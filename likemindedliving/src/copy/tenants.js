@@ -1,4 +1,4 @@
-export const tenants = [{
+export const tenants = {
     h1: `Matching professionals with like-minded housemates and beautiful London flatshare properties`,
     algorithm: {
       title: `Let our algorithm work for you`,
@@ -65,4 +65,4 @@ export const tenants = [{
         cta: `View all blogs`
     }
 
-}]
+}

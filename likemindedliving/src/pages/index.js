@@ -1,12 +1,15 @@
 import React from "react"
 
+import Landing from '../components/mainSections/Landing'
+import QuizLinks from '../components/mainSections/QuizLinks'
 
-const IndexPage = () => (
-  <>
-    <div>
-     This is the Landing Page 
-    </div>
-  </>
-)
+const IndexPage = () => {
+  return(
+    <>
+    <Landing />
+    <QuizLinks />
+    </>
+  )  
+}
 
 export default IndexPage

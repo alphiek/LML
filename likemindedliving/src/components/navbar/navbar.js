@@ -11,6 +11,9 @@ const NavWrapper = styled.nav`
     height: 7.5vh;
     padding-right: 1vw;
     padding-left: 1vw;
+    position: fixed;
+    top: 0;
+    z-index: 999;
     `
 
 const Navbar = () => {

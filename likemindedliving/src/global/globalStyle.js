@@ -74,7 +74,7 @@ footer {
 address {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 0.55em;
+  font-size: 0.65em;
   line-height: 150%;
   letter-spacing: 0.02em;
   font-style: normal;
@@ -97,6 +97,8 @@ a:hover {
 
 img {
   border-style: none;
+  display: block;
+  max-width: 100%;
 }
 
 hr {
@@ -110,17 +112,21 @@ hr {
   background-color: #252454;
 }
 
-img {
-  max-width: 100%;
-  margin-bottom: 1.45rem;
+.lml {
+  font-size: 1.4em;
+  padding-bottom: 0.3em;
+  font-weight: 800;
+  color: #4B4A68;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  line-height: 130%;
 }
 
 h1 {
-  font-size: 0.9em;
-  font-weight: 300;
-  margin-bottom: 1.45rem;
-  color: #F4F5F6;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #4B4A68;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
   line-height: 130%;
 }
@@ -133,14 +139,13 @@ h2 {
   font-size: 1.62671rem;
   line-height: 1.1;
 }
+
 h3 {
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
+  font-size: 0.60em;
+  padding-bottom: 0.5em;
   line-height: 1.1;
 }
 
@@ -152,6 +157,11 @@ ul {
 
 
 p {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 0.55em;
+  line-height: 1.1;
 }
 
 

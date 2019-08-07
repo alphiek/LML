@@ -36,11 +36,11 @@ const Footer = () => {
       <footer>
           <address>
               <AddressTitle>{title}</AddressTitle>
-              <p>{address.house}</p>
-              <p>{address.street}</p>
-              <p>{address.town}</p>
-              <p>{address.city}</p>
-              <p>{address.postal}</p>
+              {address.house} <br/>
+              {address.street} <br/>
+              {address.town} <br/>
+              {address.city} <br/>
+              {address.postal}
               <hr />
               <AddressLink href={`tel:${address.tel}`}>Tel: {address.tel}</AddressLink>
               <AddressLink href={`mailto:${address.email}`}>Email: {address.email}</AddressLink>
@@ -51,8 +51,8 @@ const Footer = () => {
                  rel='noopener noreferrer'>
                    <Fb />                      
               </a>
-              <a href={social.fb}
-                 aria-label='Facebook Link'
+              <a href={social.insta}
+                 aria-label='Instagram Link'
                  target='blank'
                  rel='noopener noreferrer'>
                    <Insta />                      
