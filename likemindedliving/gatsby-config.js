@@ -27,6 +27,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-portal`,
+      options: {
+        key: 'portal',
+        id: 'portal',
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pdf`,

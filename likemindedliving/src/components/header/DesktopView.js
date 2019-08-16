@@ -1,24 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
-import { linkUrls } from '../../copy/links'
+
 import Link from '../../global/Link'
 
-const FlexContainer = styled.ul`
+const DesktopMenuContainer = styled.ul`
   display: flex;
-  width: 60vw;
+  width: 35em;
   justify-content: space-around;
   align-items: center;
   height: 100%;
 `
 
-const LinkContainer = () => {
-    let data = linkUrls.map(e => <li key={e.name}><Link link={e} /></li>)
+const DesktopView = ({ items }) => {
+    let data = items.map(e => <li key={e.name}><Link link={e} /></li>)
     return (
-        <FlexContainer>
+        <DesktopMenuContainer>
             <li><a href='www'>landlords & estate agents</a></li>
             {data}
-        </FlexContainer>
+        </DesktopMenuContainer>
     )
 }
 
-export default LinkContainer
+export default DesktopView
