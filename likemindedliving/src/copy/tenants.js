@@ -1,28 +1,32 @@
+import { colors } from '../global/colors'
+
 export const tenants = {
-    h1: `Matching professionals with like-minded housemates and beautiful London flatshare properties`,
-    algorithm: {
-      title: `Let our algorithm work for you`,
-      text: `Take our quick quiz, we'll search 1000's of London
-      flatshare properties only bringing back exactly what you ask for!`,
-      cta: `let's get started`
+    landing: {
+        h1: `Big impactful H1 to summarise the page content max is 70 characters`,
+        p1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna 
+        aliqua.`,
+        color: `${colors.primary}`
+        },
+    process: {
+        h3: `So why not get started`,
+        p1: `Our process could not be easier, check out our simple steps to finding you the 
+        right property.`
     },
-    landlord: {
-        title: `Have a room to rent?`,
-        text: `Find out how our unique matching process will guarantee the ideal tenants.`,
-        cta: `some call to action`
-      },
     sectionOne: {
-        title: `Why compromise when it comes to comfort`,
-        textOne: `We firmly believe that you should enjoy where you live 
-        and also who you live with.`,
-        textTwo: `Flat sharing should never be an isolated, lonely experience. Which is why
-        we take a unique approach to ensure that you not only find the perfect home but housemates
-        with understanding and shared interests.`
+        h2: `Property Matching Section`,
+        p1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna 
+        aliqua.`
         },
     sectionTwo: {
-        title: `Explore our top London flatshare picks`,
-        cta: `Show me all properties`
-    },
+        h2: `Housemate matching section`,
+        p1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna aliqua. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+        tempor incididunt ut labore et dolore magna 
+        aliqua.`
+        },
     sectionThree: {
         title: `Ever had a difficult flatsharing experience?`,
         text: `Read how our happy housemates found their perfect solution to 

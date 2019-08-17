@@ -4,4 +4,5 @@ export const colors = {
     dustyBlue: '#4F698D',
     textPrimary: '#4B4A68',
     textSeconday: '#EDF7FB',    
+    lilac: '#C9D2F5'
 }

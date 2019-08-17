@@ -1,8 +1,10 @@
 import React from "react"
+import Landing from '../components/landing/Landing'
+import { tenants } from '../copy/tenants'
 
 const IndexPage = () => {
-  return(
-    <div style={{ height: '100vh'}}>This is the Landing Page</div>
+  return (
+    <Landing copy={tenants.landing} />
   )  
 }
 

@@ -1,9 +1,9 @@
 import React from 'react'
-import { ResponsiveLayout } from '../ResponsiveLayout'
+import { ResponsiveLayout } from '../../global/ResponsiveLayout'
 import TabletView from './TabletView'
 import DesktopView from './DesktopView'
 
-const Content = ({ items }) => (
+const NavBreakpoints = ({ items }) => (
     <ResponsiveLayout
       breakpoint={991}
       renderDesktop={() => (
@@ -15,4 +15,4 @@ const Content = ({ items }) => (
       />
 )
 
-export default Content
+export default NavBreakpoints

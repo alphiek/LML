@@ -26,6 +26,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: normal;
+  color: #4B4A68;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -112,24 +113,23 @@ hr {
   background-color: #252454;
 }
 
-.lml {
+h1 {
   font-size: 1.4em;
-  padding-bottom: 0.3em;
-  font-weight: 800;
+  text-align: center;
+  font-weight: 700;
   color: #4B4A68;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
   line-height: 130%;
 }
 
-h1 {
-  font-size: 0.75em;
-  font-weight: 500;
-  color: #4B4A68;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  text-rendering: optimizeLegibility;
+.title-sub-text {
+  font-size: 0.6em;
+  text-align: center;
   line-height: 130%;
+  width: 80%;
 }
+
 h2 {
   margin-bottom: 1.45rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,

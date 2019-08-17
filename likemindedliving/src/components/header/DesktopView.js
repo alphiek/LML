@@ -1,18 +1,15 @@
 import React from 'react'
-import styled from 'styled-components'
 
-import Link from '../../global/Link'
-
-const DesktopMenuContainer = styled.ul`
-  display: flex;
-  width: 35em;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-`
+import LinkList from '../../global/LinkList'
+import { DesktopMenuContainer } from '../containers/Containers'
 
 const DesktopView = ({ items }) => {
-    let data = items.map(e => <li key={e.name}><Link link={e} /></li>)
+
+    let data = items.map(e =>
+        <LinkList key={e.name} link={e} />
+    )
+
+
     return (
         <DesktopMenuContainer>
             <li><a href='www'>landlords & estate agents</a></li>
