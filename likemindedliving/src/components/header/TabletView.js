@@ -2,7 +2,7 @@ import React from 'react'
 
 import Toggle from '../../global/Toggle'
 import Portal from '../../portal/Portal'
-import LinkList from '../../global/LinkList'
+import LinkList from '../../global/Links/LinkList'
 import Burger from './Burger'
 import { TabletMenuContainer, FixedWrapper } from '../containers/Containers'
 

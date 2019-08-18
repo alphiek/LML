@@ -2,16 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Pattern = styled.svg`
-  fill: #000;
+  fill: #f9f5f5;
   width: 2em;
   height: 2em;
   position: absolute;
   overflow: visible;
   top: 0;
   left: 55%;
+  opacity: 0;
   transform: translate(-50%, -50%);
+  transition: 0.4s;
+  z-index: 0;
   :hover {
-    opacity: 0;
+    opacity: 1;
   }
 
 `

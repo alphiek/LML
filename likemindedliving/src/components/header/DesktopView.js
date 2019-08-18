@@ -1,6 +1,6 @@
 import React from 'react'
 
-import LinkList from '../../global/LinkList'
+import LinkList from '../../global/Links/LinkList'
 import { DesktopMenuContainer } from '../containers/Containers'
 
 const DesktopView = ({ items }) => {

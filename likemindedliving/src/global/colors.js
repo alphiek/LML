@@ -1,8 +1,11 @@
 export const colors = {
-    grey: '#F8F5F5',
+    grey: '#F5F7F9',
     mint: '#BEF1E9',
     dustyBlue: '#4F698D',
     textPrimary: '#4B4A68',
-    textSeconday: '#EDF7FB',    
-    lilac: '#C9D2F5'
+    textSeconday: '#ECE7E7',    
+    lilac: '#C9D2F5',
+    white: '#FFF',
+    peach: '#F9D1B7',
+    blue: '#2D7BEF'    
 }

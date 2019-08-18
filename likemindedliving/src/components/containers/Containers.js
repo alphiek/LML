@@ -4,6 +4,7 @@ import { colors } from '../../global/colors'
 
 // 1. Nav Containers
 // 2. Section Containers
+// 3. Flex Children
 
 
 // 1. Nav Containers
@@ -50,14 +51,34 @@ export const FixedWrapper = styled.div`
 
 export const Section = styled.section`
   display: flex;
-  height: auto;
+  height: 15em;
   width: 100%;
   justify-content: center;
   align-items: center;
+  background-color: ${props => props.bgColor};
 `
 
-export const TextBlockCenter = styled(Flex)`
+export const ContentCenter = styled(Flex)`
+  width: 60%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+`
+
+export const LandingCenter = styled(Flex)`
    width: 50%;
    margin-top: 5em;
    margin-bottom: 5em;
+`
+
+
+
+// 3. Flex Children
+
+export const FlexChild = styled.div`
+  width: 50%;
+`
+
+export const BlobFlex = styled(Flex)`
+  position: relative;
+  width: 50%
 `

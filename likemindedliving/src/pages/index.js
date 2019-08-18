@@ -1,10 +1,9 @@
 import React from "react"
-import Landing from '../components/landing/Landing'
-import { tenants } from '../copy/tenants'
+import MainTenants from '../components/sections/MainTenants'
 
 const IndexPage = () => {
   return (
-    <Landing copy={tenants.landing} />
+    <MainTenants/>
   )  
 }
 

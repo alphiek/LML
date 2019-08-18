@@ -35,6 +35,10 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
+main {
+  margin-top: 2em;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -117,7 +121,6 @@ h1 {
   font-size: 1.4em;
   text-align: center;
   font-weight: 700;
-  color: #4B4A68;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
   line-height: 130%;
@@ -131,13 +134,11 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 1.45rem;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 600;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
-  line-height: 1.1;
+  font-size: 1em;
+  line-height: 130%;
 }
 
 h3 {
@@ -153,6 +154,10 @@ ul {
   list-style-position: outside;
   list-style-image: none;
   list-style-type: none;
+}
+
+li {
+  z-index: 2;
 }
 
 

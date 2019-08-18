@@ -1,19 +1,16 @@
 import React from 'react'
-import Hover from './Hover'
+import Hover from '../Hover'
 
-const LinkList = ({ link }) => {
+const PageLink = ({ link }) => {
     return (
         <Hover>
-            <li>
                 <a
                     href={link.url}
                     aria-label={`Link to ${link.name}`}
-                    target='blank'
                     rel='noopener noreferrer'
                 >{link.name}</a>
-            </li>
         </Hover>
     )
 }
 
-export default LinkList
+export default PageLink
