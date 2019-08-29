@@ -1,6 +1,6 @@
 import React from 'react'
 import { LandingCenter } from '../containers/Containers'
-import Squiggle from '../shapes/Squiggle';
+import { Squiggle } from '../shapes/Squiggle';
 import { colors } from '../../global/colors'
 
 

@@ -1,9 +1,10 @@
 import React from "react"
-import MainTenants from '../components/sections/MainTenants'
+import Main from '../components/sections/Main'
+import { tenants } from '../copy/tenants'
 
 const IndexPage = () => {
   return (
-    <MainTenants/>
+    <Main data={tenants} />
   )  
 }
 

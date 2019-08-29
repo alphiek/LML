@@ -1,12 +1,16 @@
 import React from 'react'
 import { FullWidthText } from '../text/TextSection'
+import { Body } from '../text/Text'
+import { FullWidthContainer, CarouselContainer } from '../containers/Containers'
 
 const Testimonial = ({ copy }) => {
     return (
-        <>
-        <FullWidthText copy={copy[1]} />
-        <div>This will be the testimonial carousel</div>
-        </>
+        <FullWidthContainer column>
+            <FullWidthText copy={copy[1]} />
+            <CarouselContainer justifyCenter alignCenter>
+                <Body>This will be the testimonial carousel</Body>
+            </CarouselContainer>
+        </ FullWidthContainer>
     )
 }
 

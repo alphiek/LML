@@ -5,7 +5,7 @@ html {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-size: calc(0.6em + 1vw);
+  font-size: calc(0.5em + 1vw);
   box-sizing: border-box;
   overflow-y: scroll;
   line-height: 130%;
@@ -36,7 +36,7 @@ body {
 }
 
 main {
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
 
 * {
@@ -79,7 +79,7 @@ footer {
 address {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 0.65em;
+  font-size: 0.5em;
   line-height: 150%;
   letter-spacing: 0.02em;
   font-style: normal;
@@ -92,7 +92,7 @@ a {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: #1E1D42;
-  font-size: 0.55em;
+  font-size: 0.5em;
 }
 
 a:active,
@@ -124,12 +124,21 @@ h1 {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
   line-height: 130%;
+  @media (max-width: 991px) {
+    font-size: 1.2em;
+    }
+    @media (max-width: 767px) {
+    font-size: 1em;
+    }
+    @media (max-width: 479px) {
+    font-size: 1em;
+  }
 }
 
 .title-sub-text {
   font-size: 0.6em;
   text-align: center;
-  line-height: 130%;
+  line-height: 135%;
   width: 80%;
 }
 
@@ -137,7 +146,7 @@ h2 {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-rendering: optimizeLegibility;
-  font-size: 1em;
+  font-size: 0.7em;
   line-height: 130%;
 }
 
@@ -145,8 +154,8 @@ h3 {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-rendering: optimizeLegibility;
-  font-size: 0.60em;
-  padding-bottom: 0.5em;
+  font-size: 0.7em;
+  padding-bottom: 1em;
   line-height: 1.1;
 }
 
@@ -166,7 +175,7 @@ p {
   font-weight: normal;
   text-rendering: optimizeLegibility;
   font-size: 0.55em;
-  line-height: 1.1;
+  line-height: 135%;
 }
 
 

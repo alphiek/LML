@@ -1,15 +1,11 @@
-import React from 'react'
+import React from "react"
+import Main from '../components/sections/Main'
+import { landlord } from '../copy/landlords'
 
-
-const Landlords = () => {
+const LandlordPage = () => {
   return (
-    <div>
-      <h1>
-        This is the second page
-      </h1>
-    </div>
-  )
+    <Main data={landlord} />
+  )  
 }
 
-
-export default Landlords
+export default LandlordPage

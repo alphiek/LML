@@ -17,7 +17,8 @@ export const tenants = {
         cta: `Take our where would you like to live in London quiz`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
-        squiggle: `${colors.lilac}`
+        squiggle: `${colors.lilac}`,
+        blob: `${colors.mint}`
     },
     process: {
         h3: `So why not get started`,
@@ -51,7 +52,8 @@ export const tenants = {
         cta: `Call to action to take the housemate quiz`,
         color: `${colors.textSeconday}`,
         bgColor: `${colors.textPrimary}`,
-        squiggle: `${colors.peach}`
+        squiggle: `${colors.peach}`,
+        blob: `${colors.lilac}`
     },
     sectionThree: {
         h2: `Algorithm section`,
@@ -81,7 +83,8 @@ export const tenants = {
         find housemates that are suited for the duration of your tenancy.`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.grey}`,
-        squiggle: `${colors.mint}`
+        squiggle: `${colors.mint}`,
+        blob: `${colors.textPrimary}`
     },
     properties: {
         h2: `Explore our top London flatshare picks`,

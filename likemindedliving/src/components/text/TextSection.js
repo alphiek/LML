@@ -1,7 +1,8 @@
 import React from 'react'
 import { FlexChild } from '../containers/Containers'
 import { H2, Body } from '../text/Text'
-import Squiggle from '../shapes/Squiggle'
+import Cta from '../text/Cta'
+import { ShortSquiggle } from '../shapes/Squiggle'
 
 export const TextSection = ({ copy, children }) => {
     return (
@@ -13,12 +14,12 @@ export const TextSection = ({ copy, children }) => {
                 copy.h3 && <h3>{copy.h3}</h3>
             }           
             {
-                copy.squiggle && <Squiggle color={copy.squiggle} />
+                copy.squiggle && <ShortSquiggle color={copy.squiggle} width='3.5em'/>
             }
             <Body color={copy.color}>{copy.p1}</Body>
             {children}
             {   
-                copy.cta && <Body color={copy.color}>{copy.cta}</Body>
+                copy.cta && <Cta color={copy.color} cta={copy.cta} />
             }
         </FlexChild>
     )

@@ -5,6 +5,7 @@ import { colors } from '../../global/colors'
 // 1. Nav Containers
 // 2. Section Containers
 // 3. Flex Children
+// 4. Image Containers
 
 
 // 1. Nav Containers
@@ -51,23 +52,36 @@ export const FixedWrapper = styled.div`
 
 export const Section = styled.section`
   display: flex;
-  height: 15em;
   width: 100%;
+  height: auto;
   justify-content: center;
   align-items: center;
   background-color: ${props => props.bgColor};
 `
 
-export const ContentCenter = styled(Flex)`
-  width: 60%;
-  margin-top: 2em;
-  margin-bottom: 2em;
-`
-
 export const LandingCenter = styled(Flex)`
    width: 50%;
-   margin-top: 5em;
-   margin-bottom: 5em;
+   margin-top: 3em;
+   margin-bottom: 1em;
+`
+
+export const ContentCenter = styled(Flex)`
+  width: 60%;
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+    }
+`
+
+export const CarouselContainer = styled(Flex)`
+  width: 100%;
+  height: 15em;
+`
+
+export const FullWidthContainer = styled(Flex)`
+  position: relative;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  width: 60%;
 `
 
 
@@ -75,10 +89,37 @@ export const LandingCenter = styled(Flex)`
 // 3. Flex Children
 
 export const FlexChild = styled.div`
+  padding: 1em;
   width: 50%;
 `
 
 export const BlobFlex = styled(Flex)`
   position: relative;
-  width: 50%
+  width: 50%;
+`
+
+// 4. Image Containers
+
+export const ImageContainer = styled.div`
+  position: absolute;
+  width: 15em;
+  height: auto;
+  z-index: 3;
+`
+
+export const IconContainer = styled(Flex)`
+  width: 5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+`
+
+export const AlgorithmContainer = styled(Flex)`
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+`
+
+export const AlgorithmFactWrapper = styled(Flex)`
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  width: 100%;
 `
