@@ -5,7 +5,7 @@ import gradBlob from './gradientBlob.svg'
 
 const Blob = styled.svg`
    fill: ${props => props.color};
-   width: 18em;
+   width: 80%;
    position: relative;
    -webkit-transform: ${props => props.rotate};
    transform: ${props => props.rotate};
@@ -18,8 +18,8 @@ const GradBlobContainer = styled.div`
    margin-bottom: 4em;
 `
 
-export const BlobOne = ({ color, rotate }) => (
-   <BlobFlex>
+export const BlobOne = ({ color, rotate, children }) => (
+   <BlobFlex justifyCenter>
       <Blob
       color={color}
       rotate={rotate}
@@ -29,6 +29,7 @@ export const BlobOne = ({ color, rotate }) => (
          c56.8,21.7,118.3,42.7,144.5,82c26.1,39.3,17,96.8,2.7,146.3c-14.3,49.7-33.9,91.3-66.8,129.4c-32.9,38-79.4,72.3-131.7,70.2
          c-52.4-2.1-110.6-40.5-159.6-86.7C158.7,462.7,119.1,408.6,102.4,350.6z"/>
       </Blob>
+      {children}
     </BlobFlex>
 )
 

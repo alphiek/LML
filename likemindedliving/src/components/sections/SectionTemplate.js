@@ -8,11 +8,9 @@ import Process from './Process'
 import SectionTwo from './SectionTwo'
 import SectionThree from './SectionThree'
 import SectionFour from './SectionFour'
-import Properties from './Properties'
+import WPCarousel from './WPCarousel'
 import Testimonial from './Testimonial'
 import PressReel from './PressReel'
-import Blogs from './Blogs'
-
 
 
 const SectionTemplate = ({ copy }) => {
@@ -31,13 +29,13 @@ const SectionTemplate = ({ copy }) => {
     } else if (copy[0] === 'sectionFour') {
         section = <SectionFour copy={copy}/>
     } else if (copy[0] === 'properties') {
-        section = <Properties copy={copy}/>
+        section = <WPCarousel copy={copy}/>
     }  else if (copy[0] === 'testimonials') {
         section = <Testimonial copy={copy}/>
     } else if (copy[0] === 'pressReel') {
         section = <PressReel copy={copy}/>
     } else {
-        section = <Blogs copy={copy}/>
+        section = <WPCarousel copy={copy}/>
     }
 
     return (

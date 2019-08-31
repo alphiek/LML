@@ -16,3 +16,11 @@ export const linkUrls = [
         url:  `https://likemindedliving.outgrow.us/likemindedliving-45`
     },  
 ]
+
+export const ctaUrls = {  
+    
+    landlord: {
+        name: `Landlord sign up form`,
+        url: `https://likemindedliving.outgrow.us/likemindedliving-45`
+    }
+}

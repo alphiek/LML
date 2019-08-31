@@ -140,13 +140,22 @@ h1 {
   text-align: center;
   line-height: 135%;
   width: 80%;
+  @media (max-width: 991px) {
+    font-size: 0.65em;
+    }
+    @media (max-width: 767px) {
+    font-size: 0.7em;
+    }
+    @media (max-width: 479px) {
+    font-size: 0.75em;
+  }
 }
 
 h2 {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-rendering: optimizeLegibility;
-  font-size: 0.7em;
+  font-size: 0.78em;
   line-height: 130%;
 }
 
@@ -175,7 +184,16 @@ p {
   font-weight: normal;
   text-rendering: optimizeLegibility;
   font-size: 0.55em;
-  line-height: 135%;
+  line-height: 140%;
+  @media (max-width: 991px) {
+    font-size: 0.6em;
+    }
+    @media (max-width: 767px) {
+    font-size: 0.65em;
+    }
+    @media (max-width: 479px) {
+    font-size: 0.7em;
+  }
 }
 
 

@@ -1,25 +1,25 @@
 import React from 'react'
 import { FlexChild } from '../containers/Containers'
 import { H2, Body } from '../text/Text'
-import Cta from '../text/Cta'
 import { ShortSquiggle } from '../shapes/Squiggle'
+import PageLink from '../../global/Links/PageLink'
 
 export const TextSection = ({ copy, children }) => {
     return (
-        <FlexChild>
+        <FlexChild justifyCenter>
             {
                 copy.h2 && <H2 color={copy.color}>{copy.h2}</H2>
-            } 
+            }
             {
                 copy.h3 && <h3>{copy.h3}</h3>
-            }           
+            }
             {
-                copy.squiggle && <ShortSquiggle color={copy.squiggle} width='3.5em'/>
+                copy.squiggle && <ShortSquiggle color={copy.squiggle} width='3.5em' />
             }
             <Body color={copy.color}>{copy.p1}</Body>
             {children}
-            {   
-                copy.cta && <Cta color={copy.color} cta={copy.cta} />
+            {
+                copy.link && <PageLink link={copy.link} />
             }
         </FlexChild>
     )
@@ -28,10 +28,12 @@ export const TextSection = ({ copy, children }) => {
 export const FullWidthText = ({ copy }) => {
     return (
         <>
-          <H2 color={copy.color}>{copy.h2}</H2>
-          {
-              copy.p1 && <Body color={copy.color}>{copy.p1}</Body>
-          }
+            <div style={{ marginBottom: '0.5em'}}>
+                <H2 color={copy.color}>{copy.h2}</H2>
+            </div>
+            {
+                copy.p1 && <Body color={copy.color}>{copy.p1}</Body>
+            }
         </>
     )
 }

@@ -5,7 +5,7 @@ import { IconContainer } from '../components/containers/Containers'
 const Icon = styled.div`
   width: 1.2em;
   height: 1.2em;
-  border 1px solid #F9D1B7;
+  border 2px solid #F9D1B7;
   border-radius: 50%;
 `
 

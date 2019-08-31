@@ -10,15 +10,21 @@ export const tenants = {
         bgColor: `${colors.white}`,
     },
     sectionOne: {
+        tenants: true,
         h2: `Property Matching Section`,
         p1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
             tempor incididunt ut labore et dolore magna 
             aliqua.`,
-        cta: `Take our where would you like to live in London quiz`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
         squiggle: `${colors.lilac}`,
-        blob: `${colors.mint}`
+        blob: `${colors.mint}`,
+        link: {
+            color: `${colors.textPrimary}`,
+            bgColor: `${colors.grey}`,
+            name: `Take our where would you like to live in London quiz`,
+            url: `https://likemindedliving.outgrow.us/Copy-of-likemindedliving-3-2`
+        },
     },
     process: {
         h3: `So why not get started`,
@@ -38,7 +44,7 @@ export const tenants = {
 
         },
         color: `${colors.primary}`,
-        bgColor: `${colors.white}`
+        bgColor: `${colors.white}`,
     },
     sectionTwo: {
         h2: `Housemate matching section`,
@@ -53,7 +59,13 @@ export const tenants = {
         color: `${colors.textSeconday}`,
         bgColor: `${colors.textPrimary}`,
         squiggle: `${colors.peach}`,
-        blob: `${colors.lilac}`
+        blob: `${colors.lilac}`,
+        link: {
+            color: `${colors.textPrimary}`,
+            bgColor: `${colors.mint}`,
+            name: `Take our housemate matching quiz`,
+            url: `https://likemindedliving.outgrow.us/likemindedliving-17`
+        },
     },
     sectionThree: {
         h2: `Algorithm section`,
@@ -70,7 +82,13 @@ export const tenants = {
         cta: `Call to action for the algorithm section`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
-        squiggle: `${colors.blue}`
+        squiggle: `${colors.blue}`,
+        link: {
+            color: `${colors.textPrimary}`,
+            bgColor: `${colors.lilac}`,
+            name: `Register your interest`,
+            url: `https://likemindedliving.outgrow.us/likemindedliving-45`
+        },
     },
     sectionFour: {
         h2: `What makes our flatsharing community the ideal choice`,
@@ -113,10 +131,11 @@ export const tenants = {
                 experiencing London life with. Couldn't have asked for more!`,
                 name: `Malcolm`,
                 job: `Graduate`
-            }
+            },
+            squiggle: `${colors.lilac}`
         },
         color: `${colors.textPrimary}`,
-        bgColor: `${colors.white}`
+        bgColor: `${colors.white}`,
     },
     pressReel: {
         articles: {

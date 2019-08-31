@@ -6,17 +6,17 @@ import { ImageContainer } from '../../components/containers/Containers'
 export const WhereToLive = () => (
     <StaticQuery query={graphql`
     query {
-        whereToLive: file(relativePath: { eq: "main/WhereToLive.png"}) {
+        sectionOneImg: file(relativePath: { eq: "main/SectionOneImg.png"}) {
             childImageSharp {
               fluid {
-                  ...GatsbyImageSharpFluid_withWebp
+                  ...GatsbyImageSharpFluid_noBase64
               }
             }
         }
     }
 `}
 render={data => {
-    const imageData = data.whereToLive.childImageSharp.fluid
+    const imageData = data.sectionOneImg.childImageSharp.fluid
     return (
         <ImageContainer>
            <Img fluid={imageData}/>

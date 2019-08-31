@@ -10,10 +10,10 @@ const LinkStyle = styled.a`
   border-radius: 0.35em;
 `
 
-const PageLink = ({ link }) => {
+export const CarouselLink = ({ link }) => {
     return (
         <Hover>
-            <div style={{ marginTop: '2em'}}>
+            <div>
             <LinkStyle
                     color={link.color}
                     bgColor={link.bgColor}
@@ -29,4 +29,3 @@ const PageLink = ({ link }) => {
     )
 }
 
-export default PageLink

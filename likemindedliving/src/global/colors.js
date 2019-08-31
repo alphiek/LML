@@ -7,5 +7,6 @@ export const colors = {
     lilac: '#C9D2F5',
     white: '#FFF',
     peach: '#F9D1B7',
-    blue: '#2D7BEF'    
+    blue: '#2D7BEF',
+    lightPeach: '#FCE9DD',
 }
