@@ -1,16 +1,16 @@
 import React from 'react'
 import { FullWidthText } from '../text/TextSection'
-import { TestimonialContainer, TestimonialHeaderWrapper, TestimonialTextWrapper } from '../containers/Containers'
+import { TestimonialContainer, TestimonialHeadingContainer, TestimonialHeadingWrapper} from '../containers/Containers'
 import Breakpoints from '../cards/testimonial/Breakpoints'
 
 const Testimonial = ({ copy }) => {
     return (
         <TestimonialContainer column>
-            <TestimonialHeaderWrapper>
-                <TestimonialTextWrapper>
+            <TestimonialHeadingContainer>
+                <TestimonialHeadingWrapper>
                     <FullWidthText copy={copy[1]} />
-                </TestimonialTextWrapper>
-            </TestimonialHeaderWrapper>
+                </TestimonialHeadingWrapper>
+            </TestimonialHeadingContainer>
            <Breakpoints copy={copy[1].testimonial} />
         </ TestimonialContainer>
     )

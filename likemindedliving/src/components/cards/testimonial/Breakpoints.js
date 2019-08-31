@@ -5,14 +5,14 @@ import DesktopView from './DesktopView'
 
 const Breakpoints = ({ copy }) => (
     <ResponsiveLayout
-      breakpoint={768}
-      renderDesktop={() => (
-          <DesktopView copy={copy}/>
-      )}
-      renderTablet={() => (
-          <MobileView copy={copy} />
-      )}
-      />
+        breakpoint={768}
+        renderDesktop={() => (
+            <DesktopView copy={copy} />
+        )}
+        renderTablet={() => (
+            <MobileView copy={copy} />
+        )}
+    />
 )
 
 export default Breakpoints

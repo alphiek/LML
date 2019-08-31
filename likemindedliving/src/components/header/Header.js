@@ -1,15 +1,15 @@
 import React from 'react'
 import Logo from './Logo'
 import NavBreakpoints from './NavBreakpoints'
-import { NavWrapper } from '../containers/Containers'
+import { NavContainer } from '../containers/Containers'
 
 const Header = ({ items }) => {
   return (
     <header>
-      <NavWrapper>
+      <NavContainer>
         <Logo />
         <NavBreakpoints items={items}/>
-      </NavWrapper>
+      </NavContainer>
    </header>
   )
 }

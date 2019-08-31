@@ -1,21 +1,25 @@
 import React from 'react'
 import { FullWidthText } from '../text/TextSection'
-import { Body } from '../text/Text'
-import { FullWidthContainer, CarouselContainer, LinkContainerRight } from '../containers/Containers'
+import { FullWidthContainer, CarouselContainer, LinkWrapperRight } from '../containers/Containers'
 import { CarouselLink } from '../../global/Links/CarouselLink'
+import SwiperCarousel from '../Swiper/Swiper'
+import { propertyData } from '../cards/Properties/propertyData'
+import { blogData } from '../cards/Blogs/blogData'
 
-const Blogs = ({ copy }) => {
+const WPCarousel = ({ copy }) => {
     return (
         <FullWidthContainer column >
             <FullWidthText copy={copy[1]} />
             <CarouselContainer justifyCenter alignCenter>
-                <Body>This will be the wp carousel</Body>
+                {
+                    copy[0] === 'properties' ? <SwiperCarousel data={propertyData}/> : <SwiperCarousel data={blogData}/>
+                }
             </CarouselContainer>
-            <LinkContainerRight>
+            <LinkWrapperRight>
                 <CarouselLink link={copy[1].link} />
-            </LinkContainerRight>
+            </LinkWrapperRight>
         </ FullWidthContainer>
     )
 }
 
-export default Blogs
+export default WPCarousel

@@ -1,16 +1,19 @@
 import React from 'react'
-import { TestimonialCardWrapper } from '../../containers/Containers'
+import { TestimonialCardContainer } from '../../containers/Containers'
 import { TestimonialOne } from '../../../images/queries/TestimonialOne'
+import TestimonialCard from './TestimonialCard'
 
 export const MobileView = ({ copy }) => {
     return (
-                <TestimonialCardWrapper>
-                    {
-                        copy.one &&
-                        <TestimonialOne />
-                    }
-                </TestimonialCardWrapper>
-        )
+        <TestimonialCardContainer>
+            {
+                copy.one &&
+                <TestimonialCard copy={copy.one} color={copy.squiggle}>
+                    <TestimonialOne />
+                </TestimonialCard>
+            }
+        </TestimonialCardContainer>
+    )
 }
 
 export default MobileView

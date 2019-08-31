@@ -4,7 +4,7 @@ import Toggle from '../../global/Toggle'
 import Portal from '../../portal/Portal'
 import LinkList from '../../global/Links/LinkList'
 import Burger from './Burger'
-import { TabletMenuContainer, FixedWrapper } from '../containers/Containers'
+import { TabletMenuContainer, FixedContainer } from '../containers/Containers'
 
 
 const TabletView = ({ items }) => {
@@ -16,13 +16,13 @@ const TabletView = ({ items }) => {
             </div>}
             content={hide => (
                 <Portal>
-                    <FixedWrapper>
+                    <FixedContainer>
                         <TabletMenuContainer>
                             <button onClick={hide}>X</button>
                             <li><a href='www'>landlords & estate agents</a></li>
                             {data}
                         </TabletMenuContainer>
-                    </FixedWrapper>
+                    </FixedContainer>
                 </Portal>
             )}
         />
