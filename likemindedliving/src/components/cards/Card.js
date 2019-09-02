@@ -2,13 +2,26 @@ import React from 'react'
 import { Body } from '../text/Text'
 import { ShortSquiggle } from '../shapes/Squiggle'
 import { colors } from '../../global/colors'
+import styled from 'styled-components'
 
+const CardContainer = styled.div`
+   border-radius: 0.5em;
+   overflow: hidden;
+`
+const CardImageWrapper = styled.div`
+   height: 4em;
+   background: grey;
+`
+
+const CardTextContainer = styled.div`
+   padding: 0.75em 0 1em 0.5em;
+`
 
 const Card = ({ data }) => {
     return (
-        <div>
-            <div>{data.img}</div>
-            <div>
+        <CardContainer>
+            <CardImageWrapper>{data.img}</CardImageWrapper>
+            <CardTextContainer>
                 <h3>{data.name}</h3>
                 <ShortSquiggle color={colors.mint} width='2em' />
                 {
@@ -22,8 +35,8 @@ const Card = ({ data }) => {
                 }
                 <a href='https://www.rkkcreative.xyz'
                     target='_blank' rel='noopener noreferrer'>{data.link}</a>
-            </div>
-        </div>
+            </CardTextContainer>
+        </CardContainer>
     )
 }
 

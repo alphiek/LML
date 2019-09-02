@@ -12,7 +12,7 @@ const Blob = styled.svg`
 `
 
 const GradBlobContainer = styled.div`
-   width: 17em;
+   width: 15em;
    position: relative;
    margin-top: 4em;
    margin-bottom: 4em;

@@ -21,6 +21,7 @@ html {
 }
 }
 
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -93,6 +94,15 @@ a {
   font-weight: 600;
   color: #1E1D42;
   font-size: 0.5em;
+  @media (max-width: 991px) {
+    font-size: 0.6em;
+    }
+    @media (max-width: 767px) {
+    font-size: 0.7em;
+    }
+    @media (max-width: 479px) {
+    font-size: 0.75em;
+  }
 }
 
 a:active,
@@ -137,6 +147,7 @@ h1 {
 
 .title-sub-text {
   font-size: 0.6em;
+  margin-top: 0.8em;
   text-align: center;
   line-height: 135%;
   width: 80%;
@@ -149,6 +160,11 @@ h1 {
     @media (max-width: 479px) {
     font-size: 0.75em;
   }
+}
+
+.landlord {
+  color: #FFF;
+  margin-bottom: 4em;
 }
 
 h2 {
@@ -204,4 +220,69 @@ p {
     font-size: 100%;
   }
 }
+
+
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 `

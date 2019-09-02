@@ -1,27 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
+const PatternWrapper = styled.div`
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  overflow: visible;
+  padding-bottom: 0.5em;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+ :hover {
+    opacity: 1;
+  }
+`
+
 const Pattern = styled.svg`
   fill: #f9f5f5;
   width: 2em;
   height: 2em;
-  position: absolute;
-  overflow: visible;
-  top: 0;
-  left: 55%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: 0.4s;
-  z-index: 0;
-  :hover {
-    opacity: 1;
-  }
-
 `
 
 
 export const HoverPattern = () => (
-    <Pattern 
+    <PatternWrapper>
+ <Pattern 
       viewBox="0 0 86.9 46.3"
       alt='on hover pattern'>
           <g>
@@ -762,6 +768,7 @@ export const HoverPattern = () => (
                 c0,0.1,0.1,0,0.1,0C27.3,63.5,27.5,63.7,27.6,63.7z"/>
         </g>
       </Pattern>
+    </PatternWrapper>   
 )
 
 

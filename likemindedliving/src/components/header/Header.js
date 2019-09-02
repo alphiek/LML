@@ -1,15 +1,15 @@
 import React from 'react'
-import Logo from './Logo'
+import HomeLink from '../../global/Links/HomeLink'
 import NavBreakpoints from './NavBreakpoints'
-import { NavContainer } from '../containers/Containers'
+import { NavDropdown } from '../animations/dropdown'
 
 const Header = ({ items }) => {
   return (
     <header>
-      <NavContainer>
-        <Logo />
+      <NavDropdown>
+        <HomeLink />
         <NavBreakpoints items={items}/>
-      </NavContainer>
+      </NavDropdown>
    </header>
   )
 }

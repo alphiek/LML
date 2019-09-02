@@ -17,9 +17,24 @@ export const TextSection = ({ copy, children }) => {
                 copy.squiggle && <ShortSquiggle color={copy.squiggle} width='3.5em' />
             }
             <Body color={copy.color}>{copy.p1}</Body>
+            {
+                copy.p2 && <Body>{copy.p2}</Body>
+            }
             {children}
             {
                 copy.link && <PageLink link={copy.link} />
+            }
+        </FlexChild>
+    )
+}
+
+export const CarouselTextSection = ({ copy }) => {
+    return (
+        <FlexChild justifyCenter>
+           <h3>{copy.h3}</h3>
+            <Body color={copy.color}>{copy.p1}</Body>
+            {
+                copy.p2 && <Body>{copy.p2}</Body>
             }
         </FlexChild>
     )

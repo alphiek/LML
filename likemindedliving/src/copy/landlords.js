@@ -2,56 +2,58 @@ import { colors } from '../global/colors'
 
 export const landlord = {
     landing: {
-        h1: `Big impactful H1 to summarise the page content max is 70 characters`,
-        p1: `This is the landlord page, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna 
-        aliqua.`,
-        color: `${colors.primary}`,
-        bgColor: `${colors.white}`,
+        landlord: true,
+        h1: `Find flat-sharers for your rental property`,
+        p1: `Whether you are an estate agent or private landlord, we’d love to hear from you, 
+        and see if you could help our renters find their ideal home.`,
+        color: `${colors.white}`,
+        bgColor: `${colors.textPrimary}`,
     },
     sectionOne: {
-        h2: `This is USP1 Landlord Page`,
-        p1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna 
-            aliqua.`,
-        cta: `Take our where would you like to live in London quiz`,
+        landlords: true,
+        h2: `How do we work`,
+        p1: `Like-Minded Living is naturally a tenant company, specialising in finding professional tenants, 
+        grouping them together, and matching them to their ideal property.`,
+        p2: `We love to work with estate agents or private landlords 
+        that can help us provide the perfect property to our customers. We are building London’s first community of flat-sharers all 
+        connected to each other by their like-minded traits, get in touch with us if you own or are managing a property that is suitable for sharers.`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
-        squiggle: `${colors.lilac}`
+        squiggle: `${colors.lilac}`,
+        blob: `${colors.mint}`,
     },
     process: {
-        h3: `So why not get started`,
-        p1: `Our process could not be easier, check out our simple steps to finding you the 
-        right property.`,
+        h3: `How it works`,
+        p1: `No text provided here should we delete this from the carousel for landlords`,
         steps: {
-            one: `Register your interest and take our 'Where would you like to live in London Quiz here. 
-                The answers will give us a good understanding of your budget, location and property requirements.`,
-            two: `Using your information, we’ll run our algorithm which will search thousands 
-                 of properties across every major listing site, in accordance with your property requirements.`,
-            three: `We will hand pick the best properties from the bunch brought forward and 
-                 arrange with you a day to view at-least 3 properties that suit your needs.`,
-            four: `Once you’re happy with your property, leave it to us to find suitable housemates. 
-                  Take our Like-Minded housemate quiz and we’ll only match you with housemates who match well with your answers.`,
-            five: `Once a group has been formed we’ll work with you to get all the necessary documents to create the tenancy agreement. `,
-            six: `All that’s left is to get ready for move-in, we’ll always stay on hand to assist with any issues you may have`
-
+            one: `On our website, fill in our landlord / estate agent sign up form, here, or on our quiz page. 
+                  A member of our team will be in touch to confirm your details and discuss the letting of your property`,
+            two: `We will market your property on our website and to our pool of sharers looking for a place to live. 
+                  We can rent either on a room by room basis or as a whole property, depending on your preferences.`,
+            three: `Viewing - A member of our team will be in touch shortly to arrange a viewing, typically these occur 
+                  weeknights in the evening or on Saturdays in the afternoon`,
+            four: `Offer - During this exciting period our dedicated lettings manager will be in touch of any offers received and arrange the desired move-in date`,
+            five: `Move-in – We’ll be on hand to assist with your referencing process should you need our help, 
+                  and once the tenancy agreement is formed a member of our team will be one call away to assist.`,
         },
         color: `${colors.primary}`,
-        bgColor: `${colors.white}`
+        bgColor: `${colors.white}`,
+        link: {
+            color: `${colors.textPrimary}`,
+            bgColor: `${colors.grey}`,
+            name: `Need button text for landlord sign up form`,
+            url: `https://likemindedliving.outgrow.us/likemindedliving-45`
+        },
     },
     sectionTwo: {
-        h2: `Housemate matching section`,
-        p1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna aliqua. 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna 
-        aliqua.`,
-        fact: `Some interesting fact about something or other to do with renting in London
-        accompanied by icons to support the information`,
-        cta: `Call to action to take the housemate quiz`,
+        h2: `Are we a subletting company`,
+        p1: `No, we are not. We are a tenant company that exists to help renters find the perfect place to live. 
+        A member of our team will be on hand to help with arranging the viewing, but once our clients have placed 
+        an offer on your property, we take a backseat role, and let your team takeover the referencing process as necessary.`,
         color: `${colors.textSeconday}`,
         bgColor: `${colors.textPrimary}`,
-        squiggle: `${colors.peach}`
+        squiggle: `${colors.peach}`,
+        blob: `${colors.lilac}`,
     },
     sectionThree: {
         h2: `Algorithm section`,
@@ -68,52 +70,28 @@ export const landlord = {
         cta: `Call to action for the algorithm section`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
-        squiggle: `${colors.blue}`
+        squiggle: `${colors.blue}`,
+        link: {
+            color: `${colors.textPrimary}`,
+            bgColor: `${colors.lilac}`,
+            name: `Register your interest`,
+            url: `https://likemindedliving.outgrow.us/likemindedliving-45`
+        },
     },
     sectionFour: {
-        h2: `What makes our flatsharing community the ideal choice`,
-        p1: `Like-Minded Living was made by flat-sharers, we understand 
-        the challenges faced by flat-sharers and we exist to face those challenges
-        head on.`,
+        h2: `What makes Like-minded living the ideal choice`,
+        p1: `Like-Minded Living is naturally a tenant company, specialising in finding professional tenants, grouping them together, 
+        and matching them to their ideal property. We love to work with estate agents or private landlords that can help us provide the perfect property 
+        to our customers. We are building London’s first community of flat-sharers all connected to each other by their like-minded traits, 
+        get in touch with us if you own or are managing a property that is suitable for sharers.`,
         p2: `We act as your property finder, having developed proprietary software that
         allows us to scan the market searching across thousands of listings, to bring you your 
         perfect property. Alongside utilising our housemate matching algorithm to help you 
         find housemates that are suited for the duration of your tenancy.`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.grey}`,
-        squiggle: `${colors.mint}`
-    },
-    properties: {
-        h2: `Explore our top London flatshare picks`,
-        link: {
-            name: `Show me all properties`,
-            url: `https://likemindedliving.co.uk/properties/`
-        },
-        color: `${colors.textPrimary}`,
-        bgColor: `${colors.white}`
-    },
-    testimonials: {
-        h2: `Ever had a difficult flat sharing experience?`,
-        p1: `Read how our happy housemates found their perfect solution to 
-        renting in London.`,
-        testimonial: {
-            one: {
-                text: `Like-Minded Living were the greatest, I have an
-                 awesome flat in London and more importantly housemates to enjoy
-                 experiencing London life with. Couldn't have asked for more!`,
-                name: `Suzanna`,
-                job: `Marketing Consultant`
-            },
-            two: {
-                text: `Like-Minded Living were the greatest, I have an
-                awesome flat in London and more importantly housemates to enjoy
-                experiencing London life with. Couldn't have asked for more!`,
-                name: `Malcolm`,
-                job: `Graduate`
-            }
-        },
-        color: `${colors.textPrimary}`,
-        bgColor: `${colors.white}`
+        squiggle: `${colors.mint}`,
+        blob: `${colors.textPrimary}`
     },
     pressReel: {
         articles: {

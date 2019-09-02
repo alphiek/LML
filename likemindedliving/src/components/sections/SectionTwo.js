@@ -10,7 +10,7 @@ const SectionTwo = ({ copy }) => {
         <ContentCenter alignCenter rowReverse >
             <TextSection copy={copy[1]}>
                 <HousemateIcons />
-                <Body color={copy[1].color}>This is the section for the facts and icons</Body>
+                <Body color={copy[1].color}>{copy[1].fact}</Body>
             </TextSection>
             <BlobOne color={copy[1].blob} rotate='rotate(139deg)'/>
         </ContentCenter>

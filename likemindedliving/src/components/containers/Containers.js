@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { animated as a } from 'react-spring'
 import Flex from './Flex'
 import { colors } from '../../global/colors'
 import Img from 'gatsby-image'
@@ -23,6 +24,7 @@ import Img from 'gatsby-image'
 
 export const DesktopMenuContainer = styled.ul`
   display: flex;
+  z-index: 20;
   width: 35em;
   justify-content: space-around;
   align-items: center;
@@ -47,16 +49,25 @@ export const FixedContainer = styled.div`
   background-color: ${colors.mint};
 `
 
-export const NavContainer = styled.nav`
+export const NavContainer = styled(a.nav)`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 2.5em;
+    height: 2.8em;
     padding-right: 1vw;
     padding-left: 1em;
     position: fixed;
     top: 0;
     z-index: 600;
+    @media (max-width: 991px) {
+      height: 3em;
+    }
+    @media (max-width: 767px) {
+      height: 3.5em;
+    }
+    @media (max-width: 479px) {
+      height: 4em;
+    }
     `
 
 
@@ -107,6 +118,23 @@ export const LinkWrapperRight = styled.div`
   width: auto;
   text-align: right;
 `
+
+export const FlexChild = styled.div`
+  padding: 1em;
+  width: 50%;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+`
+
+export const BlobFlex = styled(Flex)`
+  position: relative;
+  width: 50%;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+`
+
 // b. Landing
 
 export const LandingCenter = styled(Flex)`
@@ -129,6 +157,17 @@ export const CarouselContainer = styled(Flex)`
   width: 100%;
   height: 15em;
 `
+
+export const CarouselHeadingContainer = styled.div`
+  background-color: ${colors.lightPeach};
+  padding: 2em 0 2em 15%;
+  width: 90%;
+`
+
+export const ProcessLinkRight = styled(LinkWrapperRight)`
+  margin-bottom: 2em;
+`
+
 // d. Properties
 
 
@@ -180,24 +219,6 @@ export const TextWrapper = styled.div`
 
 
 
-
-// 3. Flex Children
-
-export const FlexChild = styled.div`
-  padding: 1em;
-  width: 50%;
-  @media (max-width: 767px) {
-    width: 100%;
-  }
-`
-
-export const BlobFlex = styled(Flex)`
-  position: relative;
-  width: 50%;
-  @media (max-width: 767px) {
-    width: 100%;
-  }
-`
 
 // 4. Image and Icon Containers
 

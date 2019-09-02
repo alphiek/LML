@@ -1,6 +1,6 @@
 export const blogData = {
     0: {
-        img: `This is the image`,
+        img: ``,
         name: `Blah`,
         blurb: `Donec dapibus maximus luctus. Vivamus ac sem id urna 
         imperdiet fringilla quis id sapien. Nunc aliquet erat et odio 
@@ -12,7 +12,7 @@ export const blogData = {
         link: `This is the link`
     },
     1: {
-        img: `This is the image`,
+        img: ``,
         name: `Blah Blah`,
         blurb: `Donec dapibus maximus luctus. Vivamus ac sem id urna 
         imperdiet fringilla quis id sapien. Nunc aliquet erat et odio 
@@ -24,7 +24,7 @@ export const blogData = {
         link: `This is the link`
     },
     2: {
-        img: `This is the image`,
+        img: ``,
         name: `Blah grr`,
         blurb: `Donec dapibus maximus luctus. Vivamus ac sem id urna 
         imperdiet fringilla quis id sapien. Nunc aliquet erat et odio 
@@ -36,7 +36,7 @@ export const blogData = {
         link: `This is the link`
     },
     3: {
-        img: `This is the image`,
+        img: ``,
         name: `Blah duh`,
         blurb: `Donec dapibus maximus luctus. Vivamus ac sem id urna 
         imperdiet fringilla quis id sapien. Nunc aliquet erat et odio 
@@ -48,7 +48,7 @@ export const blogData = {
         link: `This is the link`
     },
     4: {
-        img: `This is the image`,
+        img: ``,
         name: `Whoop Whoop`,
         blurb: `Donec dapibus maximus luctus. Vivamus ac sem id urna 
         imperdiet fringilla quis id sapien. Nunc aliquet erat et odio 
@@ -60,7 +60,7 @@ export const blogData = {
         link: `This is the link`
     },
     5: {
-        img: `This is the image`,
+        img: ``,
         name: `grrrrr Blah`,
         blurb: `Donec dapibus maximus luctus. Vivamus ac sem id urna 
         imperdiet fringilla quis id sapien. Nunc aliquet erat et odio 
@@ -72,7 +72,7 @@ export const blogData = {
         link: `This is the link`
     },
     6: {
-        img: `This is the image`,
+        img: ``,
         name: `Duh blah`,
         blurb: `Donec dapibus maximus luctus. Vivamus ac sem id urna 
         imperdiet fringilla quis id sapien. Nunc aliquet erat et odio 
@@ -84,7 +84,7 @@ export const blogData = {
         link: `This is the link`
     },
     7: {
-        img: `This is the image`,
+        img: ``,
         name: `blurblah`,
         blurb: `Donec dapibus maximus luctus. Vivamus ac sem id urna 
         imperdiet fringilla quis id sapien. Nunc aliquet erat et odio 
@@ -96,7 +96,7 @@ export const blogData = {
         link: `This is the link`
     },
     8: {
-        img: `This is the image`,
+        img: ``,
         name: `Blahry Blarhry Blah`,
         blurb: `Donec dapibus maximus luctus. Vivamus ac sem id urna 
         imperdiet fringilla quis id sapien. Nunc aliquet erat et odio 

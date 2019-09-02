@@ -2,19 +2,20 @@ import { colors } from '../global/colors'
 
 export const tenants = {
     landing: {
-        h1: `Big impactful H1 to summarise the page content max is 70 characters`,
-        p1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna 
-        aliqua.`,
+        tenants: true,
+        h1: `Search rental properties everywhere.\n Your price. Your location.`,
+        p1: `Our Property Search Tool searches 1000s of listings across all major sites to find your ideal home, 
+        customers can save up to £1000s per year on rent.`,
         color: `${colors.primary}`,
         bgColor: `${colors.white}`,
     },
     sectionOne: {
         tenants: true,
-        h2: `Property Matching Section`,
-        p1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-            tempor incididunt ut labore et dolore magna 
-            aliqua.`,
+        h2: `Property Search Tool`,
+        p1: `Submit your details and let our tool find your perfect property. 
+        We’ll book your viewings, and manage the offer process, so you can focus on moving in to your ideal home.`,
+        p2: `Fill in this short form to start the exciting process of looking for your property. 
+        Once your form has been filled in a member of our team will be in touch to kick-start finding your new home!`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
         squiggle: `${colors.lilac}`,
@@ -22,40 +23,43 @@ export const tenants = {
         link: {
             color: `${colors.textPrimary}`,
             bgColor: `${colors.grey}`,
-            name: `Take our where would you like to live in London quiz`,
-            url: `https://likemindedliving.outgrow.us/Copy-of-likemindedliving-3-2`
+            name: `Button text for the tenant sign up form here`,
+            url: `https://likemindedliving.outgrow.us/likemindedliving-45`
         },
     },
     process: {
         h3: `So why not get started`,
         p1: `Our process could not be easier, check out our simple steps to finding you the 
         right property.`,
+        p2: `London has over 32 boroughs, between 6 zones, it can be quite confusing to find an area best suited to you. 
+        Take our quiz to help you make that decision.`,
         steps: {
-            one: `Register your interest and take our 'Where would you like to live in London Quiz here. 
+            1: `Register your interest and take our 'Where would you like to live in London quiz. 
                 The answers will give us a good understanding of your budget, location and property requirements.`,
-            two: `Using your information, we’ll run our algorithm which will search thousands 
+            2: `Using your information, we’ll run our algorithm which will search thousands 
                  of properties across every major listing site, in accordance with your property requirements.`,
-            three: `We will hand pick the best properties from the bunch brought forward and 
+            3: `We will hand pick the best properties from the bunch brought forward and 
                  arrange with you a day to view at-least 3 properties that suit your needs.`,
-            four: `Once you’re happy with your property, leave it to us to find suitable housemates. 
+            4: `Once you’re happy with your property, leave it to us to find suitable housemates. 
                   Take our Like-Minded housemate quiz and we’ll only match you with housemates who match well with your answers.`,
-            five: `Once a group has been formed we’ll work with you to get all the necessary documents to create the tenancy agreement. `,
-            six: `All that’s left is to get ready for move-in, we’ll always stay on hand to assist with any issues you may have`
+            5: `Once a group has been formed we’ll work with you to get all the necessary documents to create the tenancy agreement. `,
+            6: `All that’s left is to get ready for move-in, we’ll always stay on hand to assist with any issues you may have`
 
         },
-        color: `${colors.primary}`,
+        link: {
+            color: `${colors.mint}`,
+            bgColor: `${colors.textPrimary}`,
+            name: `Take our where would you like to live in London quiz`,
+            url: `https://likemindedliving.outgrow.us/Copy-of-likemindedliving-3-2`
+        },
+        color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
     },
     sectionTwo: {
-        h2: `Housemate matching section`,
-        p1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna aliqua. 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna 
-        aliqua.`,
-        fact: `Some interesting fact about something or other to do with renting in London
-        accompanied by icons to support the information`,
-        cta: `Call to action to take the housemate quiz`,
+        h2: `Housemate matching`,
+        p1: `Looking to flat-share as an individual? No worries. We know how hard it can be moving into a new home with complete strangers. 
+        Take our ‘LML Housemate Matching’ quiz, and we’ll use the results to best match you to other compatible housemates for a happy house.`,
+        fact: `Take this quiz to help us find your ideal housemates for your house-share`,
         color: `${colors.textSeconday}`,
         bgColor: `${colors.textPrimary}`,
         squiggle: `${colors.peach}`,
@@ -68,37 +72,32 @@ export const tenants = {
         },
     },
     sectionThree: {
-        h2: `Algorithm section`,
-        p1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna 
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
-        aute irure dolor in`,
+        h2: `The algorithm behind our tool`,
+        p1: `Our algorithm searches across all of the UK’s major property listing sites, and takes detail s into account such as tube station, 
+        room price per housemate, and living room status. We use these metrics to help you find the highest quality properties at the best possible price.`,
+        p2: `We regularly survey the market and calculate average prices for advertised properties. 
+        Use this quiz to check if you are paying too much for your property.`,
         fact: {
-            one: `Fact about money saved with icon`,
-            two: `We search 1000's of major listings to bring you what you want`,
-            three: `Fact about something else`
+            one: `We search over 1000s major listing to bring what you want`,
+            two: `Customers save on average £1,500 per year when using our tool`,
         },
-        cta: `Call to action for the algorithm section`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
         squiggle: `${colors.blue}`,
         link: {
             color: `${colors.textPrimary}`,
             bgColor: `${colors.lilac}`,
-            name: `Register your interest`,
-            url: `https://likemindedliving.outgrow.us/likemindedliving-45`
+            name: `Start your search today`,
+            url: `https://likemindedliving.outgrow.us/Copy-of-likemindedliving-5-1`
         },
     },
     sectionFour: {
         h2: `What makes our flatsharing community the ideal choice`,
-        p1: `Like-Minded Living was made by flat-sharers, we understand 
-        the challenges faced by flat-sharers and we exist to face those challenges
-        head on.`,
-        p2: `We act as your property finder, having developed proprietary software that
-        allows us to scan the market searching across thousands of listings, to bring you your 
-        perfect property. Alongside utilising our housemate matching algorithm to help you 
-        find housemates that are suited for the duration of your tenancy.`,
+        p1: `Ever had a difficult flat-sharing experience renting in London? 
+        Has your agent partially returned your deposit, your landlord ignored an issue relating 
+        to your property for months? Or could it be that your rent is too expensive and your current home is over-crowded? `,
+        p2: `Like-Minded Living was made by flat-sharers, we understand the challenges faced by flat-sharers, 
+        and we exist to face these challenges head on.`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.grey}`,
         squiggle: `${colors.mint}`,

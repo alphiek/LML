@@ -3,6 +3,7 @@ import React from 'react'
 import Toggle from '../../global/Toggle'
 import Portal from '../../portal/Portal'
 import LinkList from '../../global/Links/LinkList'
+import LandlordLink from '../../global/Links/LandlordLink'
 import Burger from './Burger'
 import { TabletMenuContainer, FixedContainer } from '../containers/Containers'
 
@@ -19,7 +20,7 @@ const TabletView = ({ items }) => {
                     <FixedContainer>
                         <TabletMenuContainer>
                             <button onClick={hide}>X</button>
-                            <li><a href='www'>landlords & estate agents</a></li>
+                            <LandlordLink />
                             {data}
                         </TabletMenuContainer>
                     </FixedContainer>

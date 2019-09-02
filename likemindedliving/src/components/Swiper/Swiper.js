@@ -8,6 +8,7 @@ const SwiperCarousel = ({ data }) => {
     let slides = slideData.map(item => <div id={item[0]}><Card data={item[1]} /></div>)
 
     const params = {
+        grabCursor: true,
         slidesPerView: 4,
         spaceBetween: 50,
         breakpoints: {

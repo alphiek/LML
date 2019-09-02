@@ -1,15 +1,22 @@
 import React from 'react'
-import { TextSection } from '../text/TextSection'
-import { Body }  from '../text/Text'
-import { ContentCenter, CarouselContainer } from '../containers/Containers'
+import { CarouselTextSection } from '../text/TextSection'
+import { Body } from '../text/Text'
+import { ContentCenter, CarouselContainer, ProcessLinkRight, CarouselHeadingContainer } from '../containers/Containers'
+import ProcessSlide from '../Swiper/process/ProcessSlide'
+import PageLink from '../../global/Links/PageLink'
 
 const Process = ({ copy }) => {
     return (
         <ContentCenter columnReverse>
-        <CarouselContainer justifyCenter alignCenter>
-            <Body>This will be the process carousel</Body>
-        </CarouselContainer>
-        <TextSection copy={copy[1]}/>
+            <ProcessLinkRight>
+                <PageLink link={copy[1].link} />
+            </ProcessLinkRight>
+            <CarouselContainer justifyCenter alignCenter>
+                <ProcessSlide/> 
+            </CarouselContainer>
+            <CarouselHeadingContainer>
+              <CarouselTextSection copy={copy[1]} />
+            </CarouselHeadingContainer>
         </ContentCenter>
     )
 }
