@@ -3,7 +3,9 @@ import { colors } from '../global/colors'
 export const landlord = {
     landing: {
         landlord: true,
-        h1: `Find flat-sharers for your rental property`,
+        h1: {
+            firstLine: `Find flat-sharers for your rental property`,
+        },
         p1: `Whether you are an estate agent or private landlord, we’d love to hear from you, 
         and see if you could help our renters find their ideal home.`,
         color: `${colors.white}`,

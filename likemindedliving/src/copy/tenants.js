@@ -3,7 +3,10 @@ import { colors } from '../global/colors'
 export const tenants = {
     landing: {
         tenants: true,
-        h1: `Search rental properties everywhere.\n Your price. Your location.`,
+        h1: {
+            firstLine: `Search rental properties everywhere.`,
+            secondLine: `Save on rent. Discover your dream home.`
+        },
         p1: `Our Property Search Tool searches 1000s of listings across all major sites to find your ideal home, 
         customers can save up to £1000s per year on rent.`,
         color: `${colors.primary}`,
