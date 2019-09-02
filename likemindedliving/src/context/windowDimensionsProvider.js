@@ -1,12 +1,14 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
+import { window } from 'browser-monads'
 
 const WindowDimensionsContext = createContext(null)
 
 const WindowDimensionsProvider = ({ children }) => {
     const [dimensions, setDimensions] = useState({
-            width: typeof window !== `undefined` ? window.innerWidth : 0,
-            height: typeof window !== `undefined` ? window.innerWidth : 0,
+            width: window.innerWidth,
+            height: window.innerHeight,
         })
+
 useEffect(() => {
     const handleResize = () => {
         setDimensions({
@@ -14,7 +16,7 @@ useEffect(() => {
             height: window.innerHeight,
         })
     }
-    window.addEventListener('resize', handleResize)
+    window.addEventListener('resize',  handleResize)
     return () => { window.removeEventListener('resize', handleResize) }
 }, [])
 return (
