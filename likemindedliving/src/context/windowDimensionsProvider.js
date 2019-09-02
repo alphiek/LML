@@ -4,25 +4,25 @@ const WindowDimensionsContext = createContext(null)
 
 const WindowDimensionsProvider = ({ children }) => {
     const [dimensions, setDimensions] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight,
-    })
-    useEffect(() => {
-        const handleResize = () => {
-            setDimensions({
-                width: window.innerWidth,
-                height: window.innerHeight,
-            })
-        }
-        window.addEventListener('resize', handleResize)
-        return () => {window.removeEventListener('resize', handleResize)}
-    }, [])
-    return (
-        <WindowDimensionsContext.Provider value={dimensions}>
-            {children}
-        </WindowDimensionsContext.Provider>
-    )
-} 
+            width: typeof window !== `undefined` ? window.innerWidth : null,
+            height: typeof window !== `undefined` ? window.innerWidth : null,
+        })
+useEffect(() => {
+    const handleResize = () => {
+        setDimensions({
+            width: window.innerWidth,
+            height: window.innerHeight,
+        })
+    }
+    window.addEventListener('resize', handleResize)
+    return () => { window.removeEventListener('resize', handleResize) }
+}, [])
+return (
+    <WindowDimensionsContext.Provider value={dimensions}>
+        {children}
+    </WindowDimensionsContext.Provider>
+)
+}
 
 export default WindowDimensionsProvider
 export const useWindowDimensions = () => useContext(WindowDimensionsContext)
