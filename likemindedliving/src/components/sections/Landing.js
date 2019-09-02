@@ -9,30 +9,36 @@ const Landing = ({ copy }) => {
   let txt = copy[1]
 
   const charPoses = {
-    exit: { opacity: 0, y: 20 },
+    exit: { opacity: 0, y: -60 },
     enter: {
       opacity: 1,
       y: 0,
-      delay: ({ charIndex }) => charIndex * 30
+      delay: ({ charIndex }) => charIndex * 40
     }
   };
 
   return (
     <LandingCenter justifyCenter alignCenter>
-      <h1 margin='0.4em' color={txt.color}>
-       <SplitText initialPose="exit" pose="enter">{txt.h1.firstLine}</SplitText>
-       <br/>
-       {
-         txt.h1.secondLine !== null ? <SplitText initialPose="exit" pose="enter">{txt.h1.secondLine}</SplitText> : null
+    {
+      txt.landlord && 
+      <>
+       <H1 margin='0.4em' color={txt.color}>
+       <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>{txt.h1.firstLine}</SplitText>
+       </H1>
+       <Squiggle width={'100%'} color={colors.lilac}/>
+       <p className='title-sub-text landlord'>{txt.p1}</p>
+       </>
+    }
+    {
+      txt.tenants && 
+      <>
+       <H1 margin='0.4em' color={txt.color}>
+       <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>{txt.h1.firstLine}</SplitText>
+       </H1>
+       <Squiggle width={'100%'} color={colors.lilac}/>
+       <p className='title-sub-text'>{txt.p1}</p>
+       </>
        }
-      </h1>
-    <Squiggle width={'100%'} color={colors.lilac}/>
-    {
-      txt.landlord && <p className='title-sub-text landlord'>{txt.p1}</p>
-    }
-    {
-      txt.tenants && <p className='title-sub-text'>{txt.p1}</p>
-    }
     </LandingCenter>
   )
 }

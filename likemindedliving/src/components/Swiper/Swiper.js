@@ -5,7 +5,7 @@ import Card from '../cards/Card'
 const SwiperCarousel = ({ data }) => {
     let info = data
     let slideData = Object.entries(info)
-    let slides = slideData.map(item => <div id={item[0]}><Card data={item[1]} /></div>)
+    let slides = slideData.map(item => <div key={item[0]}><Card data={item[1]} /></div>)
 
     const params = {
         grabCursor: true,
