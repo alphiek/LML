@@ -4,12 +4,13 @@ export const tenants = {
     landing: {
         tenants: true,
         h1: {
-            firstLine: `Search\xa0rental\xa0properties\xa0everywhere. Save\xa0on\xa0rent. Discover\xa0your\xa0dream\xa0home.`,
+            firstLine: `Search\xa0rental\xa0properties everywhere. Save\xa0on\xa0rent. Discover\xa0your\xa0dream\xa0home.`,
         },
         p1: `Our Property Search Tool searches 1000s of listings across all major sites to find your ideal home, 
         customers can save up to £1000s per year on rent.`,
         color: `${colors.primary}`,
         bgColor: `${colors.white}`,
+        squiggle: `${colors.lilac}`,
     },
     sectionOne: {
         tenants: true,

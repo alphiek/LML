@@ -7,7 +7,7 @@ export const NavDropdown = ({ children }) => {
     const props = useSpring({
       config: config.default,
       to: ({top: 0}),
-      from: ({top: -300 })
+      from: ({top: -30 })
     })
     return (
       <NavContainer style={props}>

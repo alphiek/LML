@@ -10,6 +10,7 @@ export const landlord = {
         and see if you could help our renters find their ideal home.`,
         color: `${colors.white}`,
         bgColor: `${colors.textPrimary}`,
+        squiggle: `${colors.mint}`,
     },
     sectionOne: {
         landlords: true,

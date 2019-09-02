@@ -9,7 +9,7 @@ const LandlordLink = () => {
                 <Link                    
                     to='/landlord'
                     aria-label={`Link to landlord & estate agents page`}
-                    activeStyle={{ opacity: 0 }}
+                    activeStyle={{ color: 'white' }}
                     partiallyActive={true}
                 >landlords & estate agents</Link>
             </li>

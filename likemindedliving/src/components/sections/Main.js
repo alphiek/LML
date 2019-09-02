@@ -1,5 +1,4 @@
 import React from 'react'
-
 import SectionTemplate from './SectionTemplate';
 
 const Main = ({ data }) => {

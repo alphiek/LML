@@ -2,8 +2,8 @@ import React from 'react'
 import { LandingCenter } from '../containers/Containers'
 import { Squiggle } from '../shapes/Squiggle';
 import { H1 } from '../text/Text'
-import { colors } from '../../global/colors'
 import SplitText from 'react-pose-text'
+import { FadeIn } from '../animations/FadeIn'
 
 const Landing = ({ copy }) => {
   let txt = copy[1]
@@ -13,7 +13,7 @@ const Landing = ({ copy }) => {
     enter: {
       opacity: 1,
       y: 0,
-      delay: ({ charIndex }) => charIndex * 40
+      delay: ({ charIndex }) => charIndex * 30
     }
   };
 
@@ -25,8 +25,10 @@ const Landing = ({ copy }) => {
        <H1 margin='0.4em' color={txt.color}>
        <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>{txt.h1.firstLine}</SplitText>
        </H1>
-       <Squiggle width={'100%'} color={colors.lilac}/>
-       <p className='title-sub-text landlord'>{txt.p1}</p>
+       <Squiggle width={'100%'} color={txt.squiggle}/>
+       <FadeIn delay={1200} >
+         <p className='title-sub-text landlord'>{txt.p1}</p>
+       </FadeIn>
        </>
     }
     {
@@ -35,8 +37,10 @@ const Landing = ({ copy }) => {
        <H1 margin='0.4em' color={txt.color}>
        <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>{txt.h1.firstLine}</SplitText>
        </H1>
-       <Squiggle width={'100%'} color={colors.lilac}/>
+       <Squiggle width={'100%'} color={txt.squiggle}/>
+       <FadeIn delay={2000}>
        <p className='title-sub-text'>{txt.p1}</p>
+       </FadeIn >
        </>
        }
     </LandingCenter>

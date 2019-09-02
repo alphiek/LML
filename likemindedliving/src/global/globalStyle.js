@@ -36,10 +36,6 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
-main {
-  margin-top: 2.5em;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -285,4 +281,27 @@ p {
   }
 }
 
+button {
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  background: transparent;
+  font-size: inherit;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  background: transparent;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background: tranparent;
+}
 `

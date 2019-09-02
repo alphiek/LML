@@ -20,7 +20,7 @@ const TabletView = ({ items }) => {
                     <FixedContainer>
                         <TabletMenuContainer>
                             <button onClick={hide}>X</button>
-                            <LandlordLink />
+                            <button onClick={hide}><LandlordLink /></button>                            
                             {data}
                         </TabletMenuContainer>
                     </FixedContainer>

@@ -6,6 +6,7 @@ import Logo from '../../images/Logo'
 const HomeLink = () => {
     return (
         <Link
+            style={{ display: 'flex'}}
             to='/'
             aria-label={`Link to home page`}>
             <Logo />

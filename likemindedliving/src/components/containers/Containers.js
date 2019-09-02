@@ -139,7 +139,7 @@ export const BlobFlex = styled(Flex)`
 
 export const LandingCenter = styled(Flex)`
    width: 50%;
-   margin-top: 3em;
+   padding-top: 5em;
    @media (max-width: 991px) {
     width: 65%;
     }
