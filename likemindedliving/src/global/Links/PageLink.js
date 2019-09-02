@@ -1,14 +1,6 @@
 import React from 'react'
-import Hover from '../Hover'
-import styled from 'styled-components'
-
-const LinkStyle = styled.a`
-  color: ${props => props.color};
-  background-color: ${props => props.bgColor};
-  width: auto;
-  padding: 1.5em;
-  border-radius: 0.35em;
-`
+import Hover from './Hover'
+import { LinkStyle } from './LinkStyles'
 
 const PageLink = ({ link }) => {
     return (

@@ -1,17 +1,18 @@
 import React from 'react'
-import Hover from '../Hover'
+import Hover from './Hover'
+import { NavLinkStyle } from './LinkStyles'
 
 const LinkList = ({ link }) => {
     return (
         <Hover>
-            <li style={{zIndex: '10'}}>
+            <NavLinkStyle>
                 <a
                     href={link.url}
                     aria-label={`Link to ${link.name}`}
                     target='blank'
                     rel='noopener noreferrer'
                 >{link.name}</a>
-            </li>
+            </NavLinkStyle>
         </Hover>
     )
 }

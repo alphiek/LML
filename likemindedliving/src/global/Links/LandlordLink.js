@@ -1,5 +1,5 @@
 import React from 'react'
-import Hover from '../Hover'
+import Hover from './Hover'
 import { Link } from 'gatsby'
 
 const LandlordLink = () => {

@@ -1,29 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
-
-
-const PatternWrapper = styled.div`
-  margin: 0 auto;
-  text-align: center;
-  position: absolute;
-  overflow: visible;
-  padding-bottom: 0.5em;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: 0.4s;
- :hover {
-    opacity: 1;
-  }
-`
-
-const Pattern = styled.svg`
-  fill: #f9f5f5;
-  width: 2em;
-  height: 2em;
-`
-
+import { Pattern, PatternWrapper} from './LinkStyles'
 
 export const HoverPattern = () => (
     <PatternWrapper>

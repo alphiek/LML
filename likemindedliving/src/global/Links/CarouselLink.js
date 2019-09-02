@@ -1,14 +1,7 @@
 import React from 'react'
-import Hover from '../Hover'
-import styled from 'styled-components'
+import Hover from './Hover'
+import { LinkStyle } from './LinkStyles'
 
-const LinkStyle = styled.a`
-  color: ${props => props.color};
-  background-color: ${props => props.bgColor};
-  width: auto;
-  padding: 1.5em;
-  border-radius: 0.35em;
-`
 
 export const CarouselLink = ({ link }) => {
     return (
