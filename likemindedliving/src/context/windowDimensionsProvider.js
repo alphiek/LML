@@ -4,8 +4,8 @@ const WindowDimensionsContext = createContext(null)
 
 const WindowDimensionsProvider = ({ children }) => {
     const [dimensions, setDimensions] = useState({
-            width: typeof window !== `undefined` ? window.innerWidth : null,
-            height: typeof window !== `undefined` ? window.innerWidth : null,
+            width: typeof window !== `undefined` ? window.innerWidth : 0,
+            height: typeof window !== `undefined` ? window.innerWidth : 0,
         })
 useEffect(() => {
     const handleResize = () => {
