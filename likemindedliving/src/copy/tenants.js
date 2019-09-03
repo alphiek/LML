@@ -1,16 +1,15 @@
 import { colors } from '../global/colors'
 
 export const tenants = {
-    landing: {
+    headline: {
         tenants: true,
-        h1: {
-            firstLine: `Search\xa0rental\xa0properties everywhere. Save\xa0on\xa0rent. Discover\xa0your\xa0dream\xa0home.`,
-        },
+        h1: `Search rental properties everywhere. Save\xa0on\xa0rent. Discover your dream\xa0home.`,
         p1: `Our Property Search Tool searches 1000s of listings across all major sites to find your ideal home, 
-        customers can save up to £1000s per year on rent.`,
+        customers can save up\xa0to £1000s\xa0per\xa0year\xa0on\xa0rent.`,
         color: `${colors.primary}`,
         bgColor: `${colors.white}`,
-        squiggle: `${colors.lilac}`,
+        divider: `${colors.lilac}`,
+        class: `title-sub-text`
     },
     sectionOne: {
         tenants: true,
@@ -21,7 +20,7 @@ export const tenants = {
         Once your form has been filled in a member of our team will be in touch to kick-start finding your new home!`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
-        squiggle: `${colors.lilac}`,
+        divider: `${colors.lilac}`,
         blob: `${colors.mint}`,
         link: {
             color: `${colors.textPrimary}`,
@@ -65,7 +64,7 @@ export const tenants = {
         fact: `Take this quiz to help us find your ideal housemates for your house-share`,
         color: `${colors.textSeconday}`,
         bgColor: `${colors.textPrimary}`,
-        squiggle: `${colors.peach}`,
+        divider: `${colors.peach}`,
         blob: `${colors.lilac}`,
         link: {
             color: `${colors.textPrimary}`,
@@ -86,7 +85,7 @@ export const tenants = {
         },
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
-        squiggle: `${colors.blue}`,
+        divider: `${colors.blue}`,
         link: {
             color: `${colors.textPrimary}`,
             bgColor: `${colors.lilac}`,
@@ -103,7 +102,7 @@ export const tenants = {
         and we exist to face these challenges head on.`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.grey}`,
-        squiggle: `${colors.mint}`,
+        divider: `${colors.mint}`,
         blob: `${colors.textPrimary}`
     },
     properties: {
@@ -134,7 +133,7 @@ export const tenants = {
                 name: `Malcolm`,
                 job: `Graduate`
             },
-            squiggle: `${colors.lilac}`
+            divider: `${colors.lilac}`
         },
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,

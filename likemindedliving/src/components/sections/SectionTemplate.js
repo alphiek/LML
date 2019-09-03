@@ -1,8 +1,9 @@
 import React from 'react'
 
-import { Section } from '../containers/Containers';
+import { Section } from '../containers/Containers'
+import Headline from '../Headline/Headline'
 
-import Landing from './Landing'
+
 import SectionOne from './SectionOne'
 import Process from './Process'
 import SectionTwo from './SectionTwo'
@@ -16,8 +17,8 @@ import PressReel from './PressReel'
 const SectionTemplate = ({ copy }) => {
 
     let section;
-    if(copy[0] === 'landing') {
-        section = <Landing copy={copy}/>
+    if(copy[0] === 'headline') {
+        section = <Headline copy={copy[1]}/>
     } else if(copy[0] === 'sectionOne') {
         section = <SectionOne copy={copy}/>
     } else if(copy[0] === 'process') {

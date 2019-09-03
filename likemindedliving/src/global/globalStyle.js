@@ -74,7 +74,7 @@ header {
 }
 
 main {
-  padding-Top: 2.8em;
+  padding-Top: 2.7em;
 }
 
 
@@ -139,33 +139,47 @@ hr {
 
 h1 {
   font-size: 1.4em;
+  padding-top: 7%;
+  margin-bottom: 0.4em;
   text-align: center;
   font-weight: 700;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
-  line-height: 130%; 
+  line-height: 130%;
+  @media (max-width: 1024px) {
+    font-size: 1.2em;
+    }
+  @media (max-width: 768px) {
+    font-size: 1.1em;
+  }
+  @media (max-width: 480px) {
+    font-size: 1em;
+    padding-top: 10%;
+    line-height: 140%;
+  }
 }
 
 .title-sub-text {
-  font-size: 0.6em;
+  font-size: 0.65em;
+  text-align: center;
   margin-top: 0.8em;
   text-align: center;
-  line-height: 135%;
+  line-height: 140%;
+  width: 70%;
+
+  @media (max-width: 768px) {
+  font-size: 0.7em;
+  }
+  @media (max-width: 480px) {
+  font-size: 0.75em;
   width: 80%;
-  @media (max-width: 991px) {
-    font-size: 0.65em;
-    }
-    @media (max-width: 767px) {
-    font-size: 0.7em;
-    }
-    @media (max-width: 479px) {
-    font-size: 0.75em;
+  line-height: 160%;
   }
 }
 
 .landlord {
   color: #FFF;
-  margin-bottom: 4em;
+  margin-bottom: 5%;
 }
 
 h2 {

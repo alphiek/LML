@@ -1,16 +1,15 @@
 import { colors } from '../global/colors'
 
 export const landlord = {
-    landing: {
+    headline: {
         landlord: true,
-        h1: {
-            firstLine: `Find flat-sharers for your rental property`,
-        },
+        h1: `Find flat-sharers for your rental property`,
         p1: `Whether you are an estate agent or private landlord, we’d love to hear from you, 
-        and see if you could help our renters find their ideal home.`,
+        and see if you could help our renters find their\xa0ideal\xa0home.`,
         color: `${colors.white}`,
         bgColor: `${colors.textPrimary}`,
-        squiggle: `${colors.mint}`,
+        divider:`${colors.mint}`,
+        class: `title-sub-text landlord`
     },
     sectionOne: {
         landlords: true,
@@ -22,7 +21,7 @@ export const landlord = {
         connected to each other by their like-minded traits, get in touch with us if you own or are managing a property that is suitable for sharers.`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
-        squiggle: `${colors.lilac}`,
+        divider: `${colors.lilac}`,
         blob: `${colors.mint}`,
     },
     process: {
@@ -55,7 +54,7 @@ export const landlord = {
         an offer on your property, we take a backseat role, and let your team takeover the referencing process as necessary.`,
         color: `${colors.textSeconday}`,
         bgColor: `${colors.textPrimary}`,
-        squiggle: `${colors.peach}`,
+        divider: `${colors.peach}`,
         blob: `${colors.lilac}`,
     },
     sectionThree: {
@@ -73,7 +72,7 @@ export const landlord = {
         cta: `Call to action for the algorithm section`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
-        squiggle: `${colors.blue}`,
+        divider: `${colors.blue}`,
         link: {
             color: `${colors.textPrimary}`,
             bgColor: `${colors.lilac}`,
@@ -93,7 +92,7 @@ export const landlord = {
         find housemates that are suited for the duration of your tenancy.`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.grey}`,
-        squiggle: `${colors.mint}`,
+        divider: `${colors.mint}`,
         blob: `${colors.textPrimary}`
     },
     pressReel: {

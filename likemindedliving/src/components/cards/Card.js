@@ -1,6 +1,6 @@
 import React from 'react'
 import { Body } from '../text/Text'
-import { ShortSquiggle } from '../shapes/Squiggle'
+import { ShortDivider } from '../Dividers/Dividers'
 import { colors } from '../../global/colors'
 import styled from 'styled-components'
 
@@ -23,7 +23,7 @@ const Card = ({ data }) => {
             <CardImageWrapper>{data.img}</CardImageWrapper>
             <CardTextContainer>
                 <h3>{data.name}</h3>
-                <ShortSquiggle color={colors.mint} width='2em' />
+                <ShortDivider color={colors.mint} width='2em' />
                 {
                     data.place && <Body>{data.place}</Body>
                 }

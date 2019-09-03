@@ -1,12 +1,5 @@
 import React from 'react'
-import { animated as a } from 'react-spring'
 
-
-export const H1 = ({ children, color, margin }) => {
-  return (
-    <a.h1 style={{ color: `${color}`, marginBottom: `${margin}`}}>{children}</a.h1>
-  )
-}
 
 export const H2 = ({ children, color }) => {
     return (

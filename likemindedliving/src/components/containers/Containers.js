@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 
 // 2. Sections
 // a. Section Global Containers
-// b. Landing Page
+
 // c. Process Carousel
 // d. Properties
 // e. Testimonials
@@ -81,21 +81,6 @@ export const BlobFlex = styled(Flex)`
   }
 `
 
-// b. Landing
-
-export const LandingCenter = styled(Flex)`
-   width: 50%;
-   padding-top: 2.5em;
-   @media (max-width: 991px) {
-    width: 65%;
-    }
-    @media (max-width: 767px) {
-    width: 70%;
-    }
-    @media (max-width: 479px) {
-    width: 80%;
-  }
-`
 
 // c. Process Carousel
 

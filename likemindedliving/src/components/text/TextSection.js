@@ -1,7 +1,7 @@
 import React from 'react'
 import { FlexChild } from '../containers/Containers'
 import { H2, Body } from '../text/Text'
-import { ShortSquiggle } from '../shapes/Squiggle'
+import { ShortDivider } from '../Dividers/Dividers'
 import PageLink from '../../global/Links/PageLink'
 
 export const TextSection = ({ copy, children }) => {
@@ -14,7 +14,7 @@ export const TextSection = ({ copy, children }) => {
                 copy.h3 && <h3>{copy.h3}</h3>
             }
             {
-                copy.squiggle && <ShortSquiggle color={copy.squiggle} width='3.5em' />
+                copy.divider && <ShortDivider color={copy.divider} width='3.5em' />
             }
             <Body color={copy.color}>{copy.p1}</Body>
             {

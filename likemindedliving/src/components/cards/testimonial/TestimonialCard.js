@@ -1,6 +1,6 @@
 import React from 'react'
 import { Body } from '../../text/Text'
-import { ShortSquiggle } from '../../shapes/Squiggle'
+import { ShortDivider } from '../../Dividers/Dividers'
 import { TestimonialCardWrapper, TextWrapper } from '../../containers/Containers'
 
 
@@ -10,7 +10,7 @@ const TestimonialCard = ({ color, copy, children }) => {
             {children}
             <TextWrapper>
                 <Body>{copy.text}</Body>
-                <ShortSquiggle color={color} width='2.5em' />
+                <ShortDivider color={color} width='2.5em' />
                 <Body>{copy.name}</Body>
                 <Body>{copy.job}</Body>
             </TextWrapper>
