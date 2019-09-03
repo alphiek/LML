@@ -1,10 +1,7 @@
 import styled from 'styled-components'
-import { animated as a } from 'react-spring'
 import Flex from './Flex'
 import { colors } from '../../global/colors'
 import Img from 'gatsby-image'
-
-// 1. Nav
 
 // 2. Sections
 // a. Section Global Containers
@@ -18,57 +15,6 @@ import Img from 'gatsby-image'
 
 // 3. Section 1 - 4 / Flex Children
 // 4. Image and Icon Containers
-
-
-// 1. Nav Containers
-
-export const DesktopMenuContainer = styled.ul`
-  display: flex;
-  z-index: 20;
-  width: 35em;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-`
-
-export const TabletMenuContainer = styled(DesktopMenuContainer)`
-  width: 100%;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
-`
-
-export const FixedContainer = styled.div`
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  padding: 1em;
-  background-color: ${colors.mint};
-`
-
-export const NavContainer = styled(a.nav)`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 2.8em;
-    padding-right: 1vw;
-    padding-left: 1em;
-    position: fixed;
-    top: 0;
-    z-index: 600;
-    @media (max-width: 991px) {
-      height: 3em;
-    }
-    @media (max-width: 767px) {
-      height: 3.5em;
-    }
-    @media (max-width: 479px) {
-      height: 4em;
-    }
-    `
 
 
 // 2. Section Containers
@@ -139,7 +85,7 @@ export const BlobFlex = styled(Flex)`
 
 export const LandingCenter = styled(Flex)`
    width: 50%;
-   padding-top: 5em;
+   padding-top: 2.5em;
    @media (max-width: 991px) {
     width: 65%;
     }

@@ -1,5 +1,9 @@
 export const linkUrls = [
     {
+        name: `landlords & estate agents`,
+        url: `http://localhost:8000/landlord`
+    },
+    {
         name: `blogs`,
         url:  `https://likemindedliving.co.uk/blog/`
     },

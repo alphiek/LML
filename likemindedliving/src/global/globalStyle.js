@@ -1,23 +1,25 @@
 import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
 
+
 html {
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  height: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-size: calc(0.5em + 1vw);
+  font-size: calc(12px + 0.8vw);
   box-sizing: border-box;
   overflow-y: scroll;
   line-height: 130%;
   background-color: #fff;
-  @media (max-width: 991px) {
-  font-size: calc(0.6em + 1.2vw);
+  @media (max-width: 1024px) {
+    font-size: calc(12px + 1.2vw);
+    }
+  @media (max-width: 768px) {
+  font-size: calc(12px + 1.9vw);
   }
-  @media (max-width: 767px) {
-  font-size: calc(0.6em + 1.8vw);
-  }
-  @media (max-width: 479px) {
-  font-size: calc(0.6em + 2.2vw);
+  @media (max-width: 480px) {
+  font-size: calc(12px + 2.5vw);
 }
 }
 
@@ -28,6 +30,7 @@ body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: normal;
   color: #4B4A68;
+  height: 100%;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -57,12 +60,29 @@ section {
   display: block;
 }
 
-nav {
+header {
   width: 100%;
+  position: fixed;
   background: rgb(201,210,245);
   background: -moz-linear-gradient(254deg, rgba(201,210,245,1) 0%, rgba(190,225,236,1) 51%, rgba(180,236,228,1) 100%);
   background: -webkit-linear-gradient(254deg, rgba(201,210,245,1) 0%, rgba(190,225,236,1) 51%, rgba(180,236,228,1) 100%);
   background: linear-gradient(254deg, rgba(201,210,245,1) 0%, rgba(190,225,236,1) 51%, rgba(180,236,228,1) 100%);
+  height: 75px;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+main {
+  padding-Top: 2.8em;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1em;
 }
 
 footer {
@@ -89,16 +109,10 @@ a {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: #1E1D42;
-  font-size: 0.5em;
-  @media (max-width: 991px) {
+  font-size: 0.55em;
+  @media (max-width: 1024px) {
     font-size: 0.6em;
     }
-    @media (max-width: 767px) {
-    font-size: 0.7em;
-    }
-    @media (max-width: 479px) {
-    font-size: 0.75em;
-  }
 }
 
 a:active,
@@ -129,16 +143,7 @@ h1 {
   font-weight: 700;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
-  line-height: 130%;
-  @media (max-width: 991px) {
-    font-size: 1.2em;
-    }
-    @media (max-width: 767px) {
-    font-size: 1em;
-    }
-    @media (max-width: 479px) {
-    font-size: 1em;
-  }
+  line-height: 130%; 
 }
 
 .title-sub-text {
@@ -181,9 +186,10 @@ h3 {
 }
 
 ul {
-  list-style-position: outside;
+  list-style: none;
   list-style-image: none;
   list-style-type: none;
+  display: flex;
 }
 
 li {
@@ -208,79 +214,6 @@ p {
   }
 }
 
-
-
-
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
-
-
-
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
-
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
 button {
   display: inline-block;
   border: none;
@@ -290,6 +223,7 @@ button {
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
+  box-sizing: border-box;
 }
 
 button:hover,
@@ -304,4 +238,5 @@ button:focus {
 button:active {
   background: tranparent;
 }
+
 `

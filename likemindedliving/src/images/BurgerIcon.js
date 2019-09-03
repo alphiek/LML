@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 const BurgerIcon = styled.svg`
    fill: #FFF;
-   width: 1.2em;
    height: 1em;
+   width: auto;
 `
 
 const Burger = () => (

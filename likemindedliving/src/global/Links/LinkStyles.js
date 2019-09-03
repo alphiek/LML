@@ -1,11 +1,31 @@
 import styled from 'styled-components'
+import { Bounce } from '../../components/animations/keyframes'
+import { Link } from 'gatsby'
 
 export const NavLinkStyle = styled.li`
-
+  position: relative;
+  :hover {
+    animation: ${Bounce} 0.2s ease-out 2;
+  }
+  @media (max-width: 480px) {
+    text-align: right;
+  }
 `
 
+export const GatsbyLink = styled(Link)`
+  postion: relative;
+  :hover {
+    animation: ${Bounce} 0.2s ease-out 2;
+  }
+`
 export const HoverWrapper = styled.div`
   position: relative;
+  @media (max-width: 1023px){
+    padding: 0.5em 0;
+    }
+  @media(max-width: 480px) {
+    padding: 0.75em 0;
+  }
 `
 
 export const LinkStyle = styled.a`

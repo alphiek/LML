@@ -1,16 +1,24 @@
 import React from 'react'
-import HomeLink from '../../global/Links/HomeLink'
-import NavBreakpoints from './NavBreakpoints'
-import { NavDropdown } from '../animations/dropdown'
+import { useToggle } from '../../hooks/useToggle'
+import Toolbar from './Toolbar/Toolbar'
+import SideDrawer from './SideDrawer/SideDrawer'
+import Backdrop from './Backdrop/Backdrop'
 
 const Header = ({ items }) => {
+  const { isShowing, toggle } = useToggle(false)
+
+  let backDrop;
+
+  if ( isShowing ) {
+    backDrop = <Backdrop click={toggle} />
+  }
+
   return (
-    <header>
-      <NavDropdown>
-        <HomeLink />
-        <NavBreakpoints items={items}/>
-      </NavDropdown>
-   </header>
+    <>
+      <Toolbar items={items} toggleHandler={toggle}/>
+      <SideDrawer show={isShowing} items={items} />
+      {backDrop}
+    </>
   )
 }
 

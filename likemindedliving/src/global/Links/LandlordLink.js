@@ -1,17 +1,17 @@
 import React from 'react'
 import Hover from './Hover'
-import { Link } from 'gatsby'
+import { GatsbyLink } from './LinkStyles'
 
 const LandlordLink = () => {
     return (
         <Hover>
             <li style={{zIndex: '10'}}>
-                <Link                    
+                <GatsbyLink                   
                     to='/landlord'
                     aria-label={`Link to landlord & estate agents page`}
                     activeStyle={{ color: 'white' }}
                     partiallyActive={true}
-                >landlords & estate agents</Link>
+                >landlords & estate agents</GatsbyLink>
             </li>
         </Hover>
     )

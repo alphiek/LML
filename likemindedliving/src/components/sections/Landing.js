@@ -13,7 +13,7 @@ const Landing = ({ copy }) => {
     enter: {
       opacity: 1,
       y: 0,
-      delay: ({ charIndex }) => charIndex * 30
+      delay: ({ charIndex }) => charIndex * 20
     }
   };
 
@@ -26,7 +26,7 @@ const Landing = ({ copy }) => {
        <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>{txt.h1.firstLine}</SplitText>
        </H1>
        <Squiggle width={'100%'} color={txt.squiggle}/>
-       <FadeIn delay={1200} >
+       <FadeIn delay={800} >
          <p className='title-sub-text landlord'>{txt.p1}</p>
        </FadeIn>
        </>
@@ -38,7 +38,7 @@ const Landing = ({ copy }) => {
        <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>{txt.h1.firstLine}</SplitText>
        </H1>
        <Squiggle width={'100%'} color={txt.squiggle}/>
-       <FadeIn delay={2000}>
+       <FadeIn delay={800}>
        <p className='title-sub-text'>{txt.p1}</p>
        </FadeIn >
        </>

@@ -1,8 +1,8 @@
 import { useState, useCallback } from 'react'
 
 export const useToggle = (initialValue) => {
-    const [toggleValue, setToggleValue] = useState(initialValue)
-    const toggle = useCallback(() => setToggleValue(!toggleValue))
+    const [isShowing, setIsShowing] = useState(initialValue)
+    const toggle = useCallback(() => setIsShowing(!isShowing))
 
-    return [toggleValue, toggle]
+    return { isShowing, toggle }
 }
