@@ -5,8 +5,8 @@ import Testimonial from '../Testimonial/Testimonial'
 
 import { SectionContent, SectionContentReverse} from '../sections/USPSections'
 import Process from '../sections/Process'
-import WPCarousel from '../sections/WPCarousel'
-import PressReel from '../sections/PressReel'
+import WPCarousel from '../WPCarousel/WPCarousel'
+import PressReel from '../PressReel/PressReel'
 import SectionSubGrid from './SectionSubGrid'
 
 

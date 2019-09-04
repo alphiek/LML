@@ -95,16 +95,4 @@ export const blogData = {
         Pellentesque ullamcorper quis lorem et viverra.`,
         link: `This is the link`
     },
-    8: {
-        img: ``,
-        name: `Blahry Blarhry Blah`,
-        blurb: `Donec dapibus maximus luctus. Vivamus ac sem id urna 
-        imperdiet fringilla quis id sapien. Nunc aliquet erat et odio 
-        auctor, elementum tempus lorem ornare. Sed interdum magna sapien, 
-        vitae hendrerit ligula hendrerit sed. Etiam mollis sapien eget 
-        lectus porta, vitae ornare lectus tempus. Integer quis fringilla 
-        nisi. Proin id congue risus. Fusce non dignissim tortor. 
-        Pellentesque ullamcorper quis lorem et viverra.`,
-        link: `This is the link`
-    },
 }

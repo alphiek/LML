@@ -7,6 +7,8 @@ import styled from 'styled-components'
 const CardContainer = styled.div`
    border-radius: 0.5em;
    overflow: hidden;
+   width: 100%;
+   height: 100%;
 `
 const CardImageWrapper = styled.div`
    height: 4em;
@@ -18,23 +20,25 @@ const CardTextContainer = styled.div`
 `
 
 const Card = ({ data }) => {
+    let copy = data[1]
+
     return (
         <CardContainer>
-            <CardImageWrapper>{data.img}</CardImageWrapper>
+            <CardImageWrapper>{copy.img}</CardImageWrapper>
             <CardTextContainer>
-                <h3>{data.name}</h3>
+                <h3>{copy.name}</h3>
                 <ShortDivider color={colors.mint} width='2em' />
                 {
-                    data.place && <Body>{data.place}</Body>
+                    copy.place && <Body>{copy.place}</Body>
                 }
                 {
-                    data.price && <Body>{data.price}</Body>
+                    copy.price && <Body>{copy.price}</Body>
                 }
                 {
-                    data.blurb && <Body>{data.blurb.substring(0, 90)}</Body>
+                    copy.blurb && <Body>{copy.blurb.substring(0, 90)}</Body>
                 }
                 <a href='https://www.rkkcreative.xyz'
-                    target='_blank' rel='noopener noreferrer'>{data.link}</a>
+                    target='_blank' rel='noopener noreferrer'>{copy.link}</a>
             </CardTextContainer>
         </CardContainer>
     )
