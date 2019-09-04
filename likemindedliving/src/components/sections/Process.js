@@ -1,13 +1,13 @@
 import React from 'react'
 import { CarouselTextSection } from '../text/TextSection'
-import { ContentCenter, CarouselContainer, ProcessLinkRight, CarouselHeadingContainer } from '../containers/Containers'
+import { CarouselContainer, ProcessLinkRight, CarouselHeadingContainer } from '../containers/Containers'
 import ProcessSlide from '../Swiper/process/ProcessSlide'
 import PageLink from '../../global/Links/PageLink'
 
 const Process = ({ copy }) => {
     return (
-        <ContentCenter columnReverse>
-            <ProcessLinkRight>
+        <div>
+             <ProcessLinkRight>
                 <PageLink link={copy[1].link} />
             </ProcessLinkRight>
             <CarouselContainer justifyCenter alignCenter>
@@ -16,7 +16,7 @@ const Process = ({ copy }) => {
             <CarouselHeadingContainer>
               <CarouselTextSection copy={copy[1]} />
             </CarouselHeadingContainer>
-        </ContentCenter>
+        </div>           
     )
 }
 

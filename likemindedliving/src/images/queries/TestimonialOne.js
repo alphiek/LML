@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
-import { TestimonialImageWrapper } from '../../components/containers/Containers'
+import { TestimonialImageWrapper } from '../../components/Testimonial/TestimonialCard'
 
 
 

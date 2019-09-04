@@ -1,12 +1,13 @@
 import { colors } from '../global/colors'
 
 export const tenants = {
+    tenants: true,
     headline: {
         tenants: true,
         h1: `Search rental properties everywhere. Save\xa0on\xa0rent. Discover your dream\xa0home.`,
         p1: `Our Property Search Tool searches 1000s of listings across all major sites to find your ideal home, 
         customers can save up\xa0to £1000s\xa0per\xa0year\xa0on\xa0rent.`,
-        color: `${colors.primary}`,
+        color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
         divider: `${colors.lilac}`,
         class: `title-sub-text`
@@ -66,6 +67,7 @@ export const tenants = {
         bgColor: `${colors.textPrimary}`,
         divider: `${colors.peach}`,
         blob: `${colors.lilac}`,
+        rotate: `rotate(139deg)`,
         link: {
             color: `${colors.textPrimary}`,
             bgColor: `${colors.mint}`,
@@ -124,16 +126,17 @@ export const tenants = {
                  awesome flat in London and more importantly housemates to enjoy
                  experiencing London life with. Couldn't have asked for more!`,
                 name: `Suzanna`,
-                job: `Marketing Consultant`
+                job: `Marketing Consultant`,
+                divider: `${colors.lilac}`
             },
             two: {
                 text: `Like-Minded Living were the greatest, I have an
                 awesome flat in London and more importantly housemates to enjoy
                 experiencing London life with. Couldn't have asked for more!`,
                 name: `Malcolm`,
-                job: `Graduate`
+                job: `Graduate`,
+                divider: `${colors.lilac}`
             },
-            divider: `${colors.lilac}`
         },
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,

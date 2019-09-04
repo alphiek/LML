@@ -1,12 +1,17 @@
 import React from 'react'
-import { FlexChild } from '../containers/Containers'
+import Flex from '../containers/Flex'
 import { H2, Body } from '../text/Text'
 import { ShortDivider } from '../Dividers/Dividers'
 import PageLink from '../../global/Links/PageLink'
+import styled from 'styled-components'
+
+const TextContainer = styled(Flex)`
+   height: 100%;
+`
 
 export const TextSection = ({ copy, children }) => {
     return (
-        <FlexChild justifyCenter>
+        <TextContainer column justifyCenter contentCenter>
             {
                 copy.h2 && <H2 color={copy.color}>{copy.h2}</H2>
             }
@@ -24,19 +29,19 @@ export const TextSection = ({ copy, children }) => {
             {
                 copy.link && <PageLink link={copy.link} />
             }
-        </FlexChild>
+        </TextContainer>
     )
 }
 
 export const CarouselTextSection = ({ copy }) => {
     return (
-        <FlexChild justifyCenter>
+        <Flex>
            <h3>{copy.h3}</h3>
             <Body color={copy.color}>{copy.p1}</Body>
             {
                 copy.p2 && <Body>{copy.p2}</Body>
             }
-        </FlexChild>
+        </Flex>
     )
 }
 

@@ -1,6 +1,7 @@
 import { colors } from '../global/colors'
 
 export const landlord = {
+    landlord: true,
     headline: {
         landlord: true,
         h1: `Find flat-sharers for your rental property`,

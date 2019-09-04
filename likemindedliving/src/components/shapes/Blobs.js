@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { BlobFlex } from '../containers/Containers'
+import Flex from '../containers/Flex'
 import gradBlob from './gradientBlob.svg'
 
 const Blob = styled.svg`
@@ -16,6 +16,10 @@ const GradBlobContainer = styled.div`
    position: relative;
    margin-top: 4em;
    margin-bottom: 4em;
+`
+
+
+const BlobFlex = styled(Flex)`
 `
 
 export const BlobOne = ({ color, rotate, children }) => (

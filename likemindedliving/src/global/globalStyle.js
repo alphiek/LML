@@ -9,7 +9,6 @@ html {
   -webkit-text-size-adjust: 100%;
   font-size: calc(12px + 0.8vw);
   box-sizing: border-box;
-  overflow-y: scroll;
   line-height: 130%;
   background-color: #fff;
   @media (max-width: 1024px) {
