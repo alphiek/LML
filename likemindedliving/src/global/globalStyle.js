@@ -198,6 +198,14 @@ h3 {
   line-height: 1.1;
 }
 
+h4 {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  font-size: 0.5em;
+  line-height: 1.1;
+}
+
 ul {
   list-style: none;
   list-style-image: none;

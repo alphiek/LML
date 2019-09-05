@@ -11,6 +11,11 @@ export const NavLinkStyle = styled.li`
     text-align: right;
   }
 `
+export const LinkWrapperRight = styled.div`
+  width: auto;
+  text-align: right;
+  margin-right: 15%;
+`
 
 export const GatsbyLink = styled(Link)`
   postion: relative;
@@ -20,6 +25,7 @@ export const GatsbyLink = styled(Link)`
 `
 export const HoverWrapper = styled.div`
   position: relative;
+  width: auto;
   @media (max-width: 1023px){
     padding: 0.5em 0;
     }
@@ -56,7 +62,7 @@ export const PatternWrapper = styled.div`
 `
 
 export const Pattern = styled.svg`
-  fill: #f9f5f5;
+  fill: ${props => props.color};
   width: 2em;
   height: 2em;
 `

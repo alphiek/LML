@@ -1,11 +1,23 @@
 import React from 'react'
 import Hover from './Hover'
 import { LinkStyle } from './LinkStyles'
+import { colors } from '../../global/colors'
 
 
 export const CarouselLink = ({ link }) => {
+    
+    let hoverColor;
+
+    if (link.name.includes('blog')) {
+        hoverColor = colors.lilac
+    } else if (link.name.includes('properties')) {
+        hoverColor = colors.mint
+    }
+
+    console.log(hoverColor)
+
     return (
-        <Hover>
+        <Hover color={hoverColor}>
             <div>
             <LinkStyle
                     color={link.color}

@@ -1,9 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import Flex from '../containers/Flex'
-import { FullWidthText } from '../text/TextSection'
+import { H2, Body } from '../text/Text'
 import { colors } from '../../global/colors'
 import TestimonialCard from './TestimonialCard'
+
+const H2Testimonial = styled(H2)`
+  margin-bottom: 0.5em;
+`
 
 export const CardWrapper = styled(Flex)`
   grid-column: 2;
@@ -36,7 +40,7 @@ const Background = styled.div`
 `
 const Heading = styled(Flex)`
   margin: 2em 0 2em 10%;
-  width: 20%;
+  width: 15%;
   @media(max-width: 1024px) {
     width: 40%;
   }
@@ -58,7 +62,8 @@ const Testimonial = ({ copy }) => {
     <TestimonialGrid>
       <Background>
       <Heading contentCentre justifyEnd>
-        <FullWidthText copy={data} />
+        <H2Testimonial color={data.color}>{data.h2}</H2Testimonial>
+        <Body color={data.color}>{data.p1}</Body>
       </Heading>
       </Background> 
       {cards}

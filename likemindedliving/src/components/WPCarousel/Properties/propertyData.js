@@ -2,9 +2,9 @@ export const propertyData = {
     0: {
         img: ``,
         place: `Clapham`,
-        name: `This is the name`,
-        price: `This is the price`,
-        link: `This is the link`
+        name: `Spacious Double`,
+        price: `£300 pcm`,
+        link: `More info`
     },
     1: {
         img: ``,

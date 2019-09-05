@@ -1,9 +1,10 @@
 import React from 'react'
 import { Pattern, PatternWrapper} from './LinkStyles'
 
-export const HoverPattern = () => (
+export const HoverPattern = ({ color }) => (
     <PatternWrapper>
  <Pattern 
+      color={color}
       viewBox="0 0 86.9 46.3"
       alt='on hover pattern'>
           <g>

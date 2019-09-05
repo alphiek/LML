@@ -17,10 +17,7 @@ export const FullWidthContainer = styled(Flex)`
     width: 80%;
   }
 `
-export const LinkWrapperRight = styled.div`
-  width: auto;
-  text-align: right;
-`
+
 
 
 // c. Process Carousel
@@ -36,7 +33,7 @@ export const CarouselHeadingContainer = styled.div`
   width: 90%;
 `
 
-export const ProcessLinkRight = styled(LinkWrapperRight)`
+export const ProcessLinkRight = styled.div`
   margin-bottom: 2em;
 `
 

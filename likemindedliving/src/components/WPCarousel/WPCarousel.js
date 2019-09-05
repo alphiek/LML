@@ -2,18 +2,64 @@ import React from 'react'
 import styled from 'styled-components'
 import Flex from '../containers/Flex'
 import { FullWidthText } from '../text/TextSection'
-import { LinkWrapperRight } from '../containers/Containers'
+import { LinkWrapperRight } from '../../global/Links/LinkStyles'
 import { CarouselLink } from '../../global/Links/CarouselLink'
 import Card from './Card'
 import { propertyData } from './Properties/propertyData'
 import { blogData } from './Blogs/blogData'
 
 
+export const CardContainer = styled.div`
+   border-radius: 0.5em;
+   width: 8.5em;
+   height: 100%;
+   margin: 0.2em;
+   transition: all .2s ease-in-out;
+   box-shadow: 0 10px 15px -3px rgba(75, 74, 104, 0.1), 0 4px 6px -2px rgba(75, 74, 104, 0.05);
+   :hover {
+    box-shadow: 0 25px 25px -12px rgba(75, 74, 104, 0.25);
+    transform: scale(1.02);
+    transform: translate(0, -0.1em);
+    @media (max-width: 480px) {
+      box-shadow: none;
+      transform: none;
+    }
+    @media (max-width: 480px) {
+      box-shadow: 0 10px 15px -3px rgba(75, 74, 104, 0.3), 0 4px 6px -2px rgba(75, 74, 104, 0.10);
+    }
+  }
+`
+
+
+const GridItem = styled.li`
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    cursor: grabbing;
+    overflow: hidden;
+    padding-bottom: 2em;
+    &: first-child {
+      margin-left: 20.5em;
+      @media (max-width: 1024px) {
+        margin-left: 12.5em;
+      }
+      @media (max-width: 768px) {
+        margin-left: 8.5em;
+      }
+      @media (max-width: 480px) {
+        margin-left: 4.5em;
+      }
+    }
+`
+
 const HorizontalScroll = styled.ul`
   -webkit-overflow-scrolling: touch;
   display: grid;
-  grid-gap: 0.2em;
-  grid-template-columns: repeat(8, 8em);
+  cursor: grabbing;
+  grid-gap: 0em;
+  grid-template-columns: 30em repeat(7, 9.5em);
   grid-template-rows: minmax(8em, 1fr);
   overflow-x: scroll;
   overflow-y: hidden;
@@ -23,28 +69,35 @@ const HorizontalScroll = styled.ul`
   &::-webkit-scrollbar {
     display: none;
   }
+  scrollbar-width: none;
+  @media (max-width: 1024px) {
+    grid-template-columns: 22em repeat(7, 9.5em);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 18em repeat(7, 9.5em);
+  }
+  @media (max-width: 480px) {
+    grid-template-columns: 14em repeat(7, 9.5em);
+  }
 `
 
 
 const ContainerGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: start;
-  overflow-x: scroll;
-  width: 60%;
+  align-content: center;
+  -webkit-overflow-scrolling: touch;
+  cursor: grabbing;
+  overflow: scroll;
+  overflow: hidden;
+  border-radius: 8px;
+  width: 100%;
   &::-webkit-scrollbar {
     display: none;
   }
+  scrollbar-width: none;
+  @media (max-width: 1024px) {
+    margin-top: 1.5em;
+  }
 `
-
-export const GridItem = styled.li`
-    scroll-snap-align: center;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background: #fff;
-`
-
 
 
 const WPCarousel = ({ copy }) => {
@@ -62,11 +115,10 @@ const WPCarousel = ({ copy }) => {
         content = <p>Something is wrong here</p>
     }
 
-
     return (
         <>
         <FullWidthText copy={copy[1]} />
-        <Flex justifyCenter alignCenter>
+        <Flex justifyEnd alignCenter>
             <ContainerGrid>
                 <HorizontalScroll>
                     {content}
@@ -74,7 +126,7 @@ const WPCarousel = ({ copy }) => {
             </ContainerGrid >
         </Flex >
         <LinkWrapperRight>
-                <CarouselLink link={copy[1].link} />
+                <CarouselLink link={copy[1].link}/>
         </LinkWrapperRight>
         </>
     )

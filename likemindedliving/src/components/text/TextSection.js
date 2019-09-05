@@ -9,6 +9,15 @@ const TextContainer = styled(Flex)`
    height: 100%;
 `
 
+const FullWidthTextWrapper = styled.div`
+   margin: 5% 0 4% 15%;
+   @media (max-width: 480px) {
+    margin: 5% 0 4% 10%; 
+    width: 50%;
+   }
+   
+`
+
 export const TextSection = ({ copy, children }) => {
     return (
         <TextContainer column justifyCenter contentCenter>
@@ -48,9 +57,9 @@ export const CarouselTextSection = ({ copy }) => {
 export const FullWidthText = ({ copy }) => {
     return (
         <>
-            <div style={{ marginBottom: '0.5em'}}>
+            <FullWidthTextWrapper>
                 <H2 color={copy.color}>{copy.h2}</H2>
-            </div>
+            </FullWidthTextWrapper>
             {
                 copy.p1 && <Body color={copy.color}>{copy.p1}</Body>
             }
