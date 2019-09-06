@@ -32,6 +32,7 @@ const LandlordGrid = styled.div`
    'sectionTwo'
    'sectionThree'
    'sectionFour'
+   'testimonials'
    'pressReel'
    'blogs';   
 `

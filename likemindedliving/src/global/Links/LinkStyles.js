@@ -15,6 +15,10 @@ export const LinkWrapperRight = styled.div`
   width: auto;
   text-align: right;
   margin-right: 15%;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
 `
 
 export const GatsbyLink = styled(Link)`

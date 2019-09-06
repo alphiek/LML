@@ -96,6 +96,26 @@ export const landlord = {
         divider: `${colors.mint}`,
         blob: `${colors.textPrimary}`
     },
+    testimonials: {
+        h2: `Quisque nec sagittis massa, sit amet luctus enim`,
+        p1: `Vivamus ac fringilla erat. Suspendisse hendrerit ex sed tincidunt blandit.`,
+        testimonial: {
+            one: {
+                id: 4569,
+                text: `Like Minded Living are worth trying out even if you have had reasonable success with other agents. I did this and found the service I have received from Like Minded Living to be very good. It started when Denzel , (Director) , visited my property and gave an appraisal and ever since then I have not looked back. In fact I have increased my portfolio with them and would suggest anyone having issues with their agents to use Like Minded Living. Even if you haven’t got a problem with your agent but want to try something different then again contact Denzel at Like Minded Living and you will not be disappointed. From being in regular contact regarding the property to paying rent on time , I have found the management team to be extremely efficient. They have dealt with any issues relating to my property quickly and with a minimum of fuss. I’m looking forward to continue with the business relationship and would recommend Like Minded Living to everyone whether you are a Tenant or a Landlord.`,
+                name: `Ravin`,
+                divider: `${colors.lilac}`
+            },
+            two: {
+                id: 6589,
+                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac fringilla erat. Suspendisse hendrerit ex sed tincidunt blandit. Quisque nec sagittis massa, sit amet luctus enim.`,
+                name: `Name`,
+                divider: `${colors.lilac}`
+            },
+        },
+        color: `${colors.textPrimary}`,
+        bgColor: `${colors.white}`,
+    },
     pressReel: {
         articles: {
             one: {

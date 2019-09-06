@@ -3,6 +3,7 @@ import Flex from '../containers/Flex'
 import { H2, Body } from '../text/Text'
 import { ShortDivider } from '../Dividers/Dividers'
 import PageLink from '../../global/Links/PageLink'
+import { FadeIn } from '../animations/FadeIn'
 import styled from 'styled-components'
 
 const TextContainer = styled(Flex)`
@@ -57,9 +58,11 @@ export const CarouselTextSection = ({ copy }) => {
 export const FullWidthText = ({ copy }) => {
     return (
         <>
-            <FullWidthTextWrapper>
+        <FadeIn delay={150}>
+        <FullWidthTextWrapper>
                 <H2 color={copy.color}>{copy.h2}</H2>
             </FullWidthTextWrapper>
+        </FadeIn>
             {
                 copy.p1 && <Body color={copy.color}>{copy.p1}</Body>
             }

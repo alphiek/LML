@@ -18,9 +18,16 @@ const DividerLong = styled.svg`
   }
 `
 const DividerShort = styled(DividerLong)`
-  stroke-width: 3;
+  stroke-width: 4;
   height: 1em;
   width: ${props => props.width};
+  @media(max-width: 768px) {
+    stroke-width: 5;
+  }
+  @media(max-width: 480px) {
+    stroke-width: 6;
+    height: 2em;
+  }
 `
 
 

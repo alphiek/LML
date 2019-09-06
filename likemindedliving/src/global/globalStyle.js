@@ -30,7 +30,7 @@ body {
   font-weight: normal;
   color: #4B4A68;
   height: 100%;
-  word-wrap: break-word;
+  word-wrap: normal;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -87,6 +87,7 @@ nav {
 footer {
   background-color: #BAEEE5;
   color: #252454;
+  margin-top: 2em;
   padding-top: 3em;
   padding-bottom: 3em;
   padding-left: 4vw;
@@ -217,13 +218,14 @@ li {
   z-index: 2;
 }
 
-
 p {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: normal;
   text-rendering: optimizeLegibility;
   font-size: 0.55em;
   line-height: 140%;
+  text-align: left;
+  word-wrap: normal;
   @media (max-width: 991px) {
     font-size: 0.6em;
     }

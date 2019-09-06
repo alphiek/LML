@@ -7,6 +7,7 @@ import { CarouselLink } from '../../global/Links/CarouselLink'
 import Card from './Card'
 import { propertyData } from './Properties/propertyData'
 import { blogData } from './Blogs/blogData'
+import { FadeInRight } from '../animations/FadeIn'
 
 
 export const CardContainer = styled.div`
@@ -102,34 +103,36 @@ const ContainerGrid = styled.div`
 
 const WPCarousel = ({ copy }) => {
 
-    let section = copy[0]
-    let propData = Object.entries(propertyData)
-    let bgData = Object.entries(blogData)
-    let content;
+  let section = copy[0]
+  let propData = Object.entries(propertyData)
+  let bgData = Object.entries(blogData)
+  let content;
 
-    if (section === 'properties') {
-       content = propData.map(item => <GridItem><Card data={item}/></GridItem>)
-    } else if (section === 'blogs') {
-       content = bgData.map(item => <GridItem><Card data={item}/></GridItem>)
-    } else {
-        content = <p>Something is wrong here</p>
-    }
+  if (section === 'properties') {
+    content = propData.map(item => <GridItem><Card data={item} /></GridItem>)
+  } else if (section === 'blogs') {
+    content = bgData.map(item => <GridItem><Card data={item} /></GridItem>)
+  } else {
+    content = <p>Something is wrong here</p>
+  }
 
-    return (
-        <>
-        <FullWidthText copy={copy[1]} />
-        <Flex justifyEnd alignCenter>
-            <ContainerGrid>
-                <HorizontalScroll>
-                    {content}
-                </HorizontalScroll>
-            </ContainerGrid >
-        </Flex >
-        <LinkWrapperRight>
-                <CarouselLink link={copy[1].link}/>
-        </LinkWrapperRight>
-        </>
-    )
+  return (
+    <>
+      <FullWidthText copy={copy[1]} />
+      <Flex justifyEnd alignCenter>
+        <ContainerGrid>
+          <HorizontalScroll>
+            {content}
+          </HorizontalScroll>
+        </ContainerGrid >
+      </Flex >
+      <LinkWrapperRight>
+        <FadeInRight>
+          <CarouselLink link={copy[1].link} />
+        </FadeInRight>
+      </LinkWrapperRight>
+    </>
+  )
 }
 
 

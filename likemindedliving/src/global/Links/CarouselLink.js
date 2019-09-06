@@ -14,8 +14,6 @@ export const CarouselLink = ({ link }) => {
         hoverColor = colors.mint
     }
 
-    console.log(hoverColor)
-
     return (
         <Hover color={hoverColor}>
             <div>

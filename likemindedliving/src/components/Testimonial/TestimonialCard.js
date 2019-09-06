@@ -6,22 +6,71 @@ import { Body } from '../text/Text'
 import { ShortDivider } from '../Dividers/Dividers'
 import { CardWrapper } from './Testimonial'
 import Img from 'gatsby-image'
+import { FadeIn } from '../animations/FadeIn'
 
 export const TestimonialImageWrapper = styled(Img)`
-  width: 95%;
+  width: 96%;
+  @media(max-width: 768px) {
+    width: 48%;
+    margin-left: 0.5em;
+    @media(max-width: 480px) {
+        width: 68%;
+        margin-left: 0;
+`
+
+const ScrollContainer = styled.div`
+  height: 6.5em;
+  position: relative;
+  padding-right: 0.3em;
+  scroll-margin-bottom: 1em;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: y proximity;
+  scroll-snap-align: start;
+  &::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: white;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #C9D2F5;
+}
+`
+
+const FadeOut = styled.div`
+   position: absolute; 
+   height: 2em;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   background: -webkit-linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    ); 
+`
+
+const TextWrapper = styled.div`
+  margin: 0 1em;
+  @media(max-width: 768px) {
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 1em;
 `
 
 const Card = styled.div`  
-  width: 10em;
+  width: 10.5em;
   margin-top: 5em;
   margin-left: 2em;
   @media(max-width: 1024px) {
-      margin-top: -1em;
-      margin-left: 5em;
+      margin-top: -1.75em;
+      margin-left: 1em;
   }
   @media(max-width: 768px) {
     margin-top: -1em;
     margin-left: 15%;
+}
+@media(max-width: 768px) {
+    width: 70%;
 }
 `
 
@@ -42,11 +91,23 @@ const TestimonialCard = ({ copy }) => {
     return (
         <CardWrapper>
             <Card>
-                {img}
-                <Body>{data.text}</Body>
-                <ShortDivider color={data.divider} width='2.5em' />
-                <Body>{data.name}</Body>
-                <Body>{data.job}</Body>
+                <FadeIn>
+                    {img}
+                </FadeIn>
+                <TextWrapper>
+                    <FadeIn>
+                    <ScrollContainer>
+                        <FadeOut/>
+                        <p>{data.text}</p>
+                    </ScrollContainer>                        
+                    </FadeIn>
+                    <ShortDivider color={data.divider} width='2.5em' />
+                    <Body weight={600}>
+                        {data.name}
+                        <br />
+                        {data.job}
+                    </Body>
+                </TextWrapper>
             </Card>
         </CardWrapper>
     )

@@ -2,10 +2,13 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 
+const TermsContainer = styled.ul`
+   flex-direction: column;
+`
 const PdfLink = styled.a`
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 0.45em;
-  line-height: 130%;
+  line-height: 120%;
   text-transform: uppercase;
 `
 
@@ -31,7 +34,7 @@ const Terms = () => {
     }
   `)
   return (
-      <ul>
+      <TermsContainer>
         {data.allFile.edges.map((file, index) => {
           return (
             <li key={`pdf-${index}`}>
@@ -53,7 +56,7 @@ const Terms = () => {
            rel='noopener noreferrer'
            >Privacy Policy</PdfLink>
         </li>
-      </ul>
+      </TermsContainer>
   )
 }
 export default Terms
