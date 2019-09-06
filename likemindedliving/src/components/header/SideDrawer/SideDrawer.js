@@ -38,7 +38,6 @@ const SideDrawerListWrapper = styled.ul`
 `
 
 const sideDrawer = ({ show, items }) => {
-    console.log(show)
 
     let data = items.map(e =>
         <LinkList key={e.name} link={e} />

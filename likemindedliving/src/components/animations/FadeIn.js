@@ -18,3 +18,12 @@ export const FadeInRight = ({ children, delay }) => {
     )
 }
 
+export const FadeInLeft = ({ children, delay }) => {
+    return (
+        <Fade left cascade delay={delay}>
+            {children}
+        </Fade>
+    )
+}
+
+

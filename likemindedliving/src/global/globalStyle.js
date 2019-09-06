@@ -88,18 +88,29 @@ footer {
   background-color: #BAEEE5;
   color: #252454;
   margin-top: 2em;
-  padding-top: 3em;
-  padding-bottom: 3em;
-  padding-left: 4vw;
+  padding: 3em 2em;
+  @media(max-width: 480px) {
+    padding: 3em 1em 2em 1em;
+  }
 }
 
 address {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 400;
+  text-align: left;
   font-size: 0.5em;
   line-height: 150%;
   letter-spacing: 0.02em;
   font-style: normal;
+  @media (max-width: 1024px) {
+    font-size: 0.55em;
+  }
+  @media (max-width: 768px) {
+    font-size: 0.6em;
+  }
+  @media (max-width: 480px) {
+    font-size: 0.65em;
+  }
 }
 
 a {
@@ -128,13 +139,17 @@ img {
 
 hr {
   box-sizing: content-box;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
   height: 2px;
-  width: 15vw;
+  width: 10em;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   overflow: visible;
   border: none;
   background-color: #252454;
+  opacity: 0.7;
 }
 
 h1 {

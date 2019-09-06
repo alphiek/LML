@@ -91,6 +91,8 @@ const ContainerGrid = styled.div`
   overflow: hidden;
   border-radius: 8px;
   width: 100%;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
   }

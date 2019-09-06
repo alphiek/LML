@@ -10,6 +10,25 @@ const PdfLink = styled.a`
   font-size: 0.45em;
   line-height: 120%;
   text-transform: uppercase;
+  transition: 0.5s;
+  : hover {
+    opacity: 0.5;
+  }
+  @media (max-width: 1024px) {
+    font-size: 0.5em;
+  }
+  @media (max-width: 768px) {
+    font-size: 0.55em
+  }
+  @media (max-width: 480px) {
+    font-size: 0.6em;
+  }
+`
+
+const PDFLinkWrapper = styled.li`
+    @media (max-width: 1024px) {
+      margin: 0.2em 0;
+    }
 `
 
 const convertName = (name) => {
@@ -37,7 +56,7 @@ const Terms = () => {
       <TermsContainer>
         {data.allFile.edges.map((file, index) => {
           return (
-            <li key={`pdf-${index}`}>
+            <PDFLinkWrapper key={`pdf-${index}`}>
               <PdfLink
                  href={file.node.publicURL}
                  aria-label={`Link to ${file.node.name}`}
@@ -46,16 +65,17 @@ const Terms = () => {
                  >
                 {convertName(file.node.name)}
               </PdfLink>
-            </li>
+            </PDFLinkWrapper>
           )
         })}
-        <li><PdfLink 
+        <PDFLinkWrapper
+        ><PdfLink 
            href='https://www.iubenda.com/privacy-policy/79077073'
            aria-label='Link to Privacy Policy'
            target='blank'
            rel='noopener noreferrer'
            >Privacy Policy</PdfLink>
-        </li>
+        </PDFLinkWrapper>
       </TermsContainer>
   )
 }

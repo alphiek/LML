@@ -4,7 +4,11 @@ import styled from 'styled-components'
 const Icon = styled.svg`
    fill: #252454;
    height: 3em;
-   margin-right: 2em;
+   margin-right: 2.5em;
+   @media (max-width: 1024px) {
+      margin: 0.5em 3em 0.5em 0;
+
+    }
 `
 
 export const Fb = () => (
