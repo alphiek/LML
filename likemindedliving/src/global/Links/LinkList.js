@@ -14,7 +14,7 @@ const NavLink = styled.a`
 
 const LinkList = ({ link }) => {
     return (
-        <Hover color='#f9f5f5'>
+        <Hover color='#f9f5f5' margin='50%'>
             <NavLinkStyle>
                     <NavLink
                         href={link.url}

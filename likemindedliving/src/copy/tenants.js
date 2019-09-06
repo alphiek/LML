@@ -23,7 +23,7 @@ export const tenants = {
         link: {
             color: `${colors.textPrimary}`,
             bgColor: `${colors.grey}`,
-            name: `Button text for the tenant sign up form here`,
+            name: `CTA for tenant sign up form`,
             url: `https://likemindedliving.outgrow.us/likemindedliving-45`
         },
     },
@@ -160,7 +160,6 @@ export const tenants = {
     blogs: {
         h2: `Looking for Inspiration? Check out our recent blogs and top tips for living in the city`,
         link: {
-
             name: `Show me all the blogs`,
             url: `https://likemindedliving.co.uk/blog/`
         },

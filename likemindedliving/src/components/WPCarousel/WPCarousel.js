@@ -7,26 +7,27 @@ import { CarouselLink } from '../../global/Links/CarouselLink'
 import Card from './Card'
 import { propertyData } from './Properties/propertyData'
 import { blogData } from './Blogs/blogData'
-import { FadeInRight } from '../animations/FadeIn'
+import { FadeInRight, FadeIn } from '../animations/FadeIn'
 
 
 export const CardContainer = styled.div`
    border-radius: 0.5em;
    width: 8.5em;
    height: 100%;
+   overflow: hidden;
    margin: 0.2em;
    transition: all .2s ease-in-out;
-   box-shadow: 0 10px 15px -3px rgba(75, 74, 104, 0.1), 0 4px 6px -2px rgba(75, 74, 104, 0.05);
+   box-shadow: 0 10px 18px -3px rgba(75, 74, 104, 0.25), 0 4px 6px -2px rgba(75, 74, 104, 0.05);
    :hover {
-    box-shadow: 0 25px 25px -12px rgba(75, 74, 104, 0.25);
+    box-shadow: 0 25px 25px -15px rgba(75, 74, 104, 0.45);
     transform: scale(1.02);
     transform: translate(0, -0.1em);
     @media (max-width: 480px) {
       box-shadow: none;
       transform: none;
     }
-    @media (max-width: 480px) {
-      box-shadow: 0 10px 15px -3px rgba(75, 74, 104, 0.3), 0 4px 6px -2px rgba(75, 74, 104, 0.10);
+    @media (max-width: 768px) {
+      box-shadow: 0 10px 15px -3px rgba(75, 74, 104, 0.4), 0 4px 6px -2px rgba(75, 74, 104, 0.10);
     }
   }
 `
@@ -39,7 +40,7 @@ const GridItem = styled.li`
     align-items: center;
     background: #fff;
     cursor: grabbing;
-    overflow: hidden;
+    overflow: visable;
     padding-bottom: 2em;
     &: first-child {
       margin-left: 20.5em;
@@ -123,15 +124,17 @@ const WPCarousel = ({ copy }) => {
       <FullWidthText copy={copy[1]} />
       <Flex justifyEnd alignCenter>
         <ContainerGrid>
+          <FadeInRight duration={1800}>
           <HorizontalScroll>
-            {content}
+              {content}
           </HorizontalScroll>
+          </FadeInRight>         
         </ContainerGrid >
       </Flex >
       <LinkWrapperRight>
-        <FadeInRight>
+        <FadeIn>
           <CarouselLink link={copy[1].link} />
-        </FadeInRight>
+        </FadeIn>
       </LinkWrapperRight>
     </>
   )

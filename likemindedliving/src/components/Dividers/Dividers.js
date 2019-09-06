@@ -20,8 +20,9 @@ const DividerLong = styled.svg`
 const DividerShort = styled(DividerLong)`
   stroke-width: 4;
   height: 1em;
-  margin-top: 0.5em;
+  margin-top: ${props => props.top};
   width: ${props => props.width};
+  margin-bottom: ${props => props.bottom};
   @media(max-width: 768px) {
     stroke-width: 5;
   }
@@ -43,9 +44,11 @@ export const LandingDivider = ({ color }) => {
   )
 }
 
-export const ShortDivider = ({ width, color }) => {
+export const ShortDivider = ({ width, color, bottom, top }) => {
   return (
     <DividerShort
+      top={top}
+      bottom={bottom}
       width={width}
       color={color}
       viewBox="0 0 90 6.9"

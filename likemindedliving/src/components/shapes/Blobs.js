@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Flex from '../containers/Flex'
 import gradBlob from './gradientBlob.svg'
 
 const Blob = styled.svg`
@@ -9,6 +8,10 @@ const Blob = styled.svg`
    position: relative;
    -webkit-transform: ${props => props.rotate};
    transform: ${props => props.rotate};
+   @media (max-width: 880px) {
+      width:60%;
+   }
+   border: 1px solid black;
 `
 
 const GradBlobContainer = styled.div`
@@ -18,12 +21,7 @@ const GradBlobContainer = styled.div`
    margin-bottom: 4em;
 `
 
-
-const BlobFlex = styled(Flex)`
-`
-
-export const BlobOne = ({ color, rotate, children }) => (
-   <BlobFlex justifyCenter>
+export const BlobOne = ({ color, rotate }) => (
       <Blob
       color={color}
       rotate={rotate}
@@ -33,22 +31,17 @@ export const BlobOne = ({ color, rotate, children }) => (
          c56.8,21.7,118.3,42.7,144.5,82c26.1,39.3,17,96.8,2.7,146.3c-14.3,49.7-33.9,91.3-66.8,129.4c-32.9,38-79.4,72.3-131.7,70.2
          c-52.4-2.1-110.6-40.5-159.6-86.7C158.7,462.7,119.1,408.6,102.4,350.6z"/>
       </Blob>
-      {children}
-    </BlobFlex>
 )
 
 export const GradBlob = () => (
-   <BlobFlex>
       <GradBlobContainer>
          <img src={gradBlob} alt='Coloured Background'></img>
       </GradBlobContainer>
- </BlobFlex>
 )
 
 
 
 export const BlobTwo = ({ color }) => (
-   <BlobFlex>
       <Blob
       color={color}
       viewBox="0 0 628 421.6"
@@ -57,5 +50,4 @@ export const BlobTwo = ({ color }) => (
 	       s-112.7,52.6-181.8,74.4c-69.1,21.9-141.8,47.4-198,37.3c-56.1-10.1-95.8-55.7-124.1-99.2c-28.4-43.6-45.5-85-47.5-132.7
 	       c-2-47.6,11.3-101.5,60-134.1C112,17.4,196.2,6.1,278.7,6.1C361.3,6.2,441.9,17.8,505.1,46.9z"/>
       </Blob>
-    </BlobFlex>
 )

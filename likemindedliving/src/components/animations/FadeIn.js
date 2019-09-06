@@ -10,9 +10,9 @@ export const FadeIn = ({ children, delay }) => {
     )
 }
 
-export const FadeInRight = ({ children, delay }) => {
+export const FadeInRight = ({ children, delay, duration }) => {
     return (
-        <Fade right delay={delay}>
+        <Fade right delay={delay} duration={duration}>
             {children}
         </Fade>
     )

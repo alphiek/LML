@@ -36,7 +36,7 @@ export const SectionContent = ({ copy }) => {
 
     return (
         <>
-            <ReverseItemRight>
+            <ReverseItemRight justifyCenter>
                 {blob}
             </ReverseItemRight>
             <ReverseItemLeft>

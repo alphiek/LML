@@ -27,9 +27,10 @@ const CardImageWrapper = styled.div`
 `
 
 const CardTextContainer = styled.div`
-   padding: 0.75em 0 0.5em 0.75em;
+   display: grid;
+   padding: 0.75em 0 0 0.75em;
    margin-bottom: 0.5em;
-   width: 80%;
+   width: 100%;
    word-wrap: break-word;
    white-space: normal;
    & ${CardBody}: last-child {
@@ -43,11 +44,11 @@ const Card = ({ data }) => {
     let content;
     let divider;
 
-    if ( copy.place && copy.price ) {
+    if (copy.place && copy.price) {
         content = <><CardBody>{copy.place}</CardBody>
-                  <CardBody>{copy.price}</CardBody></>
+            <CardBody>{copy.price}</CardBody></>
         divider = <ShortDivider color={colors.mint} width='2em' />
-    } else if ( copy.blurb ) {
+    } else if (copy.blurb) {
         content = <CardBody>{copy.blurb.substring(0, 90)}...</CardBody>
         divider = <ShortDivider color={colors.lilac} width='2em' />
     }
@@ -59,11 +60,12 @@ const Card = ({ data }) => {
                 <h4>{copy.name}</h4>
                 {divider}
                 {content}
-                <Hover color={colors.lightPeach}>
-                <CardLink href='https://www.rkkcreative.xyz'
-                    target='_blank' rel='noopener noreferrer'>{copy.link}</CardLink>
-                </Hover>
-                
+                <div style={{ marginTop: '10%' }}>
+                    <Hover color={colors.lightPeach} margin='20%'>
+                        <CardLink href='https://www.rkkcreative.xyz'
+                            target='_blank' rel='noopener noreferrer'>{copy.link}</CardLink>
+                    </Hover>
+                </div>
             </CardTextContainer>
         </CardContainer>
     )

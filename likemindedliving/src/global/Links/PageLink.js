@@ -2,9 +2,9 @@ import React from 'react'
 import Hover from './Hover'
 import { LinkStyle } from './LinkStyles'
 
-const PageLink = ({ link }) => {
+const PageLink = ({ link, color }) => {
     return (
-        <Hover>
+        <Hover color={color}>
             <div style={{ marginTop: '2em'}}>
             <LinkStyle
                     color={link.color}

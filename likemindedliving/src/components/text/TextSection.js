@@ -23,13 +23,16 @@ export const TextSection = ({ copy, children }) => {
     return (
         <TextContainer column justifyCenter contentCenter>
             {
-                copy.h2 && <H2 color={copy.color}>{copy.h2}</H2>
+                copy.h2 && 
+                <FadeIn>
+                    <H2 color={copy.color}>{copy.h2}</H2>
+                </FadeIn>
             }
             {
                 copy.h3 && <h3>{copy.h3}</h3>
             }
             {
-                copy.divider && <ShortDivider color={copy.divider} width='3.5em' />
+                copy.divider && <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
             }
             <Body color={copy.color}>{copy.p1}</Body>
             {
@@ -37,7 +40,7 @@ export const TextSection = ({ copy, children }) => {
             }
             {children}
             {
-                copy.link && <PageLink link={copy.link} />
+                copy.link && <FadeIn><PageLink color='white' link={copy.link} /></FadeIn>
             }
         </TextContainer>
     )
