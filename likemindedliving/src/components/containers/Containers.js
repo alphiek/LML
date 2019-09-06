@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import Flex from './Flex'
-import { colors } from '../../global/colors'
 
 export const FullWidthContainer = styled(Flex)`
   position: relative;
@@ -21,21 +20,6 @@ export const FullWidthContainer = styled(Flex)`
 
 
 // c. Process Carousel
-
-export const CarouselContainer = styled(Flex)`
-  width: 100%;
-  height: 15em;
-`
-
-export const CarouselHeadingContainer = styled.div`
-  background-color: ${colors.lightPeach};
-  padding: 2em 0 2em 15%;
-  width: 90%;
-`
-
-export const ProcessLinkRight = styled.div`
-  margin-bottom: 2em;
-`
 
 export const ImageContainer = styled.div`
   position: absolute;

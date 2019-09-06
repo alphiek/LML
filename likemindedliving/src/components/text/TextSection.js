@@ -43,18 +43,6 @@ export const TextSection = ({ copy, children }) => {
     )
 }
 
-export const CarouselTextSection = ({ copy }) => {
-    return (
-        <Flex>
-           <h3>{copy.h3}</h3>
-            <Body color={copy.color}>{copy.p1}</Body>
-            {
-                copy.p2 && <Body>{copy.p2}</Body>
-            }
-        </Flex>
-    )
-}
-
 export const FullWidthText = ({ copy }) => {
     return (
         <>

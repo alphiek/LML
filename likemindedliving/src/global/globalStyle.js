@@ -203,6 +203,11 @@ h2 {
   text-rendering: optimizeLegibility;
   font-size: 0.78em;
   line-height: 130%;
+  @media (max-width: 768px) {
+    font-size: 0.81em;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+  }
 }
 
 h3 {

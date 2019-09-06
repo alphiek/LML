@@ -4,7 +4,7 @@ import Headline from '../Headline/Headline'
 import Testimonial from '../Testimonial/Testimonial'
 
 import { SectionContent, SectionContentReverse} from '../sections/USPSections'
-import Process from '../sections/Process'
+import ProcessCarousel from '../ProcessCarousel/ProcessCarousel'
 import WPCarousel from '../WPCarousel/WPCarousel'
 import PressReel from '../PressReel/PressReel'
 import SectionSubGrid from './SectionSubGrid'
@@ -33,7 +33,7 @@ const GridItem = ({ copy, area }) => {
     } else if (area === 'sectionFour') {
       section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><SectionContentReverse  copy={copy}/></SectionSubGrid></GridCell>
     } else if (area === 'process') {
-      section = <GridCell bgColor={bgColor} area={area}><Process copy={copy}/></GridCell>
+      section = <GridCell bgColor={bgColor} area={area}><ProcessCarousel copy={copy[1]}/></GridCell>
     } else if (area === 'properties') {
       section = <GridCell bgColor={bgColor} area={area}><WPCarousel copy={copy}/></GridCell>
     } else if (area === 'testimonials') {

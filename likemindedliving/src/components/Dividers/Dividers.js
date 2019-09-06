@@ -20,6 +20,7 @@ const DividerLong = styled.svg`
 const DividerShort = styled(DividerLong)`
   stroke-width: 4;
   height: 1em;
+  margin-top: 0.5em;
   width: ${props => props.width};
   @media(max-width: 768px) {
     stroke-width: 5;

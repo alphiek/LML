@@ -14,11 +14,15 @@ export const CardWrapper = styled(Flex)`
   grid-column: 2;
   grid-row: 1 / span 2;
   @media(max-width: 1024px) {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2;
+    margin-left: 4em;
   }
   @media(max-width: 768px) {
     grid-column: 1;
+  }
+  @media (max-width: 480px) {
+    margin-left: 0
   }
 `
 
@@ -30,12 +34,16 @@ const TestimonialGrid = styled.div`
   grid-template-rows: repeat(2, auto);
   & ${CardWrapper}: nth-child(2) {
     grid-column: 3;
+    @media(max-width: 1024px) {
+      grid-column: 2;
+      margin-left: -1em;
+    }
     @media(max-width: 768px) {
       display: none;
     }
   }
   @media(max-width: 1024px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   @media(max-width: 768px) {
     grid-template-columns: 1fr;
@@ -46,7 +54,7 @@ const Background = styled.div`
   grid-row: 1;
   background-color: ${colors.lightPeach};
   @media(max-width: 1024px) {
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
   }
   @media(max-width: 768px) {
     grid-column: 1;
@@ -57,7 +65,7 @@ const Heading = styled(Flex)`
   text-align: left;
   width: 18%;
   @media(max-width: 1024px) {
-    width: 42%;
+    width: 30%;
   }
   @media(max-width: 768px) {
     width: 60%;

@@ -28,7 +28,7 @@ const CardImageWrapper = styled.div`
 
 const CardTextContainer = styled.div`
    padding: 0.75em 0 0.5em 0.75em;
-   margin-bottom: 3em
+   margin-bottom: 0.5em;
    width: 80%;
    word-wrap: break-word;
    white-space: normal;
