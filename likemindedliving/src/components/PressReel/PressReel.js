@@ -16,18 +16,23 @@ const HorizontalScroll = styled.ul`
   &::-webkit-scrollbar {
     display: none;
   }
+  scrollbar-width: none;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 `
 
 
 const ContainerGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  align-content: start;
+  justify-content: center;
+  align-content: center;
   overflow-y: scroll;
-  width: 80%;
+  width: 75%;
   &::-webkit-scrollbar {
     display: none;
   }
+  scrollbar-width: none;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 `
 
 export const GridItem = styled.li`
@@ -38,6 +43,7 @@ export const GridItem = styled.li`
     align-items: center;
     background: #fff;
     font-size: 0.5em;
+    will-change: scroll-position;
 `
 
 

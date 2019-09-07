@@ -14,7 +14,7 @@ export const NavLinkStyle = styled.li`
 export const LinkWrapperRight = styled.div`
   width: auto;
   text-align: right;
-  margin-right: 15%;
+  margin-right: 10vw;
   &::-webkit-scrollbar {
     display: none;
   }

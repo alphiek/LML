@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { GridItem, ReverseItemLeft, ReverseItemRight } from '../Grids/SectionSubGrid'
 import { TextSection } from '../text/TextSection'
-import { BlobOne, GradBlob, BlobTwo } from '../shapes/Blobs'
-import HousemateIcons from '../../images/HousemateIcons'
+import { BlobOne, GradBlob, BlobTwo, BlobThree } from '../shapes/Blobs'
 import { AlgorithmContainer, AlgorithmFactWrapper } from '../containers/Containers'
 import { Body } from '../text/Text'
 
@@ -27,7 +26,6 @@ export const SectionContent = ({ copy }) => {
         fact = <AlgorithmContainer>
             <AlgorithmFactWrapper alignCenter nowrap><Icon /><Body>{data.fact.one}</Body></AlgorithmFactWrapper>
             <AlgorithmFactWrapper alignCenter nowrap><Icon /><Body>{data.fact.two}</Body></AlgorithmFactWrapper>
-            <AlgorithmFactWrapper alignCenter nowrap><Icon /><Body>{data.fact.three}</Body></AlgorithmFactWrapper>
         </AlgorithmContainer>
         blob = <GradBlob />
     } else {
@@ -58,11 +56,8 @@ export const SectionContentReverse = ({ copy }) => {
     let blob;
 
     if (section === 'sectionTwo') {
-        fact = <>
-            <HousemateIcons />
-            <Body color={copy[1].color}>{copy[1].fact}</Body>
-        </>
-        blob = <BlobOne color={data.blob} rotate={data.rotate} />
+        fact = <Body color={copy[1].color}>{copy[1].fact}</Body>
+        blob = <BlobThree color={data.blob} rotate={data.rotate} />
     } else {
         blob = <BlobTwo color={copy[1].blob} />
     }

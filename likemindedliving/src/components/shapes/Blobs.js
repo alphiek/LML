@@ -1,47 +1,91 @@
 import React from 'react'
 import styled from 'styled-components'
 import gradBlob from './gradientBlob.svg'
+import  Zoom from 'react-reveal/Zoom'
+import Flex from '../containers/Flex'
 
 const Blob = styled.svg`
    fill: ${props => props.color};
-   width: 80%;
+   width: 18vw;
    position: relative;
    -webkit-transform: ${props => props.rotate};
    transform: ${props => props.rotate};
-   @media (max-width: 880px) {
-      width:60%;
+   @media (max-width: 1024px) {
+      width: 30vw;
+      justify-content: center;
    }
-   border: 1px solid black;
+   @media (max-width: 480px) {
+      width: 80%;
+      justify-content: center;
+   }
 `
 
 const GradBlobContainer = styled.div`
-   width: 15em;
+   width: 22vw;
    position: relative;
-   margin-top: 4em;
-   margin-bottom: 4em;
+   @media (max-width: 1024px) {
+      width: 35vw;
+   }
+   @media (max-width: 480px) {
+      width: 80%;
+   }
+`
+
+const BlobFlex = styled(Flex)`
+  @media (max-width: 1024px) {
+     justify-content: center;
+  }
 `
 
 export const BlobOne = ({ color, rotate }) => (
+   <BlobFlex justifyCenter alignCenter>
+      <Zoom>
       <Blob
       color={color}
       rotate={rotate}
-      viewBox="0 0 666.9 661.4"
+      viewBox="0 0 484.7 470.6"
       alt='Coloured Background'>
-         <path d="M102.4,350.6c-16.7-58-10.5-119.9,19.2-162.1s83.1-64.8,135.8-64.9s104.7,22.4,161.4,44.2
-         c56.8,21.7,118.3,42.7,144.5,82c26.1,39.3,17,96.8,2.7,146.3c-14.3,49.7-33.9,91.3-66.8,129.4c-32.9,38-79.4,72.3-131.7,70.2
-         c-52.4-2.1-110.6-40.5-159.6-86.7C158.7,462.7,119.1,408.6,102.4,350.6z"/>
+         <path d="M9.1,226.2C-7.6,168.4-1.4,106.8,28.3,64.7S111.1,0.1,163.5,0s104.3,22.3,160.8,44.1
+	      c56.6,21.6,117.8,42.6,143.9,81.7c26,39.1,16.9,96.4,2.7,145.8c-14.2,49.5-33.7,91-66.6,128.9c-32.8,37.9-79.1,72-131.2,70
+	      c-52.2-2.1-110.1-40.4-159-86.4C65.3,337.9,25.8,284,9.1,226.2z"/>
       </Blob>
+      </Zoom>       
+   </BlobFlex>
 )
 
+export const BlobThree = ({ color, rotate }) => (
+   <BlobFlex justifyStart alignCenter>
+      <Zoom>
+      <Blob
+      color={color}
+      rotate={rotate}
+      viewBox="0 0 484.7 470.6"
+      alt='Coloured Background'>
+         <path d="M9.1,226.2C-7.6,168.4-1.4,106.8,28.3,64.7S111.1,0.1,163.5,0s104.3,22.3,160.8,44.1
+	      c56.6,21.6,117.8,42.6,143.9,81.7c26,39.1,16.9,96.4,2.7,145.8c-14.2,49.5-33.7,91-66.6,128.9c-32.8,37.9-79.1,72-131.2,70
+	      c-52.2-2.1-110.1-40.4-159-86.4C65.3,337.9,25.8,284,9.1,226.2z"/>
+      </Blob>
+      </Zoom>       
+   </BlobFlex>
+)
+
+
+
 export const GradBlob = () => (
+   <BlobFlex justifyCenter alignCenter>
+      <Zoom>
       <GradBlobContainer>
          <img src={gradBlob} alt='Coloured Background'></img>
       </GradBlobContainer>
+      </Zoom>
+      </BlobFlex>
 )
 
 
 
 export const BlobTwo = ({ color }) => (
+   <BlobFlex justifyStart alignCenter>
+      <Zoom>
       <Blob
       color={color}
       viewBox="0 0 628 421.6"
@@ -50,4 +94,6 @@ export const BlobTwo = ({ color }) => (
 	       s-112.7,52.6-181.8,74.4c-69.1,21.9-141.8,47.4-198,37.3c-56.1-10.1-95.8-55.7-124.1-99.2c-28.4-43.6-45.5-85-47.5-132.7
 	       c-2-47.6,11.3-101.5,60-134.1C112,17.4,196.2,6.1,278.7,6.1C361.3,6.2,441.9,17.8,505.1,46.9z"/>
       </Blob>
+      </Zoom>
+      </BlobFlex>
 )

@@ -7,6 +7,8 @@ html {
   height: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   font-size: calc(12px + 0.8vw);
   box-sizing: border-box;
   line-height: 130%;
@@ -90,7 +92,7 @@ footer {
   margin-top: 2em;
   padding: 3em 2em;
   @media(max-width: 480px) {
-    padding: 3em 1em 2em 1em;
+    padding: 3em 8% 2em 8%;
   }
 }
 
@@ -225,6 +227,15 @@ h4 {
   text-rendering: optimizeLegibility;
   font-size: 0.5em;
   line-height: 1.1;
+  @media (max-width: 1024px) {
+    font-size: 0.55em;
+  }
+  @media (max-width: 768px) {
+    font-size: 0.6em;
+  }
+  @media (max-width: 480px) {
+    font-size: 0.65em;
+  }
 }
 
 ul {
@@ -248,6 +259,7 @@ p {
   word-wrap: normal;
   @media (max-width: 991px) {
     font-size: 0.6em;
+    line-height: 145%;
     }
     @media (max-width: 767px) {
     font-size: 0.65em;

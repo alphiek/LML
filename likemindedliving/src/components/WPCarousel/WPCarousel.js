@@ -22,12 +22,12 @@ export const CardContainer = styled.div`
     box-shadow: 0 25px 25px -15px rgba(75, 74, 104, 0.45);
     transform: scale(1.02);
     transform: translate(0, -0.1em);
-    @media (max-width: 480px) {
-      box-shadow: none;
-      transform: none;
-    }
     @media (max-width: 768px) {
-      box-shadow: 0 10px 15px -3px rgba(75, 74, 104, 0.4), 0 4px 6px -2px rgba(75, 74, 104, 0.10);
+    box-shadow: 0 25px 25px -15px rgba(75, 74, 104, 0.45);
+    transform: none;
+    }
+    @media(max-width: 768px) {
+      transition: none;
     }
   }
 `
@@ -39,8 +39,9 @@ const GridItem = styled.li`
     justify-content: flex-start;
     align-items: center;
     background: #fff;
-    cursor: grabbing;
+    cursor: pointer;
     overflow: visable;
+    will-change: scroll-position;
     padding-bottom: 2em;
     &: first-child {
       margin-left: 20.5em;
@@ -59,7 +60,7 @@ const GridItem = styled.li`
 const HorizontalScroll = styled.ul`
   -webkit-overflow-scrolling: touch;
   display: grid;
-  cursor: grabbing;
+  cursor: pointer;
   grid-gap: 0em;
   grid-template-columns: 30em repeat(7, 9.5em);
   grid-template-rows: minmax(8em, 1fr);
@@ -125,10 +126,12 @@ const WPCarousel = ({ copy }) => {
       <Flex justifyEnd alignCenter>
         <ContainerGrid>
           <FadeInRight duration={1800}>
-          <HorizontalScroll>
-              {content}
-          </HorizontalScroll>
-          </FadeInRight>         
+            <div>
+              <HorizontalScroll>
+                {content}
+              </HorizontalScroll>
+            </div>
+          </FadeInRight>
         </ContainerGrid >
       </Flex >
       <LinkWrapperRight>

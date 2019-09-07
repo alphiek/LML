@@ -15,7 +15,18 @@ const CarouselGrid = styled.div`
   grid-template-areas: 
   'header header header'
   'number image content'
-  '. button button'
+  '. button button';
+  padding-bottom: 2em;   
+  @media (max-width: 1024px) {
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1em 14em auto auto;
+    grid-template-areas: 
+    'header'
+    'number'
+    'image' 
+    'content'
+    'button'; 
+  }
 `
 
 const Header = styled.div`
@@ -26,6 +37,9 @@ const Header = styled.div`
   padding: 2em 0 1.5em 5%;
   margin-bottom: 2em;
   margin-left: 6%;
+  @media(max-width: 1024px) {
+    width: 60%;
+  }
 `
 
 const HeaderWrapper = styled.div`
@@ -33,25 +47,38 @@ const HeaderWrapper = styled.div`
 `
 const Number = styled(Flex)`
    padding: 1em;
+   font-size: 0.5em;
    grid-area: number;
+   @media (max-width: 1024px) {
+     justify-content: flex-start;
+   }
 `
 
 const Image = styled(Flex)`
   grid-area: image;
+  font-size: 0.5em;
 `
 
 const Content = styled(Flex)`
+   grid-area: content;
+   font-size: 0.5em;
    padding: 1em;
+   @media (max-width: 1024px) {
+    justify-content: center;
+  }
 `
 
 const LinkWrapper = styled(Flex)`
    margin-right: 3em;
    grid-area: button;
+   @media (max-width: 1024px) {
+    margin-right: 0;
+    justify-content: center;
+  }
 `
 
 
 const ProcessCarousel = ({ copy }) => {
-  console.log(copy)
   return (
     <CarouselGrid>
       <Header>
@@ -66,7 +93,9 @@ const ProcessCarousel = ({ copy }) => {
       <Image justifyCenter contentCenter>image</Image>
       <Content contentCenter>Content</Content>
       <LinkWrapper justifyEnd>
-        <PageLink link={copy.link} />
+        <FadeIn>
+          <PageLink link={copy.link} />
+        </FadeIn>
       </LinkWrapper>
     </CarouselGrid>
   )

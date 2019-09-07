@@ -93,6 +93,7 @@ export const tenants = {
         blob: `${colors.textPrimary}`
     },
     properties: {
+        properties: true,
         h2: `Explore our top London flatshare picks`,
         link: {
             name: `Show me all properties`,
@@ -158,7 +159,9 @@ export const tenants = {
         bgColor: `${colors.textPrimary}`
     },
     blogs: {
-        h2: `Looking for Inspiration? Check out our recent blogs and top tips for living in the city`,
+        blogs: true,
+        h2: `Looking for Inspiration?`,
+        h2p2: `Check out our recent blogs and top tips for living in the city`,
         link: {
             name: `Show me all the blogs`,
             url: `https://likemindedliving.co.uk/blog/`

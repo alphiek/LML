@@ -9,9 +9,17 @@ const CardLink = styled.a`
   padding-top: 3em;
   font-size: 0.45em;
   width: auto;
+  @media (max-width: 1024px) {
+    font-size: 0.5em;
+  }
+  @media (max-width: 768px) {
+    font-size: 0.55em;
+  }
+  @media (max-width: 480px) {
+    font-size: 0.6em;
+  }
    
 `
-
 const CardBody = styled.p`
    margin-top: 0;
    width: 80%;
@@ -19,10 +27,19 @@ const CardBody = styled.p`
    font-size: 0.48em;
    font-family: Montserrat, Arial, Helvetica, sans-serif;
    letter-spacing: 0.2px;
+   @media (max-width: 1024px) {
+    font-size: 0.52em;
+  }
+  @media (max-width: 768px) {
+    font-size: 0.58em;
+  }
+  @media (max-width: 480px) {
+    font-size: 0.6em;
+  }
 `
 const CardImageWrapper = styled.div`
    height: 5em;
-   background: grey;
+   background: #4B4A68;
    border-radius: 0.5em 0.5em 0 0;
 `
 
@@ -32,6 +49,7 @@ const CardTextContainer = styled.div`
    margin-bottom: 0.5em;
    width: 100%;
    word-wrap: break-word;
+   overflow: hidden;
    white-space: normal;
    & ${CardBody}: last-child {
        margin-bottom: 1em;
