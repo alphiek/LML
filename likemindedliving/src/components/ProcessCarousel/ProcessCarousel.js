@@ -5,6 +5,7 @@ import PageLink from '../../global/Links/PageLink'
 import { FadeIn } from '../animations/FadeIn'
 import { Body } from '../text/Text'
 import { colors } from '../../global/colors'
+import SlideContainer from './SlideContainer'
 
 
 const CarouselGrid = styled.div`
@@ -45,28 +46,7 @@ const Header = styled.div`
 const HeaderWrapper = styled.div`
   width: 80%;
 `
-const Number = styled(Flex)`
-   padding: 1em;
-   font-size: 0.5em;
-   grid-area: number;
-   @media (max-width: 1024px) {
-     justify-content: flex-start;
-   }
-`
 
-const Image = styled(Flex)`
-  grid-area: image;
-  font-size: 0.5em;
-`
-
-const Content = styled(Flex)`
-   grid-area: content;
-   font-size: 0.5em;
-   padding: 1em;
-   @media (max-width: 1024px) {
-    justify-content: center;
-  }
-`
 
 const LinkWrapper = styled(Flex)`
    margin-right: 3em;
@@ -89,9 +69,7 @@ const ProcessCarousel = ({ copy }) => {
           <Body color={copy.color}>{copy.p1}</Body>
         </HeaderWrapper>
       </Header>
-      <Number justifyEnd>Number</Number>
-      <Image justifyCenter contentCenter>image</Image>
-      <Content contentCenter>Content</Content>
+      <SlideContainer copy={copy.steps}/>
       <LinkWrapper justifyEnd>
         <FadeIn>
           <PageLink link={copy.link} />

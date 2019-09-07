@@ -29,14 +29,14 @@ export const landlord = {
         h3: `How it works`,
         p1: `No text provided here should we delete this from the carousel for landlords`,
         steps: {
-            one: `On our website, fill in our landlord / estate agent sign up form, here, or on our quiz page. 
+            1: `On our website, fill in our landlord / estate agent sign up form, here, or on our quiz page. 
                   A member of our team will be in touch to confirm your details and discuss the letting of your property`,
-            two: `We will market your property on our website and to our pool of sharers looking for a place to live. 
+            2: `We will market your property on our website and to our pool of sharers looking for a place to live. 
                   We can rent either on a room by room basis or as a whole property, depending on your preferences.`,
-            three: `Viewing - A member of our team will be in touch shortly to arrange a viewing, typically these occur 
+            3: `Viewing - A member of our team will be in touch shortly to arrange a viewing, typically these occur 
                   weeknights in the evening or on Saturdays in the afternoon`,
-            four: `Offer - During this exciting period our dedicated lettings manager will be in touch of any offers received and arrange the desired move-in date`,
-            five: `Move-in – We’ll be on hand to assist with your referencing process should you need our help, 
+            4: `Offer - During this exciting period our dedicated lettings manager will be in touch of any offers received and arrange the desired move-in date`,
+            5: `Move-in – We’ll be on hand to assist with your referencing process should you need our help, 
                   and once the tenancy agreement is formed a member of our team will be one call away to assist.`,
         },
         color: `${colors.primary}`,
