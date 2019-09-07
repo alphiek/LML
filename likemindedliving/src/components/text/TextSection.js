@@ -23,6 +23,8 @@ const FullWidthTextWrapper = styled.div`
 `
 
 const Span = styled.span`
+    display: block;
+    margin-top: 0.4em;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 0.9em;

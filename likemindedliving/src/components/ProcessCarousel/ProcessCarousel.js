@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Flex from '../containers/Flex'
-import PageLink from '../../global/Links/PageLink'
 import { FadeIn } from '../animations/FadeIn'
 import { Body } from '../text/Text'
 import { colors } from '../../global/colors'
@@ -11,12 +9,12 @@ import SlideContainer from './SlideContainer'
 const CarouselGrid = styled.div`
   margin: 0 15%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(33.33%, 1fr));
-  grid-template-rows: auto 14em auto;
+  width: 70%;
+  grid-template-columns: repeat(3, minmax(10% 40% 50%));
+  grid-template-rows: auto 14em;
   grid-template-areas: 
   'header header header'
-  'number image content'
-  '. button button';
+  'number image content';
   padding-bottom: 2em;   
   @media (max-width: 1024px) {
     grid-template-columns: 100%;
@@ -25,8 +23,7 @@ const CarouselGrid = styled.div`
     'header'
     'number'
     'image' 
-    'content'
-    'button'; 
+    'content';
   }
 `
 
@@ -48,16 +45,6 @@ const HeaderWrapper = styled.div`
 `
 
 
-const LinkWrapper = styled(Flex)`
-   margin-right: 3em;
-   grid-area: button;
-   @media (max-width: 1024px) {
-    margin-right: 0;
-    justify-content: center;
-  }
-`
-
-
 const ProcessCarousel = ({ copy }) => {
   return (
     <CarouselGrid>
@@ -69,12 +56,7 @@ const ProcessCarousel = ({ copy }) => {
           <Body color={copy.color}>{copy.p1}</Body>
         </HeaderWrapper>
       </Header>
-      <SlideContainer copy={copy.steps}/>
-      <LinkWrapper justifyEnd>
-        <FadeIn>
-          <PageLink link={copy.link} />
-        </FadeIn>
-      </LinkWrapper>
+      <SlideContainer copy={copy.steps} link={copy.link}/>
     </CarouselGrid>
   )
 }

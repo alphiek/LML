@@ -18,14 +18,22 @@ export const CardContainer = styled.div`
    margin: 0.2em;
    transition: all .2s ease-in-out;
    box-shadow: 0 10px 18px -3px rgba(75, 74, 104, 0.25), 0 4px 6px -2px rgba(75, 74, 104, 0.05);
+   &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+   }
+    scrollbar-width: none;
    :hover {
     box-shadow: 0 25px 25px -15px rgba(75, 74, 104, 0.45);
     transform: scale(1.02);
     transform: translate(0, -0.1em);
     @media (max-width: 768px) {
-    box-shadow: 0 25px 25px -15px rgba(75, 74, 104, 0.45);
+    box-shadow: 0 10px 18px -3px rgba(75, 74, 104, 0.25), 0 4px 6px -2px rgba(75, 74, 104, 0.05);
     transform: none;
     }
+  }
     @media(max-width: 768px) {
       transition: none;
     }
@@ -40,8 +48,14 @@ const GridItem = styled.li`
     align-items: center;
     background: #fff;
     cursor: pointer;
-    overflow: visable;
     will-change: scroll-position;
+    &::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      height: 0;
+      -webkit-appearance: none;
+     }
+    scrollbar-width: none;
     padding-bottom: 2em;
     &: first-child {
       margin-left: 20.5em;
@@ -71,6 +85,9 @@ const HorizontalScroll = styled.ul`
   white-space: nowrap;
   &::-webkit-scrollbar {
     display: none;
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
   }
   scrollbar-width: none;
   @media (max-width: 1024px) {
@@ -97,6 +114,9 @@ const ContainerGrid = styled.div`
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
   }
   scrollbar-width: none;
   @media (max-width: 1024px) {
@@ -104,6 +124,15 @@ const ContainerGrid = styled.div`
   }
 `
 
+const Wrapper = styled.div`
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+  }
+    scrollbar-width: none;
+`
 
 const WPCarousel = ({ copy }) => {
 
@@ -126,11 +155,11 @@ const WPCarousel = ({ copy }) => {
       <Flex justifyEnd alignCenter>
         <ContainerGrid>
           <FadeInRight duration={1800}>
-            <div>
+            <Wrapper>
               <HorizontalScroll>
                 {content}
               </HorizontalScroll>
-            </div>
+            </Wrapper>
           </FadeInRight>
         </ContainerGrid >
       </Flex >

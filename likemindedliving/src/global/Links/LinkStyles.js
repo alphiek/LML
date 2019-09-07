@@ -2,6 +2,23 @@ import styled from 'styled-components'
 import { Bounce } from '../../components/animations/keyframes'
 import { Link } from 'gatsby'
 
+export const ButtonWrapper = styled.div`
+  margin-top: 2em;
+  text-align: center;
+  background: ${props => props.bgColor};
+  width: 60%;
+  line-height: 130%;
+  padding: 0.5em;
+  border-radius: 0.35em;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 4px 6px -1px rgba(75, 74, 104, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  :hover {
+    box-shadow: 0 25px 25px -15px rgba(75, 74, 104, 0.2);
+    transform: scale(1.02);
+    transform: translate(0, -0.1em);
+  }
+`
+
 export const NavLinkStyle = styled.li`
   position: relative;
   :hover {
@@ -40,17 +57,6 @@ export const HoverWrapper = styled.div`
 
 export const LinkStyle = styled.a`
   color: ${props => props.color};
-  background-color: ${props => props.bgColor};
-  width: auto;
-  padding: 1.5em;
-  border-radius: 0.35em;
-  transition: all .3s ease-in-out;
-  box-shadow: 0 4px 6px -1px rgba(75, 74, 104, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  :hover {
-    box-shadow: 0 25px 25px -15px rgba(75, 74, 104, 0.2);
-    transform: scale(1.02);
-    transform: translate(0, -0.1em);
-  }
 `
 
 
