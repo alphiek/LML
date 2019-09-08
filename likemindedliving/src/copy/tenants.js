@@ -41,8 +41,8 @@ export const tenants = {
 
         },
         link: {
-            color: `${colors.mint}`,
-            bgColor: `${colors.textPrimary}`,
+            color: `${colors.textPrimary}`,
+            bgColor: `${colors.lightPeach}`,
             name: `Take our where would you like to live in London quiz`,
             url: `https://likemindedliving.outgrow.us/Copy-of-likemindedliving-3-2`
         },

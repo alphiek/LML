@@ -51,7 +51,7 @@ export const TextSection = ({ copy, children }) => {
             }
             {children}
             {
-                copy.link && <FadeIn><PageLink color='white' link={copy.link} /></FadeIn>
+                copy.link && <FadeIn><PageLink mTop='2em' color='white' link={copy.link} /></FadeIn>
             }
         </TextContainer>
     )

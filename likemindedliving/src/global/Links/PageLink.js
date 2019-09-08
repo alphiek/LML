@@ -5,10 +5,10 @@ import { LinkStyle, ButtonWrapper } from './LinkStyles'
 
 
 
-const PageLink = ({ link, color }) => {
+const PageLink = ({ link, color, mTop }) => {
     return (
         <Hover color={color}>
-            <ButtonWrapper bgColor={link.bgColor}>
+            <ButtonWrapper mTop={mTop} bgColor={link.bgColor}>
             <LinkStyle
                     color={link.color}
                     href={link.url}

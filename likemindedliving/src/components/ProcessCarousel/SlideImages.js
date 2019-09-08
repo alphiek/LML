@@ -1,35 +1,72 @@
 import React from 'react'
 import styled from 'styled-components'
+import { colors } from '../../global/colors'
 import Flex from '../containers/Flex'
 
-
-const Image = styled(Flex)`
+const ImageCell = styled(Flex)`
   grid-area: image;
-  font-size: 0.5em;
 `
+
+const ImageWrapper = styled(Flex)`
+  width: 100%;
+  height: 12em;
+  font-size: 0.8em;
+  border: 2px solid ${props => props.color};
+`
+
 
 const SlideImages = ({ slide }) => {
     let slideImage;
 
     if (slide === '1') {
-        slideImage = <Image justifyCenter contentCenter>This is the first image</Image>
+        slideImage =
+            <ImageCell justifyCenter contentCenter>
+                <ImageWrapper justifyCenter contentCenter color={colors.mint}>
+                    Img One
+              </ImageWrapper>
+            </ImageCell>
     } else if (slide === '2') {
-        slideImage = <Image justifyCenter contentCenter>This is the second image</Image>
+        slideImage =
+            <ImageCell justifyCenter contentCenter>
+                <ImageWrapper justifyCenter contentCenter color={colors.lilac}>
+                    Img Two
+                </ImageWrapper>
+            </ImageCell>
     } else if (slide === '3') {
-        slideImage = <Image justifyCenter contentCenter>This is the third image</Image>
+        slideImage =
+            <ImageCell justifyCenter contentCenter>
+                <ImageWrapper justifyCenter contentCenter color={colors.grey}>
+                    Img Three
+                </ImageWrapper>
+            </ImageCell>
     } else if (slide === '4') {
-        slideImage = <Image justifyCenter contentCenter>This is the fourth image</Image>
+        slideImage =
+            <ImageCell justifyCenter contentCenter>
+                <ImageWrapper justifyCenter contentCenter color={colors.lightPeach}>
+                    Img Four
+                </ImageWrapper>
+            </ImageCell>
     } else if (slide === '5') {
-        slideImage = <Image justifyCenter contentCenter>This is the fifth image</Image>
+        slideImage =
+            <ImageCell justifyCenter contentCenter>
+                <ImageWrapper justifyCenter contentCenter color={colors.mint}>
+                    Img Five
+                </ImageWrapper>
+            </ImageCell>
     } else if (slide === '6') {
-        slideImage = <Image justifyCenter contentCenter>This is the sixth image</Image>
+        slideImage =
+            <ImageCell justifyCenter contentCenter>
+                <ImageWrapper justifyCenter contentCenter color={colors.lilac}>
+                    Img Six
+                </ImageWrapper>
+            </ImageCell>
     } else {
         return <div>Something is wrong here</div>
     }
 
     return (
         <>
-        {slideImage}
+            {slideImage}
         </>
     )
 }

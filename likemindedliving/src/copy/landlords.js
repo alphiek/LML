@@ -39,7 +39,7 @@ export const landlord = {
             5: `Move-in – We’ll be on hand to assist with your referencing process should you need our help, 
                   and once the tenancy agreement is formed a member of our team will be one call away to assist.`,
         },
-        color: `${colors.primary}`,
+        color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
         link: {
             color: `${colors.textPrimary}`,

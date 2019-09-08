@@ -3,10 +3,10 @@ import { Bounce } from '../../components/animations/keyframes'
 import { Link } from 'gatsby'
 
 export const ButtonWrapper = styled.div`
-  margin-top: 2em;
+  margin-top: ${props => props.mTop};
   text-align: center;
   background: ${props => props.bgColor};
-  width: 60%;
+  width: ${props=> props.width};
   line-height: 130%;
   padding: 0.5em;
   border-radius: 0.35em;
