@@ -15,6 +15,12 @@ const Icon = styled.div`
   margin-right: 0.4em;
 `
 
+const H4 = styled.h4`
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  color: rgba(45,123,239,0.9);
+`
+
 export const SectionContent = ({ copy }) => {
     let data = copy[1]
     let section = copy[0]
@@ -24,9 +30,12 @@ export const SectionContent = ({ copy }) => {
 
     if (section === 'sectionThree') {
         fact = <AlgorithmContainer>
-            <AlgorithmFactWrapper alignCenter nowrap><Icon /><Body>{data.fact.one}</Body></AlgorithmFactWrapper>
-            <AlgorithmFactWrapper alignCenter nowrap><Icon /><Body>{data.fact.two}</Body></AlgorithmFactWrapper>
-        </AlgorithmContainer>
+                  <AlgorithmFactWrapper alignCenter nowrap><Icon /><Body>{data.fact.one}</Body></AlgorithmFactWrapper>
+                  <AlgorithmFactWrapper alignCenter nowrap><Icon /><Body>{data.fact.two}</Body></AlgorithmFactWrapper>
+               </AlgorithmContainer>
+        blob = <GradBlob />
+    } else if (section === 'sectionThreeLandlord') {
+        fact = Object.entries(data.fact).map((item, index) => <><H4 key={index}>{item[1].h4}</H4> <Body>{item[1].p}</Body></>)
         blob = <GradBlob />
     } else {
         blob = <BlobOne color={data.blob} />

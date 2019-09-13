@@ -44,7 +44,7 @@ export const landlord = {
         link: {
             color: `${colors.textPrimary}`,
             bgColor: `${colors.grey}`,
-            name: `Need button text for landlord sign up form`,
+            name: `CTA for landlord sign up form`,
             url: `https://likemindedliving.outgrow.us/likemindedliving-45`
         },
     },
@@ -57,29 +57,28 @@ export const landlord = {
         bgColor: `${colors.textPrimary}`,
         divider: `${colors.peach}`,
         blob: `${colors.lilac}`,
+        rotate: `rotate(139deg)`,
     },
-    sectionThree: {
-        h2: `Algorithm section`,
-        p1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna 
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis 
-        aute irure dolor in`,
+    sectionThreeLandlord: {
+        h2: `Third section headline`,
+        p1: `We work with professional renters that come from a variety of backgrounds. From doctors, to marketing execs all looking for a place to live in London.`,
         fact: {
-            one: `Fact about money saved with icon`,
-            two: `We search 1000's of major listings to bring you what you want`,
-            three: `Fact about something else`
+            1: {
+                h4: `Is there a split commission?`,
+                p: `No, we are wholly retained by our clients and there will be no charge to your agency`
+            },
+            2: {
+                h4: `Will a member of our company be present at the viewing?`,
+                p: `Yes, usually a member from our lettings team will be on hand to help with any queries you or your client may have. Once we have facilitated the introduction our team take a backseat role to provide support as required.`
+            },
+            3: {
+                h4: `Do we need to be on the tenancy agreement?`,
+                p: `No, once our renters have indicated to us they would like to rent your property, the final tenancy agreement shall be between yourselves and them.`
+            },
         },
-        cta: `Call to action for the algorithm section`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
         divider: `${colors.blue}`,
-        link: {
-            color: `${colors.textPrimary}`,
-            bgColor: `${colors.lilac}`,
-            name: `Register your interest`,
-            url: `https://likemindedliving.outgrow.us/likemindedliving-45`
-        },
     },
     sectionFour: {
         h2: `What makes Like-minded living the ideal choice`,
@@ -87,10 +86,6 @@ export const landlord = {
         and matching them to their ideal property. We love to work with estate agents or private landlords that can help us provide the perfect property 
         to our customers. We are building London’s first community of flat-sharers all connected to each other by their like-minded traits, 
         get in touch with us if you own or are managing a property that is suitable for sharers.`,
-        p2: `We act as your property finder, having developed proprietary software that
-        allows us to scan the market searching across thousands of listings, to bring you your 
-        perfect property. Alongside utilising our housemate matching algorithm to help you 
-        find housemates that are suited for the duration of your tenancy.`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.grey}`,
         divider: `${colors.mint}`,

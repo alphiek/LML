@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-
 import H1SplitText from '../animations/H1SplitText'
 import Flex from '../containers/Flex'
 import { FadeIn } from '../animations/FadeIn'

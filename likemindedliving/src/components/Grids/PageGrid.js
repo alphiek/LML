@@ -30,7 +30,7 @@ const LandlordGrid = styled.div`
    'sectionOne'
    'process'
    'sectionTwo'
-   'sectionThree'
+   'sectionThreeLandlord'
    'sectionFour'
    'testimonials'
    'pressReel'

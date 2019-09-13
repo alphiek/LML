@@ -30,6 +30,8 @@ const GridItem = ({ copy, area }) => {
       section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><SectionContentReverse  copy={copy}/></SectionSubGrid></GridCell>
     } else if (area === 'sectionThree') {
       section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><SectionContent  copy={copy}/></SectionSubGrid></GridCell>
+    } else if (area === 'sectionThreeLandlord') {
+        section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><SectionContent  copy={copy}/></SectionSubGrid></GridCell>
     } else if (area === 'sectionFour') {
       section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><SectionContentReverse  copy={copy}/></SectionSubGrid></GridCell>
     } else if (area === 'process') {
