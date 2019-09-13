@@ -2,12 +2,15 @@ import React from 'react'
 import Flex from '../containers/Flex'
 import { H2, Body } from '../text/Text'
 import { ShortDivider } from '../Dividers/Dividers'
-import PageLink from '../../global/Links/PageLink'
 import { FadeIn } from '../animations/FadeIn'
 import styled from 'styled-components'
 
 const TextContainer = styled(Flex)`
    height: 100%;
+   @media (max-width: 1024px) {
+       width: 80%;
+       align-items: center;
+   }
 `
 
 const FullWidthTextWrapper = styled.div`
@@ -50,9 +53,6 @@ export const TextSection = ({ copy, children }) => {
                 copy.p2 && <Body>{copy.p2}</Body>
             }
             {children}
-            {
-                copy.link && <FadeIn><PageLink mTop='2em' color='white' link={copy.link} /></FadeIn>
-            }
         </TextContainer>
     )
 }

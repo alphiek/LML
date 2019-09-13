@@ -10,7 +10,7 @@ export const H2 = ({ children, color }) => {
 
 export const Body = ({ children, color, weight }) => (
   <FadeIn>
-    <p style={{ marginBottom: '1em', color: `${color}`, fontWeight: `${weight}`}}>{children}</p>
+    <p style={{ color: `${color}`, fontWeight: `${weight}`}}>{children}</p>
   </FadeIn>
 )
 

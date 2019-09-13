@@ -12,10 +12,15 @@ const TextCenter = styled(Flex)`
         width: 60%;
     }
     @media (max-width: 1024px) {
-      width: 70%;
+      width: 65%;
+      margin-top: 1em;
+    }
+    @media (max-width: 768px) {
+      margin-top: 1.5em;
+      width: 78%;
     }
     @media (max-width: 480px) {
-        width: 78%;
+      width: 75%;
     }
 `
 

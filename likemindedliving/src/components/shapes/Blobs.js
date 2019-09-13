@@ -3,10 +3,7 @@ import styled from 'styled-components'
 import gradBlob from './gradientBlob.svg'
 import  Zoom from 'react-reveal/Zoom'
 import Flex from '../containers/Flex'
-import idealChoice from '../../images/IdealChoice.svg'
-import algorithm from '../../images/Algorithm.svg'
-import housemates from '../../images/Housemates.svg'
-import london from '../../images/London.svg'
+
 
 const Blob = styled.svg`
    fill: ${props => props.color};
@@ -37,46 +34,16 @@ const GradBlobContainer = styled.div`
 
 const BlobFlex = styled(Flex)`
   position: relative;
-  @media (max-width: 1024px) {
-     justify-content: center;
-  }
+  justify-content: center;
+  align-items: center;
 `
 
-const ImageWrapper = styled.img`
-   position: absolute;
-   width: 90%;
-   z-index: 10;
-   left: -1em;
-`
-
-const IdealWrapper = styled.img`
-   position: absolute;
-   width: 83%;
-   z-index: 10;
-   left: -1em;
-`
-
-const HousemateWrapper = styled.img`
-   position: absolute;
-   width: 90%;
-   z-index: 10;
-   left: -2em;
-`
-
-const PropertyWrapper = styled.img`
-   position: absolute;
-   width: 16em;
-   max-width: 200%;
-   z-index: 10;
-`
-
-export const BlobOne = ({ color, rotate }) => (
-   <BlobFlex justifyCenter alignCenter>
-      <PropertyWrapper src={london} />
+export const BlobOne = ({ color, children }) => (
+   <BlobFlex>
+      {children}
       <Zoom>
       <Blob
       color={color}
-      rotate={rotate}
       viewBox="0 0 484.7 470.6"
       alt='Coloured Background'>
          <path d="M9.1,226.2C-7.6,168.4-1.4,106.8,28.3,64.7S111.1,0.1,163.5,0s104.3,22.3,160.8,44.1
@@ -87,9 +54,9 @@ export const BlobOne = ({ color, rotate }) => (
    </BlobFlex>
 )
 
-export const BlobThree = ({ color, rotate }) => (
-   <BlobFlex justifyStart alignCenter>
-      <HousemateWrapper src={housemates} />
+export const BlobThree = ({ color, rotate, children }) => (
+   <BlobFlex>
+      {children}
       <Zoom>
       <Blob
       color={color}
@@ -105,10 +72,9 @@ export const BlobThree = ({ color, rotate }) => (
 )
 
 
-
-export const GradBlob = () => (
-   <BlobFlex justifyCenter alignCenter>
-      <ImageWrapper src={algorithm} />
+export const GradBlob = ({ children }) => (
+   <BlobFlex>
+      {children}
       <Zoom>
       <GradBlobContainer>
          <img src={gradBlob} alt='Coloured Background'></img>
@@ -118,12 +84,9 @@ export const GradBlob = () => (
 )
 
 
-
-
-
-export const BlobTwo = ({ color }) => (
-   <BlobFlex justifyStart alignCenter>
-      <IdealWrapper src={idealChoice}/>
+export const BlobTwo = ({ children, color }) => (
+   <BlobFlex>
+      {children}
       <Zoom>
       <Blob
       color={color}

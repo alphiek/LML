@@ -1,6 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
-import GridItem from './GridItem'
+import GridSection from './GridSection'
+import LandlordGridSection from './LandlordGridSection'
 
 const TenantGrid = styled.div`
    display: grid;
@@ -9,14 +10,14 @@ const TenantGrid = styled.div`
    grid-template-columns: 100%;
    grid-template-areas: 
    'headline'
-   'sectionOne'
-   'process'
+   'sectionOne'   
    'sectionTwo'
    'sectionThree'
    'sectionFour'
-   'properties'
+   'process'
    'testimonials'
-   'pressReel'
+   'properties'
+   'pressReel'  
    'blogs';   
 `
 
@@ -30,23 +31,24 @@ const LandlordGrid = styled.div`
    'sectionOne'
    'process'
    'sectionTwo'
-   'sectionThreeLandlord'
+   'sectionThree'
    'sectionFour'
-   'testimonials'
    'pressReel'
+   'testimonials'
    'blogs';   
 `
 
 const PageGrid = ({ copy }) => {
   let data = Object.entries(copy)
-  let item = data.slice(1).map((item, index) => <GridItem key={item[0]} area={item[0]} copy={item}/>)
+  let item = data.slice(1).map((item, index) => <GridSection key={index} area={item[0]} copy={item}/>)
+  let landlorditem = data.slice(1).map((item, index) => <LandlordGridSection key={index} area={item[0]} copy={item}/>)
     
   let grid;
 
   if ( copy.tenants ) {
     grid = <TenantGrid>{item}</TenantGrid>
   } else if ( copy.landlord ) {
-    grid = <LandlordGrid>{item}</LandlordGrid>
+    grid = <LandlordGrid>{landlorditem}</LandlordGrid>
   } else {
     grid = <p>There is a problem here!</p>
   }

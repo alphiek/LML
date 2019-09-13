@@ -16,11 +16,8 @@ html {
   @media (max-width: 1024px) {
     font-size: calc(12px + 1.2vw);
     }
-  @media (max-width: 768px) {
-  font-size: calc(12px + 1.9vw);
-  }
   @media (max-width: 480px) {
-  font-size: calc(12px + 2.5vw);
+  font-size: calc(12px + 2.2vw);
 }
 }
 
@@ -38,6 +35,9 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  @media (max-width: 1024px) {
+    text-align: center;
+  }
 }
 
 * {
@@ -123,6 +123,7 @@ a {
   font-weight: 600;
   color: #1E1D42;
   font-size: 0.55em;
+  line-height: 130%;
   @media (max-width: 1024px) {
     font-size: 0.6em;
     }
@@ -164,7 +165,7 @@ h1 {
   text-rendering: optimizeLegibility;
   line-height: 130%;
   @media (max-width: 1024px) {
-    font-size: 1.2em;
+    font-size: 1.1em;
     }
   @media (max-width: 768px) {
     font-size: 1.1em;
@@ -205,9 +206,12 @@ h2 {
   text-rendering: optimizeLegibility;
   font-size: 0.78em;
   line-height: 130%;
+  @media (max-width: 1024px) {
+    text-align: center;
+    font-weight: 700;
+  }
   @media (max-width: 768px) {
     font-size: 0.81em;
-    font-weight: 700;
     letter-spacing: 0.2px;
   }
 }
@@ -219,6 +223,9 @@ h3 {
   font-size: 0.7em;
   padding-bottom: 1em;
   line-height: 1.1;
+  @media (max-width: 1024px) {
+    text-align: center;
+  }
 }
 
 h4 {
@@ -257,6 +264,11 @@ p {
   line-height: 140%;
   text-align: left;
   word-wrap: normal;
+  margin-bottom: 1em;
+  @media(max-width: 1024px) {
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
   @media (max-width: 991px) {
     font-size: 0.6em;
     line-height: 145%;

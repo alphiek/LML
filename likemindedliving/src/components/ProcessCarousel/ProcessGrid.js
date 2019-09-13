@@ -5,23 +5,27 @@ import Heading from './Heading'
 
 
 const CarouselGrid = styled.div`
-  margin: 0 20%;
+  margin: 2em 20%;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 0.5fr 0.5fr 0.5fr;
   grid-template-areas: 
-  'header image'
-  '.  image'
+  'header content'
+  '. content'
   '. content';
   padding-bottom: 2em;   
   @media (max-width: 1024px) {
+    margin: 0 25%;
     grid-template-columns: 100%;
-    grid-template-rows: auto 1em 14em auto auto;
     grid-template-areas: 
     'header'
-    'number'
-    'image' 
     'content';
+  }
+  @media (max-width: 1024px) {
+    margin: 0 20%;
+  }
+  @media (max-width: 1024px) {
+    margin: 0 15%;
   }
 `
 
@@ -34,7 +38,7 @@ const ProcessGrid = ({ copy }) => {
         color={copy.color}
         pColor={copy.bgColor}
         />
-      <SlideContainer copy={copy.steps} link={copy.link}/>
+      <SlideContainer copy={copy.steps} landlord={copy.landlord} link={copy.link}/>
     </CarouselGrid>
   )
 }

@@ -3,12 +3,12 @@ import { Bounce } from '../../components/animations/keyframes'
 import { Link } from 'gatsby'
 
 export const ButtonWrapper = styled.div`
-  margin-top: ${props => props.mTop};
   text-align: center;
   background: ${props => props.bgColor};
-  width: ${props=> props.width};
+  width: 100%;
   line-height: 130%;
   padding: 0.5em;
+  font-size: 0.9em;
   border-radius: 0.35em;
   transition: all .3s ease-in-out;
   box-shadow: 0 4px 6px -1px rgba(75, 74, 104, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -16,6 +16,13 @@ export const ButtonWrapper = styled.div`
     box-shadow: 0 25px 25px -15px rgba(75, 74, 104, 0.2);
     transform: scale(1.02);
     transform: translate(0, -0.1em);
+  }
+  @media (max-width: 1024px) {
+    padding: 0.75em;
+  }
+  @media (max-width: 768px) {
+    padding: 1em;
+    font-size: 1em;
   }
 `
 

@@ -142,9 +142,9 @@ const WPCarousel = ({ copy }) => {
   let content;
 
   if (section === 'properties') {
-    content = propData.map(item => <GridItem><Card data={item} /></GridItem>)
+    content = propData.map((item, index) => <GridItem key={index}><Card data={item} /></GridItem>)
   } else if (section === 'blogs') {
-    content = bgData.map(item => <GridItem><Card data={item} /></GridItem>)
+    content = bgData.map((item, index) => <GridItem key={index}><Card data={item} /></GridItem>)
   } else {
     content = <p>Something is wrong here</p>
   }

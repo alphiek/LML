@@ -2,28 +2,61 @@ import React from 'react'
 import styled from 'styled-components'
 import Flex from '../containers/Flex'
 
-export const ReverseItemRight = styled(Flex)`
+
+const ItemTemplate = styled(Flex)`
    width: 100%;
    position: relative;
-   margin: 2em 0;
-   grid-area: right;
-   @media (max-width: 1024px) {
-   grid-area: left;
-   margin: 1em 0;
-   }
 `
-export const ReverseItemLeft = styled.div`
-    width: 100%;
-    position: relative;
-    margin: 2em 0;
+
+const ItemSmallTop = styled(ItemTemplate)`
+  @media (max-width: 1024px) {
     grid-area: left;
-    padding-right: 3em;
-    @media (max-width: 1024px) {
-    grid-area: right;
-    padding-right: 0;
-    margin: 1em 0 2em 0;
+    margin: 1em 0;
     }
 `
+const ItemSmallBottom = styled(ItemTemplate)`
+  @media (max-width: 1024px) {
+    grid-area: right;
+    padding-right: 0;
+    text-align: center;
+    margin: 1em 0 2em 0;
+  }
+`
+
+export const PropertySearchImage = styled(ItemSmallTop)`
+   margin: 2em 0;
+   grid-area: right;  
+`
+
+export const PropertySearchText = styled(ItemSmallBottom)`
+    grid-area: left;
+    padding-right: 3em;
+`
+
+export const HouseMateImage = styled(ItemTemplate)`
+    grid-area: left;
+`
+
+export const HouseMateText = styled(ItemTemplate)`
+    grid-area: right;
+`
+
+export const AlgorithmText = styled(ItemSmallTop)`
+    grid-area: left;
+`
+
+export const AlgorithmImage = styled(ItemSmallBottom)`
+    grid-area: right;
+`
+
+export const IdealImage = styled(ItemTemplate)`
+    grid-area: left;
+`
+
+export const IdealText = styled(ItemTemplate)`
+    grid-area: right;
+`
+
 
 const Grid = styled.div`
   display: grid;
@@ -31,9 +64,6 @@ const Grid = styled.div`
   grid-template-columns: 50% 50%;
   grid-template-areas: 
    'left right';
-   & ${ReverseItemLeft}: first-child {
-     margin: 0 0 2em 0;
-   }
    @media (max-width: 1024px) {
     margin: 0 15%;
     grid-template-columns: 100%;
@@ -53,15 +83,7 @@ const Grid = styled.div`
   }
 `
 
-export const GridItem = styled.div`
-   position: relative;
-   width: 100%;
-   margin: 2em 0;
-   grid-area: ${props => props.area};
-   @media(max-width: 1024px) {
-    margin: 1em 0 2em 0;
-   }
-`
+
 
 const SectionSubGrid = ({ children }) => {
     return (

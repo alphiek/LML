@@ -52,7 +52,7 @@ const PressReel = ({ copy }) => {
     let data = copy[1].articles
     let items = Object.entries(data)
 
-    let content = items.map(item => <GridItem><article>{item[1].name}</article></GridItem>)
+    let content = items.map((item, index) => <GridItem key={index}><article>{item[1].name}</article></GridItem>)
 
     return (
         <Flex justifyCenter alignCenter>

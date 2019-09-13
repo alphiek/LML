@@ -7,10 +7,10 @@ import { LinkStyle } from '../../global/Links/LinkStyles'
 
 
 export const LinkWrapper = styled(Flex)`
-  width: 100%;
-  text-align: center;
   background: ${props => props.bgColor};
-  padding: 0.5em 2em;
+  text-align: center;
+  line-height: 140%;
+  padding: 0.75em 2em;
   margin: 0.5em 0;
   border-radius: 0.35em;
   `
@@ -19,7 +19,7 @@ const Link = ({ link }) => {
     return (
         <FadeIn>
             <Hover>
-                <LinkWrapper justifycenter
+                <LinkWrapper justifycenter alignCenter
                   bgColor={link.bgColor}>
                     <LinkStyle
                         color={link.color}

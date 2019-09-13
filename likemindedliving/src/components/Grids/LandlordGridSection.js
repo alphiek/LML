@@ -2,12 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import Headline from '../Headline/Headline'
 import Testimonial from '../Testimonial/Testimonial'
-
-import { SectionContent, SectionContentReverse} from '../sections/USPSections'
+import { SectionContent } from '../sections/LandlordFAQs'
 import ProcessGrid from '../ProcessCarousel/ProcessGrid'
 import WPCarousel from '../WPCarousel/WPCarousel'
 import PressReel from '../PressReel/PressReel'
-import SectionSubGrid from './SectionSubGrid'
+import LandlordSubGrid from './LandlordSubGrid'
 
 
 const GridCell = styled.section`
@@ -18,26 +17,22 @@ const GridCell = styled.section`
   background-color: ${props => props.bgColor};
 `
 
-const GridItem = ({ copy, area }) => {
+const LandlordGridSection = ({ copy, area }) => {
     let section;
     let bgColor = copy[1].bgColor
 
     if (area === 'headline') {
       section = <GridCell bgColor={bgColor} area={area}><Headline copy={copy[1]}/></GridCell>
     } else if (area === 'sectionOne') {
-      section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><SectionContent  copy={copy}/></SectionSubGrid></GridCell>
+      section = <GridCell bgColor={bgColor} area={area}><LandlordSubGrid><SectionContent  copy={copy}/></LandlordSubGrid></GridCell>
     } else if (area === 'sectionTwo') {
-      section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><SectionContentReverse  copy={copy}/></SectionSubGrid></GridCell>
+      section = <GridCell bgColor={bgColor} area={area}><LandlordSubGrid><SectionContent  copy={copy}/></LandlordSubGrid></GridCell>
     } else if (area === 'sectionThree') {
-      section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><SectionContent  copy={copy}/></SectionSubGrid></GridCell>
-    } else if (area === 'sectionThreeLandlord') {
-        section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><SectionContent  copy={copy}/></SectionSubGrid></GridCell>
+      section = <GridCell bgColor={bgColor} area={area}><LandlordSubGrid><SectionContent  copy={copy}/></LandlordSubGrid></GridCell>
     } else if (area === 'sectionFour') {
-      section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><SectionContentReverse  copy={copy}/></SectionSubGrid></GridCell>
+      section = <GridCell bgColor={bgColor} area={area}><LandlordSubGrid><SectionContent  copy={copy}/></LandlordSubGrid></GridCell>
     } else if (area === 'process') {
       section = <GridCell bgColor={bgColor} area={area}><ProcessGrid copy={copy[1]}/></GridCell>
-    } else if (area === 'properties') {
-      section = <GridCell bgColor={bgColor} area={area}><WPCarousel copy={copy}/></GridCell>
     } else if (area === 'testimonials') {
       section = <GridCell bgColor={bgColor} area={area}><Testimonial copy={copy}/></GridCell>
     } else if (area === 'pressReel') {
@@ -55,4 +50,4 @@ const GridItem = ({ copy, area }) => {
     )
 }
 
-export default GridItem
+export default LandlordGridSection

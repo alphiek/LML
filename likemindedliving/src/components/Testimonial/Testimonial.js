@@ -79,7 +79,7 @@ const Testimonial = ({ copy }) => {
   let data = copy[1]
   let testimonial = Object.entries(copy[1].testimonial)
 
-  let cards = testimonial.map(item => <TestimonialCard key={item.id} copy={item} />)
+  let cards = testimonial.map((item, index) => <TestimonialCard key={index} copy={item} />)
 
   return (
     <TestimonialGrid>

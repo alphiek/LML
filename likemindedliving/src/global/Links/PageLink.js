@@ -3,12 +3,10 @@ import Hover from './Hover'
 import { LinkStyle, ButtonWrapper } from './LinkStyles'
 
 
-
-
-const PageLink = ({ link, color, mTop }) => {
+const PageLink = ({ link, color }) => {
     return (
         <Hover color={color}>
-            <ButtonWrapper mTop={mTop} bgColor={link.bgColor}>
+            <ButtonWrapper bgColor={link.bgColor}>
             <LinkStyle
                     color={link.color}
                     href={link.url}
