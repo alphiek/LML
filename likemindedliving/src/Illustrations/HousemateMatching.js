@@ -1,7 +1,20 @@
 import React from 'react'
 import { BlobThree } from '../components/shapes/Blobs'
-import { ImageWrapper } from './Styles'
+import styled from 'styled-components'
 import housemates from '../images/Housemates.svg'
+
+export const ImageWrapper = styled.img`
+   position: absolute;
+   width: 18em;
+   max-width: 200%;
+   z-index: 10;
+   @media (max-width: 768px) {
+     width: 45vw;
+   }
+   @media (max-width: 480px) {
+     width: 65vw;
+   }
+`
 
 
 const HousemateMatching = ({ color, rotate }) => (

@@ -27,11 +27,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-portal`,
+      resolve: `gatsby-source-graphql`,
       options: {
-        key: 'portal',
-        id: 'portal',
-      }
+        typeName: `WPBlogsGraphQL`,
+        fieldName: `blogs`,
+        url: `https://likemindedliving.co.uk/blog/graphql`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,

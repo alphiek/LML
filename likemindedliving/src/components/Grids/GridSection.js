@@ -17,9 +17,16 @@ const GridCell = styled.section`
   grid-area: ${props => props.area};
   padding: 1em 0;
   width: auto;
-  height: auto;
+  min-height: auto;
   background-color: ${props => props.bgColor};
 `
+const SectionCell = styled(GridCell)`
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 480px;
+`
+
 
 const GridSection = ({ copy, area }) => {
     let section;
@@ -28,13 +35,13 @@ const GridSection = ({ copy, area }) => {
     if (area === 'headline') {
       section = <GridCell bgColor={bgColor} area={area}><Headline copy={copy[1]}/></GridCell>
     } else if (area === 'sectionOne') {
-      section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><PropertySearch copy={copy}/></SectionSubGrid></GridCell>
+      section = <SectionCell bgColor={bgColor} area={area}><SectionSubGrid><PropertySearch copy={copy}/></SectionSubGrid></SectionCell>
     } else if (area === 'sectionTwo') {
-      section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><HouseMate copy={copy}/></SectionSubGrid></GridCell>
+      section = <SectionCell bgColor={bgColor} area={area}><SectionSubGrid><HouseMate copy={copy}/></SectionSubGrid></SectionCell>
     } else if (area === 'sectionThree') {
-      section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><Algorithm copy={copy}/></SectionSubGrid></GridCell>
+      section = <SectionCell bgColor={bgColor} area={area}><SectionSubGrid><Algorithm copy={copy}/></SectionSubGrid></SectionCell>
     } else if (area === 'sectionFour') {
-      section = <GridCell bgColor={bgColor} area={area}><SectionSubGrid><IdealChoice copy={copy}/></SectionSubGrid></GridCell>
+      section = <SectionCell bgColor={bgColor} area={area}><SectionSubGrid><IdealChoice copy={copy}/></SectionSubGrid></SectionCell>
     } else if (area === 'process') {
       section = <GridCell bgColor={bgColor} area={area}><ProcessGrid copy={copy[1]}/></GridCell>
     } else if (area === 'properties') {

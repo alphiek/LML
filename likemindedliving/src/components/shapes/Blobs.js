@@ -36,6 +36,8 @@ const BlobFlex = styled(Flex)`
   position: relative;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 `
 
 export const BlobOne = ({ color, children }) => (

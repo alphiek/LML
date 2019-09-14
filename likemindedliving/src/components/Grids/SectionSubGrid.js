@@ -5,26 +5,27 @@ import Flex from '../containers/Flex'
 
 const ItemTemplate = styled(Flex)`
    width: 100%;
+   height: 100%;
    position: relative;
 `
 
 const ItemSmallTop = styled(ItemTemplate)`
   @media (max-width: 1024px) {
     grid-area: left;
+    padding: 0;
     margin: 1em 0;
     }
 `
 const ItemSmallBottom = styled(ItemTemplate)`
   @media (max-width: 1024px) {
     grid-area: right;
-    padding-right: 0;
+    padding: 0;
     text-align: center;
     margin: 1em 0 2em 0;
   }
 `
 
 export const PropertySearchImage = styled(ItemSmallTop)`
-   margin: 2em 0;
    grid-area: right;  
 `
 
@@ -33,12 +34,13 @@ export const PropertySearchText = styled(ItemSmallBottom)`
     padding-right: 3em;
 `
 
-export const HouseMateImage = styled(ItemTemplate)`
+export const HouseMateImage = styled(ItemSmallTop)`
     grid-area: left;
 `
 
-export const HouseMateText = styled(ItemTemplate)`
+export const HouseMateText = styled(ItemSmallBottom)`
     grid-area: right;
+    padding-left: 1.2em;
 `
 
 export const AlgorithmText = styled(ItemSmallTop)`
@@ -49,11 +51,11 @@ export const AlgorithmImage = styled(ItemSmallBottom)`
     grid-area: right;
 `
 
-export const IdealImage = styled(ItemTemplate)`
+export const IdealImage = styled(ItemSmallTop)`
     grid-area: left;
 `
 
-export const IdealText = styled(ItemTemplate)`
+export const IdealText = styled(ItemSmallBottom)`
     grid-area: right;
 `
 
