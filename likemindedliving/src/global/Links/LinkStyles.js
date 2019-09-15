@@ -75,7 +75,7 @@ export const PatternWrapper = styled.div`
   overflow: visible;
   padding-bottom: 0.5em;
   top: 50%;
-  left: ${props => props.margin};
+  left: 50%;
   opacity: 0;
   transform: translate(-50%, -50%);
   transition: 0.4s;

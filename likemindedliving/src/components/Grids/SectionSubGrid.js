@@ -40,7 +40,6 @@ export const HouseMateImage = styled(ItemSmallTop)`
 
 export const HouseMateText = styled(ItemSmallBottom)`
     grid-area: right;
-    padding-right: 3em;
     text-align: right;
 `
 

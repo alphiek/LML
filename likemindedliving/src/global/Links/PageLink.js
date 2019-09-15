@@ -1,11 +1,9 @@
 import React from 'react'
-import Hover from './Hover'
 import { LinkStyle, ButtonWrapper } from './LinkStyles'
 
 
 const PageLink = ({ link, color }) => {
     return (
-        <Hover color={color}>
             <ButtonWrapper bgColor={link.bgColor}>
             <LinkStyle
                     color={link.color}
@@ -16,8 +14,7 @@ const PageLink = ({ link, color }) => {
                 >
                 {link.name}
             </LinkStyle>         
-            </ButtonWrapper>       
-        </Hover>
+            </ButtonWrapper>
     )
 }
 

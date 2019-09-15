@@ -8,12 +8,11 @@ const CarouselGrid = styled.div`
   margin-bottom: 5%;
   display: grid;
   grid-template-columns: 20% 1fr 1fr 20%;
-  grid-template-rows: repeat(2, auto);
   @media (max-width: 1024px) {
     grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
     margin: 0 20%;
     padding: 2em 0;
-    grid-template-rows: repeat(2, auto);
   }
   @media (max-width: 1024px) {
     margin: 0 15%;

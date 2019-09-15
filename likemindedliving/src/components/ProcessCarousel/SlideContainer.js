@@ -14,15 +14,16 @@ import Arrows from './Arrows'
 const ContentCell = styled(Flex)`
   grid-column: 3/4;
   border-radius: 8px 8px 0px 0;
-  grid-row: 2;
-  margin-top: -5.5em;
-  padding-top: 1em;
+  grid-row: 1;
+  margin-top: 2em;
+  padding: 2em 0;
   width: 100%;
   position: relative;
   background: white;
 @media (max-width: 1024px) {
  justify-content: center;
   grid-column: 1;
+  grid-row: 2;
   margin-top: 0;
 }`
 

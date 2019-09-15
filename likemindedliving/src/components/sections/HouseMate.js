@@ -5,8 +5,9 @@ import { HouseMateImage, HouseMateText } from '../Grids/SectionSubGrid'
 import HousemateMatching from '../../Illustrations/HousemateMatching'
 import { FadeIn } from '../animations/FadeIn'
 import { TextSectionEnd } from '../text/TextSection'
-import { FactBody } from '../text/Text'
+import { FactRight } from '../text/Text'
 import PageLink from '../../global/Links/PageLink'
+
 
 
 const SignUpFormWrapper = styled.div`
@@ -31,7 +32,7 @@ const HouseMate = ({ copy }) => {
             <HouseMateText contentCenter alignEnd column>
                 <TextSectionEnd copy={data}>
                     <FadeIn>
-                    <FactBody color={data.factColor}>{data.fact}</FactBody>
+                    <FactRight color={data.factColor}>{data.fact}</FactRight>
                     </FadeIn>
                     <FadeIn>
                         <SignUpFormWrapper>

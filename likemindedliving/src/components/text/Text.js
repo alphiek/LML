@@ -10,17 +10,23 @@ const FactP = styled.p`
   line-height: 130%;
   letter-spacing: 0.05px;
   @media (max-width: 1024px) {
+    margin: 1em auto 0;
     font-size: 0.58em;
-    width: 100%;
   }
   @media (max-width: 768px) {
     font-size: 0.62em;
     line-height: 150%;
   }
-  @media (max-width: 480px) {
-    width: 100%;
-  }
 `
+
+const FactFloat = styled(FactP)`
+   float: right;
+   @media (max-width: 1024px) {
+     float: none;
+   }
+`
+
+
 export const H2 = ({ children, color }) => {
   return (
     <FadeIn>
@@ -46,6 +52,10 @@ export const Body = ({ children, color }) => (
 
 export const FactBody = ({ children, color }) => (
     <FactP style={{ color: `${color}`}}>{children}</FactP>
+)
+
+export const FactRight = ({ children, color }) => (
+  <FactFloat style={{ color: `${color}`}}>{children}</FactFloat>
 )
 
 
