@@ -188,6 +188,8 @@ export const landlord = {
         bgColor: `${colors.textPrimary}`
     },
     blogs: {
+        blogs: true,
+        page: 'landlords',
         h2: `Looking for Inspiration? Check out our recent blogs and top tips for living in the city`,
         link: {
 

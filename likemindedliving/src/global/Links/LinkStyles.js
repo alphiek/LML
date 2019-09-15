@@ -9,6 +9,7 @@ export const ButtonWrapper = styled.div`
   line-height: 130%;
   padding: 0.5em;
   font-size: 0.9em;
+  font-weight: 700;
   border-radius: 0.35em;
   transition: all .3s ease-in-out;
   box-shadow: 0 4px 6px -1px rgba(75, 74, 104, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);

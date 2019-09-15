@@ -262,7 +262,6 @@ p {
   text-rendering: optimizeLegibility;
   font-size: 0.55em;
   line-height: 140%;
-  text-align: left;
   word-wrap: normal;
   margin-bottom: 1em;
   @media(max-width: 1024px) {

@@ -6,27 +6,39 @@ import AlgorithmIllustration from '../../Illustrations/AlgorithmIllustration'
 import { FadeIn } from '../animations/FadeIn'
 import { TextSection } from '../text/TextSection'
 import Flex from '../containers/Flex'
-import { Body } from '../text/Text'
+import { FactBody } from '../text/Text'
 import PageLink from '../../global/Links/PageLink'
 
 
 const AlgorithmContainer = styled(Flex)`
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+  @media (max-width: 1024px) {
+    justify-content: center;
+    align-items: center;
+ }
 `
 
 const AlgorithmFactWrapper = styled(Flex)`
   padding-top: 0.2em;
   padding-bottom: 0.2em;
   width: 100%;
+  @media (max-width: 1024px) {
+     flex-wrap: wrap;
+     justify-content: center;
+     flex-direction: column;
+  }
 `
 
 const SignUpFormWrapper = styled.div`
   width: 10em;
   @media (max-width: 1024px) {
      width: 15em;
-     padding-top: 2em;
+     padding-top: 1em;
   }
+  @media (max-width: 768px) {
+    width: 15em;
+    padding-top: 0em;
+ }
   @media (max-width: 480px) {
       width: 12em;
   }
@@ -35,11 +47,24 @@ const SignUpFormWrapper = styled.div`
 const Icon = styled.div`
   width: 1.2em;
   height: 1.2em;
-  border 1px solid #F9D1B7;
+  background: rgba(75, 74, 104, 0.95);
   border-radius: 50%;
-  margin-right: 0.4em;
-`
-
+  margin-right: 0.7em;
+  @media (max-width: 1024px) {
+      width: 1.5em;
+      height: 1.5em;
+      margin: 0.5em 0 0.5em 0;
+  }
+  @media (max-width: 768px) {
+    width: 1.7em;
+    height: 1.7em;
+    margin: 0.5em 0 0.5em 0;
+}
+@media (max-width: 480px) {
+    width: 1.8em;
+    height: 1.8em;
+    margin: 0.5em 0 0.5em 0;
+}`
 
 const Algorithm = ({ copy }) => {
     let data = copy[1]
@@ -52,8 +77,8 @@ const Algorithm = ({ copy }) => {
             <AlgorithmText contentCenter column>
                 <TextSection copy={data}>
                     <AlgorithmContainer>
-                        <AlgorithmFactWrapper alignCenter nowrap><Icon /><Body>{data.fact.one}</Body></AlgorithmFactWrapper>
-                        <AlgorithmFactWrapper alignCenter nowrap><Icon /><Body>{data.fact.two}</Body></AlgorithmFactWrapper>
+                        <AlgorithmFactWrapper alignCenter noWrap contentCenter><Icon /><FactBody color={data.factColor}>{data.fact.one}</FactBody></AlgorithmFactWrapper>
+                        <AlgorithmFactWrapper alignCenter noWrap contentCenter><Icon /><FactBody color={data.factColor}>{data.fact.two}</FactBody></AlgorithmFactWrapper>
                     </AlgorithmContainer>
                     <FadeIn>
                         <SignUpFormWrapper>

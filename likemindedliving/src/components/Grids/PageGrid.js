@@ -10,13 +10,13 @@ const TenantGrid = styled.div`
    grid-template-columns: 100%;
    grid-template-areas: 
    'headline'
-   'sectionOne'   
+   'sectionOne'  
+   'process' 
    'sectionTwo'
    'sectionThree'
    'sectionFour'
-   'process'
-   'testimonials'
    'properties'
+   'testimonials'
    'pressReel'  
    'blogs';   
 `

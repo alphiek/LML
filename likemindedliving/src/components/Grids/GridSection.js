@@ -27,6 +27,15 @@ const SectionCell = styled(GridCell)`
    min-height: 480px;
 `
 
+const AlgorithmCell = styled(GridCell)`
+   padding: 4em 0;
+   @media (max-width: 1024px) {
+     padding: 4em 0 2em 0;
+   }
+   @media (max-width: 768px) {
+     padding: 6em 0 3em 0;
+   }
+`
 
 const GridSection = ({ copy, area }) => {
     let section;
@@ -39,7 +48,7 @@ const GridSection = ({ copy, area }) => {
     } else if (area === 'sectionTwo') {
       section = <SectionCell bgColor={bgColor} area={area}><SectionSubGrid><HouseMate copy={copy}/></SectionSubGrid></SectionCell>
     } else if (area === 'sectionThree') {
-      section = <SectionCell bgColor={bgColor} area={area}><SectionSubGrid><Algorithm copy={copy}/></SectionSubGrid></SectionCell>
+      section = <AlgorithmCell bgColor={bgColor} area={area}><SectionSubGrid><Algorithm copy={copy}/></SectionSubGrid></AlgorithmCell>
     } else if (area === 'sectionFour') {
       section = <SectionCell bgColor={bgColor} area={area}><SectionSubGrid><IdealChoice copy={copy}/></SectionSubGrid></SectionCell>
     } else if (area === 'process') {

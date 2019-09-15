@@ -42,25 +42,28 @@ export const tenants = {
         },
         link: {
             color: `${colors.textPrimary}`,
-            bgColor: `${colors.lightPeach}`,
+            bgColor: `${colors.mint}`,
             name: `Take our where would you like to live in London quiz`,
             url: `https://likemindedliving.outgrow.us/Copy-of-likemindedliving-3-2`
         },
+        divider: `${colors.textPrimary}`,
         color: `${colors.textPrimary}`,
+        stripColor: `${colors.grey}`,
         bgColor: `${colors.white}`,
     },
     sectionTwo: {
         h2: `Housemate matching`,
         p1: `Looking to flat-share as an individual? No worries. We know how hard it can be moving into a new home with complete strangers. Take our ‘LML Housemate Matching’ quiz, and we’ll use the results to best match you to other compatible housemates for a happy house.`,
         fact: `Take this quiz to help us find your ideal housemates for your house-share`,
-        color: `${colors.textSeconday}`,
-        bgColor: `${colors.textPrimary}`,
-        divider: `${colors.peach}`,
-        blob: `${colors.lilac}`,
+        color: `${colors.textPrimary}`,
+        factColor: `${colors.blue}`,
+        bgColor: `${colors.grey}`,
+        divider: `${colors.mint}`,
+        blob: `${colors.blue}`,
         rotate: `rotate(139deg)`,
         link: {
             color: `${colors.textPrimary}`,
-            bgColor: `${colors.mint}`,
+            bgColor: `${colors.white}`,
             name: `Take our housemate matching quiz`,
             url: `https://likemindedliving.outgrow.us/likemindedliving-17`
         },
@@ -76,6 +79,7 @@ export const tenants = {
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
         divider: `${colors.blue}`,
+        factColor: `${colors.blue}`,
         link: {
             color: `${colors.textPrimary}`,
             bgColor: `${colors.lilac}`,
@@ -160,6 +164,7 @@ export const tenants = {
     },
     blogs: {
         blogs: true,
+        page: 'tenants',
         h2: `Looking for Inspiration?`,
         h2p2: `Check out our recent blogs and top tips for living in the city`,
         link: {

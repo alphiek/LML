@@ -12,15 +12,25 @@ import Flex from '../containers/Flex'
 import Arrows from './Arrows'
 
 const ContentCell = styled(Flex)`
-  grid-area: content;
-  width: 90%;
+  grid-column: 3/4;
+  border-radius: 8px 8px 0px 0;
+  grid-row: 2;
+  margin-top: -5.5em;
+  padding-top: 1em;
+  width: 100%;
   position: relative;
+  background: white;
 @media (max-width: 1024px) {
  justify-content: center;
+  grid-column: 1;
+  margin-top: 0;
 }`
 
 const Container = styled.div`
-  width: 72%;
+  width: 65%;
+  @media (max-width: 480px) {
+      width: 100%;
+  }
 `
 
 
@@ -33,9 +43,9 @@ const SlideContainer = ({ copy, link, landlord }) => {
     let slides;
 
     if (landlord) {
-        slides = <LandlordSlideImages slide={currentSlide.toString()} />
+        slides = <LandlordSlideImages slide={Number(currentSlide)} />
     } else {
-        slides = <SlideImages slide={currentSlide.toString()} />
+        slides = <SlideImages slide={Number(currentSlide)} />
     }
 
     const updateSlideHandler = val => {

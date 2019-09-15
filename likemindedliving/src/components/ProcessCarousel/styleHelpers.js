@@ -1,10 +1,11 @@
 export const updateStyle = (val, currentSlide) => {
+    
     let style;
 
-    if (val === currentSlide.toString()) {
+    if (val === currentSlide) {
         style = {
             opacity: '0.8',
-            fontSize: '0.75em',
+            fontSize: '0.7em',
             fontWeight: '800',
             color: '#585795',
             transform: 'scale(1.25)'
@@ -12,7 +13,7 @@ export const updateStyle = (val, currentSlide) => {
     } else {
         style = {
             opacity: '1',
-            fontSize: '0.75em',
+            fontSize: '0.7em',
             fontWeight: '800',
             color: '#4B4A68'
         }
@@ -22,16 +23,17 @@ export const updateStyle = (val, currentSlide) => {
 
 
 export const updateNext = ( currentSlide, totalSlides ) => {
+
     let next;
 
-    if (currentSlide.toString() === totalSlides.toString()) {
+    if (currentSlide === totalSlides) {
         next = {
             display: 'none'
         }
     } else {
         next = {
             opacity: '1',
-            fontSize: '0.7em',
+            fontSize: '0.65em',
             paddingTop: '0.5em',
             fontWeight: '800',
             color: '#4B4A68'
@@ -45,16 +47,15 @@ export const updateNext = ( currentSlide, totalSlides ) => {
 export const updatePrevious = ( currentSlide ) => {
     let previous;
 
-    if (currentSlide.toString() === '1') {
+    if (currentSlide === 1) {
         previous = {
             display: 'none'
         }
     } else {
         previous = {
             opacity: '0.7',
-            fontSize: '0.7em',
+            fontSize: '0.65em',
             paddingTop: '0.5em',
-            paddingRight: '1em',
             fontWeight: '800',
             color: '#585795'
         }

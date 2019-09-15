@@ -6,8 +6,8 @@ import { LinkWrapperRight } from '../../global/Links/LinkStyles'
 import { CarouselLink } from '../../global/Links/CarouselLink'
 import Card from './Card'
 import { propertyData } from './Properties/propertyData'
-import { blogData } from './Blogs/blogData'
 import { FadeInRight, FadeIn } from '../animations/FadeIn'
+import BlogContent from './Blogs/BlogContent'
 
 
 export const CardContainer = styled.div`
@@ -135,16 +135,16 @@ const Wrapper = styled.div`
 `
 
 const WPCarousel = ({ copy }) => {
-
+  
   let section = copy[0]
+  let page = copy[1].page
   let propData = Object.entries(propertyData)
-  let bgData = Object.entries(blogData)
   let content;
 
   if (section === 'properties') {
     content = propData.map((item, index) => <GridItem key={index}><Card data={item} /></GridItem>)
   } else if (section === 'blogs') {
-    content = bgData.map((item, index) => <GridItem key={index}><Card data={item} /></GridItem>)
+    content = <BlogContent page={page}/>
   } else {
     content = <p>Something is wrong here</p>
   }

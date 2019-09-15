@@ -5,9 +5,13 @@ import housemates from '../images/Housemates.svg'
 
 export const ImageWrapper = styled.img`
    position: absolute;
-   width: 18em;
+   width: 17em;
+   margin-left: -1em;
    max-width: 200%;
    z-index: 10;
+   @media (max-width: 1024px) {
+     margin-left: 0;
+   }
    @media (max-width: 768px) {
      width: 45vw;
    }

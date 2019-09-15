@@ -13,6 +13,9 @@ export const LinkWrapper = styled(Flex)`
   padding: 0.75em 2em;
   margin: 0.5em 0;
   border-radius: 0.35em;
+  @media (max-width: 768px) {
+    margin: 1em 0 0.5em 0;
+  }
   `
 
 const Link = ({ link }) => {

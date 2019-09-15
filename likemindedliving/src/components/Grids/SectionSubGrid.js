@@ -40,23 +40,43 @@ export const HouseMateImage = styled(ItemSmallTop)`
 
 export const HouseMateText = styled(ItemSmallBottom)`
     grid-area: right;
-    padding-left: 1.2em;
+    padding-right: 3em;
+    text-align: right;
 `
 
-export const AlgorithmText = styled(ItemSmallTop)`
+export const AlgorithmText = styled(ItemSmallBottom)`
     grid-area: left;
+    @media (max-width: 1024px) {
+      margin-top: 3em;
+    }
+    @media (max-width: 768px) {
+      margin-top: 4em;
+    }
 `
 
-export const AlgorithmImage = styled(ItemSmallBottom)`
+export const AlgorithmImage = styled(ItemSmallTop)`
     grid-area: right;
 `
 
 export const IdealImage = styled(ItemSmallTop)`
     grid-area: left;
+    @media (max-width: 1024px) {
+      margin-top: 1.5em;
+    }
+    @media (max-width: 768px) {
+      margin-top: 2.5em;
+    }
 `
 
 export const IdealText = styled(ItemSmallBottom)`
     grid-area: right;
+    padding-left: 1.2em;
+    @media (max-width: 1024px) {
+      margin-top: 2em;
+    }
+    @media (max-width: 768px) {
+      margin-top: 3em;
+    }
 `
 
 

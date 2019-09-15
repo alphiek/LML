@@ -10,7 +10,7 @@ const PaginationWrapper = styled(Flex)`
 const Pagination = ({ pagination, updateSlideHandler, updateStyle, currentSlide }) => {
 
     let numbers = pagination.map((number, index) => 
-        <button key={index} style={updateStyle(number, currentSlide)} onClick={() => updateSlideHandler(number)}>
+        <button key={index} style={updateStyle(Number(number), currentSlide)} onClick={() => updateSlideHandler(Number(number))}>
         {number}
         </button>)
 

@@ -23,6 +23,7 @@ const Blob = styled.svg`
 
 const GradBlobContainer = styled.div`
    width: 22vw;
+   height: 100%;
    position: relative;
    @media (max-width: 1024px) {
       width: 35vw;
@@ -34,14 +35,16 @@ const GradBlobContainer = styled.div`
 
 const BlobFlex = styled(Flex)`
   position: relative;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
+  @media (max-width: 1024px) {
+   justify-content: center;
+   align-items: center;
+  }
 `
 
 export const BlobOne = ({ color, children }) => (
-   <BlobFlex>
+   <BlobFlex alignCenter justifyCenter>
       {children}
       <Zoom>
       <Blob
@@ -57,7 +60,7 @@ export const BlobOne = ({ color, children }) => (
 )
 
 export const BlobThree = ({ color, rotate, children }) => (
-   <BlobFlex>
+   <BlobFlex justifyStart alignCenter>
       {children}
       <Zoom>
       <Blob
@@ -75,7 +78,7 @@ export const BlobThree = ({ color, rotate, children }) => (
 
 
 export const GradBlob = ({ children }) => (
-   <BlobFlex>
+   <BlobFlex alignCenter justifyCenter>
       {children}
       <Zoom>
       <GradBlobContainer>
@@ -87,7 +90,7 @@ export const GradBlob = ({ children }) => (
 
 
 export const BlobTwo = ({ children, color }) => (
-   <BlobFlex>
+   <BlobFlex justifyStart alignCenter>
       {children}
       <Zoom>
       <Blob

@@ -14,22 +14,22 @@ import step6 from '../../images/Step6.svg'
 const SlideImages = ({ slide }) => {
     let slideImage;
 
-    if (slide === '1') {
+    if (slide === 1) {
         slideImage =
             <ImageWrapper><ImgBlock src={step1} /></ImageWrapper>
-    } else if (slide === '2') {
+    } else if (slide === 2) {
         slideImage =
             <ImageWrapper><ImgBlock src={step2}/></ImageWrapper>
-    } else if (slide === '3') {
+    } else if (slide === 3) {
         slideImage =
         <ImageWrapper><ImgBlock src={step3}/></ImageWrapper>
-    } else if (slide === '4') {
+    } else if (slide === 4) {
         slideImage =
         <ImageWrapper><ImgBlock src={step4}/></ImageWrapper>
-    } else if (slide === '5') {
+    } else if (slide === 5) {
         slideImage =
         <ImageWrapper><ImgBlock src={step5}/></ImageWrapper>
-    } else if (slide === '6') {
+    } else if (slide === 6) {
         slideImage =
         <ImageWrapper><ImgBlock src={step6}/></ImageWrapper>
     } else {
