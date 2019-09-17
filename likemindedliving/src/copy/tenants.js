@@ -70,10 +70,10 @@ export const tenants = {
     },
     sectionThree: {
         h2: `The algorithm behind our tool`,
-        p1: `Our algorithm searches across all of the UK’s major property listing sites, and takes detail s into account such as tube station, room price per housemate, and living room status. We use these metrics to help you find the highest quality properties at the best possible price.`,
-        p2: `We regularly survey the market and calculate average prices for advertised properties. Use this quiz to check if you are paying too much for your property.`,
+        p1: `We found from our trading experience that, sharers usually tend to pay more to rent a property than their market counterparts due to the difficulty of looking for a suitable flat share property. Typically, in London, 86% of postcodes take up more than a third of a professional’s take-home pay. `,
+        p2: `Alarmingly, this was due to sharers not fully utilising all rental options that would be available to them in the market. To challenge this, we built technology that searches across the market, literally through every street, to make sure renters find the best deal. Our results so far have been exciting and now we’re on a mission to help renters everywhere find the best properties at less than a third of your take-home salary.`,
         fact: {
-            one: `We search over 1000s major listing to bring what you want`,
+            one: `We search over 1000s of major listing to find a property that fits`,
             two: `Customers save on average £1,500 per year when using our tool`,
         },
         color: `${colors.textPrimary}`,
@@ -111,17 +111,14 @@ export const tenants = {
         p1: `Read how our happy housemates found their perfect solution to renting in London.`,
         testimonial: {
             one: {
-                id: 4569,
-                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac fringilla erat. Suspendisse hendrerit ex sed tincidunt blandit. Quisque nec sagittis massa, sit amet luctus enim.`,
-                name: `Name`,
-                job: `Job title`,
+                text: `Like Minded Living are worth trying out even if you have had reasonable success with other agents. I did this and found the service I have received from Like Minded Living to be very good. It started when Denzel , (Director) , visited my property and gave an appraisal and ever since then I have not looked back. In fact I have increased my portfolio with them and would suggest anyone having issues with their agents to use Like Minded Living. Even if you haven’t got a problem with your agent but want to try something different then again contact Denzel at Like Minded Living and you will not be disappointed. From being in regular contact regarding the property to paying rent on time , I have found the management team to be extremely efficient. They have dealt with any issues relating to my property quickly and with a minimum of fuss. I’m looking forward to continue with the business relationship and would recommend Like Minded Living to everyone whether you are a Tenant or a Landlord`,
+                name: `Tyrone`,
                 divider: `${colors.lilac}`
             },
             two: {
                 id: 6589,
-                text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac fringilla erat. Suspendisse hendrerit ex sed tincidunt blandit. Quisque nec sagittis massa, sit amet luctus enim.`,
-                name: `Name`,
-                job: `Job Title`,
+                text: `Haven't had a drama with our room rental in Putney! Have heard some horror stories with some agencys in London and from my experience with Menzi and Like minded living would recommend this as a good option!`,
+                name: `Aaron`,
                 divider: `${colors.lilac}`
             },
         },

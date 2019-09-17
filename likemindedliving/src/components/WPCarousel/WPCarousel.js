@@ -12,8 +12,9 @@ import BlogContent from './Blogs/BlogContent'
 
 export const CardContainer = styled.div`
    border-radius: 0.5em;
-   width: 8.5em;
+   width: 12em;
    height: 100%;
+   position: relative;
    overflow: hidden;
    margin: 0.2em;
    transition: all .2s ease-in-out;
@@ -75,13 +76,13 @@ const HorizontalScroll = styled.ul`
   -webkit-overflow-scrolling: touch;
   display: grid;
   cursor: pointer;
-  grid-gap: 0em;
+  grid-gap: 0.2em;
   grid-template-columns: 30em repeat(7, 9.5em);
   grid-template-rows: minmax(8em, 1fr);
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x proximity;
-  padding-bottom: 0.5em;
+  padding: 1% 0 0.5em 0;;
   white-space: nowrap;
   &::-webkit-scrollbar {
     display: none;

@@ -45,18 +45,14 @@ const Span = styled.span`
 `
 
 export const TextSection = ({ copy, children }) => {
-
     let h2;
     let h3;
-    let p2;
 
     if (copy.h2) {
         h2 = <H2 color={copy.color}>{copy.h2}</H2>
     } else if (copy.h3) {
         h3 = <H3>{copy.h3}</H3>
-    } else if (copy.p2) {
-        p2 = <Body>{copy.p2}</Body>
-    }
+    } 
 
     return (
         <TextContainer column justifyCenter contentCenter>
@@ -66,7 +62,9 @@ export const TextSection = ({ copy, children }) => {
                 copy.divider && <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
             }
             <Body color={copy.color}>{copy.p1}</Body>
-            {p2}
+            {
+                copy.p2 && <Body color={copy.color}>{copy.p2}</Body>
+            }
             {children}
         </TextContainer>
     )

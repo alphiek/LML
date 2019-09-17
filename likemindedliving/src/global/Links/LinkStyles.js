@@ -7,7 +7,7 @@ export const ButtonWrapper = styled.div`
   background: ${props => props.bgColor};
   width: 100%;
   line-height: 130%;
-  padding: 0.5em;
+  padding: 0.5em 0.5em 0.8em;
   font-size: 0.9em;
   font-weight: 700;
   border-radius: 0.35em;

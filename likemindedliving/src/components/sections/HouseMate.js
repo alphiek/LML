@@ -36,7 +36,7 @@ const HouseMate = ({ copy }) => {
                     </FadeIn>
                     <FadeIn>
                         <SignUpFormWrapper>
-                            <PageLink color='white' link={data.link} />
+                            <PageLink link={data.link} />
                         </SignUpFormWrapper>
                     </FadeIn>
                 </TextSectionEnd >

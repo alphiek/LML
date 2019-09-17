@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { ShortDivider } from '../Dividers/Dividers'
-import { colors } from '../../global/colors'
-import Hover from '../../global/Links/Hover'
+import { ShortDivider } from '../../Dividers/Dividers'
+import { colors } from '../../../global/colors'
 
 export const CardContainer = styled.div`
    border-radius: 0.5em;
-   width: 8.5em;
+   width: 12em;
    height: 100%;
+   position: relative;
    overflow: hidden;
    margin: 0.2em;
    transition: all .2s ease-in-out;
@@ -36,7 +36,6 @@ export const CardContainer = styled.div`
 `
 
 const CardLink = styled.a`
-  padding-top: 3em;
   font-size: 0.45em;
   width: auto;
   @media (max-width: 1024px) {
@@ -53,7 +52,7 @@ const CardLink = styled.a`
 const CardBody = styled.p`
    margin-top: 0;
    width: 80%;
-   margin-bottom: 0.3em;
+   margin-bottom: 2em;
    font-size: 0.48em;
    font-family: Montserrat, Arial, Helvetica, sans-serif;
    letter-spacing: 0.2px;
@@ -69,8 +68,15 @@ const CardBody = styled.p`
 `
 const CardImageWrapper = styled.div`
    height: 5em;
+   width: 100%;
+   overflow: hidden;
    background: #4B4A68;
    border-radius: 0.5em 0.5em 0 0;
+`
+
+const Image = styled.img`
+   width: 100%;
+   opacity: 0.8;
 `
 
 const CardTextContainer = styled.div`
@@ -86,21 +92,36 @@ const CardTextContainer = styled.div`
    }
 `
 
+const AbsLink = styled.div`
+   position: absolute;
+   bottom: 4%;
+`
+
 const BlogCard = ({ data }) => {
+
+    let imageData = data.featuredImage;
+    let imageUrl;
+
+    for (let item in imageData ) {
+      if (item === 'sourceUrl') {
+        imageUrl = imageData[item]
+      } 
+    }
+
+    
+
 
     return (
         <CardContainer>
-            <CardImageWrapper>This is the image</CardImageWrapper>
+            <CardImageWrapper><Image src={imageUrl} /></CardImageWrapper>
             <CardTextContainer>
                 <h4>{data.title}</h4>
                 <ShortDivider color={colors.lilac} width='2em' />
                 <CardBody>{data.excerpt.substring(0, 90)}...</CardBody>
-                <div style={{ marginTop: '10%' }}>
-                    <Hover color={colors.lightPeach} margin='20%'>
+                <AbsLink>
                         <CardLink href='https://www.likemindedliving.co.uk/blogs/${data.slug)'
                             target='_blank' rel='noopener noreferrer'>Read More</CardLink>
-                    </Hover>
-                </div>
+                </AbsLink>
             </CardTextContainer>
         </CardContainer>
     )

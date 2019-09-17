@@ -31,7 +31,7 @@ const PropertySearch = ({ copy }) => {
                 <TextSection copy={data}>
                 <FadeIn>
                     <SignUpFormWrapper>
-                        <PageLink color='blue' link={data.link} />
+                        <PageLink link={data.link} />
                     </SignUpFormWrapper>
                 </FadeIn>
                 </TextSection >

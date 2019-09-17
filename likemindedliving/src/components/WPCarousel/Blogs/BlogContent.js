@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { useBlogData } from '../../../hooks/useBlogData'
-import BlogCard from '../BlogCard'
+import BlogCard from './BlogCard'
 
 const GridItem = styled.li`
     scroll-snap-align: center;

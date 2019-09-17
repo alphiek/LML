@@ -11,7 +11,6 @@ const HorizontalScroll = styled.ul`
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x proximity;
-  padding-bottom: 0.5em;
   white-space: nowrap;
   &::-webkit-scrollbar {
     display: none;
@@ -37,11 +36,11 @@ const ContainerGrid = styled.div`
 
 export const GridItem = styled.li`
     scroll-snap-align: center;
-    padding: 3em;
+    padding: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
+    color: white;
     font-size: 0.5em;
     will-change: scroll-position;
 `

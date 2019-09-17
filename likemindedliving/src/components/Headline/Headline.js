@@ -26,6 +26,21 @@ const TextCenter = styled(Flex)`
 
 
 const Headline = ({ copy }) => {
+
+  
+const realNumberArray = [4, 5.6, -9.8, 7.14, 42, 6, 8.34, -2];
+
+const squareList = (arr => {
+    const squaredIntegers = arr.filter(item => Number.isInteger(item) && item >= 0).map(item => item * item)
+    return squaredIntegers
+  }
+)
+
+const squaredIntegers = squareList(realNumberArray)
+console.log(squaredIntegers)
+
+
+
   return (
     <Flex justifyCenter alignCenter>
        <TextCenter justifyCenter alignCenter>
@@ -35,6 +50,7 @@ const Headline = ({ copy }) => {
           <p className={copy.class}>{copy.p1}</p>
         </FadeIn>
       </TextCenter>
+
     </Flex>     
   )
 }

@@ -140,8 +140,6 @@ const TestimonialCard = ({ copy }) => {
                     <ShortDivider color={data.divider} width='2.5em' />
                     <Body weight={600}>
                         {data.name}
-                        <br />
-                        {data.job}
                     </Body>
                 </TextWrapper>
             </Card>
