@@ -14,10 +14,10 @@ const TenantGrid = styled.div`
    'process' 
    'sectionTwo'
    'sectionThree'
+   'pressReel'  
    'sectionFour'
    'properties'
    'testimonials'
-   'pressReel'  
    'blogs';   
 `
 
