@@ -23,10 +23,10 @@ const GridItem = styled.li`
     &: first-child {
       margin-left: 20.5em;
       @media (max-width: 1024px) {
-        margin-left: 12.5em;
+        margin-left: 8.55em;
       }
       @media (max-width: 768px) {
-        margin-left: 8.5em;
+        margin-left: 5.5em;
       }
       @media (max-width: 480px) {
         margin-left: 4.5em;

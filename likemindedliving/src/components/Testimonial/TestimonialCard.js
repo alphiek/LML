@@ -59,6 +59,7 @@ const ScrollContainer = styled.div`
 `
 
 const FadeOut = styled.div`
+   display: none;
    position: absolute; 
    height: 1.8em;
    width: 100%;

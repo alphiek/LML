@@ -48,6 +48,10 @@ const Span = styled.span`
         margin: 0 auto;
 
     }
+    @media (max-width: 480px)
+    {
+        width: 80%;
+    }
 `
 
 export const TextSection = ({ copy, children }) => {

@@ -68,6 +68,14 @@ const Heading = styled(Flex)`
   }
   `
 
+const DividerWrapper = styled.div`
+  @media (max-width: 1024px)
+  {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.3em;
+  }
+  `
 
 const Testimonial = ({ copy }) => {
   let data = copy[1]
@@ -81,9 +89,11 @@ const Testimonial = ({ copy }) => {
         <Heading contentCentre justifyStart>
           <FadeIn>
             <H2Testimonial color={data.color}>{data.h2}</H2Testimonial>
-            <ShortDivider bottom='0' top='0' color={data.divider} width='3.5em' />       
-            </FadeIn>
-            <Body color={data.color}>{data.p1}</Body>
+            <DividerWrapper>
+              <ShortDivider bottom='0' top='0' color={data.divider} width='3.5em' />
+            </DividerWrapper>
+          </FadeIn>
+          <Body color={data.color}>{data.p1}</Body>
         </Heading>
       </Background>
       {cards}

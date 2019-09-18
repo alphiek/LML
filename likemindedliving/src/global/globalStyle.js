@@ -237,7 +237,7 @@ h4 {
   font-weight: 700;
   text-rendering: optimizeLegibility;
   font-size: 0.5em;
-  line-height: 1.1;
+  line-height: 130%;
   @media (max-width: 1024px) {
     font-size: 0.55em;
   }
