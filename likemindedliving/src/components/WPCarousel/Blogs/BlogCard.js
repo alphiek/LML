@@ -1,25 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-
 import { ShortDivider } from '../../Dividers/Dividers'
 import { colors } from '../../../global/colors'
 
 export const CardContainer = styled.div`
    border-radius: 0.5em;
    width: 12em;
-   height: 100%;
+   height: 13em;
    position: relative;
    overflow: hidden;
    margin: 0.2em;
    transition: all .2s ease-in-out;
    box-shadow: 0 10px 18px -3px rgba(75, 74, 104, 0.25), 0 4px 6px -2px rgba(75, 74, 104, 0.05);
-   &::-webkit-scrollbar {
-    display: none;
-    width: 0;
-    height: 0;
-    -webkit-appearance: none;
-   }
-    scrollbar-width: none;
    :hover {
     box-shadow: 0 25px 25px -15px rgba(75, 74, 104, 0.45);
     transform: scale(1.02);
@@ -81,7 +73,7 @@ const Image = styled.img`
 
 const CardTextContainer = styled.div`
    display: grid;
-   padding: 0.75em 0 0 0.75em;
+   padding: 0.75em;
    margin-bottom: 0.5em;
    width: 100%;
    word-wrap: break-word;
@@ -108,7 +100,7 @@ const BlogCard = ({ data }) => {
       } 
     }
 
-    
+    console.log(data.slug);
 
 
     return (
@@ -119,7 +111,8 @@ const BlogCard = ({ data }) => {
                 <ShortDivider color={colors.lilac} width='2em' />
                 <CardBody>{data.excerpt.substring(0, 90)}...</CardBody>
                 <AbsLink>
-                        <CardLink href='https://www.likemindedliving.co.uk/blogs/${data.slug)'
+                        <CardLink 
+                            href={`https://www.likemindedliving.co.uk/blog/${data.slug}`}
                             target='_blank' rel='noopener noreferrer'>Read More</CardLink>
                 </AbsLink>
             </CardTextContainer>

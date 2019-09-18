@@ -24,6 +24,7 @@ const CardBody = styled.p`
    margin-top: 0;
    width: 80%;
    margin-bottom: 0.3em;
+   text-align: left;
    font-size: 0.48em;
    font-family: Montserrat, Arial, Helvetica, sans-serif;
    letter-spacing: 0.2px;
@@ -46,6 +47,7 @@ const CardImageWrapper = styled.div`
 const CardTextContainer = styled.div`
    display: grid;
    padding: 0.75em 0 0 0.75em;
+   text-align: left;
    margin-bottom: 0.5em;
    width: 100%;
    word-wrap: break-word;

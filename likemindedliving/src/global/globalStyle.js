@@ -106,6 +106,7 @@ address {
   font-style: normal;
   @media (max-width: 1024px) {
     font-size: 0.55em;
+    text-align: center;
   }
   @media (max-width: 768px) {
     font-size: 0.6em;
@@ -153,6 +154,9 @@ hr {
   border: none;
   background-color: #252454;
   opacity: 0.7;
+  @media (max-width: 1024px) {
+    margin: 2em auto 2em auto;
+  }
 }
 
 h1 {

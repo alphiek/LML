@@ -9,22 +9,19 @@ import Img from 'gatsby-image'
 import { FadeIn } from '../animations/FadeIn'
 
 export const TestimonialImageWrapper = styled(Img)`
-  width: 96%;
+  width: 65%;
   @media(max-width: 1024px) {
-    width: 90%;
+    width: 9em;
+    margin: 0 auto;
   }
   @media(max-width: 768px) {
-    width: 52%;
-    margin-left: 0.5em;
-  @media(max-width: 480px) {
-    width: 68%;
-    margin-left: 0;
+    width: 8.8em;
 `
 
 const ScrollContainer = styled.div`
   height: 6.5em;
   position: relative;
-  padding-right: 0.3em;
+  margin-right: 1.5em;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: y proximity;
@@ -51,14 +48,14 @@ const ScrollContainer = styled.div`
   }
    scrollbar-color: #C9D2F5 white;
    @media(max-width: 1024px) {
-       height: 7.5em;
-       padding-right: 0.6em;
+       width: 60%;
+       height: auto;
+       margin: 0 auto;
    }
-   @media(max-width: 768px) {
-    height: 8em;
-    padding-right: 0.6em;
-}
-}
+   @media(max-width: 480px)
+   {
+     width: 80%;
+   }
 `
 
 const FadeOut = styled.div`
@@ -73,41 +70,36 @@ const FadeOut = styled.div`
         rgba(255, 255, 255, 1) 100%
     ); 
     @media(max-width: 1024px) {
-        height: 2.3em;
+        display: none;
       }
 `
 
 const TextWrapper = styled.div`
-  margin: 0 1em;
-  @media(max-width: 768px) {
-    width: 80%;
-    margin-left: 15%;
-    margin-top: 1em;
-  }
-  @media (max-width: 480px) {
-      margin-left:10%;
-      width: 90%;
+  margin-left: 0.5em;
+  @media (max-width: 1024px) {
+    margin-left: 0;
   }
 `
 
 const Card = styled.div`  
-  width: 10.5em;
-  margin-top: 5em;
-  margin-left: 2em;
+  width: 100%;
+  margin-top: -3.5em;
+  padding: 0 2em;
   @media(max-width: 1024px) {
-      width: 13em;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
       margin-top: -1.75em;
   }
-  @media(max-width: 768px) {
-    margin-top: -1em;
-    margin-left: 15%;
-}
-@media(max-width: 480px) {
-    width: 70%;
-    margin-top: -2em;
-}
 `
-
+const TestimonialText = styled.p`
+  margin: 1em 1em 1em 0em;
+  @media (max-width: 1024px)
+  {
+    margin: 1em 0;
+  }
+`
 const TestimonialCard = ({ copy }) => {
     let data = copy[1]
     let number = copy[0]
@@ -132,12 +124,12 @@ const TestimonialCard = ({ copy }) => {
                     <FadeIn>
                         <div style={{ position: 'relative' }}>
                             <ScrollContainer>
-                                <p style={{marginBottom: '2em', marginRight: '0.2em'}}>{data.text}</p>
+                                <TestimonialText>{data.text}</TestimonialText>
                             </ScrollContainer>
                             <FadeOut />
                         </div>
                     </FadeIn>
-                    <ShortDivider color={data.divider} width='2.5em' />
+                    <ShortDivider color={data.divider} top={'1em'} width='2.5em' />
                     <Body weight={600}>
                         {data.name}
                     </Body>

@@ -11,6 +11,7 @@ const HorizontalScroll = styled.ul`
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x proximity;
+  scroll-snap-align: center;
   white-space: nowrap;
   &::-webkit-scrollbar {
     display: none;
@@ -26,7 +27,7 @@ const ContainerGrid = styled.div`
   justify-content: center;
   align-content: center;
   overflow-y: scroll;
-  width: 75%;
+  width: 67%;
   &::-webkit-scrollbar {
     display: none;
   }

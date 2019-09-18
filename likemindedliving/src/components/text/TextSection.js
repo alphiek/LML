@@ -25,23 +25,29 @@ const TextContainerEnd = styled(Flex)`
 `
 
 const FullWidthTextWrapper = styled.div`
-   margin: 5% 15% 4% 15%;
+   margin: 5% 15% 4% 20%;
    @media (max-width: 1024px) {
-    width: 40%;
-    margin: 5% 0 4% 20%; 
+    width: 100%;
+    margin: 5% 0 4% 0%; 
 }
-   @media (max-width: 768px) {
+@media (max-width: 480px) {
     width: 60%;
-    margin: 5% 10% 4% 12%; 
+    margin: 5% auto 4% auto;
 }
 `
 
 const Span = styled.span`
     display: block;
-    margin-top: 0.4em;
+    margin-top: 0em;
+    width: 20em;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 0.9em;
+    @media (max-width: 1024px)
+    {
+        margin: 0 auto;
+
+    }
 `
 
 export const TextSection = ({ copy, children }) => {
@@ -99,12 +105,12 @@ export const TextSectionEnd = ({ copy, children }) => {
     )
 }
 
-export const FullWidthText = ({ copy }) => {
+export const FullWidthText = ({ copy, children }) => {
 
     let h2;
 
     if (copy.h2p2) {
-        h2 = <H2 color={copy.color}>{copy.h2}<br /><Span>{copy.h2p2}</Span></H2>
+        h2 = <H2 color={copy.color}>{copy.h2}<br />{children}<Span>{copy.h2p2}</Span></H2>
     } else {
         h2 = <H2 color={copy.color}>{copy.h2}</H2>
     }

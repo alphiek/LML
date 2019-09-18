@@ -44,6 +44,11 @@ export const LinkWrapperRight = styled.div`
     display: none;
   }
   scrollbar-width: none;
+  @media (max-width: 1024px) {
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 1em;
+  }
 `
 
 export const GatsbyLink = styled(Link)`

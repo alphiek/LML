@@ -8,6 +8,7 @@ import Card from './Card'
 import { propertyData } from './Properties/propertyData'
 import { FadeInRight, FadeIn } from '../animations/FadeIn'
 import BlogContent from './Blogs/BlogContent'
+import { ShortDivider } from '../Dividers/Dividers'
 
 
 export const CardContainer = styled.div`
@@ -61,10 +62,10 @@ const GridItem = styled.li`
     &: first-child {
       margin-left: 20.5em;
       @media (max-width: 1024px) {
-        margin-left: 12.5em;
+        margin-left: 8.55em;
       }
       @media (max-width: 768px) {
-        margin-left: 8.5em;
+        margin-left: 5.5em;
       }
       @media (max-width: 480px) {
         margin-left: 4.5em;
@@ -82,7 +83,7 @@ const HorizontalScroll = styled.ul`
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x proximity;
-  padding: 1% 0 0.5em 0;;
+  padding: 1% 0 0.5em 0;
   white-space: nowrap;
   &::-webkit-scrollbar {
     display: none;
@@ -92,10 +93,10 @@ const HorizontalScroll = styled.ul`
   }
   scrollbar-width: none;
   @media (max-width: 1024px) {
-    grid-template-columns: 22em repeat(7, 9.5em);
+    grid-template-columns: 18em repeat(7, 9.5em);
   }
   @media (max-width: 768px) {
-    grid-template-columns: 18em repeat(7, 9.5em);
+    grid-template-columns: 15em repeat(7, 9.5em);
   }
   @media (max-width: 480px) {
     grid-template-columns: 14em repeat(7, 9.5em);
@@ -121,7 +122,7 @@ const ContainerGrid = styled.div`
   }
   scrollbar-width: none;
   @media (max-width: 1024px) {
-    margin-top: 1.5em;
+    margin-top: 1em;
   }
 `
 
@@ -152,7 +153,12 @@ const WPCarousel = ({ copy }) => {
 
   return (
     <>
-      <FullWidthText copy={copy[1]} />
+      <FullWidthText copy={copy[1]}>
+      {
+         copy[1].divider && <ShortDivider bottom='0' top='0.5em' color={copy[1].divider} width='3.5em' />
+         
+      }
+      </ FullWidthText>
       <Flex justifyEnd alignCenter>
         <ContainerGrid>
           <FadeInRight duration={1800}>

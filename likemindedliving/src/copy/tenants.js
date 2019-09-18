@@ -124,6 +124,7 @@ export const tenants = {
         },
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
+        divider: `${colors.white}`,
     },
     pressReel: {
         articles: {
@@ -169,7 +170,8 @@ export const tenants = {
             url: `https://likemindedliving.co.uk/blog/`
         },
         color: `${colors.textPrimary}`,
-        bgColor: `${colors.white}`
+        bgColor: `${colors.white}`,
+        divider: `${colors.mint}`,
     }
 
 }

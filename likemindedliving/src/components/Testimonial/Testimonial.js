@@ -5,24 +5,23 @@ import { Body } from '../text/Text'
 import { colors } from '../../global/colors'
 import TestimonialCard from './TestimonialCard'
 import { FadeIn } from '../animations/FadeIn'
+import { ShortDivider } from '../Dividers/Dividers'
 
 const H2Testimonial = styled.h2`
   margin-bottom: 0.5em;
+  @meda (max-width: 1024px) 
+  {
+    width: 100%;
+  }
 `
 
 export const CardWrapper = styled(Flex)`
   grid-column: 2;
-  grid-row: 1 / span 2;
+  grid-row: 2 / span 2;
   @media(max-width: 1024px) {
     grid-column: 1;
     grid-row: 2;
-    margin-left: 4em;
-  }
-  @media(max-width: 768px) {
-    grid-column: 1;
-  }
-  @media (max-width: 480px) {
-    margin-left: 0
+    justify-content: center;
   }
 `
 
@@ -30,23 +29,17 @@ const TestimonialGrid = styled.div`
   display: grid;
   margin-left: 5%; 
   margin-bottom: 5%;
-  grid-template-columns: 35% 22% 22% 1fr;
+  grid-template-columns: 38% 25% 25% 1fr;
   grid-template-rows: repeat(2, auto);
   & ${CardWrapper}: nth-child(2) {
     grid-column: 3;
     @media(max-width: 1024px) {
-      grid-column: 2;
-      margin-left: -1em;
-    }
-    @media(max-width: 768px) {
       display: none;
     }
   }
   @media(max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media(max-width: 768px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
+    margin: 0;
   }
 `
 const Background = styled.div`
@@ -54,18 +47,18 @@ const Background = styled.div`
   grid-row: 1;
   background-color: ${colors.lightPeach};
   @media(max-width: 1024px) {
-    grid-column: 1 / 3;
-  }
-  @media(max-width: 768px) {
     grid-column: 1;
   }
 `
 const Heading = styled(Flex)`
-  margin: 3em 0 2em 10.5%;
+  margin: 3em 0 2em 16%;
   text-align: left;
   width: 18%;
   @media(max-width: 1024px) {
-    width: 30%;
+    width: 80%;
+    margin 3em auto 2em auto;
+    justify-content: center;
+    flex-direction: column;
   }
   @media(max-width: 768px) {
     width: 60%;
@@ -74,6 +67,7 @@ const Heading = styled(Flex)`
     width: 70%;
   }
   `
+
 
 const Testimonial = ({ copy }) => {
   let data = copy[1]
@@ -84,9 +78,10 @@ const Testimonial = ({ copy }) => {
   return (
     <TestimonialGrid>
       <Background>
-        <Heading contentCentre justifyEnd>
+        <Heading contentCentre justifyStart>
           <FadeIn>
             <H2Testimonial color={data.color}>{data.h2}</H2Testimonial>
+            <ShortDivider bottom='0' top='0' color={data.divider} width='3.5em' />       
             </FadeIn>
             <Body color={data.color}>{data.p1}</Body>
         </Heading>

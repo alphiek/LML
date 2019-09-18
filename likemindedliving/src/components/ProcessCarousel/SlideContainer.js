@@ -20,12 +20,17 @@ const ContentCell = styled(Flex)`
   width: 100%;
   position: relative;
   background: white;
-@media (max-width: 1024px) {
+@media (max-width: 1024px) 
+{
  justify-content: center;
   grid-column: 1;
   grid-row: 2;
   margin-top: 0;
-}`
+};
+@media (max-width: 480px)
+{
+ padding 1.5em;
+};`
 
 const Container = styled.div`
   width: 65%;

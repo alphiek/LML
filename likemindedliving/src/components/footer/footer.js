@@ -9,6 +9,11 @@ const AddressTitle = styled.p`
   font-weight: 700;
   font-size: 1.2em;
   padding-bottom: 2em;
+  @media (max-width: 1024px)
+  {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
 `
 const AddressLink = styled.a`
   font-family: Montserrat, Arial, Helvetica, sans-serif;
