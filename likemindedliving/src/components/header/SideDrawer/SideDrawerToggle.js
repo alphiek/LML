@@ -1,10 +1,10 @@
 import React from 'react'
-import BurgerIcon from '../../../images/BurgerIcon'
+import BurgerIcon from './BurgerIcon'
 import styled from 'styled-components'
 
 const SideDrawerButton = styled.button`
    display: flex;
-   @media(min-width: 1023px) {
+   @media(min-width: 1025px) {
     display: none;
  }
 `

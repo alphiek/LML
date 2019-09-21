@@ -1,11 +1,13 @@
 import React from 'react'
-import LinkList from '../../../global/Links/LinkList'
 import { Spring, animated as a } from 'react-spring/renderprops'
 import styled from 'styled-components'
+
 import { colors } from '../../../global/colors'
+import NavLinks from '../Links/NavLinks/NavLinks'
 
 const SideDrawerContainer = styled(a.nav)`
-  height: 100%;
+  height: 100vh;
+  max-height: 100vh;
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
   position: fixed;
   background: ${colors.mint};
@@ -14,33 +16,27 @@ const SideDrawerContainer = styled(a.nav)`
   width: 70%;
   max-width: 400px;
   display: block;
-  padding: 0;
   z-index: 200;
-  @media(min-width: 1023px) {
+  @media(min-width: 1025px) {
      display: none;
+  }
+  @media(max-width: 480px) {
+      width: 80%;
   }
 `
 
 const SideDrawerListWrapper = styled.ul`
-  height: 100%;
+  height: 100vh;
   flex-direction: column;
   align-items: flex-end;
   text-align: left;
-  margin: 2em 1em;
-  @media (max-width: 768px) {
-      margin: 0 1em;
-      justify-content: center;
-  }
-  @media (max-width: 480px) {
-    margin: 3em 1em;
-    justify-content: flex-start;
-  }
+  margin: 2rem 1rem;
 `
 
 const sideDrawer = ({ show, items }) => {
 
     let data = items.map(e =>
-        <LinkList key={e.name} link={e} />
+        <NavLinks key={e.name} link={e} />
     )
 
     return (

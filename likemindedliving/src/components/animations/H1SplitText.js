@@ -18,7 +18,7 @@ const H1SplitText = ({ h1, color }) => {
       };
 
     return (
-      <H1 color={color}>
+      <H1 style={{marginTop: '0'}} color={color}>
           <SplitText 
             initialPose="exit" 
             pose="enter" 

@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 const LogoIcon = styled.svg`
   fill: #fff;
-  width: 4em;
+  height: auto;
+  width: 3.5rem;
 `
 
 const Logo = () => {

@@ -3,38 +3,23 @@ export const GlobalStyle = createGlobalStyle`
 
 
 html {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
   height: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  font-size: calc(12px + 0.8vw);
-  box-sizing: border-box;
-  line-height: 130%;
+  font-size: 16px;
   background-color: #fff;
-  @media (max-width: 1024px) {
-    font-size: calc(12px + 1.2vw);
-    }
-  @media (max-width: 480px) {
-  font-size: calc(12px + 2.2vw);
-}
+  width: 100%;
 }
 
 
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 140%;
   font-weight: normal;
+  text-rendering: optimizeLegibility;
   color: #4B4A68;
-  height: 100%;
   word-wrap: normal;
   font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
+
   @media (max-width: 1024px) {
     text-align: center;
   }
@@ -68,7 +53,6 @@ header {
   background: -moz-linear-gradient(254deg, rgba(201,210,245,1) 0%, rgba(190,225,236,1) 51%, rgba(180,236,228,1) 100%);
   background: -webkit-linear-gradient(254deg, rgba(201,210,245,1) 0%, rgba(190,225,236,1) 51%, rgba(180,236,228,1) 100%);
   background: linear-gradient(254deg, rgba(201,210,245,1) 0%, rgba(190,225,236,1) 51%, rgba(180,236,228,1) 100%);
-  height: 75px;
   top: 0;
   left: 0;
   z-index: 50;
@@ -78,12 +62,14 @@ main {
   padding-Top: 2.7em;
 }
 
-
 nav {
+  position: relative;
   display: flex;
+  font-size: 0.9rem;
   align-items: center;
   height: 100%;
-  padding: 0 1em;
+  padding: 1rem;
+  max-height: 90px;
 }
 
 footer {
@@ -98,36 +84,89 @@ footer {
 
 address {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
   font-weight: 400;
   text-align: left;
-  font-size: 0.5em;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  font-style: normal;
-  @media (max-width: 1024px) {
-    font-size: 0.55em;
-    text-align: center;
-  }
-  @media (max-width: 768px) {
-    font-size: 0.6em;
-  }
+}
+
+
+h1 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.953rem;
+  line-height: 130%;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 7%;
+  margin-bottom: 0.4em;
+
   @media (max-width: 480px) {
-    font-size: 0.65em;
+    padding-top: 10%;
   }
 }
 
+.title-sub-text {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.8em;
+  width: 70%;
+
+  @media (max-width: 480px) {
+  width: 80%;
+  }
+}
+
+.landlord {
+  color: #FFF;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  @media (max-width: 1024px) {
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+  @media (max-width: 1024px) {
+    text-align: center;
+  }
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  word-wrap: normal;
+  margin-bottom: 1em;
+
+  @media(max-width: 1024px) {
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+}
+
+
 a {
+  font-size: 0.9rem;
+  font-weight: 600;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-weight: 600;
   color: #1E1D42;
-  font-size: 0.55em;
-  line-height: 130%;
-  @media (max-width: 1024px) {
-    font-size: 0.6em;
-    }
 }
 
 a:active,
@@ -159,96 +198,6 @@ hr {
   }
 }
 
-h1 {
-  font-size: 1.4em;
-  padding-top: 7%;
-  margin-bottom: 0.4em;
-  text-align: center;
-  font-weight: 700;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  text-rendering: optimizeLegibility;
-  line-height: 130%;
-  @media (max-width: 1024px) {
-    font-size: 1.1em;
-    }
-  @media (max-width: 768px) {
-    font-size: 1.1em;
-  }
-  @media (max-width: 480px) {
-    font-size: 1em;
-    padding-top: 10%;
-    line-height: 140%;
-  }
-}
-
-.title-sub-text {
-  font-size: 0.65em;
-  text-align: center;
-  margin-top: 0.8em;
-  text-align: center;
-  line-height: 140%;
-  width: 70%;
-
-  @media (max-width: 768px) {
-  font-size: 0.7em;
-  }
-  @media (max-width: 480px) {
-  font-size: 0.75em;
-  width: 80%;
-  line-height: 160%;
-  }
-}
-
-.landlord {
-  color: #FFF;
-  margin-bottom: 5%;
-}
-
-h2 {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  text-rendering: optimizeLegibility;
-  font-size: 0.78em;
-  line-height: 130%;
-  @media (max-width: 1024px) {
-    text-align: center;
-    font-weight: 700;
-  }
-  @media (max-width: 768px) {
-    font-size: 0.81em;
-    letter-spacing: 0.2px;
-  }
-}
-
-h3 {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  text-rendering: optimizeLegibility;
-  font-size: 0.7em;
-  padding-bottom: 1em;
-  line-height: 1.1;
-  @media (max-width: 1024px) {
-    text-align: center;
-  }
-}
-
-h4 {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  text-rendering: optimizeLegibility;
-  font-size: 0.5em;
-  line-height: 130%;
-  @media (max-width: 1024px) {
-    font-size: 0.55em;
-  }
-  @media (max-width: 768px) {
-    font-size: 0.6em;
-  }
-  @media (max-width: 480px) {
-    font-size: 0.65em;
-  }
-}
-
 ul {
   list-style: none;
   list-style-image: none;
@@ -260,36 +209,14 @@ li {
   z-index: 2;
 }
 
-p {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-  font-size: 0.55em;
-  line-height: 140%;
-  word-wrap: normal;
-  margin-bottom: 1em;
-  @media(max-width: 1024px) {
-    text-align: center;
-    margin-bottom: 1.5em;
-  }
-  @media (max-width: 991px) {
-    font-size: 0.6em;
-    line-height: 145%;
-    }
-    @media (max-width: 767px) {
-    font-size: 0.65em;
-    }
-    @media (max-width: 479px) {
-    font-size: 0.7em;
-  }
-}
+
 
 button {
+  font-size: inherit;
   display: inline-block;
   border: none;
   text-decoration: none;
   background: transparent;
-  font-size: inherit;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;

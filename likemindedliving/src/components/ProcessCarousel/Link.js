@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { FadeIn } from '../animations/FadeIn'
 import Flex from '../containers/Flex'
-import Hover from '../../global/Links/Hover'
 import { LinkStyle } from '../../global/Links/LinkStyles'
 
 
@@ -21,7 +20,6 @@ export const LinkWrapper = styled(Flex)`
 const Link = ({ link }) => {
     return (
         <FadeIn>
-            <Hover>
                 <LinkWrapper justifycenter alignCenter
                   bgColor={link.bgColor}>
                     <LinkStyle
@@ -34,7 +32,6 @@ const Link = ({ link }) => {
                         {link.name}
                     </LinkStyle>
                 </LinkWrapper>
-            </Hover>
         </FadeIn>
     )
 }

@@ -6,6 +6,7 @@ import { FadeIn } from '../animations/FadeIn'
 import { LandingDivider } from '../Dividers/Dividers'
 
 
+
 const TextCenter = styled(Flex)`
   width: 50%;
     @media (max-width: 1460px) {

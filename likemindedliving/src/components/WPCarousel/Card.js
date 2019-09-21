@@ -3,7 +3,6 @@ import { ShortDivider } from '../Dividers/Dividers'
 import { colors } from '../../global/colors'
 import styled from 'styled-components'
 import { CardContainer } from './WPCarousel'
-import Hover from '../../global/Links/Hover'
 
 const CardLink = styled.a`
   padding-top: 3em;
@@ -81,10 +80,8 @@ const Card = ({ data }) => {
                 {divider}
                 {content}
                 <div style={{ marginTop: '10%' }}>
-                    <Hover color={colors.lightPeach} margin='20%'>
                         <CardLink href='https://www.rkkcreative.xyz'
                             target='_blank' rel='noopener noreferrer'>{copy.link}</CardLink>
-                    </Hover>
                 </div>
             </CardTextContainer>
         </CardContainer>

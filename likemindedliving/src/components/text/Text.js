@@ -29,7 +29,7 @@ const FactFloat = styled(FactP)`
 
 export const H2 = ({ children, color }) => {
   return (
-    <FadeIn>
+    <FadeIn delay={0}>
       <h2 style={{ color: `${color}` }}>{children}</h2>
     </FadeIn>
   )
@@ -37,7 +37,7 @@ export const H2 = ({ children, color }) => {
 
 export const H3 = ({ children, color }) => {
   return (
-    <FadeIn>
+    <FadeIn delay={0}>
       <h3 style={{ color: `${color}` }}>{children}</h3>
     </FadeIn>
   )

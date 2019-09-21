@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `http://rkkcollective.com`,
     title: `Like-Minded Living`,
     description: `Specialists for rooms for rent and flatshare in London`,
     address: {
@@ -9,7 +10,7 @@ module.exports = {
       city: `London`,
       postal: `SW6 3JA`,
       tel: `+44 207 859 4781`,
-      email: `property@likemindedliving.co.uk`
+      email: `property@likemindedliving.co.uk`      
     },
     social: {
       fb: `https://www.facebook.com/likemindedliving/`,
@@ -39,6 +40,13 @@ module.exports = {
       options: {
         name: `pdf`,
         path: `${__dirname}/src/pdf`,
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'http://www.rkkcollective.com',
+        policy: [{ userAgent: '*', disallow: '/' }]
       }
     },
     `gatsby-plugin-styled-components`,
