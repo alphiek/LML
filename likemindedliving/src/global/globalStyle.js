@@ -59,7 +59,9 @@ header {
 }
 
 main {
-  padding-Top: 2.7em;
+  padding-top: 75px;
+  width: 100%;
+  overflow: hidden;
 }
 
 nav {
@@ -68,8 +70,9 @@ nav {
   font-size: 0.9rem;
   align-items: center;
   height: 100%;
-  padding: 1rem;
-  max-height: 90px;
+  width: 100%;
+  padding: 1.5rem;
+  max-height: 100px;
 }
 
 footer {
@@ -84,7 +87,7 @@ footer {
 
 address {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-style: normal;
   font-weight: 400;
   text-align: left;
@@ -108,7 +111,7 @@ h1 {
 .title-sub-text {
   font-size: 1rem;
   text-align: center;
-  margin-top: 0.8em;
+  margin-top: 0.8rem;
   width: 70%;
 
   @media (max-width: 480px) {
@@ -141,21 +144,21 @@ h3 {
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  text-rendering: optimizeLegibility;
+  line-height: 130%;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: 135%;
   font-weight: normal;
-  text-rendering: optimizeLegibility;
   word-wrap: normal;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 
   @media(max-width: 1024px) {
     text-align: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -186,15 +189,15 @@ hr {
   margin-left: 0;
   margin-right: auto;
   height: 2px;
-  width: 10em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  width: 10rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   overflow: visible;
   border: none;
   background-color: #252454;
   opacity: 0.7;
   @media (max-width: 1024px) {
-    margin: 2em auto 2em auto;
+    margin: 2rem auto 2rem auto;
   }
 }
 

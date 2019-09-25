@@ -1,14 +1,39 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { HouseMateImage, HouseMateText } from '../Grids/SectionSubGrid'
 import HousemateMatching from '../../Illustrations/HousemateMatching'
 import { FadeIn } from '../animations/FadeIn'
 import { TextSectionEnd } from '../text/TextSection'
 import { FactRight } from '../text/Text'
 import PageLink from '../../global/Links/PageLink'
 
+const HousemateSection = styled.section`
+ width: 100%;
+ display: flex;
+ background-color: ${props => props.bgColor};
+ flex-direction: row;
+ flex-wrap: nowrap;
+ justify-content: center;
+ align-items: center;
+ padding: 1.5rem 0;
+ @media (max-width: 1024px) {
+     flex-direction: column;
+ }
+`
 
+const HouseMateImage = styled.div`
+  width: 33.3%;
+  @media (max-width: 1024px) {
+    width: 60%;
+}
+`
+
+const HouseMateText = styled.div`
+  width: 33.3%;
+  @media (max-width: 1024px) {
+    width: 60%;
+}
+`
 
 const SignUpFormWrapper = styled.div`
   width: 12em;
@@ -22,26 +47,25 @@ const SignUpFormWrapper = styled.div`
 `
 
 const HouseMate = ({ copy }) => {
-    let data = copy[1]
 
     return (
-        <>
+        <HousemateSection bgColor={copy.bgColor}>
             <HouseMateImage justifyCenter>
-                <HousemateMatching color={data.blob} rotate={data.rotate} />
+                <HousemateMatching color={copy.blob} rotate={copy.rotate} />
             </HouseMateImage>
             <HouseMateText contentCenter alignEnd column>
-                <TextSectionEnd copy={data}>
+                <TextSectionEnd copy={copy}>
                     <FadeIn>
-                    <FactRight color={data.factColor}>{data.fact}</FactRight>
+                    <FactRight color={copy.factColor}>{copy.fact}</FactRight>
                     </FadeIn>
                     <FadeIn>
                         <SignUpFormWrapper>
-                            <PageLink link={data.link} />
+                            <PageLink link={copy.link} />
                         </SignUpFormWrapper>
                     </FadeIn>
                 </TextSectionEnd >
             </HouseMateText>
-        </>
+        </HousemateSection>
     )
 }
 

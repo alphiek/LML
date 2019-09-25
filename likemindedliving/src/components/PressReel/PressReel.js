@@ -1,70 +1,47 @@
 import React from 'react'
 import styled from 'styled-components'
-import Flex from '../containers/Flex'
 
-const HorizontalScroll = styled.ul`
+const PressSection = styled.section`
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 1.5rem 0;
+ background-color: ${props => props.bgColor};
+`
+
+const ScrollContainer = styled.div`
+  display: flex;
+  width: 60vw;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  display: grid;
-  grid-gap: 0.2em;
-  grid-template-columns: repeat(7, 7em);
-  grid-template-rows: minmax(5em, 1fr);
-  overflow-x: scroll;
-  overflow-y: hidden;
-  scroll-snap-type: x proximity;
-  scroll-snap-align: center;
-  white-space: nowrap;
   &::-webkit-scrollbar {
     display: none;
-  }
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+   }
   scrollbar-width: none;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+`
+const ArticleWrapper = styled.div`
+  text-align: center;
+  margin: 1rem 1rem;
+  color: white;
+  width: auto;
+  height: 100px;
+  flex: 0 0 auto;
 `
 
-
-const ContainerGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  align-content: center;
-  overflow-y: scroll;
-  width: 67%;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  scrollbar-width: none;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-`
-
-export const GridItem = styled.li`
-    scroll-snap-align: center;
-    padding: 4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 0.5em;
-    will-change: scroll-position;
-`
-
-
-
-const PressReel = ({ copy }) => {
-    let data = copy[1].articles
-    let items = Object.entries(data)
-
-    let content = items.map((item, index) => <GridItem key={index}><article>{item[1].name}</article></GridItem>)
-
-    return (
-        <Flex justifyCenter alignCenter>
-            <ContainerGrid>
-                <HorizontalScroll>
-                    {content}
-                </HorizontalScroll>
-            </ContainerGrid >
-        </Flex >
-    )
+const PressReel  = ({ copy }) => {
+  const articles = copy.articles.map(article => <ArticleWrapper><a style={{color: '#fff'}} href={article.url}>{article.name}</a></ArticleWrapper>)
+  
+  return (
+    <PressSection bgColor={copy.bgColor}>
+      <ScrollContainer>{articles}</ScrollContainer>
+    </PressSection>
+  )
 }
-
 
 
 export default PressReel

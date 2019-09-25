@@ -1,7 +1,7 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import ImageWrapper from './ImageWrapper'
-import { ImgBlock } from './slideStyles'
 
 import step1 from '../../images/step1.svg'
 import step2 from '../../images/Step2.svg'
@@ -10,6 +10,17 @@ import step4 from '../../images/Step4.svg'
 import step5 from '../../images/Step5.svg'
 import step6 from '../../images/Step6.svg'
 
+
+const ImgBlock = styled.img`
+  max-width: 70%;
+  width: 18em;
+  @media (max-width: 1024px) {
+    width: 60vw;
+  }
+  @media (max-width: 480px) {
+    width: 80vw;
+  }
+`
 
 const SlideImages = ({ slide }) => {
     let slideImage;

@@ -2,7 +2,7 @@ import React from 'react'
 import { LinkStyle, ButtonWrapper } from './LinkStyles'
 
 
-const PageLink = ({ link, color }) => {
+const PageLink = ({ link }) => {
     return (
             <ButtonWrapper bgColor={link.bgColor}>
             <LinkStyle

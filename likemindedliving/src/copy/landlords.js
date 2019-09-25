@@ -1,9 +1,7 @@
 import { colors } from '../global/colors'
 
 export const landlord = {
-    landlord: true,
     headline: {
-        landlord: true,
         h1: `Find flat-sharers for your rental property`,
         p1: `Whether you are an estate agent or private landlord, we’d love to hear from you, 
         and see if you could help our renters find their\xa0ideal\xa0home.`,
@@ -13,7 +11,6 @@ export const landlord = {
         class: `title-sub-text landlord`
     },
     sectionOne: {
-        landlords: true,
         h2: `About Like-Minded Living`,
         fact: {
             1: {
@@ -48,7 +45,6 @@ export const landlord = {
     process: {
         h3: `How it works`,
         p1: `Quisque nec sagittis massa, sit amet luctus enim`,
-        landlord: true,
         steps: {
             1: `On our website, fill in our landlord / estate agent sign up form, here, or on our quiz page. 
                   A member of our team will be in touch to confirm your details and discuss the letting of your property`,
@@ -152,36 +148,36 @@ export const landlord = {
         bgColor: `${colors.white}`,
     },
     pressReel: {
-        articles: {
-            one: {
+        articles: [
+            {
                 name: `Forbes`,
                 url: `https://www.forbes.com/sites/alisoncoleman/2019/01/03/whats-in-your-startup-survival-kit-for-2019-seven-entrepreneurs-share-the-contents-of-theirs/#3590f6a41288`
             },
-            two: {
+            {
                 name: `ProlificLondon`,
                 url: `https://www.prolificlondon.co.uk/features/2019/05/my-startup-minded-living`
             },
-            three: {
+            {
                 name: `Inews`,
                 url: `https://inews.co.uk/news/brexit/brexit-what-mean-for-me-leave-eu-landlord/`
             },
-            four: {
+            {
                 name: `PropertyTribes`,
                 url: ` https://www.propertytribes.com/young-entrepreneurs-week-denzel-matsaudza-t-127636468.html`
             },
-            five: {
+            {
                 name: `PropertyInvestorShow`,
                 url: ` https://www.propertyinvestor.co.uk/seminar/SeminarProfile/718`
             },
-            six: {
+            {
                 name: `EfinancialCareers`,
                 url: `https://news.efinancialcareers.com/uk-en/321062/j-p-morgan-operations-analyst`
             },
-            seven: {
+            {
                 name: `BQLive`,
                 url: `http://www.bqlive.co.uk/people/2019/07/31/news/meet-the-md-denzel-matsaudza-of-like-minded-living-35951/`
             }
-        },
+        ],
         color: `${colors.white}`,
         bgColor: `${colors.textPrimary}`
     },

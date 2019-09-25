@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Flex from '../containers/Flex'
 
 const ArrowWrapper = styled(Flex)`
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
 `
 
 const Arrows = ({ updateNext, updatePrevious, updateSlideHandler, currentSlide, totalSlides}) => {

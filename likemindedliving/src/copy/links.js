@@ -1,7 +1,7 @@
 export const linkUrls = [
     {
         name: `landlords & estate agents`,
-        url: `http://rkkcollective.com/landlord`
+        url: `http://localhost:8000/landlord`
     },
     {
         name: `blogs`,

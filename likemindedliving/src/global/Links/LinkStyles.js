@@ -5,10 +5,10 @@ export const ButtonWrapper = styled.div`
   background: ${props => props.bgColor};
   width: 100%;
   line-height: 130%;
-  padding: 0.5em 0.5em 0.8em;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-weight: 700;
-  border-radius: 0.35em;
+  padding: 1rem;
+  border-radius: 4px;
   transition: all .3s ease-in-out;
   box-shadow: 0 4px 6px -1px rgba(75, 74, 104, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   :hover {
@@ -17,10 +17,10 @@ export const ButtonWrapper = styled.div`
     transform: translate(0, -0.1em);
   }
   @media (max-width: 1024px) {
-    padding: 0.75em;
+    padding: 1rem;
   }
   @media (max-width: 768px) {
-    padding: 1em;
+    padding: 1rem;
     font-size: 1em;
   }
 `

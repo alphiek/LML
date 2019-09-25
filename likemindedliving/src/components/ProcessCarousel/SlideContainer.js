@@ -2,35 +2,21 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 
 import { updateStyle, updateNext, updatePrevious } from './styleHelpers'
-
+import Flex from '../containers/Flex'
 import SlideImages from './SlideImages'
 import LandlordSlideImages from './LandlordSlideImages'
 import StepText from './StepText'
 import Pagination from './Pagination'
 import Link from './Link'
-import Flex from '../containers/Flex'
 import Arrows from './Arrows'
 
-const ContentCell = styled(Flex)`
-  grid-column: 3/4;
-  border-radius: 8px 8px 0px 0;
-  grid-row: 1;
-  margin-top: 2em;
-  padding: 2em 0;
-  width: 100%;
-  position: relative;
-  background: white;
-@media (max-width: 1024px) 
-{
- justify-content: center;
-  grid-column: 1;
-  grid-row: 2;
-  margin-top: 0;
-};
-@media (max-width: 480px)
-{
- padding 1.5em;
-};`
+
+const ContentContainer = styled(Flex)`
+  width: 33.3%;
+  @media (max-width: 1024px) {
+    width: 60%;
+}
+`
 
 const Container = styled.div`
   width: 65%;
@@ -64,24 +50,24 @@ const SlideContainer = ({ copy, link, landlord }) => {
     }
 
     return (
-        <ContentCell aligncenter justifyCenter>
+        <ContentContainer justifyCenter alignCenter column>
             {slides}
             <StepText content={content} currentSlide={currentSlide} />
             <Container>
-            <Pagination
-                pagination={pagination}
-                updateStyle={updateStyle}
-                currentSlide={currentSlide}
-                updateSlideHandler={updateSlideHandler} />
-            <Link link={link} />
-            <Arrows
-                updatePrevious={updatePrevious}
-                updateNext={updateNext}
-                updateSlideHandler={updateSlideHandler}
-                currentSlide={currentSlide}
-                totalSlides={totalSlides} />
-                </Container>
-        </ContentCell>      
+                <Pagination
+                    pagination={pagination}
+                    updateStyle={updateStyle}
+                    currentSlide={currentSlide}
+                    updateSlideHandler={updateSlideHandler} />
+                <Link link={link} />
+                <Arrows
+                    updatePrevious={updatePrevious}
+                    updateNext={updateNext}
+                    updateSlideHandler={updateSlideHandler}
+                    currentSlide={currentSlide}
+                    totalSlides={totalSlides} />
+            </Container>
+        </ContentContainer>
     )
 }
 

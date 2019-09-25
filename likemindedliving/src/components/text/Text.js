@@ -3,18 +3,16 @@ import styled from 'styled-components'
 import { FadeIn } from '../animations/FadeIn'
 
 const FactP = styled.p`
-  margin-top: 1em;
+  margin-top: 1rem;
   font-weight: 600;
-  font-size: 0.5em;
+  font-size: 0.9rem;
   width: 65%;
   line-height: 130%;
   letter-spacing: 0.05px;
   @media (max-width: 1024px) {
     margin: 1em auto 0;
-    font-size: 0.58em;
   }
   @media (max-width: 768px) {
-    font-size: 0.62em;
     line-height: 150%;
   }
 `

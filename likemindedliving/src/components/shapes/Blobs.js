@@ -7,18 +7,10 @@ import Flex from '../containers/Flex'
 
 const Blob = styled.svg`
    fill: ${props => props.color};
-   width: 18vw;
+   width: 100%;
    position: relative;
    -webkit-transform: ${props => props.rotate};
    transform: ${props => props.rotate};
-   @media (max-width: 1024px) {
-      width: 30vw;
-      justify-content: center;
-   }
-   @media (max-width: 480px) {
-      width: 80%;
-      justify-content: center;
-   }
 `
 
 const GradBlobContainer = styled.div`

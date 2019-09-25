@@ -78,8 +78,8 @@ const DividerWrapper = styled.div`
   `
 
 const Testimonial = ({ copy }) => {
-  let data = copy[1]
-  let testimonial = Object.entries(copy[1].testimonial)
+  let data = copy
+  let testimonial = Object.entries(copy.testimonial)
 
   let cards = testimonial.map((item, index) => <TestimonialCard key={index} copy={item} />)
 

@@ -7,10 +7,12 @@ import styled from 'styled-components'
 
 const TextContainer = styled(Flex)`
    height: 100%;
+   padding: 0 5%;
    @media (max-width: 1024px) {
-       width: 80%;
+       width: 100%;
        align-items: center;
-       margin-bottom: 1em;
+       margin: 1rem 0;
+       padding: 0;
    }
 `
 
@@ -25,15 +27,7 @@ const TextContainerEnd = styled(Flex)`
 `
 
 const FullWidthTextWrapper = styled.div`
-   margin: 5% 15% 4% 20%;
-   @media (max-width: 1024px) {
-    width: 100%;
-    margin: 5% 0 4% 0%; 
-}
-@media (max-width: 480px) {
-    width: 60%;
-    margin: 5% auto 4% auto;
-}
+   width: 60vw;
 `
 
 const Span = styled.span`
@@ -109,19 +103,18 @@ export const TextSectionEnd = ({ copy, children }) => {
     )
 }
 
-export const FullWidthText = ({ copy, children }) => {
+export const FullWidthText = ({ h2, p2, color, children }) => {
+    let h2copy;
 
-    let h2;
-
-    if (copy.h2p2) {
-        h2 = <H2 color={copy.color}>{copy.h2}<br />{children}<Span>{copy.h2p2}</Span></H2>
+    if (p2) {
+        h2copy = <H2 color={color}>{h2}<br />{children}<Span>{p2}</Span></H2>
     } else {
-        h2 = <H2 color={copy.color}>{copy.h2}</H2>
+        h2copy = <H2 color={color}>{h2}</H2>
     }
     return (
         <FadeIn delay={150}>
             <FullWidthTextWrapper>
-                {h2}
+                {h2copy}
             </FullWidthTextWrapper>
         </FadeIn>
     )

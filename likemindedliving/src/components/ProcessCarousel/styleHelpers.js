@@ -5,7 +5,7 @@ export const updateStyle = (val, currentSlide) => {
     if (val === currentSlide) {
         style = {
             opacity: '0.8',
-            fontSize: '0.7em',
+            fontSize: '1rem',
             fontWeight: '800',
             color: '#585795',
             transform: 'scale(1.25)'
@@ -13,7 +13,7 @@ export const updateStyle = (val, currentSlide) => {
     } else {
         style = {
             opacity: '1',
-            fontSize: '0.7em',
+            fontSize: '1rem',
             fontWeight: '800',
             color: '#4B4A68'
         }
@@ -33,8 +33,8 @@ export const updateNext = ( currentSlide, totalSlides ) => {
     } else {
         next = {
             opacity: '1',
-            fontSize: '0.65em',
-            paddingTop: '0.5em',
+            fontSize: '1rem',
+            paddingTop: '1rem',
             fontWeight: '800',
             color: '#4B4A68'
 
@@ -54,8 +54,8 @@ export const updatePrevious = ( currentSlide ) => {
     } else {
         previous = {
             opacity: '0.7',
-            fontSize: '0.65em',
-            paddingTop: '0.5em',
+            fontSize: '1rem',
+            paddingTop: '1rem',
             fontWeight: '800',
             color: '#585795'
         }

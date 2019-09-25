@@ -7,7 +7,7 @@ import { linkUrls } from '../copy/links'
 
 const Layout = ({ children }) => {
   return (
-      <div style={{ height: '100%' }}>
+      <div>
         <Header items={linkUrls} />
         <main>{children}</main>
         <Footer />

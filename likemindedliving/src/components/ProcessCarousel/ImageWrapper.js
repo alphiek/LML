@@ -1,13 +1,19 @@
 import React from 'react'
-import { ImageCell, ImageDiv } from './slideStyles'
+import styled from 'styled-components'
+import Flex from '../containers/Flex'
+
+
+export const ImageDiv = styled(Flex)`
+  width: 100%;
+  height: auto;
+`
+
 
 const ImageWrapper = ({ children }) => {
     return (
-        <ImageCell justifyCenter contentCenter>
             <ImageDiv justifyCenter contentCenter>
                 {children}
             </ImageDiv>
-        </ImageCell>
     )
 }
 

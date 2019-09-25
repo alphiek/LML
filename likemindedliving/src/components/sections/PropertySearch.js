@@ -1,42 +1,66 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { PropertySearchImage, PropertySearchText } from '../Grids/SectionSubGrid'
 import PropertySearchTool from '../../Illustrations/PropertySearchTool'
 import { FadeIn } from '../animations/FadeIn'
 import { TextSection } from '../text/TextSection'
 import PageLink from '../../global/Links/PageLink'
 
 
-const SignUpFormWrapper = styled.div`
-  width: 10em;
-  padding-top: 1em;
+const PropertySection = styled.section`
+ width: 100%;
+ display: flex;
+ flex-direction: row-reverse;
+ flex-wrap: nowrap;
+ justify-content: center;
+ align-items: center;
+ padding: 1.5rem 0;
+ @media (max-width: 1024px) {
+     flex-direction: column;
+ }
+`
+
+const PropertySearchImage = styled.div`
+  width: 33.3%;
   @media (max-width: 1024px) {
-     width: 15em;
+    width: 60%;
+}
+`
+
+const PropertySearchText = styled.div`
+  width: 33.3%;
+  @media (max-width: 1024px) {
+    width: 60%;
+}
+`
+
+const SignUpFormWrapper = styled.div`
+  width: 60%;
+  padding-top: 1rem;
+  @media (max-width: 1024px) {
+     width: auto;
   }
   @media (max-width: 480px) {
-      width: 12em;
+      width: auto;
   }
 `
 
 const PropertySearch = ({ copy }) => {
-    let data = copy[1]
-
     return (
-        <>
-            <PropertySearchImage justifyCenter>
-                <PropertySearchTool color={data.blob} />
+        <PropertySection>
+            <PropertySearchImage>
+                <PropertySearchTool color={copy.blob} />
             </PropertySearchImage>
-            <PropertySearchText contentCenter column>
-                <TextSection copy={data}>
-                <FadeIn>
-                    <SignUpFormWrapper>
-                        <PageLink link={data.link} />
-                    </SignUpFormWrapper>
-                </FadeIn>
+            <PropertySearchText>
+                <TextSection copy={copy}>
+                    <FadeIn>
+                        <SignUpFormWrapper>
+                            <PageLink link={copy.link} />
+                        </SignUpFormWrapper>
+                    </FadeIn>
                 </TextSection >
             </PropertySearchText>
-        </>
+        </PropertySection>
     )
 }
 

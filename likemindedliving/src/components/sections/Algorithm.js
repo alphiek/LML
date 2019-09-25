@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { AlgorithmImage, AlgorithmText } from '../Grids/SectionSubGrid'
 import AlgorithmIllustration from '../../Illustrations/AlgorithmIllustration'
 import { FadeIn } from '../animations/FadeIn'
 import { TextSection } from '../text/TextSection'
@@ -9,7 +8,33 @@ import Flex from '../containers/Flex'
 import { FactBody } from '../text/Text'
 import PageLink from '../../global/Links/PageLink'
 
+const AlgorithmSection = styled.section`
+ width: 100%;
+ display: flex;
+ background-color: ${props => props.bgColor};
+ flex-direction: row-reverse;
+ flex-wrap: nowrap;
+ justify-content: center;
+ align-items: center;
+ padding: 1.5rem 0;
+ @media (max-width: 1024px) {
+     flex-direction: column;
+ }
+`
 
+const AlgorithmImage = styled.div`
+  width: 33.3%;
+  @media (max-width: 1024px) {
+    width: 60%;
+}
+`
+
+const AlgorithmText = styled.div`
+  width: 33.3%;
+  @media (max-width: 1024px) {
+    width: 60%;
+}
+`
 const AlgorithmContainer = styled(Flex)`
   margin-bottom: 1em;
   @media (max-width: 1024px) {
@@ -67,27 +92,25 @@ const Icon = styled.div`
 }`
 
 const Algorithm = ({ copy }) => {
-    let data = copy[1]
-
     return (
-        <>
+        <AlgorithmSection>
             <AlgorithmImage justifyCenter>
                 <AlgorithmIllustration />
             </AlgorithmImage>
             <AlgorithmText contentCenter column>
-                <TextSection copy={data}>
+                <TextSection copy={copy}>
                     <AlgorithmContainer>
-                        <AlgorithmFactWrapper alignCenter noWrap contentCenter><Icon /><FactBody color={data.factColor}>{data.fact.one}</FactBody></AlgorithmFactWrapper>
-                        <AlgorithmFactWrapper alignCenter noWrap contentCenter><Icon /><FactBody color={data.factColor}>{data.fact.two}</FactBody></AlgorithmFactWrapper>
+                        <AlgorithmFactWrapper alignCenter noWrap contentCenter><Icon /><FactBody color={copy.factColor}>{copy.fact.one}</FactBody></AlgorithmFactWrapper>
+                        <AlgorithmFactWrapper alignCenter noWrap contentCenter><Icon /><FactBody color={copy.factColor}>{copy.fact.two}</FactBody></AlgorithmFactWrapper>
                     </AlgorithmContainer>
                     <FadeIn>
                         <SignUpFormWrapper>
-                            <PageLink link={data.link} />
+                            <PageLink link={copy.link} />
                         </SignUpFormWrapper>
                     </FadeIn>
                 </TextSection >
             </AlgorithmText>
-        </>
+        </AlgorithmSection>
     )
 }
 

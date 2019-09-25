@@ -2,6 +2,7 @@ import React from 'react'
 
 import ImageWrapper from './ImageWrapper'
 
+
 const SlideImages = ({ slide }) => {
     let slideImage;
 

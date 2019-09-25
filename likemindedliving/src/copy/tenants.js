@@ -1,9 +1,7 @@
 import { colors } from '../global/colors'
 
 export const tenants = {
-    tenants: true,
     headline: {
-        tenants: true,
         h1: `Search rental properties everywhere. Save\xa0on\xa0rent. Discover your dream\xa0home.`,
         p1: `Our Property Search Tool searches 1000s of listings across all major sites to find your ideal home, customers can save up\xa0to £1000s\xa0per\xa0year\xa0on\xa0rent.`,
         color: `${colors.textPrimary}`,
@@ -12,7 +10,6 @@ export const tenants = {
         class: `title-sub-text`
     },
     sectionOne: {
-        tenants: true,
         h2: `Property Search Tool`,
         p1: `Submit your details and let our tool find your perfect property. We’ll book your viewings, and manage the offer process, so you can focus on moving in to your ideal home.`,
         p2: `Fill in this short form to start the exciting process of looking for your property. Once your form has been filled in a member of our team will be in touch to kick-start finding your new home!`,
@@ -48,7 +45,6 @@ export const tenants = {
         },
         divider: `${colors.textPrimary}`,
         color: `${colors.textPrimary}`,
-        stripColor: `${colors.grey}`,
         bgColor: `${colors.grey}`,
     },
     sectionTwo: {
@@ -116,7 +112,6 @@ export const tenants = {
                 divider: `${colors.lilac}`
             },
             two: {
-                id: 6589,
                 text: `Haven't had a drama with our room rental in Putney! Have heard some horror stories with some agencys in London and from my experience with Menzi and Like minded living would recommend this as a good option!`,
                 name: `Aaron`,
                 divider: `${colors.lilac}`
@@ -127,36 +122,36 @@ export const tenants = {
         divider: `${colors.white}`,
     },
     pressReel: {
-        articles: {
-            one: {
+        articles: [
+            {
                 name: `Forbes`,
                 url: `https://www.forbes.com/sites/alisoncoleman/2019/01/03/whats-in-your-startup-survival-kit-for-2019-seven-entrepreneurs-share-the-contents-of-theirs/#3590f6a41288`
             },
-            two: {
+            {
                 name: `ProlificLondon`,
                 url: `https://www.prolificlondon.co.uk/features/2019/05/my-startup-minded-living`
             },
-            three: {
+            {
                 name: `Inews`,
                 url: `https://inews.co.uk/news/brexit/brexit-what-mean-for-me-leave-eu-landlord/`
             },
-            four: {
+            {
                 name: `PropertyTribes`,
                 url: ` https://www.propertytribes.com/young-entrepreneurs-week-denzel-matsaudza-t-127636468.html`
             },
-            five: {
+            {
                 name: `PropertyInvestorShow`,
                 url: ` https://www.propertyinvestor.co.uk/seminar/SeminarProfile/718`
             },
-            six: {
+            {
                 name: `EfinancialCareers`,
                 url: `https://news.efinancialcareers.com/uk-en/321062/j-p-morgan-operations-analyst`
             },
-            seven: {
+            {
                 name: `BQLive`,
                 url: `http://www.bqlive.co.uk/people/2019/07/31/news/meet-the-md-denzel-matsaudza-of-like-minded-living-35951/`
             }
-        },
+        ],
         color: `${colors.white}`,
         bgColor: `${colors.textPrimary}`
     },
