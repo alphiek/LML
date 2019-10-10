@@ -24,16 +24,6 @@ export const Grow = keyframes`
   }
 `
 
-export const SlideDown = keyframes`
-  from {
-    top: -300px;
-  }
-  to {
-    top: 0px;
-  }
-`
-
-
 export const FadeIn = keyframes`
   from {
     opacity: 0;

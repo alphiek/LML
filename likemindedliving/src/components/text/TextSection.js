@@ -7,8 +7,7 @@ import styled from 'styled-components'
 
 const TextContainer = styled(Flex)`
    height: 100%;
-   padding: 0 5%;
-   @media (max-width: 1024px) {
+   @media (max-width: 1180px) {
        width: 100%;
        align-items: center;
        margin: 1rem 0;
@@ -16,18 +15,9 @@ const TextContainer = styled(Flex)`
    }
 `
 
-const TextContainerEnd = styled(Flex)`
-   height: 100%;
-   text-align: right;
-   @media (max-width: 1024px) {
-       width: 80%;
-       align-items: center;
-       margin-bottom: 1em;
-   }
-`
-
 const FullWidthTextWrapper = styled.div`
-   width: 60vw;
+   width: 950px;
+   margin-top: 2rem;
 `
 
 const Span = styled.span`
@@ -37,7 +27,7 @@ const Span = styled.span`
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 0.9em;
-    @media (max-width: 1024px)
+    @media (max-width: 1180px)
     {
         margin: 0 auto;
 
@@ -51,12 +41,15 @@ const Span = styled.span`
 export const TextSection = ({ copy, children }) => {
     let h2;
     let h3;
+    let p2;
 
     if (copy.h2) {
         h2 = <H2 color={copy.color}>{copy.h2}</H2>
     } else if (copy.h3) {
         h3 = <H3>{copy.h3}</H3>
-    } 
+    } else if (copy.p2) {
+        p2 = <Body>{copy.p2}</Body>
+    }
 
     return (
         <TextContainer column justifyCenter contentCenter>
@@ -69,39 +62,12 @@ export const TextSection = ({ copy, children }) => {
             {
                 copy.p2 && <Body color={copy.color}>{copy.p2}</Body>
             }
+            {p2}
             {children}
         </TextContainer>
     )
 }
 
-
-export const TextSectionEnd = ({ copy, children }) => {
-
-    let h2;
-    let h3;
-    let p2;
-
-    if (copy.h2) {
-        h2 = <H2 color={copy.color}>{copy.h2}</H2>
-    } else if (copy.h3) {
-        h3 = <H3>{copy.h3}</H3>
-    } else if (copy.p2) {
-        p2 = <Body>{copy.p2}</Body>
-    }
-
-    return (
-        <TextContainerEnd column alignEnd contentCenter>
-            {h2}
-            {h3}
-            {
-                copy.divider && <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
-            }
-            <Body color={copy.color}>{copy.p1}</Body>
-            {p2}
-            {children}
-        </TextContainerEnd>
-    )
-}
 
 export const FullWidthText = ({ h2, p2, color, children }) => {
     let h2copy;

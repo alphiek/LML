@@ -17,7 +17,7 @@ const GradBlobContainer = styled.div`
    width: 22vw;
    height: 100%;
    position: relative;
-   @media (max-width: 1024px) {
+   @media (max-width: 1180px) {
       width: 35vw;
    }
    @media (max-width: 480px) {
@@ -29,7 +29,7 @@ const BlobFlex = styled(Flex)`
   position: relative;
   width: 100%;
   height: 100%;
-  @media (max-width: 1024px) {
+  @media (max-width: 1180px) {
    justify-content: center;
    align-items: center;
   }

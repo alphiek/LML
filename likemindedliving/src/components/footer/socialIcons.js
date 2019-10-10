@@ -5,7 +5,7 @@ const Icon = styled.svg`
    fill: #252454;
    height: 3em;
    margin-right: 2.5em;
-   @media (max-width: 1024px) {
+   @media (max-width: 1180px) {
       margin: 0.5em 3em 0.5em 0;
 
     }

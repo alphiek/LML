@@ -16,7 +16,7 @@ export const ButtonWrapper = styled.div`
     transform: scale(1.02);
     transform: translate(0, -0.1em);
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1180px) {
     padding: 1rem;
   }
   @media (max-width: 768px) {
@@ -33,7 +33,7 @@ export const LinkWrapperRight = styled.div`
     display: none;
   }
   scrollbar-width: none;
-  @media (max-width: 1024px) {
+  @media (max-width: 1180px) {
     margin-right: 0;
     text-align: center;
     margin-bottom: 1em;

@@ -10,7 +10,7 @@ import { FadeIn } from '../animations/FadeIn'
 
 export const TestimonialImageWrapper = styled(Img)`
   width: 65%;
-  @media(max-width: 1024px) {
+  @media(max-width: 1180px) {
     width: 9em;
     margin: 0 auto;
   }
@@ -47,7 +47,7 @@ const ScrollContainer = styled.div`
     width: 0px;
   }
    scrollbar-color: #C9D2F5 white;
-   @media(max-width: 1024px) {
+   @media(max-width: 1180px) {
        width: 60%;
        height: auto;
        margin: 0 auto;
@@ -70,14 +70,14 @@ const FadeOut = styled.div`
         rgba(255, 255, 255, 0) 0%,
         rgba(255, 255, 255, 1) 100%
     ); 
-    @media(max-width: 1024px) {
+    @media(max-width: 1180px) {
         display: none;
       }
 `
 
 const TextWrapper = styled.div`
   margin-left: 0.5em;
-  @media (max-width: 1024px) {
+  @media (max-width: 1180px) {
     margin-left: 0;
   }
 `
@@ -86,7 +86,7 @@ const Card = styled.div`
   width: 100%;
   margin-top: -3.5em;
   padding: 0 2em;
-  @media(max-width: 1024px) {
+  @media(max-width: 1180px) {
       width: 100%;
       display: flex;
       justify-content: center;
@@ -96,7 +96,7 @@ const Card = styled.div`
 `
 const TestimonialText = styled.p`
   margin: 1em 1em 1em 0em;
-  @media (max-width: 1024px)
+  @media (max-width: 1180px)
   {
     margin: 1em 0;
   }
@@ -130,7 +130,7 @@ const TestimonialCard = ({ copy }) => {
                             <FadeOut />
                         </div>
                     </FadeIn>
-                    <ShortDivider color={data.divider} top={'1em'} width='2.5em' />
+                    <ShortDivider color={data.divider} top='1em' width='2.5em' bottom='0.2rem'/>
                     <Body weight={600}>
                         {data.name}
                     </Body>

@@ -5,6 +5,7 @@ const LogoIcon = styled.svg`
   fill: #fff;
   height: auto;
   width: 3.5rem;
+  padding-bottom: 0.5rem;
 `
 
 const Logo = () => {

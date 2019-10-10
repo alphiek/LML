@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 
 import { updateStyle, updateNext, updatePrevious } from './styleHelpers'
-import Flex from '../containers/Flex'
+import { CenterWrapperProcess } from '../containers/Containers'
 import SlideImages from './SlideImages'
 import LandlordSlideImages from './LandlordSlideImages'
 import StepText from './StepText'
@@ -10,13 +10,6 @@ import Pagination from './Pagination'
 import Link from './Link'
 import Arrows from './Arrows'
 
-
-const ContentContainer = styled(Flex)`
-  width: 33.3%;
-  @media (max-width: 1024px) {
-    width: 60%;
-}
-`
 
 const Container = styled.div`
   width: 65%;
@@ -50,7 +43,7 @@ const SlideContainer = ({ copy, link, landlord }) => {
     }
 
     return (
-        <ContentContainer justifyCenter alignCenter column>
+        <CenterWrapperProcess>
             {slides}
             <StepText content={content} currentSlide={currentSlide} />
             <Container>
@@ -67,7 +60,7 @@ const SlideContainer = ({ copy, link, landlord }) => {
                     currentSlide={currentSlide}
                     totalSlides={totalSlides} />
             </Container>
-        </ContentContainer>
+        </CenterWrapperProcess>
     )
 }
 

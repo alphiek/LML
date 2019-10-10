@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const HoverWrapper = styled.div`
   position: relative;
   width: auto;
-  @media (max-width: 1024px) {
+  @media (max-width: 1180px) {
     margin: 1.5rem 0;
   }
   @media (max-width: 820px){

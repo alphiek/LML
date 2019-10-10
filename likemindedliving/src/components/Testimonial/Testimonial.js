@@ -9,7 +9,7 @@ import { ShortDivider } from '../Dividers/Dividers'
 
 const H2Testimonial = styled.h2`
   margin-bottom: 0.5em;
-  @meda (max-width: 1024px) 
+  @meda (max-width: 1180px) 
   {
     width: 100%;
   }
@@ -18,7 +18,7 @@ const H2Testimonial = styled.h2`
 export const CardWrapper = styled(Flex)`
   grid-column: 2;
   grid-row: 2 / span 2;
-  @media(max-width: 1024px) {
+  @media(max-width: 1180px) {
     grid-column: 1;
     grid-row: 2;
     justify-content: center;
@@ -33,11 +33,11 @@ const TestimonialGrid = styled.div`
   grid-template-rows: repeat(2, auto);
   & ${CardWrapper}: nth-child(2) {
     grid-column: 3;
-    @media(max-width: 1024px) {
+    @media(max-width: 1180px) {
       display: none;
     }
   }
-  @media(max-width: 1024px) {
+  @media(max-width: 1180px) {
     grid-template-columns: 100%;
     margin: 0;
   }
@@ -46,7 +46,7 @@ const Background = styled.div`
   grid-column: 1 / 5;
   grid-row: 1;
   background-color: ${colors.lightPeach};
-  @media(max-width: 1024px) {
+  @media(max-width: 1180px) {
     grid-column: 1;
   }
 `
@@ -54,7 +54,7 @@ const Heading = styled(Flex)`
   margin: 3em 0 2em 16%;
   text-align: left;
   width: 18%;
-  @media(max-width: 1024px) {
+  @media(max-width: 1180px) {
     width: 80%;
     margin 3em auto 2em auto;
     justify-content: center;
@@ -69,7 +69,7 @@ const Heading = styled(Flex)`
   `
 
 const DividerWrapper = styled.div`
-  @media (max-width: 1024px)
+  @media (max-width: 1180px)
   {
     display: flex;
     justify-content: center;

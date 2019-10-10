@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const DividerLong = styled.svg`
   stroke: ${props => props.color};
   stroke-width: 1%;
   stroke-linecap:round;
   stroke-miterlimit:10;
-  width: 100%;
+  width: 80%;
   height: 1em;
   fill: none;
   @media(max-width: 768px) {
@@ -44,6 +45,10 @@ export const LandingDivider = ({ color }) => {
   )
 }
 
+LandingDivider.propTypes = {
+  color: PropTypes.string.isRequired
+}
+
 export const ShortDivider = ({ width, color, bottom, top }) => {
   return (
     <DividerShort
@@ -56,4 +61,11 @@ export const ShortDivider = ({ width, color, bottom, top }) => {
       <path d="M1.5,1.5c8.7,0,8.7,3.9,17.4,3.9s8.7-3.9,17.4-3.9S45,5.4,53.7,5.4s8.7-3.9,17.4-3.9 s8.7,3.9,17.4,3.9" />
     </DividerShort>
   )
+}
+
+ShortDivider.propTypes = {
+  width: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  bottom: PropTypes.string.isRequired,
+  top: PropTypes.string.isRequired
 }

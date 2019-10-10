@@ -9,5 +9,6 @@ export const colors = {
     lightBlue: '#B5DEEF',
     blue: '#5D7FAE',
     lightPeach: '#FCE9DD',
-    lightGreen: '#D2FAD6'
+    lightGreen: '#D2FAD6',
+    buttonOne: 'rgba(80, 62, 167, 0.8)'
 }

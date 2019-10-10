@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from "prop-types"
 import Fade from 'react-reveal/Fade'
 
 
@@ -10,6 +11,12 @@ export const FadeIn = ({ children, delay }) => {
     )
 }
 
+FadeIn.propTypes = {
+    children: PropTypes.node.isRequired,
+    delay: PropTypes.number
+}
+
+
 export const FadeInRight = ({ children, delay, duration }) => {
     return (
         <Fade right delay={delay} duration={duration}>
@@ -18,12 +25,9 @@ export const FadeInRight = ({ children, delay, duration }) => {
     )
 }
 
-export const FadeInLeft = ({ children, delay }) => {
-    return (
-        <Fade left cascade delay={delay}>
-            {children}
-        </Fade>
-    )
+FadeInRight.propTypes = {
+    children: PropTypes.node.isRequired,
+    delay: PropTypes.number,
+    duration: PropTypes.number
 }
-
 

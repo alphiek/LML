@@ -8,6 +8,12 @@ const ImageWrapper = styled.img`
    width: 20rem;
    max-width: 200%;
    z-index: 10;
+   @media (max-width: 1180px) {
+     width: 18rem;
+   }
+   @media (max-width: 480px) {
+     width: 16rem;
+   }
 `
 
 const PropertySearchTool = ({ color }) => (

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import H1SplitText from '../animations/H1SplitText'
 import Flex from '../containers/Flex'
@@ -19,7 +20,7 @@ const TextCenter = styled(Flex)`
     @media (max-width: 1460px) {
         width: 60%;
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 1180px) {
       width: 65%;
       margin-top: 1rem;
     }
@@ -51,3 +52,7 @@ const Headline = ({ copy }) => {
 
 
 export default Headline
+
+Headline.propTypes = {
+  copy: PropTypes.objectOf(PropTypes.string).isRequired
+}

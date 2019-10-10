@@ -24,7 +24,7 @@ const CopyWrapper = styled.div`
     margin: 2em 0;
     grid-area: copy;
     padding-right: 3em;
-    @media (max-width: 1024px) {
+    @media (max-width: 1180px) {
     grid-area: right;
     padding-right: 0;
     margin: 1em 0 2em 0;

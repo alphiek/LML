@@ -15,27 +15,19 @@ export const landlord = {
         fact: {
             1: {
                 h4: `Are we a subletting company?`,
-                p: `No, we are not. Whilst in our early stages of the business we initially entered the market through subletting to gain a foothold, we now no longer rent properties on a sublet basis. However, we spotted a greater need for providing a consultancy-based service for renters looking to move to London. We exist solely to provide renters with advice on where to live and who to live with.`
+                p: `No we are not. We deliver a consultancy based service for renters, providing advice on where and who to live with.`
             },
             2: {
                 h4: `So, what do you do?`,
                 p: `Good question. We offer a property finding service to our renters, by using our technology to search across the market and help them find properties that meet their requirements. If we are in touch with you, this usually means one of our renters have indicated to us they would like to rent your property.`
             },
-            3: {
-                h4: `Why are you a tenant finding agency? – I heard that’s a tough business`,
-                p: `We found from our subletting past that, sharers usually tend to pay more for properties due to the nature of the tenancy. Typically, in London, 86% of postcodes take up more than a third of professional’s take-home pay. For the most part this is due to sharers not fully utilising all the rental options that would be available to them. To that end, we built technology that searches across the market, literally through every street, to make sure renters find the best deal. We’ve found sharers can save an average of £1,500pa when they look for a property with us.`
-            },
             4: {
                 h4: `How do you work?`,
-                p: `Through our various marketing efforts on a daily basis we receive enquiries from renters looking for a place to live in London, at peak periods this can be up to 100 enquiries per day. We ask them to fill in our form which goes into further details on their property requirements and move-in date, this in turn triggers a property search within our dashboard to find suitable properties that meet their requirements. Renters then have a choice to select through their favourite properties, and we’ll organise a viewing on their behalf.  We love to work with estate agents or private landlords that can help us provide the perfect property to our customers. We are building London’s first community of flat-sharers all connected to each other by their like-minded traits, get in touch with us if you own or are managing a property that is suitable for sharers.`
+                p: `We’ll be in touch to arrange a viewing, if our renters are happy and like your property, we’ll provide you with their contact details and kick-start your offer process.`
             },
             5: {
                 h4: `Will a member of our company be present at the viewing?`,
-                p: `Yes, usually a member from our lettings team will be on hand to help with any queries you may have. Once we have facilitated the introduction our team then take a backseat role to provide support as required.`
-            },
-            6: {
-                h4: `What happens if your renters like my property?`,
-                p: `Happy days! – If our renters would like to live in your property, this kick starts our offer process. In this phase, we’ll work closely with you to prepare the documents required to formally place an offer for your property. We’ll then collect a holding deposit from our tenants to ensure they are serious about placing an offer. We’ll formally present this offer to you alongside full information of our clients and it will be up to you to make the decision on whether or not to proceed. Once the offer has been accepted, we’ll transfer over to you the holding deposit we received, and take a backseat role as your new prospective tenant’s progress through your referencing phase. We’ll be on hand to answer any questions and provide support should we be needed, but our role will strictly be limited to such through to the tenancy being granted. As soon as the tenancy agreement is signed, welcome your new tenants to their home and of course we’ll still be there for assistance purposes.`
+                p: `Yes, usually a member from our lettings team will be on hand to help with any queries you may have.`
             },
         },
         color: `${colors.textPrimary}`,
@@ -43,8 +35,7 @@ export const landlord = {
         divider: `${colors.lilac}`,
     },
     process: {
-        h3: `How it works`,
-        p1: `Quisque nec sagittis massa, sit amet luctus enim`,
+        h3: `Check out our process for estate agents and landlords`,
         steps: {
             1: `On our website, fill in our landlord / estate agent sign up form, here, or on our quiz page. 
                   A member of our team will be in touch to confirm your details and discuss the letting of your property`,
@@ -90,15 +81,11 @@ export const landlord = {
         fact: {
             1: {
                 h4: `Who are our tenants?`,
-                p: `We work with professionals that come from varying backgrounds, ranging from finance, marketing, through to entrepreneurs and tradesmen. We deal with people usually aged in their 20s to early 30s, looking to stay for a minimum of 12 months.`
+                p: `We work with professionals that come from varying backgrounds, usually aged in their 20s to early 30s, looking to stay for a minimum of 12 months.`
             },
             2: {
                 h4: `How do they Find us?`,
                 p: `We market our services on many fronts, from social media through to popular property listing sites. We’re also fairly active in the media having been published in articles on Forbes and Prolific London. These efforts have meant we’ve gained a reputation for being the go-to people for finding a property in London.`
-            },
-            3: {
-                h4: `Why do our tenants use our service?`,
-                p: `We like to believe tenants use us because they like us, but of course there are most practical reasons as well, lol. Our ability to search seamlessly across the world wide web has been a key factor in differentiating us from our competitors. In addition to this we provided a niche service that has been developed for flat-sharers, if you’d like to discuss how we work further please feel free to give us a call.`
             },
             4: {
                 h4: `What type of properties do you deal with?`,
@@ -114,11 +101,11 @@ export const landlord = {
         fact: {
             1: {
                 h4: `Holding Deposit`,
-                p: `As previously mentioned, we collect a holding deposit from our renters when they indicate to us they would like to place an offer on your property. This holding deposit is then transferred to you once their offer has been formally accepted.`
+                p: `We collect a holding deposit from our renters when they indicate to us they would like to place an offer on your property. This holding deposit is then transferred to you once their offer has been formally accepted.`
             },
             2: {
                 h4: `Move-in monies`,
-                p: `We notify our renters to follow your terms and conditions when it is comes to the payment schedule of moving into your property. We will assist in ensuring the move-in monies are paid by sending reminders to our renters, if necessary.`
+                p: `We notify our renters to follow your terms and conditions when it is comes to the payment schedule of moving into your property. We will assist in ensuring the move-in monies are paid.`
             },
             3: {
                 h4: `Rent`,

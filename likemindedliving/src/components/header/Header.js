@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { useToggle } from '../../hooks/useToggle'
 import Toolbar from './Toolbar/Toolbar'
 import SideDrawer from './SideDrawer/SideDrawer'
@@ -9,13 +10,13 @@ const Header = ({ items }) => {
 
   let backDrop;
 
-  if ( isShowing ) {
+  if (isShowing) {
     backDrop = <Backdrop click={toggle} />
   }
 
   return (
     <>
-      <Toolbar items={items} toggleHandler={toggle}/>
+      <Toolbar items={items} toggleHandler={toggle} />
       <SideDrawer show={isShowing} items={items} />
       {backDrop}
     </>
@@ -24,3 +25,7 @@ const Header = ({ items }) => {
 
 
 export default Header
+
+Header.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object).isRequired
+}

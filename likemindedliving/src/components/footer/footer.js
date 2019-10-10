@@ -9,7 +9,7 @@ const AddressTitle = styled.p`
   font-weight: 700;
   font-size: 1.2em;
   padding-bottom: 2em;
-  @media (max-width: 1024px)
+  @media (max-width: 1180px)
   {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -23,7 +23,7 @@ const AddressLink = styled.a`
   letter-spacing: 0.02em;
   font-style: normal;
   display: block;
-  @media (max-width: 1024px) {
+  @media (max-width: 1180px) {
     margin: 0.5em 0;
   }
 `
@@ -35,7 +35,7 @@ const Copyright = styled.p`
   letter-spacing: 0.02em;
   font-style: normal;
   margin-top: 1.5em;
-  @media (max-width: 1024px) {
+  @media (max-width: 1180px) {
     font-size: 0.5em;
   }
   @media (max-width: 768px) {

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Spring, animated as a } from 'react-spring/renderprops'
 import styled from 'styled-components'
 
@@ -17,7 +18,7 @@ const SideDrawerContainer = styled(a.nav)`
   max-width: 400px;
   display: block;
   z-index: 200;
-  @media(min-width: 1025px) {
+  @media(min-width: 1181px) {
      display: none;
   }
   @media(max-width: 480px) {
@@ -33,10 +34,10 @@ const SideDrawerListWrapper = styled.ul`
   margin: 2rem 1rem;
 `
 
-const sideDrawer = ({ show, items }) => {
+const SideDrawer = ({ show, items }) => {
 
-    let data = items.map(e =>
-        <NavLinks key={e.name} link={e} />
+    let data = items.map((e, index) =>
+        <NavLinks key={index} link={e} />
     )
 
     return (
@@ -44,14 +45,19 @@ const sideDrawer = ({ show, items }) => {
             from={{ right: -1000 }}
             to={{ right: show ? 0 : -1000 }}>
             {props => (
-                    <SideDrawerContainer style={props}>
-                        <SideDrawerListWrapper>
-                            {data}
-                        </SideDrawerListWrapper>
-                    </SideDrawerContainer>
-                )}
+                <SideDrawerContainer style={props}>
+                    <SideDrawerListWrapper>
+                        {data}
+                    </SideDrawerListWrapper>
+                </SideDrawerContainer>
+            )}
         </Spring>
     )
 }
 
-export default sideDrawer
+export default SideDrawer
+
+SideDrawer.propTypes = {
+    show: PropTypes.bool.isRequired,
+    items: PropTypes.arrayOf(PropTypes.object).isRequired
+}

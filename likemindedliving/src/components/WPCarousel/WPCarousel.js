@@ -12,7 +12,7 @@ export const CardContainer = styled.li`
   border-radius: 0.5em;
   width: 14rem;
   height: 300px;
-  margin: 0.5rem;
+  margin: 0.8rem;
   transition: all .2s ease-in-out;
   box-shadow: 0 10px 18px -3px rgba(75, 74, 104, 0.25), 0 4px 6px -2px rgba(75, 74, 104, 0.05);
   :hover {
@@ -25,11 +25,11 @@ export const CardContainer = styled.li`
     }
   }
   &: first-child {
-    margin-left: 16rem;
+    margin-left: 25vw;
   }
   &: last-child {
-    margin-right: 10rem;
-  }   
+    margin-right: 50px;
+  }
   @media(max-width: 768px) {
       transition: none;
     }

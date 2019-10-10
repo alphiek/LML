@@ -28,13 +28,17 @@ const CardLink = styled.a`
   font-size: 0.75rem;
   text-transform: uppercase;
   opacity: 0.6;
-  font-weight: 700;   
+  font-weight: 700;
+  @media (max-width: 1180px) {
+    text-align: left;
+  }
 `
 
 const CardBody = styled.p`
    width: 100%;
    flex: 1 0 auto;
    font-size: 0.8rem;
+   line-height: 145%;
    font-family: Montserrat, Arial, Helvetica, sans-serif;
    text-align: left;
    letter-spacing: 0.2px;
@@ -56,7 +60,7 @@ const BlogCard = ({ data }) => {
       <CardImageWrapper><Image src={imageUrl} /></CardImageWrapper>
       <CardTextContainer>
         <h4>{data.title}</h4>
-        <ShortDivider color={colors.lilac} width='3rem' />
+        <ShortDivider color={colors.lilac} width='3rem' top='0.2rem' bottom='0.2rem'/>
         <CardBody>{data.excerpt.substring(0, 90)}...</CardBody>
         <CardLink
           href={`https://www.likemindedliving.co.uk/blog/${data.slug}`}

@@ -11,15 +11,15 @@ export const tenants = {
     },
     sectionOne: {
         h2: `Property Search Tool`,
-        p1: `Submit your details and let our tool find your perfect property. We’ll book your viewings, and manage the offer process, so you can focus on moving in to your ideal home.`,
-        p2: `Fill in this short form to start the exciting process of looking for your property. Once your form has been filled in a member of our team will be in touch to kick-start finding your new home!`,
+        p1: `Submit your details and let our tool find your perfect property. Fill in our form and kick-start your property search today, 
+        we’ll be in touch with property details.`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
         divider: `${colors.lilac}`,
         blob: `${colors.mint}`,
         link: {
-            color: `${colors.textPrimary}`,
-            bgColor: `${colors.grey}`,
+            color: `${colors.white}`,
+            bgColor: `${colors.buttonOne}`,
             name: `CTA for tenant sign up form`,
             url: `https://likemindedliving.outgrow.us/likemindedliving-45`
         },
@@ -29,13 +29,11 @@ export const tenants = {
         p1: `Our process could not be easier, check out our simple steps to finding you the right property.`,
         p2: `London has over 32 boroughs, between 6 zones, it can be quite confusing to find an area best suited to you. Take our quiz to help you make that decision.`,
         steps: {
-            1: `Register your interest and take our 'Where would you like to live in London quiz. The answers will give us a good understanding of your budget, location and property requirements.`,
-            2: `Using your information, we’ll run our algorithm which will search thousands of properties across every major listing site, in accordance with your property requirements.`,
-            3: `We will hand pick the best properties from the bunch brought forward and arrange with you a day to view at-least 3 properties that suit your needs.`,
-            4: `Once you’re happy with your property, leave it to us to find suitable housemates. Take our Like-Minded housemate quiz and we’ll only match you with housemates who match well with your answers.`,
-            5: `Once a group has been formed we’ll work with you to get all the necessary documents to create the tenancy agreement. `,
-            6: `All that’s left is to get ready for move-in, we’ll always stay on hand to assist with any issues you may have`
-
+            1: `Fill in our ‘Where Would you Like to Live in London Quiz’`,
+            2: `Our tool will run its algorithm and search thousands of properties in accordance with your requirements`,
+            3: `We’ll hand pick the most suitable properties from the bunch`,
+            4: `You let us know when you’d like to arrange for a viewing`,
+            5: `Place an offer, and then get ready for your move-in date!`,
         },
         link: {
             color: `${colors.textPrimary}`,
@@ -66,8 +64,9 @@ export const tenants = {
     },
     sectionThree: {
         h2: `The algorithm behind our tool`,
-        p1: `We found from our trading experience that, sharers usually tend to pay more to rent a property than their market counterparts due to the difficulty of looking for a suitable flat share property. Typically, in London, 86% of postcodes take up more than a third of a professional’s take-home pay. `,
-        p2: `Alarmingly, this was due to sharers not fully utilising all rental options that would be available to them in the market. To challenge this, we built technology that searches across the market, literally through every street, to make sure renters find the best deal. Our results so far have been exciting and now we’re on a mission to help renters everywhere find the best properties at less than a third of your take-home salary.`,
+        p1: `We found sharers tend to spend more on rent when looking for properties on flat-sharing websites, alarmingly sometimes 30% more.
+        We want sharers to fully utilise the rental market and built technology that does just that. 
+        We’re on a mission to decrease rents sharers pay whilst increasing options available to them, our aim is to ensure rent takes up less than a third of take-home pay.`,
         fact: {
             one: `We search over 1000s of major listing to find a property that fits`,
             two: `Customers save on average £1,500 per year when using our tool`,
@@ -94,7 +93,7 @@ export const tenants = {
     },
     properties: {
         properties: true,
-        h2: `Explore our top London flatshare picks`,
+        h2: `Featured Properties`,
         link: {
             name: `Show me all properties`,
             url: `https://likemindedliving.co.uk/properties/`

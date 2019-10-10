@@ -17,3 +17,65 @@ export const FullWidthContainer = styled(Flex)`
   }
 `
 
+export const SectionContainer = styled.section`
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0 3rem 0;
+  margin-bottom: 2rem;
+  background-color: ${props => props.bgColor};
+`
+
+export const MainSectionContainer = styled(SectionContainer)`
+   padding: 5rem 0 3rem 0;
+`
+
+export const SectionWrapper = styled.div`
+  width: 950px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  @media (max-width: 1180px) {
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+  }
+`
+
+
+export const ReverseSectionWrapper = styled(SectionWrapper)`
+  flex-direction: row;
+  @media (max-width: 1180px) {
+    margin: 3rem 0 3rem 0;
+  }
+  `
+
+export const Wrapper = styled.div`
+  width: 85%;
+  @media (max-width: 1180px) {
+    width: 60%;
+}
+`
+
+export const CenterWrapperProcess = styled(Wrapper)`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 0 0;
+`
+
+
+export const SignUpFormWrapper = styled.div`
+  width: 70%;
+  padding-top: 1rem;
+  @media (max-width: 1180px) {
+     width: auto;
+  }
+  @media (max-width: 480px) {
+      width: auto;
+  }
+`

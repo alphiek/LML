@@ -8,6 +8,8 @@ import BlogCard from './BlogCard'
 const BlogContent = ({ page }) => {
   const data = useBlogData()
   
+  console.log(data)
+  
   let content;
   let tenants = data[1].posts.nodes
   let landlords = data[0].posts.nodes

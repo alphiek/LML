@@ -9,19 +9,12 @@ const FactP = styled.p`
   width: 65%;
   line-height: 130%;
   letter-spacing: 0.05px;
-  @media (max-width: 1024px) {
+  @media (max-width: 1180px) {
     margin: 1em auto 0;
   }
   @media (max-width: 768px) {
     line-height: 150%;
   }
-`
-
-const FactFloat = styled(FactP)`
-   float: right;
-   @media (max-width: 1024px) {
-     float: none;
-   }
 `
 
 
@@ -50,10 +43,6 @@ export const Body = ({ children, color }) => (
 
 export const FactBody = ({ children, color }) => (
     <FactP style={{ color: `${color}`}}>{children}</FactP>
-)
-
-export const FactRight = ({ children, color }) => (
-  <FactFloat style={{ color: `${color}`}}>{children}</FactFloat>
 )
 
 

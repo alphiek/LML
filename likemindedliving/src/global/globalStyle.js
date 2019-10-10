@@ -13,14 +13,14 @@ html {
 body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  line-height: 140%;
+  line-height: 145%;
   font-weight: normal;
   text-rendering: optimizeLegibility;
   color: #4B4A68;
   word-wrap: normal;
   font-kerning: normal;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1180px) {
     text-align: center;
   }
 }
@@ -75,6 +75,17 @@ nav {
   max-height: 100px;
 }
 
+.name {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 0 10px;
+  @media (max-width: 1180px) {
+    font-size: 1rem;
+  }
+}
+
 footer {
   background-color: #BAEEE5;
   color: #252454;
@@ -113,9 +124,9 @@ h1 {
   text-align: center;
   margin-top: 0.8rem;
   width: 70%;
-
+  line-height: 145%;
   @media (max-width: 480px) {
-  width: 80%;
+  width: 85%;
   }
 }
 
@@ -128,7 +139,7 @@ h2 {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1.25rem;
-  @media (max-width: 1024px) {
+  @media (max-width: 1180px) {
     text-align: center;
     font-weight: 700;
   }
@@ -138,15 +149,18 @@ h3 {
   font-weight: 600;
   font-size: 1.25rem;
   padding-bottom: 1rem;
-  @media (max-width: 1024px) {
+  @media (max-width: 1180px) {
     text-align: center;
   }
 }
 
 h4 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  line-height: 130%;
+  line-height: 145%;
+  @media (max-width: 1180px) {
+    text-align: left;
+  }
 }
 
 p {
@@ -156,7 +170,7 @@ p {
   word-wrap: normal;
   margin-bottom: 1rem;
 
-  @media(max-width: 1024px) {
+  @media(max-width: 1180px) {
     text-align: center;
     margin-bottom: 1.5rem;
   }
@@ -196,7 +210,7 @@ hr {
   border: none;
   background-color: #252454;
   opacity: 0.7;
-  @media (max-width: 1024px) {
+  @media (max-width: 1180px) {
     margin: 2rem auto 2rem auto;
   }
 }
