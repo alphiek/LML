@@ -26,6 +26,9 @@ export const SectionContainer = styled.section`
   padding: 1.5rem 0 3rem 0;
   margin-bottom: 2rem;
   background-color: ${props => props.bgColor};
+  @media (max-width: 1168px) {
+    margin-bottom: 1rem;
+  }
 `
 
 export const MainSectionContainer = styled(SectionContainer)`
@@ -57,9 +60,10 @@ export const Wrapper = styled.div`
   width: 85%;
   @media (max-width: 1180px) {
     width: 60%;
+    margin-bottom: 1rem;
   }
   @media (max-width: 768px) {
-  width: 60%;
+  width: 80%;
   }
 `
 

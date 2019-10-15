@@ -72,7 +72,7 @@ nav {
   height: 100%;
   width: 100%;
   padding: 1.5rem;
-  max-height: 100px;
+  max-height: 80px;
 }
 
 .name {
@@ -170,11 +170,11 @@ h4 {
 
 p {
   font-size: 0.9rem;
+  letter-spacing: 0.5px;
   line-height: 135%;
   font-weight: normal;
   word-wrap: normal;
   margin-bottom: 1rem;
-
   @media(max-width: 1180px) {
     text-align: center;
     margin-bottom: 1.5rem;

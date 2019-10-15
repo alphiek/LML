@@ -4,6 +4,7 @@ import { Spring, animated as a } from 'react-spring/renderprops'
 import styled from 'styled-components'
 
 import { colors } from '../../../global/colors'
+import pattern from '../../../images/menuPattern.svg'
 import NavLinks from '../Links/NavLinks/NavLinks'
 
 const SideDrawerContainer = styled(a.nav)`
@@ -26,6 +27,16 @@ const SideDrawerContainer = styled(a.nav)`
   }
 `
 
+const Pattern = styled.img`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: 50% 50%;
+`
+
 const SideDrawerListWrapper = styled.ul`
   height: 100vh;
   flex-direction: column;
@@ -46,6 +57,7 @@ const SideDrawer = ({ show, items }) => {
             to={{ right: show ? 0 : -1000 }}>
             {props => (
                 <SideDrawerContainer style={props}>
+                    <Pattern src={pattern} alt='background pattern' />
                     <SideDrawerListWrapper>
                         {data}
                     </SideDrawerListWrapper>

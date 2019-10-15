@@ -18,9 +18,18 @@ const ToolbarNavItems = styled.div`
 
 const Toolbar = ({ toggleHandler, items }) => {
 
-    let data = items.map(e =>
-        <NavLinks key={e.name} link={e} />
-    )
+    const docUrl = typeof document !== 'undefined' && document.URL
+    const urlWithSlash = typeof docUrl != 'undefined' && `${docUrl}/`
+
+    let data;
+
+    if (docUrl) {
+        data = items.filter(item => item.url !== docUrl || item.url !== urlWithSlash)
+            .map((item, index) => <NavLinks key={index} link={item} />)
+    }
+    else {
+        data = items.map((item, index) => <NavLinks key={index} link={item} />)
+    }
 
     return (
         <header>

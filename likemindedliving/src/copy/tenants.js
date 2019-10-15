@@ -3,7 +3,7 @@ import { colors } from '../global/colors'
 export const tenants = {
     headline: {
         h1: `Search rental properties everywhere. Save\xa0on\xa0rent. Discover your dream\xa0home.`,
-        p1: `Our Property Search Tool searches 1000s of listings across all major sites to find your ideal home, customers can save up\xa0to £1000s\xa0per\xa0year\xa0on\xa0rent.`,
+        p1: `Our Property Search Tool searches 1000's of listings across all major sites to find your ideal home, customers can save up\xa0to £1000's\xa0per\xa0year\xa0on\xa0rent.`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
         divider: `${colors.lilac}`,
@@ -12,7 +12,7 @@ export const tenants = {
     sectionOne: {
         h2: `Property Search Tool`,
         p1: `Submit your details and let our tool find your perfect property. Fill in our form and kick-start your property search today, 
-        we’ll be in touch with property details.`,
+        we’ll be in touch with property\xa0details.`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
         divider: `${colors.lilac}`,

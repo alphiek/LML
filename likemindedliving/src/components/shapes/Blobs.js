@@ -12,6 +12,9 @@ const Blob = styled.svg`
    position: relative;
    -webkit-transform: ${props => props.rotate};
    transform: ${props => props.rotate};
+   @media (max-width: 768px) {
+      width: 80%;
+   }
 `
 
 const GradBlobContainer = styled.div`

@@ -8,8 +8,8 @@ import BlogCard from './BlogCard'
 const BlogContent = ({ page }) => {
   const data = useBlogData()
 
-  let tenants = data[1].posts.nodes
-  let landlords = data[0].posts.nodes
+  let tenants = data[1].posts.nodes !== undefined ? data[1].posts.nodes : <div>Nothing has been returned</div>
+  let landlords = data[0].posts.nodes !== undefined ? data[0].posts.nodes : <div>Nothing was returned</div>  
   let blogItems;
 
   const getContent = (content) => {
@@ -17,17 +17,8 @@ const BlogContent = ({ page }) => {
   }
   
   if (data) {
-    if (page === 'tenants') {
-      blogItems = getContent(tenants)
-    } else if (page === 'landlords') {
-      blogItems = getContent(landlords)
-    }
-  } else {
-    console.log('no data')
-    return blogItems = 'Blogs are not available offline, please check your connection'
+    page === 'tenants' ? blogItems = getContent(tenants) : blogItems = getContent(landlords)
   } 
-
-  
 
   return (
     <>
