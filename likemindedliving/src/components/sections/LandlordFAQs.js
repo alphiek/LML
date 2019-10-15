@@ -1,5 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
+
 import Flex from '../containers/Flex'
 import { H2, Body } from '../text/Text'
 import { ShortDivider } from '../Dividers/Dividers'
@@ -58,3 +60,14 @@ export const SectionContent = ({ copy }) => {
         </>
     )
 }
+
+SectionContent.propTypes = {
+    copy: PropTypes.shape({
+        bgColor: PropTypes.string.isRequired,
+        color: PropTypes.string.isRequired,
+        divider: PropTypes.string.isRequired,
+        fact: PropTypes.objectOf(PropTypes.object).isRequired,
+        h2: PropTypes.string.isRequired
+    }).isRequired
+}
+

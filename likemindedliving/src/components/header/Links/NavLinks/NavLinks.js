@@ -23,8 +23,9 @@ export const NavLinkStyle = styled.li`
 } 
 `
 
-const NavLinks = ({ link }) => (
-  <HoverWrapper>
+const NavLinks = ({ link }) => {
+   return (
+    <HoverWrapper>
     <NavLinkStyle>
       <Link
         href={link.url}
@@ -35,7 +36,8 @@ const NavLinks = ({ link }) => (
     </NavLinkStyle>
     <HoverPattern />
   </HoverWrapper>
-)
+  )
+}
 
 export default NavLinks
 

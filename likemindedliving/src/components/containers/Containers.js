@@ -57,7 +57,10 @@ export const Wrapper = styled.div`
   width: 85%;
   @media (max-width: 1180px) {
     width: 60%;
-}
+  }
+  @media (max-width: 768px) {
+  width: 60%;
+  }
 `
 
 export const CenterWrapperProcess = styled(Wrapper)`

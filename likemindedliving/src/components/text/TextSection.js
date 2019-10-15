@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Flex from '../containers/Flex'
 import { H2, H3, Body } from '../text/Text'
 import { ShortDivider } from '../Dividers/Dividers'
@@ -68,6 +69,18 @@ export const TextSection = ({ copy, children }) => {
     )
 }
 
+TextSection.propTypes = {
+  children: PropTypes.node,
+  copy: PropTypes.shape({
+     bgColor: PropTypes.string.isRequired,
+     blob: PropTypes.string,
+     color: PropTypes.string.isRequired,
+     divider: PropTypes.string.isRequired,
+     h2: PropTypes.string.isRequired,
+     link: PropTypes.objectOf(PropTypes.string),
+     p1: PropTypes.string.isRequired
+  }).isRequired
+}
 
 export const FullWidthText = ({ h2, p2, color, children }) => {
     let h2copy;

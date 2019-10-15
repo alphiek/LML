@@ -35,6 +35,7 @@ export const landlord = {
         divider: `${colors.lilac}`,
     },
     process: {
+        landlords: true,
         h3: `Check out our process for estate agents and landlords`,
         steps: {
             1: `On our website, fill in our landlord / estate agent sign up form, here, or on our quiz page. 

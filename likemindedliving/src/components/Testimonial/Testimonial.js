@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Flex from '../containers/Flex'
 import { Body } from '../text/Text'
@@ -102,3 +103,14 @@ const Testimonial = ({ copy }) => {
 }
 
 export default Testimonial
+
+Testimonial.propTypes = {
+  copy: PropTypes.shape({
+    bgColor: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    divider: PropTypes.string.isRequired,
+    h2: PropTypes.string.isRequired,
+    p1: PropTypes.string.isRequired,
+    testimonial: PropTypes.objectOf(PropTypes.object).isRequired
+  }).isRequired
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { TestimonialOne } from '../../images/queries/TestimonialOne'
 import { TestimonialTwo } from '../../images/queries/TestimonialTwo'
@@ -102,42 +103,49 @@ const TestimonialText = styled.p`
   }
 `
 const TestimonialCard = ({ copy }) => {
-    let data = copy[1]
-    let number = copy[0]
+  let data = copy[1]
+  let number = copy[0]
 
-    let img;
+  let img;
 
-    if (number === 'one') {
-        img = <TestimonialOne />
-    } else if (number === 'two') {
-        img = <TestimonialTwo />
-    } else {
-        img = <p>There is a problem here</p>
-    }
+  if (number === 'one') {
+    img = <TestimonialOne />
+  } else if (number === 'two') {
+    img = <TestimonialTwo />
+  } else {
+    img = <p>There is a problem here</p>
+  }
 
-    return (
-        <CardWrapper>
-            <Card>
-                <FadeIn>
-                    {img}
-                </FadeIn>
-                <TextWrapper>
-                    <FadeIn>
-                        <div style={{ position: 'relative' }}>
-                            <ScrollContainer>
-                                <TestimonialText>{data.text}</TestimonialText>
-                            </ScrollContainer>
-                            <FadeOut />
-                        </div>
-                    </FadeIn>
-                    <ShortDivider color={data.divider} top='1em' width='2.5em' bottom='0.2rem'/>
-                    <Body weight={600}>
-                        {data.name}
-                    </Body>
-                </TextWrapper>
-            </Card>
-        </CardWrapper>
-    )
+  return (
+    <CardWrapper>
+      <Card>
+        <FadeIn>
+          {img}
+        </FadeIn>
+        <TextWrapper>
+          <FadeIn>
+            <div style={{ position: 'relative' }}>
+              <ScrollContainer>
+                <TestimonialText>{data.text}</TestimonialText>
+              </ScrollContainer>
+              <FadeOut />
+            </div>
+          </FadeIn>
+          <ShortDivider color={data.divider} top='1em' width='2.5em' bottom='0.2rem' />
+          <Body weight={600}>
+            {data.name}
+          </Body>
+        </TextWrapper>
+      </Card>
+    </CardWrapper>
+  )
 }
 
 export default TestimonialCard
+
+TestimonialCard.propTypes = {
+  copy: {
+    0: PropTypes.string.isRequired,
+    1: PropTypes.objectOf(PropTypes.string).isRequired,
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 import ImageWrapper from './ImageWrapper'
 
@@ -51,3 +52,7 @@ const SlideImages = ({ slide }) => {
 }
 
 export default SlideImages
+
+SlideImages.propTypes = {
+    slide: PropTypes.number.isRequired,
+}

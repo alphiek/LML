@@ -1,4 +1,5 @@
 import React from 'react'
+import Proptypes from 'prop-types'
 import styled from 'styled-components'
 import { BlobTwo } from '../components/shapes/Blobs'
 import idealchoice from '../images/IdealChoice.svg'
@@ -17,11 +18,15 @@ const ImageWrapper = styled.img`
 `
 
 const IdealChoiceImage = ({ color }) => (
-    <BlobTwo
-      color={color}>    
+  <BlobTwo
+    color={color}>
     <ImageWrapper src={idealchoice} alt='Illustration of happy housemates' />
-    </BlobTwo>
+  </BlobTwo>
 )
 
 
 export default IdealChoiceImage
+
+IdealChoiceImage.propTypes = {
+  color: Proptypes.string.isRequired
+}

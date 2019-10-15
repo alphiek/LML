@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Body } from '../text/Text'
 
@@ -27,3 +28,7 @@ const StepText = ({ content }) => {
 }
 
 export default StepText
+
+StepText.propTypes = {
+    content: PropTypes.string.isRequired
+}

@@ -1,10 +1,12 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 import ImageWrapper from './ImageWrapper'
 
 
 const SlideImages = ({ slide }) => {
     let slideImage;
+
+    console.log(slide, slideImage)
 
     if (slide === '1') {
         slideImage =
@@ -30,6 +32,10 @@ const SlideImages = ({ slide }) => {
             {slideImage}
         </>
     )
+}
+
+SlideImages.propTypes = {
+    slide: PropTypes.number.isRequired
 }
 
 export default SlideImages

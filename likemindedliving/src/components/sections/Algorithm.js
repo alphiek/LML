@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import AlgorithmIllustration from '../../Illustrations/AlgorithmIllustration'
@@ -55,20 +56,20 @@ const Algorithm = ({ copy }) => {
         <MainSectionContainer>
             <SectionWrapper>
                 <Wrapper>
-                <AlgorithmIllustration />
+                    <AlgorithmIllustration />
                 </Wrapper>
                 <Wrapper>
-                <TextSection copy={copy}>
-                    <AlgorithmContainer>
-                        <AlgorithmFactWrapper alignCenter noWrap contentCenter><Icon /><FactBody color={copy.factColor}>{copy.fact.one}</FactBody></AlgorithmFactWrapper>
-                        <AlgorithmFactWrapper alignCenter noWrap contentCenter><Icon /><FactBody color={copy.factColor}>{copy.fact.two}</FactBody></AlgorithmFactWrapper>
-                    </AlgorithmContainer>
-                    <FadeIn>
-                        <SignUpFormWrapper>
-                            <PageLink link={copy.link} />
-                        </SignUpFormWrapper>
-                    </FadeIn>
-                </TextSection >
+                    <TextSection copy={copy}>
+                        <AlgorithmContainer>
+                            <AlgorithmFactWrapper alignCenter noWrap contentCenter><Icon /><FactBody color={copy.factColor}>{copy.fact.one}</FactBody></AlgorithmFactWrapper>
+                            <AlgorithmFactWrapper alignCenter noWrap contentCenter><Icon /><FactBody color={copy.factColor}>{copy.fact.two}</FactBody></AlgorithmFactWrapper>
+                        </AlgorithmContainer>
+                        <FadeIn>
+                            <SignUpFormWrapper>
+                                <PageLink link={copy.link} />
+                            </SignUpFormWrapper>
+                        </FadeIn>
+                    </TextSection >
                 </Wrapper>
             </SectionWrapper>
         </MainSectionContainer>
@@ -76,3 +77,16 @@ const Algorithm = ({ copy }) => {
 }
 
 export default Algorithm
+
+Algorithm.propTypes = {
+    copy: PropTypes.shape({
+        bgColor: PropTypes.string.isRequired,
+        color: PropTypes.string.isRequired,
+        divider: PropTypes.string.isRequired,
+        fact: PropTypes.objectOf(PropTypes.string).isRequired,
+        factColor: PropTypes.string.isRequired,
+        h2: PropTypes.string.isRequired,
+        link: PropTypes.objectOf(PropTypes.string).isRequired,
+        p1: PropTypes.string.isRequired
+    }).isRequired
+}

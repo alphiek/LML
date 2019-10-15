@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Flex from '../containers/Flex'
 
@@ -16,3 +17,11 @@ const Arrows = ({ updateNext, updatePrevious, updateSlideHandler, currentSlide, 
 }
 
 export default Arrows
+
+Arrows.propTypes = {
+  updateNext: PropTypes.func.isRequired,
+  updatePrevious: PropTypes.func.isRequired,
+  currentSlide: PropTypes.number.isRequired,
+  totalSlides: PropTypes.number.isRequired,
+  updateSlideHandler: PropTypes.func.isRequired  
+}

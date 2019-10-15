@@ -25,6 +25,7 @@ export const tenants = {
         },
     },
     process: {
+        landlords: false,
         h3: `So why not get started`,
         p1: `Our process could not be easier, check out our simple steps to finding you the right property.`,
         p2: `London has over 32 boroughs, between 6 zones, it can be quite confusing to find an area best suited to you. Take our quiz to help you make that decision.`,

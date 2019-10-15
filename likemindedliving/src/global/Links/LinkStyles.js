@@ -17,11 +17,10 @@ export const ButtonWrapper = styled.div`
     transform: translate(0, -0.1em);
   }
   @media (max-width: 1180px) {
-    padding: 1rem;
+    padding: 1.5rem;
   }
   @media (max-width: 768px) {
-    padding: 1rem;
-    font-size: 1em;
+    font-size: 1rem;
   }
 `
 

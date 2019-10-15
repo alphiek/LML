@@ -1,4 +1,5 @@
 import React from 'react'
+import Proptypes from 'prop-types'
 import { BlobThree } from '../components/shapes/Blobs'
 import styled from 'styled-components'
 import housemates from '../images/Housemates.svg'
@@ -18,12 +19,17 @@ const ImageWrapper = styled.img`
 
 
 const HousemateMatching = ({ color, rotate }) => (
-    <BlobThree 
-      color={color}
-      rotate={rotate}>    
+  <BlobThree
+    color={color}
+    rotate={rotate}>
     <ImageWrapper src={housemates} alt='Illustration of happy housemates' />
-    </BlobThree>
+  </BlobThree>
 )
 
 
 export default HousemateMatching
+
+HousemateMatching.propTypes = {
+  color: Proptypes.string.isRequired,
+  rotate: Proptypes.string.isRequired
+}

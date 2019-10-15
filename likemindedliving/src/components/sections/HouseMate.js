@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import HousemateMatching from '../../Illustrations/HousemateMatching'
 import { MainSectionContainer, ReverseSectionWrapper, Wrapper, SignUpFormWrapper } from '../containers/Containers'
@@ -34,3 +35,18 @@ const HouseMate = ({ copy }) => {
 }
 
 export default HouseMate
+
+HouseMate.propTypes = {
+    copy: PropTypes.shape({
+        bgColor: PropTypes.string.isRequired,
+        blob: PropTypes.string.isRequired,
+        color: PropTypes.string.isRequired,
+        divider: PropTypes.string.isRequired,
+        factColor: PropTypes.string.isRequired,
+        fact: PropTypes.string.isRequired,
+        h2: PropTypes.string.isRequired,
+        link: PropTypes.objectOf(PropTypes.string).isRequired,
+        p1: PropTypes.string.isRequired,
+        rotate: PropTypes.string.isRequired
+    }).isRequired
+}

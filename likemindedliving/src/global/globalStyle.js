@@ -113,7 +113,9 @@ h1 {
   text-align: center;
   padding-top: 7%;
   margin-bottom: 0.4em;
-
+  @media (max-width: 1024px) {
+    font-size: 1.8rem;
+  }
   @media (max-width: 480px) {
     padding-top: 10%;
   }
@@ -142,6 +144,9 @@ h2 {
   @media (max-width: 1180px) {
     text-align: center;
     font-weight: 700;
+  }
+  @media (max-width: 480px) {
+    line-height: 140%;
   }
 }
 

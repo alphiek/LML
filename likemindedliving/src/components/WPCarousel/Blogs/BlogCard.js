@@ -60,7 +60,7 @@ const BlogCard = ({ data }) => {
       <CardImageWrapper><Image src={imageUrl} /></CardImageWrapper>
       <CardTextContainer>
         <h4>{data.title}</h4>
-        <ShortDivider color={colors.lilac} width='3rem' top='0.2rem' bottom='0.2rem'/>
+        <ShortDivider color={colors.lilac} width='3rem' top='0.2rem' bottom='0.2rem' />
         <CardBody>{data.excerpt.substring(0, 90)}...</CardBody>
         <CardLink
           href={`https://www.likemindedliving.co.uk/blog/${data.slug}`}

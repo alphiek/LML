@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { FadeIn } from '../animations/FadeIn'
 
@@ -26,6 +27,11 @@ export const H2 = ({ children, color }) => {
   )
 }
 
+H2.propTypes = {
+  children: PropTypes.node.isRequired,
+  color: PropTypes.string.isRequired
+}
+
 export const H3 = ({ children, color }) => {
   return (
     <FadeIn delay={0}>
@@ -34,15 +40,31 @@ export const H3 = ({ children, color }) => {
   )
 }
 
+H3.propTypes = {
+  children: PropTypes.node.isRequired,
+  color: PropTypes.string.isRequired
+}
+
 
 export const Body = ({ children, color }) => (
   <FadeIn>
-    <p style={{ color: `${color}`}}>{children}</p>
+    <p style={{ color: `${color}` }}>{children}</p>
   </FadeIn>
 )
 
+Body.propTypes = {
+  children: PropTypes.node.isRequired,
+  color: PropTypes.string
+}
+
 export const FactBody = ({ children, color }) => (
-    <FactP style={{ color: `${color}`}}>{children}</FactP>
+  <FactP style={{ color: `${color}` }}>{children}</FactP>
 )
+
+
+FactBody.propTypes = {
+  children: PropTypes.node.isRequired,
+  color: PropTypes.string.isRequired
+}
 
 

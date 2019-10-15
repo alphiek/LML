@@ -24,12 +24,12 @@ const DividerShort = styled(DividerLong)`
   margin-top: ${props => props.top};
   width: ${props => props.width};
   margin-bottom: ${props => props.bottom};
-  @media(max-width: 768px) {
-    stroke-width: 5;
+  @media(max-width: 1180px) {
+    stroke-width: 6;
+    height: 1.5rem;
   }
   @media(max-width: 480px) {
-    stroke-width: 6;
-    height: 2em;
+    height: 2rem;
   }
 `
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import gradBlob from './gradientBlob.svg'
 import  Zoom from 'react-reveal/Zoom'
@@ -51,6 +52,11 @@ export const BlobOne = ({ color, children }) => (
    </BlobFlex>
 )
 
+BlobOne.propTypes = {
+   color: PropTypes.string.isRequired,
+   children: PropTypes.node.isRequired
+}
+
 export const BlobThree = ({ color, rotate, children }) => (
    <BlobFlex justifyStart alignCenter>
       {children}
@@ -68,6 +74,12 @@ export const BlobThree = ({ color, rotate, children }) => (
    </BlobFlex>
 )
 
+BlobThree.propTypes = {
+   color: PropTypes.string.isRequired,
+   children: PropTypes.node.isRequired,
+   rotate: PropTypes.string.isRequired
+}
+
 
 export const GradBlob = ({ children }) => (
    <BlobFlex alignCenter justifyCenter>
@@ -79,6 +91,10 @@ export const GradBlob = ({ children }) => (
       </Zoom>
       </BlobFlex>
 )
+
+GradBlob.propTypes = {
+   children: PropTypes.node.isRequired
+}
 
 
 export const BlobTwo = ({ children, color }) => (
@@ -96,3 +112,8 @@ export const BlobTwo = ({ children, color }) => (
       </Zoom>
       </BlobFlex>
 )
+
+BlobTwo.propTypes = {
+   color: PropTypes.string.isRequired,
+   children: PropTypes.node.isRequired
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { updateStyle, updateNext, updatePrevious } from './styleHelpers'
@@ -65,3 +66,9 @@ const SlideContainer = ({ copy, link, landlord }) => {
 }
 
 export default SlideContainer
+
+SlideContainer.propTypes = {
+    copy: PropTypes.objectOf(PropTypes.string).isRequired,
+    landlord: PropTypes.bool.isRequired,
+    link: PropTypes.objectOf(PropTypes.string).isRequired
+}
