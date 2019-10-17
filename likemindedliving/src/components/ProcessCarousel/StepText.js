@@ -4,8 +4,9 @@ import styled from 'styled-components'
 import { Body } from '../text/Text'
 
 const TextWrapper = styled.div`
-  margin: 1rem 0 0.5rem 0;
+  margin: 1rem 0;
   height: auto;
+  min-height: 5rem;
   width: 65%;
   text-align: center;
   @media (max-width: 768px) {

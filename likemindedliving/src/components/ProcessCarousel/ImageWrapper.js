@@ -1,21 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { useSpring, animated as a } from 'react-spring'
 import styled from 'styled-components'
-import Flex from '../containers/Flex'
 
 
-export const ImageDiv = styled(Flex)`
+export const ImageDiv = styled(a.div)`
+  display: flex;
+  justify-content: center;
+  align-content: center;
   width: 100%;
   height: auto;
 `
 
 
 const ImageWrapper = ({ children }) => {
-    return (
-            <ImageDiv justifyCenter contentCenter>
-                {children}
-            </ImageDiv>
-    )
+  const props = useSpring({
+    left: '10vw', from: { left: '-40vw' }
+  })
+
+  return (
+    <ImageDiv style={props}>
+      {children}
+    </ImageDiv>
+  )
 }
 
 export default ImageWrapper

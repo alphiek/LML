@@ -44,9 +44,7 @@ export const ButtonWrapper = styled.div`
   z-index: 1;
   transition: 0.8s;
   :hover {
-    color: ${props => props.bgColor};
-    text-align: left;
-    padding-left: 0;
+    color: #4B4A68;
     ${Bubble}{
       transform: translateY(0) scale(2);
     }    

@@ -5,7 +5,7 @@ import Flex from '../containers/Flex'
 
 const PaginationWrapper = styled(Flex)`
    height: auto;  
-   margin: 2rem 0;
+   margin: 0 0 2rem;
    position: relative;
 `
 

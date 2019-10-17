@@ -20,6 +20,8 @@ const Container = styled.div`
 `
 
 
+
+
 const SlideContainer = ({ copy, link, landlord }) => {
     const [currentSlide, updateSlide] = useState(1)
 

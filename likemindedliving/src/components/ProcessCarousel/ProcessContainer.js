@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import SlideContainer from './SlideContainer'
-import { SectionContainer, ReverseSectionWrapper, Wrapper } from '../containers/Containers'
+import { MainSectionContainer, ReverseSectionWrapper, Wrapper } from '../containers/Containers'
 import { FadeIn } from '../animations/FadeIn'
 import { Body } from '../text/Text'
 import { ShortDivider } from '../Dividers/Dividers'
@@ -9,7 +9,7 @@ import { ShortDivider } from '../Dividers/Dividers'
 const ProcessContainer = ({ copy }) => {
 
   return (
-    <SectionContainer bgColor={copy.bgColor}>
+    <MainSectionContainer bgColor={copy.bgColor}>
       <ReverseSectionWrapper>
         <Wrapper>
             <FadeIn>
@@ -20,7 +20,7 @@ const ProcessContainer = ({ copy }) => {
         </Wrapper>
         <SlideContainer copy={copy.steps} link={copy.link} landlord={copy.landlords}/>
       </ReverseSectionWrapper>
-    </SectionContainer>
+    </MainSectionContainer>
   )
 }
 

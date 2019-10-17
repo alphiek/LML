@@ -9,6 +9,7 @@ import Flex from '../containers/Flex'
 const Blob = styled.svg`
    fill: ${props => props.color};
    width: 100%;
+   max-width: 300px;
    position: relative;
    -webkit-transform: ${props => props.rotate};
    transform: ${props => props.rotate};

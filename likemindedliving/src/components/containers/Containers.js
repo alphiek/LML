@@ -32,7 +32,7 @@ export const SectionContainer = styled.section`
 `
 
 export const MainSectionContainer = styled(SectionContainer)`
-   padding: 5rem 0 3rem 0;
+   padding: 4rem 0 3rem 0;
 `
 
 export const SectionWrapper = styled.div`
