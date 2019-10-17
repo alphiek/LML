@@ -87,10 +87,15 @@ nav {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   background-color: #BAEEE5;
   color: #252454;
   margin-top: 2em;
-  padding: 3em 2em;
+  padding: 100px 20px;
   @media(max-width: 480px) {
     padding: 3em 8% 2em 8%;
   }
@@ -101,7 +106,7 @@ address {
   font-size: 0.9rem;
   font-style: normal;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
 }
 
 
@@ -207,8 +212,6 @@ img {
 hr {
   box-sizing: content-box;
   display: block;
-  margin-left: 0;
-  margin-right: auto;
   height: 2px;
   width: 10rem;
   margin-top: 1.5rem;
@@ -217,9 +220,7 @@ hr {
   border: none;
   background-color: #252454;
   opacity: 0.7;
-  @media (max-width: 1180px) {
-    margin: 2rem auto 2rem auto;
-  }
+  margin: 2rem auto;
 }
 
 ul {

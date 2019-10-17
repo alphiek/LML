@@ -7,27 +7,17 @@ const TermsContainer = styled.ul`
 `
 const PdfLink = styled.a`
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-size: 0.45em;
-  line-height: 120%;
+  font-size: 0.7rem;
   text-transform: uppercase;
   transition: 0.5s;
   : hover {
     opacity: 0.5;
   }
-  @media (max-width: 1180px) {
-    font-size: 0.5em;
-  }
-  @media (max-width: 768px) {
-    font-size: 0.55em
-  }
-  @media (max-width: 480px) {
-    font-size: 0.6em;
-  }
 `
 
 const PDFLinkWrapper = styled.li`
     @media (max-width: 1180px) {
-      margin: 0.2em 0;
+      margin: 15px 0;
     }
 `
 

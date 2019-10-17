@@ -34,6 +34,7 @@ export const MainSectionContainer = styled(SectionContainer)`
 
 export const IdealChoiceSection = styled(MainSectionContainer)`
   flex-direction: column;
+  margin-bottom: 0;
   @media (max-width: 1180px) {
     padding: 80px 0 0;
   }

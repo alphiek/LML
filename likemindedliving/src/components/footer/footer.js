@@ -31,19 +31,16 @@ const AddressLink = styled.a`
 const Copyright = styled.p`
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 0.45em;
+  font-size: 0.7rem;
   letter-spacing: 0.02em;
   font-style: normal;
   margin-top: 1.5em;
-  @media (max-width: 1180px) {
-    font-size: 0.5em;
-  }
-  @media (max-width: 768px) {
-    font-size: 0.54em;
-  }
-  @media (max-width: 480px) {
-    font-size: 0.6em;
-  }
+`
+
+const IconWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 
 const Footer = () => {
@@ -63,18 +60,20 @@ const Footer = () => {
           <AddressLink href={`tel:${address.tel}`}>Tel: {address.tel}</AddressLink>
           <AddressLink href={`mailto:${address.email}`}>Email: {address.email}</AddressLink>
           <hr />
-          <a href={social.fb}
-            aria-label='Facebook Link'
-            target='blank'
-            rel='noopener noreferrer'>
-            <Fb />
-          </a>
-          <a href={social.insta}
-            aria-label='Instagram Link'
-            target='blank'
-            rel='noopener noreferrer'>
-            <Insta />
-          </a>
+          <IconWrapper>
+            <a href={social.fb}
+              aria-label='Facebook Link'
+              target='blank'
+              rel='noopener noreferrer'>
+              <Fb />
+            </a>
+            <a href={social.insta}
+              aria-label='Instagram Link'
+              target='blank'
+              rel='noopener noreferrer'>
+              <Insta />
+            </a>
+          </IconWrapper>
         </address>
         <Terms />
         <Copyright>© {new Date().getFullYear()} Like-Minded Living, all rights reserved </Copyright>
