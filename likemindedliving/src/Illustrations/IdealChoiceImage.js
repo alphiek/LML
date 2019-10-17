@@ -10,10 +10,10 @@ const ImageWrapper = styled.img`
    max-width: 200%;
    z-index: 10;
    @media (max-width: 1180px) {
-     width: 18rem;
+     width: 22rem;
    }
    @media (max-width: 480px) {
-     width: 16rem;
+     width: 20rem;
    }
 `
 

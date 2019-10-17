@@ -32,6 +32,13 @@ export const MainSectionContainer = styled(SectionContainer)`
    padding: 80px 0;
 `
 
+export const IdealChoiceSection = styled(MainSectionContainer)`
+  flex-direction: column;
+  @media (max-width: 1180px) {
+    padding: 80px 0 0;
+  }
+`
+
 export const SectionWrapper = styled.div`
   width: 950px;
   display: flex;
