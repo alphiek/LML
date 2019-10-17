@@ -20,7 +20,7 @@ export const tenants = {
         link: {
             color: `${colors.white}`,
             bgColor: `${colors.buttonOne}`,
-            name: `CTA for tenant sign up form`,
+            name: `Start your search now`,
             url: `https://likemindedliving.outgrow.us/likemindedliving-45`
         },
     },
@@ -107,12 +107,12 @@ export const tenants = {
         p1: `Read how our happy housemates found their perfect solution to renting in London.`,
         testimonial: {
             one: {
-                text: `Like Minded Living are worth trying out even if you have had reasonable success with other agents. I did this and found the service I have received from Like Minded Living to be very good. It started when Denzel , (Director) , visited my property and gave an appraisal and ever since then I have not looked back. In fact I have increased my portfolio with them and would suggest anyone having issues with their agents to use Like Minded Living. Even if you haven’t got a problem with your agent but want to try something different then again contact Denzel at Like Minded Living and you will not be disappointed. From being in regular contact regarding the property to paying rent on time , I have found the management team to be extremely efficient. They have dealt with any issues relating to my property quickly and with a minimum of fuss. I’m looking forward to continue with the business relationship and would recommend Like Minded Living to everyone whether you are a Tenant or a Landlord`,
+                text: `We came across LML through my university union page, properties were fabulous, not only were they a very high standard but the prices were more than reasonable.  I can say they are definitely very reliable with great offers on housing.`,
                 name: `Tyrone`,
                 divider: `${colors.lilac}`
             },
             two: {
-                text: `Haven't had a drama with our room rental in Putney! Have heard some horror stories with some agencys in London and from my experience with Menzi and Like minded living would recommend this as a good option!`,
+                text: `Haven't had a drama with our room rental in Putney! Have heard some horror stories with some but from my experience with Like minded living I would recommend this as a good option!`,
                 name: `Aaron`,
                 divider: `${colors.lilac}`
             },

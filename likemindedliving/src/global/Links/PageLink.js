@@ -3,7 +3,6 @@ import { ButtonWrapper, Bubble } from './LinkStyles'
 
 
 const PageLink = ({ link }) => {
-    console.log(link)
     return (
         <ButtonWrapper
             bgColor={link.bgColor}
