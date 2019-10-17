@@ -47,8 +47,8 @@ export const tenants = {
     },
     sectionTwo: {
         h2: `Housemate matching`,
-        p1: `Looking to flat-share as an individual? No worries. We know how hard it can be moving into a new home with complete strangers. Take our ‘LML Housemate Matching’ quiz, and we’ll use the results to best match you to other compatible housemates for a happy house.`,
-        fact: `Take this quiz to help us find your ideal housemates for your house-share`,
+        p1: `Looking to flat-share as an individual? No worries. We know how hard it can be moving into a new home with complete strangers. Take our ‘LML Housemate Matching’ quiz, and we’ll use the results to best match you to other compatible housemates\xa0for\xa0a\xa0happy\xa0house.`,
+        fact: `Take this quiz to help us find your ideal housemates for\xa0your\xa0house-share`,
         color: `${colors.white}`,
         factColor: `${colors.lightBlue}`,
         bgColor: `${colors.textPrimary}`,

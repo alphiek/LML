@@ -5,11 +5,11 @@ import { colors } from '../../../global/colors'
 
 
 const CardImageWrapper = styled.div`
-   height: 6rem;
+   height: 100px;
    width: 100%;
    overflow: hidden;
    background: #4B4A68;
-   border-radius: 4px 4px 0 0;
+   border-radius: 16px 16px 0 0;
 `
 
 const Image = styled.img`

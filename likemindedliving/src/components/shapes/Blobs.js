@@ -37,6 +37,7 @@ const BlobFlex = styled(Flex)`
   @media (max-width: 1180px) {
    justify-content: center;
    align-items: center;
+   margin-bottom: 16px;
   }
 `
 

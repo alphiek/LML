@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Flex from '../containers/Flex'
+import { MainSectionContainer } from '../containers/Containers'
 import { FullWidthText } from '../text/TextSection'
 import BlogContent from './Blogs/BlogContent'
 
@@ -9,9 +10,9 @@ export const CardContainer = styled.li`
   flex: 0 0 auto;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 0.5em;
-  width: 14rem;
-  height: 300px;
+  border-radius: 16px;
+  width: 15rem;
+  height: 350px;
   margin: 0.8rem;
   transition: all .2s ease-in-out;
   box-shadow: 0 10px 18px -3px rgba(75, 74, 104, 0.25), 0 4px 6px -2px rgba(75, 74, 104, 0.05);
@@ -54,6 +55,7 @@ const ScrollContainer = styled.ul`
 `
 const Section = styled(Flex)`
   width: 100%;
+  margin: 80px 0;
 `
 
 const WPCarousel = ({ copy }) => {
