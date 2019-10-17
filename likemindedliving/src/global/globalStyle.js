@@ -188,12 +188,14 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
-  color: #1E1D42;
+  color: inherit;
 }
 
 a:active,
-a:hover {
+a:hover
+a:visited {
   outline-width: 0;
+  color: inherit;
 }
 
 img {

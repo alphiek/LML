@@ -1,28 +1,42 @@
 import React from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
+
 import ImageWrapper from './ImageWrapper'
 
+import step4L from '../../images/Step4L.svg'
+import step5 from '../../images/Step5.svg'
+
+
+const ImgBlock = styled.img`
+  max-width: 70%;
+  width: 18em;
+  @media (max-width: 1180px) {
+    width: 18rem;
+  }
+  @media (max-width: 480px) {
+    width: 80vw;
+  }
+`
 
 const SlideImages = ({ slide }) => {
     let slideImage;
 
-    console.log(slide, slideImage)
-
-    if (slide === '1') {
+    if (slide === 1) {
         slideImage =
-            <ImageWrapper>One</ImageWrapper>
-    } else if (slide === '2') {
+            <ImageWrapper><ImgBlock />One</ImageWrapper>
+    } else if (slide === 2) {
         slideImage =
-            <ImageWrapper>Two</ImageWrapper>
-    } else if (slide === '3') {
+            <ImageWrapper><ImgBlock />Two</ImageWrapper>
+    } else if (slide === 3) {
         slideImage =
-        <ImageWrapper>Three</ImageWrapper>
-    } else if (slide === '4') {
+            <ImageWrapper><ImgBlock />Three</ImageWrapper>
+    } else if (slide === 4) {
         slideImage =
-        <ImageWrapper>Four</ImageWrapper>
-    } else if (slide === '5') {
+            <ImageWrapper><ImgBlock src={step4L} /></ImageWrapper>
+    } else if (slide === 5) {
         slideImage =
-        <ImageWrapper>Five</ImageWrapper>
+            <ImageWrapper><ImgBlock src={step5} /></ImageWrapper>
     } else {
         return <div>Something is wrong here</div>
     }
@@ -34,8 +48,8 @@ const SlideImages = ({ slide }) => {
     )
 }
 
-SlideImages.propTypes = {
-    slide: PropTypes.number.isRequired
-}
-
 export default SlideImages
+
+SlideImages.propTypes = {
+    slide: PropTypes.number.isRequired,
+}

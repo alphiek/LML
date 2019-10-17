@@ -51,13 +51,16 @@ export const SectionWrapper = styled.div`
 
 export const ReverseSectionWrapper = styled(SectionWrapper)`
   flex-direction: row;
+  padding: 2rem 0;
   @media (max-width: 1180px) {
     margin: 3rem 0 3rem 0;
+    padding: 0;
   }
   `
 
 export const Wrapper = styled.div`
   width: 85%;
+  padding-right: 1rem;
   @media (max-width: 1180px) {
     width: 60%;
     margin-bottom: 1rem;

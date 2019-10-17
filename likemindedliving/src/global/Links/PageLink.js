@@ -1,20 +1,26 @@
 import React from 'react'
-import { LinkStyle, ButtonWrapper } from './LinkStyles'
+import { ButtonWrapper, Bubble } from './LinkStyles'
 
 
 const PageLink = ({ link }) => {
+    console.log(link)
     return (
-            <ButtonWrapper bgColor={link.bgColor}>
-            <LinkStyle
-                    color={link.color}
-                    href={link.url}
-                    aria-label={`Link to ${link.name}`}
-                    rel='noopener noreferrer'
-                    target='_blank'
-                >
+        <ButtonWrapper
+            bgColor={link.bgColor}
+            color={link.color}>
+            <a
+                href={link.url}
+                aria-label={`Link to ${link.name}`}
+                rel='noopener noreferrer'
+                target='_blank'
+            >
                 {link.name}
-            </LinkStyle>         
-            </ButtonWrapper>
+            </a>
+            <Bubble />
+            <Bubble />
+            <Bubble />
+            <Bubble />
+        </ButtonWrapper>
     )
 }
 

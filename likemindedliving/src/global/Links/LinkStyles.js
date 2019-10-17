@@ -1,20 +1,52 @@
 import styled from 'styled-components'
 
-export const ButtonWrapper = styled.div`
-  text-align: center;
+export const Bubble = styled.span`
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #000;
+  transform: translateY(100%);
+  transform-origin: bottom;
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.8s;
+  transition-timing-function: ease-out;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  &:nth-child(1) {
+    --n: 1;
+  }
+  &:nth-child(2) {
+    --n: 2;
+  }
+  &:nth-child(3) {
+    --n: 3;
+  }
+  &:nth-child(4) {
+    --n: 4;
+  }
+`
+
+export const ButtonWrapper = styled.button`
+  cursor: pointer;
   background: ${props => props.bgColor};
-  width: 100%;
-  line-height: 130%;
+  color: ${props => props.color};
   font-size: 0.9rem;
   font-weight: 700;
-  padding: 1rem;
   border-radius: 4px;
-  transition: all .3s ease-in-out;
-  box-shadow: 0 4px 6px -1px rgba(75, 74, 104, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  line-height: 130%;
+  border: 2px solid ${props => props.bgColor};
+  position: relative;
+  overflow: visable;
+  z-index: 1;
+  transition: 0.8s;
+  ${Bubble}:hover & {
+    transform: translateY(0) scale(2);
+  }
   :hover {
-    box-shadow: 0 25px 25px -15px rgba(75, 74, 104, 0.2);
-    transform: scale(1.02);
-    transform: translate(0, -0.1em);
+    color: ${props => props.bgColor};
   }
   @media (max-width: 1180px) {
     padding: 1.5rem;
@@ -43,5 +75,6 @@ export const LinkWrapperRight = styled.div`
 export const LinkStyle = styled.a`
   color: ${props => props.color};
 `
+
 
 

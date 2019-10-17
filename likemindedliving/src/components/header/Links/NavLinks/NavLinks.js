@@ -8,6 +8,7 @@ import { Bounce } from '../../../animations/keyframes'
 
 const Link = styled.a`
   padding: 0 1.2rem;
+  color: #1E1D42;
   @media (max-width: 1180px) {
       padding: 0;
   }  
