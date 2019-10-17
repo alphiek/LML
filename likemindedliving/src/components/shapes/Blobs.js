@@ -19,15 +19,9 @@ const Blob = styled.svg`
 `
 
 const GradBlobContainer = styled.div`
-   width: 22vw;
+   width: 22rem;
    height: 100%;
    position: relative;
-   @media (max-width: 1180px) {
-      width: 35vw;
-   }
-   @media (max-width: 480px) {
-      width: 80%;
-   }
 `
 
 const BlobFlex = styled(Flex)`
@@ -37,7 +31,7 @@ const BlobFlex = styled(Flex)`
   @media (max-width: 1180px) {
    justify-content: center;
    align-items: center;
-   margin-bottom: 16px;
+   margin-bottom: 25px;
   }
 `
 

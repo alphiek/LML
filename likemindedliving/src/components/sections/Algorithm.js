@@ -51,12 +51,19 @@ const Icon = styled.div`
     margin: 0.5em 0 0.5em 0;
 }`
 
+const Spacer = styled.div`
+@media (max-width: 1180px) {
+    height: 40px;
+}
+`
+
 const Algorithm = ({ copy }) => {
     return (
         <MainSectionContainer>
             <SectionWrapper>
                 <Wrapper>
                     <AlgorithmIllustration />
+                    <Spacer />
                 </Wrapper>
                 <Wrapper>
                     <TextSection copy={copy}>

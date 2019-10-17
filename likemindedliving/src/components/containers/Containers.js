@@ -26,9 +26,6 @@ export const SectionContainer = styled.section`
   padding: 1.5rem 0 3rem 0;
   margin-bottom: 2rem;
   background-color: ${props => props.bgColor};
-  @media (max-width: 1168px) {
-    margin-bottom: 1rem;
-  }
 `
 
 export const MainSectionContainer = styled(SectionContainer)`

@@ -63,13 +63,13 @@ export const tenants = {
         },
     },
     sectionThree: {
-        h2: `The algorithm behind our tool`,
+        h2: `The algorithm behind\xa0our\xa0tool`,
         p1: `We found sharers tend to spend more on rent when looking for properties on flat-sharing websites, alarmingly sometimes 30% more.
         We want sharers to fully utilise the rental market and built technology that does just that. 
         We’re on a mission to decrease rents sharers pay whilst increasing options available to them, our aim is to ensure rent takes up less than a third of take-home pay.`,
         fact: {
-            one: `We search over 1000s of major listing to find a property that fits`,
-            two: `Customers save on average £1,500 per year when using our tool`,
+            one: `We search over 1000s of major listing to find a\xa0property\xa0that\xa0fits`,
+            two: `Customers save on average £1,500 per year when\xa0using\xa0our\xa0tool`,
         },
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
@@ -83,7 +83,7 @@ export const tenants = {
         },
     },
     sectionFour: {
-        h2: `What makes our flatsharing community the ideal choice`,
+        h2: `What makes our flatsharing community\xa0the\xa0ideal\xa0choice`,
         p1: `Ever had a difficult flat-sharing experience renting in London? Has your agent partially returned your deposit, your landlord ignored an issue relating to your property for months? Or could it be that your rent is too expensive and your current home is over-crowded? `,
         p2: `Like-Minded Living was made by flat-sharers, we understand the challenges faced by flat-sharers, and we exist to face these challenges head on.`,
         color: `${colors.textPrimary}`,
