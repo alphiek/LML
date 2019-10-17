@@ -32,7 +32,7 @@ export const SectionContainer = styled.section`
 `
 
 export const MainSectionContainer = styled(SectionContainer)`
-   padding: 4rem 0 3rem 0;
+   padding: 80px 0;
 `
 
 export const SectionWrapper = styled.div`
@@ -51,19 +51,15 @@ export const SectionWrapper = styled.div`
 
 export const ReverseSectionWrapper = styled(SectionWrapper)`
   flex-direction: row;
-  padding: 2rem 0;
-  @media (max-width: 1180px) {
-    margin: 3rem 0 3rem 0;
-    padding: 0;
-  }
   `
+
 
 export const Wrapper = styled.div`
   width: 85%;
   padding-right: 1rem;
   @media (max-width: 1180px) {
     width: 60%;
-    margin-bottom: 1rem;
+    padding-right: 0rem;
   }
   @media (max-width: 768px) {
   width: 80%;
@@ -75,7 +71,14 @@ export const CenterWrapperProcess = styled(Wrapper)`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 2rem 0 0 0;
+  margin: 30px 0 0 0;
+  @media (max-width: 1180px) {
+    width: 480px;
+    margin: 0;
+  }
+  @media (max-width: 480px) {
+    width: 300px;
+    }
 `
 
 

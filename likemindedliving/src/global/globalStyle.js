@@ -12,10 +12,10 @@ html {
 
 body {
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  -webkit-text-size-adjust: none;
   font-size: 1rem;
   line-height: 145%;
   font-weight: normal;
-  text-rendering: optimizeLegibility;
   color: #4B4A68;
   word-wrap: normal;
   font-kerning: normal;

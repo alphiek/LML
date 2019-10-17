@@ -5,6 +5,9 @@ import Flex from '../containers/Flex'
 
 const ArrowWrapper = styled(Flex)`
   margin-top: 0.5rem;
+  @media (max-width: 1180px) {
+    margin-top: 30px;
+  }
 `
 
 const Arrows = ({ updateNext, updatePrevious, updateSlideHandler, currentSlide, totalSlides}) => {

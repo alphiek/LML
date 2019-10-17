@@ -7,6 +7,9 @@ const PaginationWrapper = styled(Flex)`
    height: auto;  
    margin: 0 0 2rem;
    position: relative;
+   @media (max-width: 1180px) {
+     margin: 0 0 30px;
+   }
 `
 
 const Pagination = ({ pagination, updateSlideHandler, updateStyle, currentSlide }) => {

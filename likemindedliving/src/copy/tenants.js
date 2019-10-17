@@ -27,19 +27,18 @@ export const tenants = {
     process: {
         landlords: false,
         h3: `So why not get started`,
-        p1: `Our process could not be easier, check out our simple steps to finding you the right property.`,
-        p2: `London has over 32 boroughs, between 6 zones, it can be quite confusing to find an area best suited to you. Take our quiz to help you make that decision.`,
+        p1: `Our process could not be easier, check out our simple steps to finding\xa0you\xa0the\xa0right\xa0property.`,
         steps: {
-            1: `Fill in our ‘Where Would you Like to Live in London Quiz’`,
-            2: `Our tool will run its algorithm and search thousands of properties in accordance with your requirements`,
-            3: `We’ll hand pick the most suitable properties from the bunch`,
-            4: `You let us know when you’d like to arrange for a viewing`,
-            5: `Place an offer, and then get ready for your move-in date!`,
+            1: `Fill in our ‘Where Would you Like to Live in London\xa0Quiz’`,
+            2: `Our tool will run its algorithm and search thousands of properties in accordance with\xa0your\xa0requirements`,
+            3: `We’ll hand pick the most suitable properties from\xa0the\xa0bunch`,
+            4: `You let us know when you’d like to arrange for\xa0a\xa0viewing`,
+            5: `Place an offer, and then get ready for your\xa0move-in\xa0date!`,
         },
         link: {
             color: `${colors.textPrimary}`,
             bgColor: `${colors.mint}`,
-            name: `Take our where would you like to live in London quiz`,
+            name: `Take our where would you like to live\xa0in\xa0London\xa0quiz`,
             url: `https://likemindedliving.outgrow.us/Copy-of-likemindedliving-3-2`
         },
         divider: `${colors.textPrimary}`,
