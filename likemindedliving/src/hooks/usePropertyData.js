@@ -11,7 +11,7 @@ export const usePropertyData = () => {
                     image {
                       alt
                       fluid {
-                        base64
+                        ...GatsbyDatoCmsFluid
                       }
                       url
                     }

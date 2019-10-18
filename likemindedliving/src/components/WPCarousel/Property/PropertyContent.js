@@ -9,14 +9,14 @@ const PropertyContent = () => {
   let propertyItems;
 
   if (data) {
-    propertyItems = data.edges.map(item => <CardContainer key={item.node.id}><PropertyCard  content={item.node}/></CardContainer>)
+    propertyItems = data.edges.map(item => <CardContainer key={item.node.id}><PropertyCard content={item.node}/></CardContainer>)
   } else {
     propertyItems = <div>Nothing was returned</div>
   } 
 
   return (
     <>
-    <div>{propertyItems}</div>
+    {propertyItems}
     </>
   )
 }
