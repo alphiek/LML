@@ -17,8 +17,7 @@ import {
 `
 
 const PropertyCard = ({ content }) => {
-    console.log(content.image.fluid)
-
+    
     return (
         <>
       <CardImageWrapper><Image fluid={content.image.fluid} alt={content.image.alt} /></CardImageWrapper>
@@ -26,7 +25,7 @@ const PropertyCard = ({ content }) => {
         <h4>{content.shortdescription}</h4>
         <ShortDivider color={colors.mint} width='3rem' top='0.2rem' bottom='0.2rem' />
         <CardBody>{content.location}</CardBody>
-        <CardBody>{content.price}</CardBody>
+        <CardBody>{`£${content.price} p.c.m`}</CardBody>
         <CardLink
           href={content.linkurl}
           target='_blank' rel='noopener noreferrer'>View Property</CardLink>

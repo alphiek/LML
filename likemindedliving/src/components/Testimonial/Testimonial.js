@@ -1,104 +1,71 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Flex from '../containers/Flex'
-import { Body } from '../text/Text'
 import { colors } from '../../global/colors'
 import TestimonialCard from './TestimonialCard'
+import { H2, Body } from '../text/Text'
+
 import { FadeIn } from '../animations/FadeIn'
 import { ShortDivider } from '../Dividers/Dividers'
 
-const H2Testimonial = styled.h2`
-  margin-bottom: 0.5em;
-  @meda (max-width: 1180px) 
-  {
-    width: 100%;
-  }
+const TestimonialSection = styled.section`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
-
-export const CardWrapper = styled(Flex)`
-  grid-column: 2;
-  grid-row: 2 / span 2;
-  @media(max-width: 1180px) {
-    grid-column: 1;
-    grid-row: 2;
-    justify-content: center;
-  }
-`
-
-const TestimonialGrid = styled.div`
-  display: grid;
-  margin-left: 5%; 
-  margin-bottom: 5%;
-  grid-template-columns: 38% 25% 25% 1fr;
-  grid-template-rows: repeat(2, auto);
-  & ${CardWrapper}: nth-child(2) {
-    grid-column: 3;
-    @media(max-width: 1180px) {
-      display: none;
-    }
-  }
-  @media(max-width: 1180px) {
-    grid-template-columns: 100%;
-    margin: 0;
-  }
-`
-const Background = styled.div`
-  grid-column: 1 / 5;
-  grid-row: 1;
+const HeadingContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 80px 0 70px;
   background-color: ${colors.lightPeach};
-  @media(max-width: 1180px) {
-    grid-column: 1;
+`
+const HeadingWrapper = styled.div`
+  width: 950px;
+  @media (max-width: 1180px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
   }
 `
-const Heading = styled(Flex)`
-  margin: 3em 0 2em 16%;
-  text-align: left;
-  width: 18%;
-  @media(max-width: 1180px) {
-    width: 80%;
-    margin 3em auto 2em auto;
-    justify-content: center;
-    flex-direction: column;
-  }
-  @media(max-width: 768px) {
-    width: 60%;
-  }
-  @media(max-width: 480px) {
-    width: 70%;
-  }
-  `
 
-const DividerWrapper = styled.div`
-  @media (max-width: 1180px)
-  {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0.3em;
-  }
-  `
+const TestimonialContainer = styled.div`
+   width: 950px;
+   display: flex;
+   position: relative;
+   justify-content: space-between;
+`
+
 
 const Testimonial = ({ copy }) => {
   let data = copy
   let testimonial = Object.entries(copy.testimonial)
-
   let cards = testimonial.map((item, index) => <TestimonialCard key={index} copy={item} />)
 
+  console.log(data)
+  console.log(testimonial)
+
   return (
-    <TestimonialGrid>
-      <Background>
-        <Heading contentCentre justifyStart>
-          <FadeIn>
-            <H2Testimonial color={data.color}>{data.h2}</H2Testimonial>
-            <DividerWrapper>
-              <ShortDivider bottom='0' top='0' color={data.divider} width='3.5em' />
-            </DividerWrapper>
-          </FadeIn>
-          <Body color={data.color}>{data.p1}</Body>
-        </Heading>
-      </Background>
-      {cards}
-    </TestimonialGrid>
+    <>
+      <TestimonialSection>
+        <HeadingContainer>
+          <HeadingWrapper>
+            <H2 color={data.color}>{data.h2}</H2>
+            <ShortDivider bottom='0' top='0' color={data.divider} width='3.5em' />
+            <Body>{data.p1}</Body>
+          </HeadingWrapper>
+        </HeadingContainer>
+        <TestimonialContainer>
+        {cards}
+        </TestimonialContainer>
+      </TestimonialSection>
+    </>
   )
 }
 

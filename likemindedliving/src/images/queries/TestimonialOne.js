@@ -2,8 +2,6 @@ import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import { TestimonialImageWrapper } from '../../components/Testimonial/TestimonialCard'
 
-
-
 export const TestimonialOne = () => (
     <StaticQuery query={graphql`
     query {
