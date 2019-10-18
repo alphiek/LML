@@ -12,7 +12,6 @@ export const CardContainer = styled.li`
   flex-wrap: wrap;
   border-radius: 16px;
   width: 15rem;
-  height: 350px;
   margin: 0.8rem;
   transition: all .2s ease-in-out;
   box-shadow: 0 10px 18px -3px rgba(75, 74, 104, 0.25), 0 4px 6px -2px rgba(75, 74, 104, 0.05);
@@ -29,7 +28,7 @@ export const CardContainer = styled.li`
     margin-left: 25vw;
   }
   &: last-child {
-    margin-right: 50px;
+    opacity: 0;
   }
   @media(max-width: 768px) {
       transition: none;

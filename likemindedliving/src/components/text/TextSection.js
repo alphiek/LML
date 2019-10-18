@@ -19,6 +19,9 @@ const TextContainer = styled(Flex)`
 const FullWidthTextWrapper = styled.div`
    width: 950px;
    margin-top: 2rem;
+   @media (max-width: 1180px){
+       width: auto;
+   }
 `
 
 const Span = styled.span`
