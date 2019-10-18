@@ -19,7 +19,6 @@ const TextWrapper = styled.div`
 `
 
 const StepText = ({ content }) => {
-    console.log(content)
     return (
         <TextWrapper>
             <Body>

@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Flex from '../containers/Flex'
-import { MainSectionContainer } from '../containers/Containers'
 import { FullWidthText } from '../text/TextSection'
 import BlogContent from './Blogs/BlogContent'
+import PropertyContent from './Property/PropertyContent'
 
 export const CardContainer = styled.li`
   position: relative;
@@ -59,11 +59,10 @@ const Section = styled(Flex)`
 `
 
 const WPCarousel = ({ copy }) => {
-
   let section;
 
   if (copy.properties) {
-    section = <BlogContent page='tenants' />
+    section = <PropertyContent />
   } else {
     section = <BlogContent page={copy.page} />
   }
