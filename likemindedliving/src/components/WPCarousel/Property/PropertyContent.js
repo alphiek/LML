@@ -1,10 +1,10 @@
 import React from 'react'
+import Swiper from 'react-id-swiper';
 import { usePropertyData } from '../../../hooks/usePropertyData'
 import { CardContainer } from '../WPCarousel'
 import PropertyCard from './PropertyCard'
 
 const PropertyContent = () => {
-
   const data = usePropertyData()
   let propertyItems;
 
@@ -14,10 +14,30 @@ const PropertyContent = () => {
     propertyItems = <div>Nothing was returned</div>
   } 
 
+  const params = {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    breakpoints: {
+      1180: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      }
+    }
+  }
+
+
   return (
-    <>
+    <Swiper {...params}>
     {propertyItems}
-    </>
+    </Swiper>
   )
 }
 

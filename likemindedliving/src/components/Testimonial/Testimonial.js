@@ -4,8 +4,6 @@ import styled from 'styled-components'
 import { colors } from '../../global/colors'
 import TestimonialCard from './TestimonialCard'
 import { H2, Body } from '../text/Text'
-
-import { FadeIn } from '../animations/FadeIn'
 import { ShortDivider } from '../Dividers/Dividers'
 
 const TestimonialSection = styled.section`

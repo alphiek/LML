@@ -1,13 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Flex from '../containers/Flex'
 import { FullWidthText } from '../text/TextSection'
 import BlogContent from './Blogs/BlogContent'
 import PropertyContent from './Property/PropertyContent'
 
 export const CardContainer = styled.li`
-  position: relative;
-  flex: 0 0 auto;
   display: flex;
   flex-wrap: wrap;
   border-radius: 16px;
@@ -25,37 +22,23 @@ export const CardContainer = styled.li`
     transform: none;
     }
   }
-  &: first-child {
-    margin-left: 25vw;
-  }
-  &: last-child {
-    margin-right: 50px;
-  }
   @media(max-width: 768px) {
       transition: none;
     }
   }
 `
 
-const ScrollContainer = styled.ul`
-  display: flex;
-  width: 100%;
-  margin: 2rem 0;
-  padding: 2rem 0;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  &::-webkit-scrollbar {
-    display: none;
-    width: 0;
-    height: 0;
-    -webkit-appearance: none;
-  }
-  scrollbar-width: none;
+const SlideContainer = styled.div`
+  width: 950px;
+  @media (max-width: 1180px) {
+    width: 80vw;
+}
 `
-const Section = styled(Flex)`
+const Section = styled.div`
   width: 100%;
-  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 const WPCarousel = ({ copy }) => {
@@ -68,14 +51,14 @@ const WPCarousel = ({ copy }) => {
   }
 
   return (
-    <Section justifyCenter alignCenter>
+    <Section>
+      <SlideContainer>
       <FullWidthText
         h2={copy.h2}
         p2={copy.h2p2}
         color={copy.color} />
-      <ScrollContainer>
         {section}
-      </ScrollContainer>
+      </SlideContainer>
     </Section>
   )
 }
