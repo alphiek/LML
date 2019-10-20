@@ -21,13 +21,9 @@ export const landlord = {
                 h4: `So, what do you do?`,
                 p: `Good question. We offer a property finding service to our renters, by using our technology to search across the market and help them find properties that meet their requirements. If we are in touch with you, this usually means one of our renters have indicated to us they would like to rent your property.`
             },
-            4: {
+            3: {
                 h4: `How do you work?`,
-                p: `We’ll be in touch to arrange a viewing, if our renters are happy and like your property, we’ll provide you with their contact details and kick-start your offer process.`
-            },
-            5: {
-                h4: `Will a member of our company be present at the viewing?`,
-                p: `Yes, usually a member from our lettings team will be on hand to help with any queries you may have.`
+                p: `We’ll be in touch to arrange a viewing, if our renters are happy and like your property, we’ll provide you with their contact details and kick-start your offer process. A member of our team will usually be present at the viewing and on hand to help with any queries you may have.`
             },
         },
         color: `${colors.textPrimary}`,
@@ -49,7 +45,7 @@ export const landlord = {
                   and once the tenancy agreement is formed a member of our team will be one call away to assist.`,
         },
         color: `${colors.textPrimary}`,
-        bgColor: `${colors.white}`,
+        bgColor: `${colors.grey}`,
         link: {
             color: `${colors.textPrimary}`,
             bgColor: `${colors.grey}`,
@@ -122,12 +118,12 @@ export const landlord = {
         p1: `Vivamus ac fringilla erat. Suspendisse hendrerit ex sed tincidunt blandit.`,
         testimonial: {
             one: {
-                text: `Like Minded Living are worth trying out even if you have had reasonable success with other agents. It started with an appraisal and ever since then I have not looked back. In fact I have increased my portfolio with. Even if you haven’t got a problem with your agent but want to try something different then again contact Denzel at Like Minded Living and you will not be disappointed. I’m looking forward to continue with the business relationship and would recommend Like Minded Living to everyone whether you are a Tenant or a Landlord.`,
+                text: `"Like Minded Living are worth trying out even if you have had reasonable success with other agents. It started with an appraisal and ever since then I have not looked back. In fact I have increased my portfolio with. Even if you haven’t got a problem with your agent but want to try something different then again contact Denzel at Like Minded Living and you will not be disappointed. I’m looking forward to continue with the business relationship and would recommend Like Minded Living to everyone whether you are a Tenant or a Landlord."`,
                 name: `Ravin`,
                 divider: `${colors.lilac}`
             },
             two: {
-                text: `We have been dealing with Like-Minded Living for over 2 years and during this time we’ve had a very good relationship with Denzel and his team. We would definitely deal with Like-Minded Living moving forward and would recommend the company to any of our Landlords`,
+                text: `"We have been dealing with Like-Minded Living for over 2 years and during this time we’ve had a very good relationship with Denzel and his team. We would definitely deal with Like-Minded Living moving forward and would recommend the company to any of our Landlords."`,
                 name: `Nick`,
                 divider: `${colors.lilac}`
             },
@@ -136,6 +132,7 @@ export const landlord = {
         bgColor: `${colors.white}`,
     },
     pressReel: {
+        h2: `Hot off the press`,
         articles: [
             {
                 name: `Forbes`,
@@ -167,7 +164,8 @@ export const landlord = {
             }
         ],
         color: `${colors.white}`,
-        bgColor: `${colors.textPrimary}`
+        bgColor: `${colors.textPrimary}`,
+        divider: `${colors.lightPeach}`
     },
     blogs: {
         blogs: true,

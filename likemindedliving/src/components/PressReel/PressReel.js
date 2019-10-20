@@ -1,21 +1,34 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { ShortDivider } from '../Dividers/Dividers'
 import styled from 'styled-components'
+import { H2 } from '../text/Text'
 
 const PressSection = styled.section`
  width: 100%;
  display: flex;
  justify-content: center;
  align-items: center;
- padding: 1.5rem 0;
  background-color: ${props => props.bgColor};
+`
+
+const ContentWrapper = styled.div`
+  width: 950px;
+  display: flex;
+  padding: 60px 0;
+  flex-direction: column;
+  @media (max-width: 1180px) {
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 const ScrollContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 950px;
+  width: 100%;
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -29,14 +42,13 @@ const ScrollContainer = styled.div`
 `
 const ArticleWrapper = styled.div`
   text-align: center;
-  margin: 1rem 1.5rem;
+  margin: 0 40px 0 0;
   color: white;
   width: auto;
-  height: 100px;
+  height: 60px;
   flex: 0 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
 `
 
 const PressReel = ({ copy }) => {
@@ -44,7 +56,11 @@ const PressReel = ({ copy }) => {
 
   return (
     <PressSection bgColor={copy.bgColor}>
-      <ScrollContainer>{articles}</ScrollContainer>
+      <ContentWrapper>
+        <H2 color={copy.color}>{copy.h2}</H2>
+        <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
+        <ScrollContainer>{articles}</ScrollContainer>
+      </ContentWrapper>
     </PressSection>
   )
 }

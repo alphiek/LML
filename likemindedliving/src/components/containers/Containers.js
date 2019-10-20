@@ -1,21 +1,4 @@
 import styled from 'styled-components'
-import Flex from './Flex'
-
-export const FullWidthContainer = styled(Flex)`
-  position: relative;
-  padding-top: 4em;
-  padding-bottom: 4em;
-  width: 60%;
-  @media (max-width: 991px) {
-    width: 65%;
-  }
-  @media (max-width: 767px) {
-    width: 70%;
-  }
-  @media (max-width: 479px) {
-    width: 80%;
-  }
-`
 
 export const SectionContainer = styled.section`
   width: 100%;
@@ -30,6 +13,7 @@ export const SectionContainer = styled.section`
 
 export const MainSectionContainer = styled(SectionContainer)`
    padding: 80px 0;
+   margin-bottom: 0;
 `
 
 export const IdealChoiceSection = styled(MainSectionContainer)`

@@ -1,63 +1,84 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-
-import Flex from '../containers/Flex'
 import { H2, Body } from '../text/Text'
+import { MainSectionContainer } from '../containers/Containers'
 import { ShortDivider } from '../Dividers/Dividers'
 import { FadeIn } from '../animations/FadeIn'
 
-const TextContainer = styled(Flex)`
-   height: 100%;
-   @media (max-width: 1024px) {
-       width: 80%;
-       align-items: center;
+const LandlordSectionWrapper = styled.div`
+   width: 950px;
+   display: flex;
+   flex-direction: column;
+   @media (max-width: 1180px) {
+       width: 80vw;
    }
+`
+
+const FactContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 1180px) {
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+    }
+`
+
+const FactWrapper = styled.div`
+    width: 15rem;
+    @media (max-width: 1180px){
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 const H4 = styled.h4`
   margin-bottom: 1em;
   margin-top: 0.5em;
+  letter-spacing: 0.5px;
   color: ${props => props.color};
 `
-const CopyWrapper = styled.div`
-    width: 100%;
-    position: relative;
-    margin: 2em 0;
-    grid-area: copy;
-    padding-right: 3em;
-    @media (max-width: 1180px) {
-    grid-area: right;
-    padding-right: 0;
-    margin: 1em 0 2em 0;
-    }
+
+const TextContainer = styled.div`
+  @media (max-width: 1180px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
 `
 
 export const SectionContent = ({ copy }) => {
 
-    console.log(copy)
-
     let fact = Object.entries(copy.fact).map((item, index) => (
-        <div key={index}>
+        <FactWrapper key={index}>
             <FadeIn>
                 <H4 color={copy.color} key={index}>{item[1].h4}</H4>
             </FadeIn>
             <Body color={copy.color}>{item[1].p}</Body>
-        </div>
+        </FactWrapper>
     ))
 
     return (
-        <>
-            <CopyWrapper>
-                <TextContainer column justifyCenter contentCenter>
-                    <FadeIn>
-                        <H2 color={copy.color}>{copy.h2}</H2>
-                    </FadeIn>
-                    <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
-                    {fact}
+        <MainSectionContainer bgColor={copy.bgColor}>
+            <LandlordSectionWrapper>
+                <div></div>
+                <TextContainer>
+                        <FadeIn>
+                            <H2 color={copy.color}>{copy.h2}</H2>
+                        </FadeIn>
+                        <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
+                        <FactContainer>
+                            {fact}
+                        </FactContainer>
                 </TextContainer>
-            </CopyWrapper>
-        </>
+            </LandlordSectionWrapper>
+        </MainSectionContainer>
     )
 }
 

@@ -121,6 +121,7 @@ export const tenants = {
         divider: `${colors.white}`,
     },
     pressReel: {
+        h2: `Hot off the press`,
         articles: [
             {
                 name: `Forbes`,
@@ -152,7 +153,8 @@ export const tenants = {
             }
         ],
         color: `${colors.white}`,
-        bgColor: `${colors.textPrimary}`
+        bgColor: `${colors.textPrimary}`,
+        divider: `${colors.lightPeach}`,
     },
     blogs: {
         blogs: true,
