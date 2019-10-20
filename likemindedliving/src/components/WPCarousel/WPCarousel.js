@@ -8,9 +8,6 @@ export const CardContainer = styled.li`
   display: flex;
   flex-wrap: wrap;
   border-radius: 16px;
-  width: 15rem;
-  height: 350px;
-  margin: 0.8rem;
   transition: all .2s ease-in-out;
   box-shadow: 0 10px 18px -3px rgba(75, 74, 104, 0.25), 0 4px 6px -2px rgba(75, 74, 104, 0.05);
   :hover {
@@ -30,6 +27,7 @@ export const CardContainer = styled.li`
 
 const SlideContainer = styled.div`
   width: 950px;
+  padding: 50px 0;
   @media (max-width: 1180px) {
     width: 80vw;
 }

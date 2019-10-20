@@ -18,7 +18,7 @@ const HeadingContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 80px 0 70px;
+  padding: 80px 0 100px;
   background-color: ${colors.lightPeach};
 `
 const HeadingWrapper = styled.div`
@@ -28,7 +28,7 @@ const HeadingWrapper = styled.div`
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      width: 100%;
+      width: 80vw;
       justify-content: center;
   }
 `
@@ -38,8 +38,18 @@ const TestimonialContainer = styled.div`
    display: flex;
    position: relative;
    justify-content: space-between;
+   @media (max-width: 1180px) {
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+   }
 `
-
+const SubTextWrapper = styled.div`
+   width: 40%;
+   @media (max-width: 768px) {
+     width: 80%;
+   }
+`
 
 const Testimonial = ({ copy }) => {
   let data = copy
@@ -56,11 +66,13 @@ const Testimonial = ({ copy }) => {
           <HeadingWrapper>
             <H2 color={data.color}>{data.h2}</H2>
             <ShortDivider bottom='0' top='0' color={data.divider} width='3.5em' />
-            <Body>{data.p1}</Body>
+            <SubTextWrapper>
+              <Body>{data.p1}</Body>
+            </SubTextWrapper>
           </HeadingWrapper>
         </HeadingContainer>
         <TestimonialContainer>
-        {cards}
+          {cards}
         </TestimonialContainer>
       </TestimonialSection>
     </>

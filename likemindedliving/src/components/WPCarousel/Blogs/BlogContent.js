@@ -28,6 +28,8 @@ const BlogContent = ({ page }) => {
   const params = {
     slidesPerView: 4,
     spaceBetween: 20,
+    mousewheel: true,
+    grabCursor: true,
     breakpoints: {
       1180: {
         slidesPerView: 3,
