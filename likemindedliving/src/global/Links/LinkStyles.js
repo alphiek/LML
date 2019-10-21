@@ -4,7 +4,7 @@ export const Bubble = styled.span`
   position: absolute;
   width: 25%;
   height: 100%;
-  background-color: #FFF;
+  background-color: ${props => props.bgColorHover};
   z-index: -1;
   transform: translateY(100%);
   transform-origin: bottom;
@@ -31,6 +31,7 @@ export const ButtonWrapper = styled.div`
   cursor: pointer;
   background: ${props => props.bgColor};
   color: ${props => props.color};
+  box-shadow: -5px -3px 108px -26px rgba(11,59,61,0.2);
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: px;
@@ -44,7 +45,7 @@ export const ButtonWrapper = styled.div`
   z-index: 1;
   transition: 0.8s;
   :hover {
-    color: #4B4A68;
+    color: ${props => props.colorHover};
     ${Bubble}{
       transform: translateY(0) scale(2);
     }    

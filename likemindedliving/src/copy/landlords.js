@@ -32,7 +32,7 @@ export const landlord = {
     },
     process: {
         landlords: true,
-        h3: `Check out our process for estate agents and landlords`,
+        h3: `Check out our process for estate agents and\xa0landlords`,
         steps: {
             1: `On our website, fill in our landlord / estate agent sign up form, here, or on our quiz page. 
                   A member of our team will be in touch to confirm your details and discuss the letting of your property`,

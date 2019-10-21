@@ -46,8 +46,5 @@ const TestimonialCard = ({ copy }) => {
 export default TestimonialCard
 
 TestimonialCard.propTypes = {
-  copy: {
-    0: PropTypes.string.isRequired,
-    1: PropTypes.objectOf(PropTypes.string).isRequired,
-  }
+  copy: PropTypes.array.isRequired
 }

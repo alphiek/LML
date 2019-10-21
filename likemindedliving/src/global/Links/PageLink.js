@@ -6,7 +6,8 @@ const PageLink = ({ link }) => {
     return (
         <ButtonWrapper
             bgColor={link.bgColor}
-            color={link.color}>
+            color={link.color}
+            colorHover={link.colorHover}>
             <a
                 href={link.url}
                 aria-label={`Link to ${link.name}`}
@@ -15,10 +16,10 @@ const PageLink = ({ link }) => {
             >
                 {link.name}
             </a>
-            <Bubble />
-            <Bubble />
-            <Bubble />
-            <Bubble />
+            <Bubble bgColorHover={link.bgColorHover}/>
+            <Bubble bgColorHover={link.bgColorHover}/>
+            <Bubble bgColorHover={link.bgColorHover}/>
+            <Bubble bgColorHover={link.bgColorHover}/>
         </ButtonWrapper>
     )
 }

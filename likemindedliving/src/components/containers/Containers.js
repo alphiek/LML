@@ -1,4 +1,7 @@
 import styled from 'styled-components'
+import { colors } from '../../global/colors'
+
+//Sections 
 
 export const SectionContainer = styled.section`
   width: 100%;
@@ -24,6 +27,16 @@ export const IdealChoiceSection = styled(MainSectionContainer)`
   }
 `
 
+export const TestimonialSection = styled.section`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
+// Section Wrappers 
+
 export const SectionWrapper = styled.div`
   width: 950px;
   display: flex;
@@ -36,12 +49,12 @@ export const SectionWrapper = styled.div`
       justify-content: center;
   }
 `
-
-
 export const ReverseSectionWrapper = styled(SectionWrapper)`
   flex-direction: row;
+  z-index: 2;
   `
 
+// Main Content Wrappers 
 
 export const Wrapper = styled.div`
   width: 85%;
@@ -70,6 +83,41 @@ export const CenterWrapperProcess = styled(Wrapper)`
     }
 `
 
+export const HeadingContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 80px 0 100px;
+  background-color: ${colors.lightPeach};
+`
+
+export const TestimonialContainer = styled.div`
+   width: 950px;
+   display: flex;
+   position: relative;
+   justify-content: space-between;
+   @media (max-width: 1180px) {
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+   }
+`
+
+
+export const HeadingWrapper = styled.div`
+  width: 950px;
+  @media (max-width: 1180px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 80vw;
+      justify-content: center;
+  }
+`
+
+// Wrappers 
 
 export const SignUpFormWrapper = styled.div`
   width: 70%;
@@ -81,3 +129,25 @@ export const SignUpFormWrapper = styled.div`
       width: auto;
   }
 `
+export const SubTextWrapper = styled.div`
+   width: 45%;
+   @media (max-width: 1180px) {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+   }
+`
+
+export const ProcessSubTextWrapper = styled(SubTextWrapper)`
+   width: 60%;
+`
+
+
+export const ProcessPaginationContainer = styled.div`
+  width: 65%;
+  @media (max-width: 480px) {
+      width: 100%;
+  }
+  `

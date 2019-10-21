@@ -1,24 +1,14 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 
 import { updateStyle, updateNext, updatePrevious } from './styleHelpers'
-import { CenterWrapperProcess } from '../containers/Containers'
+import { CenterWrapperProcess, ProcessPaginationContainer } from '../containers/Containers'
 import SlideImages from './SlideImages'
 import LandlordSlideImages from './LandlordSlideImages'
 import StepText from './StepText'
 import Pagination from './Pagination'
-import Link from './Link'
+import PageLink from '../../global/Links/PageLink'
 import Arrows from './Arrows'
-
-
-const Container = styled.div`
-  width: 65%;
-  @media (max-width: 480px) {
-      width: 100%;
-  }
-`
-
 
 
 
@@ -49,20 +39,20 @@ const SlideContainer = ({ copy, link, landlord }) => {
         <CenterWrapperProcess>
             {slides}
             <StepText content={content} currentSlide={currentSlide} />
-            <Container>
+            <ProcessPaginationContainer>
                 <Pagination
                     pagination={pagination}
                     updateStyle={updateStyle}
                     currentSlide={currentSlide}
                     updateSlideHandler={updateSlideHandler} />
-                <Link link={link} />
+                <PageLink link={link} />
                 <Arrows
                     updatePrevious={updatePrevious}
                     updateNext={updateNext}
                     updateSlideHandler={updateSlideHandler}
                     currentSlide={currentSlide}
                     totalSlides={totalSlides} />
-            </Container>
+            </ProcessPaginationContainer>
         </CenterWrapperProcess>
     )
 }

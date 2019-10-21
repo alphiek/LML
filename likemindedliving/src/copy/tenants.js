@@ -20,6 +20,8 @@ export const tenants = {
         link: {
             color: `${colors.white}`,
             bgColor: `${colors.buttonOne}`,
+            colorHover: `${colors.textPrimary}`,
+            bgColorHover: `${colors.mint}`,            
             name: `Start your search now`,
             url: `https://likemindedliving.outgrow.us/likemindedliving-45`
         },
@@ -38,6 +40,8 @@ export const tenants = {
         link: {
             color: `${colors.textPrimary}`,
             bgColor: `${colors.mint}`,
+            colorHover: `${colors.mint}`,
+            bgColorHover: `${colors.buttonDark}`,  
             name: `Take our where would you like to live\xa0in\xa0London\xa0quiz`,
             url: `https://likemindedliving.outgrow.us/Copy-of-likemindedliving-3-2`
         },

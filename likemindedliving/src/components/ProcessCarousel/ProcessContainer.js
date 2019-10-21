@@ -1,25 +1,45 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import SlideContainer from './SlideContainer'
-import { MainSectionContainer, ReverseSectionWrapper, Wrapper } from '../containers/Containers'
+import { MainSectionContainer, ReverseSectionWrapper, Wrapper, ProcessSubTextWrapper } from '../containers/Containers'
 import { FadeIn } from '../animations/FadeIn'
 import { Body } from '../text/Text'
 import { ShortDivider } from '../Dividers/Dividers'
+import bg from '../../images/StepsBG.svg'
+import memphis from '../../images/StepsMemphis.svg'
+
+
+const BGPattern = styled.img`
+   position: absolute;
+   width: 100%;
+   height: auto;
+`
+
+const MemphisPattern = styled(BGPattern)`
+   margin-top: -200px;
+   z-index: 1;
+`
+
 
 const ProcessContainer = ({ copy }) => {
 
   return (
-    <MainSectionContainer bgColor={copy.bgColor}>
+    <MainSectionContainer>
       <ReverseSectionWrapper>
         <Wrapper>
+          <ProcessSubTextWrapper>
             <FadeIn>
               <h3>{copy.h3}</h3>
             </FadeIn>
             <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
             <Body color={copy.color}>{copy.p1}</Body>
+          </ProcessSubTextWrapper>
         </Wrapper>
-        <SlideContainer copy={copy.steps} link={copy.link} landlord={copy.landlords}/>
+        <SlideContainer copy={copy.steps} link={copy.link} landlord={copy.landlords} />
       </ReverseSectionWrapper>
+      <MemphisPattern src={memphis} />
+      <BGPattern src={bg} />
     </MainSectionContainer>
   )
 }
@@ -35,7 +55,6 @@ ProcessContainer.propTypes = {
     h3: PropTypes.string.isRequired,
     link: PropTypes.objectOf(PropTypes.string).isRequired,
     p1: PropTypes.string.isRequired,
-    p2: PropTypes.string.isRequired,
     steps: PropTypes.objectOf(PropTypes.string).isRequired
   }).isRequired
 }
