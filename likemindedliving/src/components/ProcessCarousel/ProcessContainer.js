@@ -13,7 +13,7 @@ import memphis from '../../images/StepsMemphis.svg'
 export const BGPattern = styled.img`
 position: absolute;
 width: 1920px;
-width: 1920px;
+min-width: 1920px;
 top: -40px;
 @media (max-width: 1180px) {
  min-width: 2500px;
