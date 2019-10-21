@@ -23,10 +23,16 @@ const BlogCard = ({ data }) => {
   }
    
   let title;
+
   if (data.title.length > 50) {
-    title = `${data.title.substring(0, 50)}...`
+    title = `${data.title
+      .split('&#8217;')
+      .join("'")
+      .substring(0, 50)}...`
   } else {
     title = data.title
+      .split('&#8217;')
+      .join("'")      
   }
 
   return (
@@ -36,7 +42,7 @@ const BlogCard = ({ data }) => {
         <div>
           <h4>{title}</h4>
           <ShortDivider color={colors.lilac} width='3rem' top='0.2rem' bottom='0.2rem' />
-          <Description>{data.excerpt.substring(0, 90)}...</Description>
+          <Description>{data.excerpt.split('&#8217;').join("'").substring(0, 90)}...</Description>
         </div>
         <HR />
         <CardLink

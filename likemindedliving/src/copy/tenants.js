@@ -130,13 +130,14 @@ export const tenants = {
     },
     pressReel: {
         h2: `Hot off the press`,
+        p1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a imperdiet est, vel ultrices ipsum.`,
         articles: [
             {
                 name: `Forbes`,
                 url: `https://www.forbes.com/sites/alisoncoleman/2019/01/03/whats-in-your-startup-survival-kit-for-2019-seven-entrepreneurs-share-the-contents-of-theirs/#3590f6a41288`
             },
             {
-                name: `ProlificLondon`,
+                name: `Prolific London`,
                 url: `https://www.prolificlondon.co.uk/features/2019/05/my-startup-minded-living`
             },
             {
@@ -144,15 +145,15 @@ export const tenants = {
                 url: `https://inews.co.uk/news/brexit/brexit-what-mean-for-me-leave-eu-landlord/`
             },
             {
-                name: `PropertyTribes`,
+                name: `Property Tribes`,
                 url: ` https://www.propertytribes.com/young-entrepreneurs-week-denzel-matsaudza-t-127636468.html`
             },
             {
-                name: `PropertyInvestorShow`,
+                name: `Property Investor Show`,
                 url: ` https://www.propertyinvestor.co.uk/seminar/SeminarProfile/718`
             },
             {
-                name: `EfinancialCareers`,
+                name: `E Financial Careers`,
                 url: `https://news.efinancialcareers.com/uk-en/321062/j-p-morgan-operations-analyst`
             },
             {

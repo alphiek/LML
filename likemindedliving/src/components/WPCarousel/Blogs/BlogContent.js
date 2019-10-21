@@ -34,11 +34,11 @@ const BlogContent = ({ page }) => {
         slidesPerView: 3,
         spaceBetween: 20
       },
-      768: {
+      900: {
         slidesPerView: 2,
         spaceBetween: 20
       },
-      480: {
+      610: {
         slidesPerView: 1,
         spaceBetween: 20
       }
