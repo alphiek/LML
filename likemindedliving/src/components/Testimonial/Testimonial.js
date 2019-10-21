@@ -3,7 +3,14 @@ import PropTypes from 'prop-types'
 
 import TestimonialCard from './TestimonialCard'
 import { H2, Body } from '../text/Text'
-import { SubTextWrapper, TestimonialContainer, FullSection, HeadingContainer, HeadingWrapper } from '../containers/Containers'
+import { 
+  SubTextWrapper, 
+  TestimonialContainer, 
+  FullSection, 
+  HeadingContainer, 
+  HeadingWrapper
+ } from '../containers/Containers'
+ 
 import { ShortDivider } from '../Dividers/Dividers'
 
 const Testimonial = ({ copy }) => {

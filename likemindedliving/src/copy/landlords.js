@@ -173,7 +173,7 @@ export const landlord = {
         h2: `Looking for Inspiration? Check out our recent blogs and top tips for living in the city`,
         link: {
 
-            name: `Show me all the blogs`,
+            name: `View all blogs`,
             url: `https://likemindedliving.co.uk/blog/`
         },
         color: `${colors.textPrimary}`,

@@ -21,13 +21,20 @@ const BlogCard = ({ data }) => {
       imageUrl = imageData[item]
     }
   }
+   
+  let title;
+  if (data.title.length > 50) {
+    title = `${data.title.substring(0, 50)}...`
+  } else {
+    title = data.title
+  }
 
   return (
     <>
       <CardImageWrapper><Image src={imageUrl} /></CardImageWrapper>
       <CardTextContainer>
         <div>
-          <h4>{data.title.substring(0, 50)}...</h4>
+          <h4>{title}</h4>
           <ShortDivider color={colors.lilac} width='3rem' top='0.2rem' bottom='0.2rem' />
           <Description>{data.excerpt.substring(0, 90)}...</Description>
         </div>

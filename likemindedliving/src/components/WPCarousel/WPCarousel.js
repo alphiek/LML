@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FullWidthText } from '../text/TextSection'
+import { CarouselText } from '../text/TextSection'
 import BlogContent from './Blogs/BlogContent'
 import PropertyContent from './Property/PropertyContent'
 import { FullSection } from '../containers/Containers'
+import { ShortDivider } from '../Dividers/Dividers'
 
 export const CardContainer = styled.li`
   display: flex;
@@ -17,7 +18,7 @@ export const CardContainer = styled.li`
 
 const SlideContainer = styled.div`
   width: 1050px;
-  height: 600px;
+  height: 500px;
   padding: 20px 0;
   @media (max-width: 1180px) {
     width: 80vw;
@@ -29,16 +30,22 @@ const WPCarousel = ({ copy }) => {
 
   if (copy.properties) {
     section = <PropertyContent />
+
   } else {
     section = <BlogContent page={copy.page} />
   }
 
   return (
     <FullSection>
-      <FullWidthText
+      <CarouselText
         h2={copy.h2}
         p2={copy.h2p2}
-        color={copy.color} />
+        link={copy.link}
+        color={copy.color}>
+        {
+          copy.divider && <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
+        }
+      </CarouselText>
       <SlideContainer>
         {section}
       </SlideContainer>

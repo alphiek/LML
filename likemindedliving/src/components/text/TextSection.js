@@ -1,11 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
+
 import Flex from '../containers/Flex'
 import { H2, H3, Body } from '../text/Text'
-import { HeadingWrapper } from '../containers/Containers'
+import { CarouselHeadingWrapper } from '../containers/Containers'
 import { ShortDivider } from '../Dividers/Dividers'
 import { FadeIn } from '../animations/FadeIn'
-import styled from 'styled-components'
+import { CarouselLink } from '../../global/Links/CarouselLink'
+
 
 const TextContainer = styled(Flex)`
    height: 100%;
@@ -15,24 +18,6 @@ const TextContainer = styled(Flex)`
        margin: 1rem 0;
        padding: 0;
    }
-`
-
-const Span = styled.span`
-    display: block;
-    margin-top: 0em;
-    width: 20em;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 0.9em;
-    @media (max-width: 1180px)
-    {
-        margin: 0 auto;
-
-    }
-    @media (max-width: 480px)
-    {
-        width: 80%;
-    }
 `
 
 export const TextSection = ({ copy, children }) => {
@@ -78,19 +63,18 @@ TextSection.propTypes = {
   }).isRequired
 }
 
-export const FullWidthText = ({ h2, p2, color, children }) => {
-    let h2copy;
 
-    if (p2) {
-        h2copy = <H2 color={color}>{h2}<br />{children}<Span>{p2}</Span></H2>
-    } else {
-        h2copy = <H2 color={color}>{h2}</H2>
-    }
+export const CarouselText = ({ h2, p2, color, link, children }) => {
     return (
         <FadeIn delay={150}>
-            <HeadingWrapper>
-                {h2copy}
-            </HeadingWrapper>
+            <CarouselHeadingWrapper>
+                <div>
+                <H2 color={color}>{h2}</H2>
+                {children}
+                <Body color={color}>{p2}</Body>
+                </div>
+                <CarouselLink link={link}/>
+            </CarouselHeadingWrapper>
         </FadeIn>
     )
 }

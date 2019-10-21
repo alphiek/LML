@@ -41,6 +41,7 @@ export const FullSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 `
 
 // Section Wrappers 
@@ -141,6 +142,13 @@ export const HeadingWrapper = styled.div`
       width: 80vw;
       justify-content: center;
   }
+`
+
+export const CarouselHeadingWrapper = styled(HeadingWrapper)`
+   display: flex;
+   justify-content: space-between;
+   margin-top: 80px;
+
 `
 
 // Wrappers 

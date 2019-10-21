@@ -7,6 +7,9 @@ import { FadeIn } from '../animations/FadeIn'
 import { TextSection } from '../text/TextSection'
 import { FactBody } from '../text/Text'
 import PageLink from '../../global/Links/PageLink'
+import bg from '../../images/StepsBG.svg'
+import memphis from '../../images/StepsMemphis.svg'
+import { BGPattern, MemphisPattern } from '../ProcessCarousel/ProcessContainer'
 
 
 const HouseMate = ({ copy }) => {
@@ -30,6 +33,8 @@ const HouseMate = ({ copy }) => {
                     </TextSection>
                 </Wrapper>
             </ReverseSectionWrapper>
+            <MemphisPattern src={memphis} />
+            <BGPattern src={bg} />
         </MainSectionContainer>
     )
 }

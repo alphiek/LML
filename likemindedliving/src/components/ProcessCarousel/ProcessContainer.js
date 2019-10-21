@@ -10,13 +10,13 @@ import bg from '../../images/StepsBG.svg'
 import memphis from '../../images/StepsMemphis.svg'
 
 
-const BGPattern = styled.img`
+export const BGPattern = styled.img`
    position: absolute;
    width: 100%;
    height: auto;
 `
 
-const MemphisPattern = styled(BGPattern)`
+export const MemphisPattern = styled(BGPattern)`
    margin-top: -200px;
    z-index: 1;
 `

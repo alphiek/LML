@@ -17,40 +17,6 @@ const AlgorithmContainer = styled(Flex)`
     align-items: center;
  }
 `
-
-const AlgorithmFactWrapper = styled(Flex)`
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  width: 100%;
-  @media (max-width: 1180px) {
-     flex-wrap: wrap;
-     justify-content: center;
-     flex-direction: column;
-  }
-`
-
-const Icon = styled.div`
-  width: 1.2em;
-  height: 1.2em;
-  background: rgba(75, 74, 104, 0.95);
-  border-radius: 50%;
-  margin-right: 0.7em;
-  @media (max-width: 1180px) {
-      width: 1.5em;
-      height: 1.5em;
-      margin: 0.5em 0 0.5em 0;
-  }
-  @media (max-width: 768px) {
-    width: 1.7em;
-    height: 1.7em;
-    margin: 0.5em 0 0.5em 0;
-}
-@media (max-width: 480px) {
-    width: 1.8em;
-    height: 1.8em;
-    margin: 0.5em 0 0.5em 0;
-}`
-
 const Spacer = styled.div`
 @media (max-width: 1180px) {
     height: 40px;
@@ -68,8 +34,8 @@ const Algorithm = ({ copy }) => {
                 <Wrapper>
                     <TextSection copy={copy}>
                         <AlgorithmContainer>
-                            <AlgorithmFactWrapper alignCenter noWrap contentCenter><Icon /><FactBody color={copy.factColor}>{copy.fact.one}</FactBody></AlgorithmFactWrapper>
-                            <AlgorithmFactWrapper alignCenter noWrap contentCenter><Icon /><FactBody color={copy.factColor}>{copy.fact.two}</FactBody></AlgorithmFactWrapper>
+                            <FactBody color={copy.factColor}>{copy.fact.one}</FactBody>
+                            <FactBody color={copy.factColor}>{copy.fact.two}</FactBody>
                         </AlgorithmContainer>
                         <FadeIn>
                             <SignUpFormWrapper>

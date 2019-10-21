@@ -53,15 +53,17 @@ export const tenants = {
         h2: `Housemate matching`,
         p1: `Looking to flat-share as an individual? No worries. We know how hard it can be moving into a new home with complete strangers. Take our ‘LML Housemate Matching’ quiz, and we’ll use the results to best match you to other compatible housemates\xa0for\xa0a\xa0happy\xa0house.`,
         fact: `Take this quiz to help us find your ideal housemates for\xa0your\xa0house-share`,
-        color: `${colors.white}`,
-        factColor: `${colors.lightBlue}`,
-        bgColor: `${colors.textPrimary}`,
-        divider: `${colors.lightPeach}`,
+        color: `${colors.textPrimary}`,
+        factColor: `${colors.buttonDark}`,
+        bgColor: `${colors.white}`,
+        divider: `${colors.buttonDark}`,
         blob: `${colors.lilac}`,
         rotate: `rotate(139deg)`,
         link: {
             color: `${colors.textPrimary}`,
             bgColor: `${colors.lightBlue}`,
+            colorHover: `${colors.lightBlue}`,
+            bgColorHover: `${colors.buttonDark}`, 
             name: `Take our housemate matching quiz`,
             url: `https://likemindedliving.outgrow.us/likemindedliving-17`
         },
@@ -82,6 +84,8 @@ export const tenants = {
         link: {
             color: `${colors.textPrimary}`,
             bgColor: `${colors.lilac}`,
+            colorHover: `${colors.textPrimary}`,
+            bgColorHover: `${colors.mint}`,
             name: `Start your search today`,
             url: `https://likemindedliving.outgrow.us/Copy-of-likemindedliving-5-1`
         },
@@ -99,7 +103,7 @@ export const tenants = {
         properties: true,
         h2: `Featured Properties`,
         link: {
-            name: `Show me all properties`,
+            name: `View all available properties <<<`,
             url: `https://likemindedliving.co.uk/properties/`
         },
         color: `${colors.textPrimary}`,
@@ -166,7 +170,7 @@ export const tenants = {
         h2: `Looking for Inspiration?`,
         h2p2: `Check out our recent blogs and top tips for living in the city`,
         link: {
-            name: `Show me all the blogs`,
+            name: `View all blogs <<<`,
             url: `https://likemindedliving.co.uk/blog/`
         },
         color: `${colors.textPrimary}`,
