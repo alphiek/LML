@@ -26,6 +26,7 @@ export const SectionContainer = styled.section`
 export const MainSectionContainer = styled(SectionContainer)`
    padding: 80px 0;
    margin-bottom: 0;
+   position: relative;
 `
 
 export const IdealChoiceSection = styled(MainSectionContainer)`
