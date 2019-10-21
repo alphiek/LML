@@ -71,7 +71,9 @@ export const CarouselText = ({ h2, p2, color, link, children }) => {
                 <div>
                 <H2 color={color}>{h2}</H2>
                 {children}
-                <Body color={color}>{p2}</Body>
+                {
+                  p2 && <Body color={color}>{p2}</Body>
+                }
                 </div>
                 <CarouselLink link={link}/>
             </CarouselHeadingWrapper>

@@ -4,9 +4,10 @@
 	 viewBox="0 0 297 350" style="enable-background:new 0 0 297 350;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
-	.st1{fill:#D2FAD6;}
-	.st2{fill:none;stroke:#D2FAD6;stroke-width:8;stroke-miterlimit:10;}
+	.st1{fill:#C9D2F5;stroke:#D3D3D3;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#D3D3D3;stroke-width:8;stroke-miterlimit:10;}
 	.st3{fill:#4B4A68;}
+	.st4{fill:#D2FAD6;}
 </style>
 <title>Artboard 37</title>
 <path class="st0" d="M25.1,19h192.4c4.4,0,8,3.6,8,8v300c0,4.4-3.6,8-8,8H25.1c-4.4,0-8-3.6-8-8V27C17.1,22.6,20.7,19,25.1,19z"/>
@@ -33,7 +34,7 @@
 <path class="st1" d="M249.3,131c2.6,0,4.7,2.1,4.7,4.7v63.6c0,2.6-2.1,4.7-4.7,4.7H148.7c-2.6,0-4.7-2.1-4.7-4.7v-63.6
 	c0-2.6,2.1-4.7,4.7-4.7H249.3 M249.3,123H148.7c-7,0-12.7,5.7-12.7,12.7v63.6c0,7,5.7,12.7,12.7,12.7h100.6c7,0,12.7-5.7,12.7-12.7
 	v-63.6C262,128.7,256.3,123,249.3,123z"/>
-<polygon class="st1" points="159,177 182,144 192,160.5 202,177 218,150 242,177 "/>
+<polygon class="st4" points="159,177 182,144 192,160.5 202,177 218,150 242,177 "/>
 <line class="st2" x1="142" y1="232" x2="259" y2="232"/>
 <line class="st2" x1="142" y1="253.5" x2="259" y2="253.5"/>
 </svg>

@@ -4,9 +4,6 @@ import styled from 'styled-components'
 import { Body } from '../text/Text'
 import { ShortDivider } from '../Dividers/Dividers'
 
-const TextWrapper = styled.div`
-`
-
 const Card = styled.div`  
   width: 45%;
   background-color: rgba(75, 74, 104, 0.95);
@@ -32,13 +29,13 @@ const TestimonialCard = ({ copy }) => {
 
   return (
     <Card>
-      <TextWrapper>
+      <div>
         <Body>{data.text}</Body>
         <ShortDivider color={data.divider} top='1em' width='2.5em' bottom='0.2rem' />
-        <Body weight={900}>
+        <Body>
           {data.name}
         </Body>
-      </TextWrapper>
+      </div>
     </Card>
   )
 }

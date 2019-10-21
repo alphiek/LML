@@ -56,9 +56,9 @@ const ArticleLink = styled.a`
 const PressReel = ({ copy }) => {
   const articles = copy.articles.map((article, index) => {
     return (
-      <div>
+      <div key={index}>
         <ArticleIcon src={articleIcon} />
-        <ArticleWrapper key={index}>
+        <ArticleWrapper>
           <ArticleLink style={{ color: '#fff' }} href={article.url}>{article.name}</ArticleLink>
         </ArticleWrapper>
       </div>
