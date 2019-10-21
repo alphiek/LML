@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import TestimonialCard from './TestimonialCard'
 import { H2, Body } from '../text/Text'
-import { SubTextWrapper, TestimonialContainer, TestimonialSection, HeadingContainer, HeadingWrapper } from '../containers/Containers'
+import { SubTextWrapper, TestimonialContainer, FullSection, HeadingContainer, HeadingWrapper } from '../containers/Containers'
 import { ShortDivider } from '../Dividers/Dividers'
 
 const Testimonial = ({ copy }) => {
@@ -13,7 +13,7 @@ const Testimonial = ({ copy }) => {
 
   return (
     <>
-      <TestimonialSection>
+      <FullSection>
         <HeadingContainer>
           <HeadingWrapper>
             <H2 color={data.color}>{data.h2}</H2>
@@ -26,7 +26,7 @@ const Testimonial = ({ copy }) => {
         <TestimonialContainer>
           {cards}
         </TestimonialContainer>
-      </TestimonialSection>
+      </FullSection>
     </>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Flex from '../containers/Flex'
 import { H2, H3, Body } from '../text/Text'
+import { HeadingWrapper } from '../containers/Containers'
 import { ShortDivider } from '../Dividers/Dividers'
 import { FadeIn } from '../animations/FadeIn'
 import styled from 'styled-components'
@@ -14,11 +15,6 @@ const TextContainer = styled(Flex)`
        margin: 1rem 0;
        padding: 0;
    }
-`
-
-const FullWidthTextWrapper = styled.div`
-   width: 950px;
-   margin-top: 2rem;
 `
 
 const Span = styled.span`
@@ -92,9 +88,9 @@ export const FullWidthText = ({ h2, p2, color, children }) => {
     }
     return (
         <FadeIn delay={150}>
-            <FullWidthTextWrapper>
+            <HeadingWrapper>
                 {h2copy}
-            </FullWidthTextWrapper>
+            </HeadingWrapper>
         </FadeIn>
     )
 }

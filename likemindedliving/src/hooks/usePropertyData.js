@@ -16,6 +16,7 @@ export const usePropertyData = () => {
                       url
                     }
                     linkurl
+                    title
                     location
                     price
                     shortdescription

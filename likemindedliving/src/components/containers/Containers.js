@@ -1,7 +1,16 @@
 import styled from 'styled-components'
 import { colors } from '../../global/colors'
+import Flex from './Flex'
 
 //Sections 
+
+export const HeadlineSection = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${props => props.bgColor};
+  min-height: 350px;
+`
 
 export const SectionContainer = styled.section`
   width: 100%;
@@ -21,13 +30,12 @@ export const MainSectionContainer = styled(SectionContainer)`
 
 export const IdealChoiceSection = styled(MainSectionContainer)`
   flex-direction: column;
-  margin-bottom: 0;
   @media (max-width: 1180px) {
     padding: 80px 0 0;
   }
 `
 
-export const TestimonialSection = styled.section`
+export const FullSection = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -36,6 +44,25 @@ export const TestimonialSection = styled.section`
 `
 
 // Section Wrappers 
+
+export const TextCenter = styled(Flex)`
+  width: 50%;
+    @media (max-width: 1460px) {
+        width: 60%;
+    }
+    @media (max-width: 1180px) {
+      width: 65%;
+      margin-top: 1rem;
+    }
+    @media (max-width: 768px) {
+      margin-top: 1.5rem;
+      width: 78%;
+    }
+    @media (max-width: 480px) {
+      width: 75%;
+    }
+`
+
 
 export const SectionWrapper = styled.div`
   width: 950px;
@@ -104,7 +131,6 @@ export const TestimonialContainer = styled.div`
    }
 `
 
-
 export const HeadingWrapper = styled.div`
   width: 950px;
   @media (max-width: 1180px) {
@@ -151,3 +177,4 @@ export const ProcessPaginationContainer = styled.div`
       width: 100%;
   }
   `
+

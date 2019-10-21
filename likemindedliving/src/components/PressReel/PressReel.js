@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ShortDivider } from '../Dividers/Dividers'
 import styled from 'styled-components'
+
+import { ShortDivider } from '../Dividers/Dividers'
 import { H2 } from '../text/Text'
+import { HeadingWrapper } from '../containers/Containers'
 
 const PressSection = styled.section`
  width: 100%;
@@ -12,17 +14,7 @@ const PressSection = styled.section`
  background-color: ${props => props.bgColor};
 `
 
-const ContentWrapper = styled.div`
-  width: 950px;
-  display: flex;
-  padding: 60px 0;
-  flex-direction: column;
-  @media (max-width: 1180px) {
-    width: 80vw;
-    justify-content: center;
-    align-items: center;
-  }
-`
+
 
 const ScrollContainer = styled.div`
   display: flex;
@@ -56,11 +48,11 @@ const PressReel = ({ copy }) => {
 
   return (
     <PressSection bgColor={copy.bgColor}>
-      <ContentWrapper>
+      <HeadingWrapper>
         <H2 color={copy.color}>{copy.h2}</H2>
         <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
         <ScrollContainer>{articles}</ScrollContainer>
-      </ContentWrapper>
+      </HeadingWrapper>
     </PressSection>
   )
 }

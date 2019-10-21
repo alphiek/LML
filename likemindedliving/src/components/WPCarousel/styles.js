@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 
 export const CardImageWrapper = styled.div`
-   height: 100px;
+   height: 150px;
    width: 100%;
    overflow: hidden;
    background: #4B4A68;
-   border-radius: 16px 16px 0 0;
+   border-radius: 8px 8px 0 0;
+   border: 10px solid white;
 `
 
 export const Image = styled.img`
@@ -16,8 +17,10 @@ export const Image = styled.img`
 export const CardTextContainer = styled.div`
    display: flex;
    flex-direction: column;
-   padding: 1rem;
+   justify-content: space-between;
+   padding: 0.3rem 1rem 1rem 1rem;
    width: 100%;
+   height: 220px;
 `
 
 export const CardLink = styled.a`
@@ -32,10 +35,27 @@ export const CardLink = styled.a`
 
 export const CardBody = styled.p`
    width: 100%;
-   flex: 1 0 auto;
    font-size: 0.8rem;
    line-height: 145%;
    font-family: Montserrat, Arial, Helvetica, sans-serif;
    text-align: left;
    letter-spacing: 0.2px;
+   text-transform: uppercase;
+   margin-bottom: 0.3rem;
+`
+
+export const CardPrice = styled(CardBody)`
+   text-transform: lowercase;
+   color: #4B4A68;
+   font-weight: 900;
+`
+
+export const HR = styled.hr`
+   margin: 0.3rem 0;
+   width: 100%;
+   opacity: 0.2;
+`
+
+export const Description = styled.p`
+   font-size: 0.85rem;
 `

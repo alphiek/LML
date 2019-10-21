@@ -1,12 +1,14 @@
 import React from 'react'
 import { ShortDivider } from '../../Dividers/Dividers'
 import { colors } from '../../../global/colors'
-import { 
-  CardBody, 
-  CardImageWrapper, 
-  Image, 
-  CardTextContainer, 
-  CardLink } from '../styles'
+import {
+  CardImageWrapper,
+  Image,
+  CardTextContainer,
+  CardLink,
+  HR,
+  Description
+} from '../styles'
 
 
 const BlogCard = ({ data }) => {
@@ -24,9 +26,12 @@ const BlogCard = ({ data }) => {
     <>
       <CardImageWrapper><Image src={imageUrl} /></CardImageWrapper>
       <CardTextContainer>
-        <h4>{data.title}</h4>
-        <ShortDivider color={colors.lilac} width='3rem' top='0.2rem' bottom='0.2rem' />
-        <CardBody>{data.excerpt.substring(0, 90)}...</CardBody>
+        <div>
+          <h4>{data.title.substring(0, 50)}...</h4>
+          <ShortDivider color={colors.lilac} width='3rem' top='0.2rem' bottom='0.2rem' />
+          <Description>{data.excerpt.substring(0, 90)}...</Description>
+        </div>
+        <HR />
         <CardLink
           href={`https://www.likemindedliving.co.uk/blog/${data.slug}`}
           target='_blank' rel='noopener noreferrer'>Read More</CardLink>

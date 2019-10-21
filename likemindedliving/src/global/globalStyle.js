@@ -156,6 +156,7 @@ h2 {
 }
 
 h3 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1.25rem;
   padding-bottom: 1rem;
@@ -165,9 +166,10 @@ h3 {
 }
 
 h4 {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  line-height: 145%;
+  line-height: 160%;
+  color: #4B4A68;
   @media (max-width: 1180px) {
     text-align: left;
   }

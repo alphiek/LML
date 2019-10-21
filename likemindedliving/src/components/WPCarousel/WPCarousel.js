@@ -3,27 +3,25 @@ import styled from 'styled-components'
 import { FullWidthText } from '../text/TextSection'
 import BlogContent from './Blogs/BlogContent'
 import PropertyContent from './Property/PropertyContent'
+import { FullSection } from '../containers/Containers'
 
 export const CardContainer = styled.li`
   display: flex;
   flex-wrap: wrap;
-  border-radius: 16px;
+  border-radius: 8px;
+  margin: 2rem 0;
+  border: 1px solid B1AFD2;
   box-shadow: 0 10px 18px -3px rgba(75, 74, 104, 0.25), 0 4px 6px -2px rgba(75, 74, 104, 0.05);
   }
 `
 
 const SlideContainer = styled.div`
-  width: 950px;
-  padding: 50px 0;
+  width: 1050px;
+  height: 600px;
+  padding: 20px 0;
   @media (max-width: 1180px) {
     width: 80vw;
 }
-`
-const Section = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `
 
 const WPCarousel = ({ copy }) => {
@@ -36,15 +34,15 @@ const WPCarousel = ({ copy }) => {
   }
 
   return (
-    <Section>
-      <SlideContainer>
+    <FullSection>
       <FullWidthText
         h2={copy.h2}
         p2={copy.h2p2}
         color={copy.color} />
+      <SlideContainer>
         {section}
       </SlideContainer>
-    </Section>
+    </FullSection>
   )
 }
 

@@ -5,7 +5,12 @@ import PropertySearchTool from '../../Illustrations/PropertySearchTool'
 import { FadeIn } from '../animations/FadeIn'
 import { TextSection } from '../text/TextSection'
 import PageLink from '../../global/Links/PageLink'
-import { SectionContainer, SectionWrapper, Wrapper, SignUpFormWrapper } from '../containers/Containers'
+import {
+    SectionContainer,
+    SectionWrapper,
+    Wrapper,
+    SignUpFormWrapper
+} from '../containers/Containers'
 
 
 const PropertySearch = ({ copy }) => {
