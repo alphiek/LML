@@ -1,1 +1,16 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1899.44 813.55"><defs><style>.cls-1{fill:#f5f7f9;}</style></defs><title>StepsBG</title><path class="cls-1" d="M1900,0V813.79c-91.12-47.32-209.17-145.4-444.13-99.52-338.1,66-528.16-38-634.19-78s-270.08,60-456.13-44c-111.32-62.23-262-64.32-365.11-56V170.11H0C150,103,333.34,58.09,539.1,98.59c378.61,74.52,532.66-103.53,765.72-60.52s423.63,96.53,578.68-21.51C1889.21,12.21,1894.7,4,1900,0Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 813.5" style="enable-background:new 0 0 1920 813.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F5F7F9;}
+</style>
+<title>StepsBG</title>
+<g>
+	<g>
+		<path class="st0" d="M1920,19.8l-1.4,748.2c-68.5,4.7-139.8,11.5-203.7,20.5c-198.1,28-463.4-64-642.7-73
+			c-176.2-8.8-326.9,56.3-537.6-14.8C207.7,590.4,35.2,683.9,0,686l0.4-534.1H0c151.6-52.1,336.8-87,544.8-55.5
+			c382.6,57.9,538.3-80.4,773.8-47s428.1,75,584.8-16.7C1909.1,29.3,1914.6,22.9,1920,19.8z"/>
+	</g>
+</g>
+</svg>

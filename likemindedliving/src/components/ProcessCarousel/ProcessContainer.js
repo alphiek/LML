@@ -11,15 +11,21 @@ import memphis from '../../images/StepsMemphis.svg'
 
 
 export const BGPattern = styled.img`
-   position: absolute;
-   width: 100%;
-   height: auto;
+position: absolute;
+width: 1920px;
+width: 1920px;
+top: -40px;
+@media (max-width: 1180px) {
+ min-width: 2500px;
+ top: -125px;
+}
 `
 
 export const MemphisPattern = styled(BGPattern)`
-   margin-top: -200px;
+   top: -150px;
    z-index: 1;
 `
+
 
 
 const ProcessContainer = ({ copy }) => {
