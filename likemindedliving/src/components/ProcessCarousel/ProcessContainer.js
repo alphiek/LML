@@ -7,8 +7,6 @@ import { FadeIn } from '../animations/FadeIn'
 import { Body } from '../text/Text'
 import { ShortDivider } from '../Dividers/Dividers'
 import bg from '../../images/StepsBG.svg'
-import memphis from '../../images/StepsMemphis.svg'
-
 
 export const BGPattern = styled.img`
 position: absolute;
@@ -26,8 +24,6 @@ export const MemphisPattern = styled(BGPattern)`
    z-index: 1;
 `
 
-
-
 const ProcessContainer = ({ copy }) => {
 
   return (
@@ -44,7 +40,6 @@ const ProcessContainer = ({ copy }) => {
         </Wrapper>
         <SlideContainer copy={copy.steps} link={copy.link} landlord={copy.landlords} />
       </ReverseSectionWrapper>
-      <MemphisPattern src={memphis} />
       <BGPattern src={bg} />
     </MainSectionContainer>
   )
