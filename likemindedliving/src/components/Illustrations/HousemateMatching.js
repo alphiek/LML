@@ -1,8 +1,8 @@
 import React from 'react'
 import Proptypes from 'prop-types'
-import { BlobThree } from '../components/shapes/Blobs'
+import { BlobThree } from '../shapes/Blobs'
 import styled from 'styled-components'
-import housemates from '../images/Housemates.svg'
+import housemates from '../../images/Housemates.svg'
 
 const ImageWrapper = styled.img`
    position: absolute;

@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Spring, animated as a } from 'react-spring/renderprops'
-import styled from 'styled-components'
+import React from "react"
+import PropTypes from "prop-types"
+import { Spring, animated as a } from "react-spring/renderprops"
+import styled from "styled-components"
 
-import { colors } from '../../../global/colors'
-import pattern from '../../../images/menuPattern.svg'
-import NavLinks from '../Links/NavLinks/NavLinks'
+import Patterns from "../../Patterns/Patterns"
+import GetLinks from "../GetLinks"
+import { colors } from "../../../global/colors"
 
 const SideDrawerContainer = styled(a.nav)`
   height: 100vh;
@@ -19,24 +19,13 @@ const SideDrawerContainer = styled(a.nav)`
   max-width: 400px;
   display: block;
   z-index: 200;
-  @media(min-width: 1181px) {
-     display: none;
+  @media (min-width: 1181px) {
+    display: none;
   }
-  @media(max-width: 480px) {
-      width: 80%;
+  @media (max-width: 480px) {
+    width: 80%;
   }
 `
-
-const Pattern = styled.img`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  object-fit: cover;
-  object-position: 50% 50%;
-`
-
 const SideDrawerListWrapper = styled.ul`
   height: 100vh;
   flex-direction: column;
@@ -46,30 +35,23 @@ const SideDrawerListWrapper = styled.ul`
 `
 
 const SideDrawer = ({ show, items }) => {
-
-    let data = items.map((e, index) =>
-        <NavLinks key={index} link={e} />
-    )
-
-    return (
-        <Spring
-            from={{ right: -1000 }}
-            to={{ right: show ? 0 : -1000 }}>
-            {props => (
-                <SideDrawerContainer style={props}>
-                    <Pattern src={pattern} alt='background pattern' />
-                    <SideDrawerListWrapper>
-                        {data}
-                    </SideDrawerListWrapper>
-                </SideDrawerContainer>
-            )}
-        </Spring>
-    )
+  return (
+    <Spring from={{ right: -1000 }} to={{ right: show ? 0 : -1000 }}>
+      {props => (
+        <SideDrawerContainer style={props}>
+          <Patterns name="sideDrawerPattern" />
+          <SideDrawerListWrapper>
+            <GetLinks items={items} />
+          </SideDrawerListWrapper>
+        </SideDrawerContainer>
+      )}
+    </Spring>
+  )
 }
 
 export default SideDrawer
 
 SideDrawer.propTypes = {
-    show: PropTypes.bool.isRequired,
-    items: PropTypes.arrayOf(PropTypes.object).isRequired
+  show: PropTypes.bool.isRequired,
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
 }

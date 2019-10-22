@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { GradBlob } from '../components/shapes/Blobs'
-import algorithm from '../images/Algorithm.svg'
+import { GradBlob } from '../shapes/Blobs'
+import algorithm from '../../images/algorithm.svg'
 
 const ImageWrapper = styled.img`
    position: absolute;

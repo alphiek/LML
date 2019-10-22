@@ -1,8 +1,8 @@
 import React from 'react'
 import Proptypes from 'prop-types'
 import styled from 'styled-components'
-import { BlobOne } from '../components/shapes/Blobs'
-import london from '../images/London.svg'
+import { BlobOne } from '../shapes/Blobs'
+import london from '../../images/London.svg'
 
 const ImageWrapper = styled.img`
    position: absolute;

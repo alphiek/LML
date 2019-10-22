@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { HoverPattern, HoverWrapper } from './HoverPattern'
-import { Bounce } from '../../../animations/keyframes'
+import { HoverPattern, HoverWrapper } from '../Illustrations/HoverPattern'
+import { Bounce } from '../animations/keyframes'
 
 
 const Link = styled.a`

@@ -2,7 +2,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
-import { ShortDivider } from '../../Dividers/Dividers'
+import Icons from '../../Icons/Icons'
 import { colors } from '../../../global/colors'
 import {
   CardImageWrapper,
@@ -31,7 +31,7 @@ const PropertyCard = ({ content }) => {
           <CardBody>{content.location}</CardBody>
           <h4>{content.title}</h4>
           <CardPrice>{`£${content.price} p.c.m`}</CardPrice>
-          <ShortDivider color={colors.mint} width='3rem' top='0.2rem' bottom='0.2rem' />
+          <Icons fill={colors.mint} name='dividerShort'/>
         </div>
         <Description>{content.shortdescription}</Description>
         <HR />

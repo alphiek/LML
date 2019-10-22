@@ -2,7 +2,7 @@ import React from 'react'
 import { useSiteMetaData } from '../../hooks/useSiteMetaData'
 import styled from 'styled-components'
 import { FadeIn } from '../animations/FadeIn'
-import { Fb, Insta } from './socialIcons'
+import Icons from '../Icons/Icons'
 import Terms from './terms'
 
 const AddressTitle = styled.p`
@@ -40,7 +40,9 @@ const Copyright = styled.p`
 const IconWrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 5rem;
+  margin: 1rem 0;
 `
 
 const Footer = () => {
@@ -65,13 +67,13 @@ const Footer = () => {
               aria-label='Facebook Link'
               target='blank'
               rel='noopener noreferrer'>
-              <Fb />
+              <Icons fill='#252454' name='fb' />
             </a>
             <a href={social.insta}
               aria-label='Instagram Link'
               target='blank'
               rel='noopener noreferrer'>
-              <Insta />
+              <Icons fill='#252454' name='insta' />
             </a>
           </IconWrapper>
         </address>

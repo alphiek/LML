@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 export const Bubble = styled.span`
@@ -58,25 +59,26 @@ export const ButtonWrapper = styled.div`
   }
 `
 
-export const LinkWrapperRight = styled.div`
-  width: auto;
-  text-align: right;
-  margin-right: 10vw;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  scrollbar-width: none;
-  @media (max-width: 1180px) {
-    margin-right: 0;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-`
+const PageLink = ({ link }) => {
+    return (
+        <ButtonWrapper
+            bgColor={link.bgColor}
+            color={link.color}
+            colorHover={link.colorHover}>
+            <a
+                href={link.url}
+                aria-label={`Link to ${link.name}`}
+                rel='noopener noreferrer'
+                target='_blank'
+            >
+                {link.name}
+            </a>
+            <Bubble bgColorHover={link.bgColorHover}/>
+            <Bubble bgColorHover={link.bgColorHover}/>
+            <Bubble bgColorHover={link.bgColorHover}/>
+            <Bubble bgColorHover={link.bgColorHover}/>
+        </ButtonWrapper>
+    )
+}
 
-
-export const LinkStyle = styled.a`
-  color: ${props => props.color};
-`
-
-
-
+export default PageLink

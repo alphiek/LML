@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import PropertySearchTool from '../../Illustrations/PropertySearchTool'
+import PropertySearchTool from '../Illustrations/PropertySearchTool'
 import { FadeIn } from '../animations/FadeIn'
 import { TextSection } from '../text/TextSection'
-import PageLink from '../../global/Links/PageLink'
+import PageLink from '../Links/PageLink'
 import {
     SectionContainer,
     SectionWrapper,

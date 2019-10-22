@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import BurgerIcon from './BurgerIcon'
+import Icons from '../../Icons/Icons'
 import styled from 'styled-components'
 
 const SideDrawerButton = styled.button`
@@ -12,7 +12,7 @@ const SideDrawerButton = styled.button`
 
 const SideDrawerToggle = ({ click }) => (
   <SideDrawerButton onClick={click}>
-    <BurgerIcon />
+    <Icons name='burger' />
   </SideDrawerButton>
 )
 

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Body } from '../text/Text'
-import { ShortDivider } from '../Dividers/Dividers'
+import Icons from '../Icons/Icons'
 
 const Card = styled.div`  
   width: 45%;
@@ -31,7 +31,7 @@ const TestimonialCard = ({ copy }) => {
     <Card>
       <div>
         <Body>{data.text}</Body>
-        <ShortDivider color={data.divider} top='1em' width='2.5em' bottom='0.2rem' />
+        <Icons name='dividerShort' fill={data.divider} />
         <Body>
           {data.name}
         </Body>

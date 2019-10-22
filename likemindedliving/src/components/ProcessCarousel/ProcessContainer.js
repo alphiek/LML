@@ -5,7 +5,7 @@ import SlideContainer from './SlideContainer'
 import { MainSectionContainer, ReverseSectionWrapper, Wrapper, ProcessSubTextWrapper } from '../containers/Containers'
 import { FadeIn } from '../animations/FadeIn'
 import { Body } from '../text/Text'
-import { ShortDivider } from '../Dividers/Dividers'
+import Icons from '../Icons/Icons'
 import bg from '../../images/StepsBG.svg'
 
 export const BGPattern = styled.img`
@@ -34,7 +34,7 @@ const ProcessContainer = ({ copy }) => {
             <FadeIn>
               <h3>{copy.h3}</h3>
             </FadeIn>
-            <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
+            <Icons name='dividerShort' fill={copy.divider} />
             <Body color={copy.color}>{copy.p1}</Body>
           </ProcessSubTextWrapper>
         </Wrapper>

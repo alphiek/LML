@@ -11,7 +11,7 @@ import {
   HeadingWrapper
  } from '../containers/Containers'
  
-import { ShortDivider } from '../Dividers/Dividers'
+import Icons from '../Icons/Icons'
 
 const Testimonial = ({ copy }) => {
   let data = copy
@@ -24,7 +24,7 @@ const Testimonial = ({ copy }) => {
         <HeadingContainer>
           <HeadingWrapper>
             <H2 color={data.color}>{data.h2}</H2>
-            <ShortDivider bottom='0' top='0' color={data.divider} width='3.5em' />
+            <Icons name='dividerShort' fill={data.divider} />
             <SubTextWrapper>
               <Body>{data.p1}</Body>
             </SubTextWrapper>

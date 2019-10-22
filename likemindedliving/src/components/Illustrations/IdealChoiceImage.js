@@ -1,8 +1,8 @@
 import React from 'react'
 import Proptypes from 'prop-types'
 import styled from 'styled-components'
-import { BlobTwo } from '../components/shapes/Blobs'
-import idealchoice from '../images/IdealChoice.svg'
+import { BlobTwo } from '../shapes/Blobs'
+import idealchoice from '../../images/IdealChoice.svg'
 
 const ImageWrapper = styled.img`
    position: absolute;

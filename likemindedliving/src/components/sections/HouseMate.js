@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import HousemateMatching from '../../Illustrations/HousemateMatching'
+import HousemateMatching from '../Illustrations/HousemateMatching'
 import { MainSectionContainer, ReverseSectionWrapper, Wrapper, SignUpFormWrapper } from '../containers/Containers'
 import { FadeIn } from '../animations/FadeIn'
 import { TextSection } from '../text/TextSection'
 import { FactBody } from '../text/Text'
-import PageLink from '../../global/Links/PageLink'
+import PageLink from '../Links/PageLink'
 import housemateBG from '../../images/housemateBG.svg'
 import { BGPattern } from '../ProcessCarousel/ProcessContainer'
 

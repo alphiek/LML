@@ -5,9 +5,9 @@ import styled from 'styled-components'
 import Flex from '../containers/Flex'
 import { H2, H3, Body } from '../text/Text'
 import { CarouselHeadingWrapper } from '../containers/Containers'
-import { ShortDivider } from '../Dividers/Dividers'
+import Icons from '../Icons/Icons'
 import { FadeIn } from '../animations/FadeIn'
-import { CarouselLink } from '../../global/Links/CarouselLink'
+import { CarouselLink } from '../Links/CarouselLink'
 
 
 const TextContainer = styled(Flex)`
@@ -38,7 +38,7 @@ export const TextSection = ({ copy, children }) => {
             {h2}
             {h3}
             {
-                copy.divider && <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
+                copy.divider && <Icons name='dividerShort' fill={copy.divider}/>
             }
             <Body color={copy.color}>{copy.p1}</Body>
             {

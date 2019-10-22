@@ -7,7 +7,7 @@ import SlideImages from './SlideImages'
 import LandlordSlideImages from './LandlordSlideImages'
 import StepText from './StepText'
 import Pagination from './Pagination'
-import PageLink from '../../global/Links/PageLink'
+import PageLink from '../Links/PageLink'
 import Arrows from './Arrows'
 
 

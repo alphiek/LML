@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { ShortDivider } from '../Dividers/Dividers'
+import Icons from '../Icons/Icons'
 import { H2, Body } from '../text/Text'
 import { HeadingWrapper } from '../containers/Containers'
 import articleIcon from '../../images/articleIcon.svg'
@@ -69,7 +69,7 @@ const PressReel = ({ copy }) => {
     <PressSection bgColor={copy.bgColor}>
       <HeadingWrapper>
         <H2 color={copy.color}>{copy.h2}</H2>
-        <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
+        <Icons name='dividerShort' fill={copy.divider} />
         <Body color={copy.color}>{copy.p1}</Body>
         <ScrollContainer>{articles}</ScrollContainer>
       </HeadingWrapper>

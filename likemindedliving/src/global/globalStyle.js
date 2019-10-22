@@ -88,7 +88,6 @@ nav {
 
 footer {
   display: flex;
-  flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -107,6 +106,10 @@ address {
   font-style: normal;
   font-weight: 400;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 

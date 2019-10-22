@@ -1,6 +1,9 @@
 import React from 'react'
-import { LinkStyle } from './LinkStyles'
+import styled from 'styled-components'
 
+const LinkStyle = styled.a`
+  color: ${props => props.color};
+`
 
 export const CarouselLink = ({ link }) => {
     return (

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { IdealChoiceSection, ReverseSectionWrapper, Wrapper } from '../containers/Containers'
-import IdealChoiceImage from '../../Illustrations/IdealChoiceImage'
+import IdealChoiceImage from '../Illustrations/IdealChoiceImage'
 import { TextSection } from '../text/TextSection'
 
 const Spacer = styled.div`

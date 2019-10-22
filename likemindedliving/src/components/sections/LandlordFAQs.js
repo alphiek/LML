@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { H2, Body } from '../text/Text'
 import { MainSectionContainer } from '../containers/Containers'
-import { ShortDivider } from '../Dividers/Dividers'
+import Icons from '../Icons/Icons'
 import { FadeIn } from '../animations/FadeIn'
 
 const LandlordSectionWrapper = styled.div`
@@ -72,7 +72,7 @@ export const SectionContent = ({ copy }) => {
                         <FadeIn>
                             <H2 color={copy.color}>{copy.h2}</H2>
                         </FadeIn>
-                        <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
+                        <Icons name='dividerShort' fill={copy.divider} />
                         <FactContainer>
                             {fact}
                         </FactContainer>

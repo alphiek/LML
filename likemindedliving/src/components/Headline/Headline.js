@@ -7,7 +7,7 @@ import {
   TextCenter
 } from '../containers/Containers'
 import { FadeIn } from '../animations/FadeIn'
-import { LandingDivider } from '../Dividers/Dividers'
+import Icons from '../Icons/Icons'
 
 const Headline = ({ copy }) => {
 
@@ -15,7 +15,7 @@ const Headline = ({ copy }) => {
     <HeadlineSection bgColor={copy.bgColor}>
       <TextCenter justifyCenter alignCenter>
         <H1SplitText h1={copy.h1} color={copy.color} />
-        <LandingDivider color={copy.divider} />
+        <Icons name='dividerLong' fill={copy.divider} />
         <FadeIn delay={300} >
           <p className={copy.class}>{copy.p1}</p>
         </FadeIn>

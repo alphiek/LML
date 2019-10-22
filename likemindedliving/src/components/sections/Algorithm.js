@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import AlgorithmIllustration from '../../Illustrations/AlgorithmIllustration'
+import AlgorithmIllustration from '../Illustrations/AlgorithmIllustration'
 import { MainSectionContainer, SectionWrapper, Wrapper, SignUpFormWrapper } from '../containers/Containers'
 import { FadeIn } from '../animations/FadeIn'
 import { TextSection } from '../text/TextSection'
 import Flex from '../containers/Flex'
 import { FactBody } from '../text/Text'
-import PageLink from '../../global/Links/PageLink'
+import PageLink from '../Links/PageLink'
 
 const AlgorithmContainer = styled(Flex)`
   margin-bottom: 1em;

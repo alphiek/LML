@@ -4,22 +4,29 @@ import { CarouselText } from '../text/TextSection'
 import BlogContent from './Blogs/BlogContent'
 import PropertyContent from './Property/PropertyContent'
 import { FullSection } from '../containers/Containers'
-import { ShortDivider } from '../Dividers/Dividers'
+import Icons from '../Icons/Icons'
+
+
+export const CardSpacer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  overflow: visible;
+`
 
 export const CardContainer = styled.li`
   display: flex;
   flex-wrap: wrap;
   border-radius: 8px;
-  margin: 2rem 0;
-  border: 1px solid B1AFD2;
-  box-shadow: 0 10px 18px -3px rgba(75, 74, 104, 0.25), 0 4px 6px -2px rgba(75, 74, 104, 0.05);
+  border: 1px solid rgba(75, 74, 104, 0.05);
+  box-shadow: 0px 8px 10px 0px rgba(75, 74, 104, 0.18);
   }
 `
 
 const SlideContainer = styled.div`
   width: 1050px;
   height: 500px;
-  padding: 20px 0;
   @media (max-width: 1180px) {
     width: 80vw;
 }
@@ -43,7 +50,7 @@ const WPCarousel = ({ copy }) => {
         link={copy.link}
         color={copy.color}>
         {
-          copy.divider && <ShortDivider bottom='0.8em' top='0.5em' color={copy.divider} width='3.5em' />
+          copy.divider && <Icons name='dividerShort' fill={copy.divider} />
         }
       </CarouselText>
       <SlideContainer>

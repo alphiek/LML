@@ -21,6 +21,7 @@ export const CardTextContainer = styled.div`
    padding: 0.3rem 1rem 1rem 1rem;
    width: 100%;
    height: 220px;
+   text-align: left;
 `
 
 export const CardLink = styled.a`
@@ -58,4 +59,5 @@ export const HR = styled.hr`
 
 export const Description = styled.p`
    font-size: 0.85rem;
+   text-align: left;
 `

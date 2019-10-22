@@ -12,7 +12,7 @@ module.exports = {
       city: `London`,
       postal: `SW6 3JA`,
       tel: `+44 207 859 4781`,
-      email: `property@likemindedliving.co.uk`      
+      email: `property@likemindedliving.co.uk`
     },
     social: {
       fb: `https://www.facebook.com/likemindedliving/`,
@@ -28,6 +28,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-portal`,
+      options: {
+        key: 'portal',
+        id: 'portal',
       },
     },
     {

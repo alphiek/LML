@@ -1,6 +1,6 @@
 import React from 'react'
 import Swiper from 'react-id-swiper';
-import { CardContainer } from '../WPCarousel'
+import { CardContainer, CardSpacer } from '../WPCarousel'
 
 import { useBlogData } from '../../../hooks/useBlogData'
 import BlogCard from './BlogCard'
@@ -14,10 +14,10 @@ const BlogContent = ({ page }) => {
   let blogItems;
 
   const getContent = (content) => {
-    return content.map(item => <CardContainer key={item.id}><BlogCard data={item} /></CardContainer>)
+    return content.map(item => <CardSpacer key={item.id}><CardContainer><BlogCard data={item} /></CardContainer></CardSpacer>)
   }
 
-  if (data) {
+  if (typeof data !== `undefined`) {
     tenants = data[1].posts.nodes
     landlords = data[0].posts.nodes 
     page === 'tenants' ? blogItems = getContent(tenants) : blogItems = getContent(landlords)
