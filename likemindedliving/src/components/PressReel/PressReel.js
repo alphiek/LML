@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import Icons from '../Icons/Icons'
 import { H2, Body } from '../text/Text'
 import { HeadingWrapper } from '../containers/Containers'
-import articleIcon from '../../images/articleIcon.svg'
 
 const PressSection = styled.section`
  width: 100%;
@@ -42,12 +41,6 @@ const ArticleWrapper = styled.div`
   display: flex;
 `
 
-const ArticleIcon = styled.img`
-  width: 4rem;
-  opacity: 0.9;
-  padding: 1rem 0;
-`
-
 const ArticleLink = styled.a`
   text-align: left;
   line-height: 135%;
@@ -57,7 +50,7 @@ const PressReel = ({ copy }) => {
   const articles = copy.articles.map((article, index) => {
     return (
       <div key={index}>
-        <ArticleIcon src={articleIcon} />
+        <Icons name="article" />
         <ArticleWrapper>
           <ArticleLink style={{ color: '#fff' }} href={article.url}>{article.name}</ArticleLink>
         </ArticleWrapper>
