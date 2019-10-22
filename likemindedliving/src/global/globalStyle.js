@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components"
 export const GlobalStyle = createGlobalStyle`
 
 
@@ -239,7 +239,9 @@ li {
   z-index: 2;
 }
 
-
+iframe {
+  border: none;
+}
 
 button {
   font-size: inherit;

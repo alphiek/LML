@@ -49,8 +49,8 @@ export const Fixed = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: ${props => props.width || '100%'};
-  height: ${props => props.height || '100%'};
+  width: ${props => props.width || "100%"};
+  height: ${props => props.height || "100%"};
   z-index: ${props => props.zIndex};
 `
 
@@ -162,7 +162,7 @@ export const CarouselHeadingWrapper = styled(HeadingWrapper)`
 // Wrappers
 
 export const SignUpFormWrapper = styled.div`
-  width: 70%;
+  width: ${props => props.width || "70%"};
   padding-top: 1rem;
   @media (max-width: 1180px) {
     width: auto;
