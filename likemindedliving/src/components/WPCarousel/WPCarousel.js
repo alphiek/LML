@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import { CarouselText } from '../text/TextSection'
+import { CarouselText } from '../Text/TextSection'
 import BlogContent from './Blogs/BlogContent'
 import PropertyContent from './Property/PropertyContent'
-import { FullSection } from '../containers/Containers'
+import { FullSection } from '../Containers/Containers'
 import Icons from '../Icons/Icons'
+import elevation from '../Utilities/elevation'
 
 
 export const CardSpacer = styled.div`
@@ -20,7 +21,7 @@ export const CardContainer = styled.li`
   flex-wrap: wrap;
   border-radius: 8px;
   border: 1px solid rgba(75, 74, 104, 0.05);
-  box-shadow: 0px 8px 10px 0px rgba(75, 74, 104, 0.18);
+  ${elevation[3]};
   }
 `
 

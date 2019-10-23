@@ -9,10 +9,10 @@ import {
   MainSectionContainer,
   SectionWrapper,
   Wrapper,
-} from "../containers/Containers"
-import { TextSection } from "../text/TextSection"
-import Flex from "../containers/Flex"
-import { FactBody } from "../text/Text"
+} from "../Containers/Containers"
+import { TextSection } from "../Text/TextSection"
+import Flex from "../Containers/Flex"
+import { FactBody } from "../Text/Text"
 
 const AlgorithmContainer = styled(Flex)`
   margin-bottom: 1em;

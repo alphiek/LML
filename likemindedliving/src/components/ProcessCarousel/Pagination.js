@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Flex from '../containers/Flex'
+import Flex from '../Containers/Flex'
 
 const PaginationWrapper = styled(Flex)`
    height: auto;  

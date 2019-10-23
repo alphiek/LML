@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { FadeIn } from '../animations/FadeIn'
+import { FadeIn } from '../Animations/FadeIn'
 
 const FactP = styled.p`
   margin-top: 1rem;

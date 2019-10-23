@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { H2, Body } from '../text/Text'
-import { MainSectionContainer } from '../containers/Containers'
+import { H2, Body } from '../Text/Text'
+import { MainSectionContainer } from '../Containers/Containers'
 import Icons from '../Icons/Icons'
-import { FadeIn } from '../animations/FadeIn'
+import { FadeIn } from '../Animations/FadeIn'
 
 const LandlordSectionWrapper = styled.div`
    width: 950px;

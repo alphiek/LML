@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import elevation from '../Utilities/elevation'
 
 const ModalOpen = ({ link, click }) => {
   return (
@@ -64,24 +65,18 @@ const Bubble = styled.span`
 `
 
 const ButtonWrapper = styled.button`
-  cursor: pointer;
+  position: relative;
   background: ${props => props.bgColor};
   color: ${props => props.color};
-  box-shadow: -5px -3px 108px -26px rgba(11, 59, 61, 0.2);
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  ${elevation[2]};
   border-radius: 4px;
   padding: 1.5rem;
-  text-align: center;
   width: 100%;
-  line-height: 130%;
-  position: relative;
-  overflow: hidden;
   z-index: 1;
   transition: 0.8s;
   :hover {
     color: ${props => props.colorHover};
+    ${elevation[3]};
     ${Bubble} {
       transform: translateY(0) scale(2);
     }

@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Blob from "../shapes/Blob"
+import Blob from "../Shapes/Blob"
 import Illustration from "./Illustration"
-import { Wrapper } from "../containers/Containers"
+import { Wrapper } from "../Containers/Containers"
 
 const IllustrationWrapper = ({ name, image, fill }) => {
   return (

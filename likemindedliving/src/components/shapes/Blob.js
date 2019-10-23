@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Zoom from "react-reveal/Zoom"
 import Shapes from "./Shapes"
 
-import Flex from "../containers/Flex"
+import Flex from "../Containers/Flex"
 
 const Blob = ({ name, fill, children }) => {
   return (

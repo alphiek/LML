@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Flex from '../containers/Flex'
+import Flex from '../Containers/Flex'
 
 const ArrowWrapper = styled(Flex)`
   margin-top: 0.5rem;

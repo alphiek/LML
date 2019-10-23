@@ -2,14 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import TestimonialCard from './TestimonialCard'
-import { H2, Body } from '../text/Text'
+import { H2, Body } from '../Text/Text'
 import { 
   SubTextWrapper, 
   TestimonialContainer, 
   FullSection, 
   HeadingContainer, 
   HeadingWrapper
- } from '../containers/Containers'
+ } from '../Containers/Containers'
  
 import Icons from '../Icons/Icons'
 

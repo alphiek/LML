@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Icons from '../Icons/Icons'
-import { H2, Body } from '../text/Text'
-import { HeadingWrapper } from '../containers/Containers'
+import { H2, Body } from '../Text/Text'
+import { HeadingWrapper } from '../Containers/Containers'
 
 const PressSection = styled.section`
  width: 100%;

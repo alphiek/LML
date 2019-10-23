@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { HoverPattern, HoverWrapper } from '../Patterns/HoverPattern'
-import { Bounce } from '../animations/keyframes'
+import { Bounce } from '../Animations/keyframes'
 
 
 const Link = styled.a`

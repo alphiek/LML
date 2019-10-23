@@ -7,10 +7,10 @@ import {
   MainSectionContainer,
   ReverseSectionWrapper,
   Wrapper,
-} from "../containers/Containers"
-import { FadeIn } from "../animations/FadeIn"
-import { TextSection } from "../text/TextSection"
-import { FactBody } from "../text/Text"
+} from "../Containers/Containers"
+import { FadeIn } from "../Animations/FadeIn"
+import { TextSection } from "../Text/TextSection"
+import { FactBody } from "../Text/Text"
 import ModalControl from "../Modal/ModalControl"
 
 import housemateBG from "../../images/housemateBG.svg"

@@ -5,9 +5,9 @@ import {
   IdealChoiceSection,
   ReverseSectionWrapper,
   Wrapper,
-} from "../containers/Containers"
+} from "../Containers/Containers"
 import IllustrationWrapper from "../Illustrations/IllustrationWrapper"
-import { TextSection } from "../text/TextSection"
+import { TextSection } from "../Text/TextSection"
 
 const Spacer = styled.div`
   height: 50px;

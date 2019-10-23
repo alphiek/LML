@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Flex from '../containers/Flex'
-import { H2, H3, Body } from '../text/Text'
-import { CarouselHeadingWrapper } from '../containers/Containers'
+import Flex from '../Containers/Flex'
+import { H2, H3, Body } from '../Text/Text'
+import { CarouselHeadingWrapper } from '../Containers/Containers'
 import Icons from '../Icons/Icons'
-import { FadeIn } from '../animations/FadeIn'
+import { FadeIn } from '../Animations/FadeIn'
 import { CarouselLink } from '../Links/CarouselLink'
 
 

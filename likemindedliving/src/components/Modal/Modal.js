@@ -2,12 +2,12 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import Spinner from "react-spinkit"
-import Portal from "../containers/Portal"
-import Backdrop from "../containers/Backdrop"
-import { Fixed } from "../containers/Containers"
-import Flex from "../containers/Flex"
 
-const Modal = ({ url, title, click }) => {
+import Backdrop from "../Containers/Backdrop"
+import { fullfixed, fullabs, fill } from "../Utilities/position"
+import Flex from "../Containers/Flex"
+
+const Modal = ({ url, title, click, styles }) => {
   const [loading, setLoading] = useState(true)
 
   const removeLoader = () => {
@@ -18,41 +18,41 @@ const Modal = ({ url, title, click }) => {
   }
 
   return (
-    <Portal>
-      <ModalContainer zIndex={99}>
-        <ModalWrapper justifyCenter alignCenter column>
-          {loading && (
-            <Loader justifyCenter alignCenter>
-              <Spinner name="ball-clip-rotate-multiple" fadeIn="none" />
-            </Loader>
-          )}
-          <ModalWindow>
-            <iframe
-              title={title}
-              width="100%"
-              height="100%"
-              src={url}
-              onLoad={removeLoader}
-              allowFullScreen
-            />
-          </ModalWindow>
-        </ModalWrapper>
-        <Backdrop click={click} />
-      </ModalContainer>
-    </Portal>
+    <ModalContainer style={{ opacity: styles.opacity }} zIndex={99}>
+      <ModalWrapper justifyCenter alignCenter column>
+        {loading && (
+          <Loader justifyCenter alignCenter>
+            <Spinner name="ball-clip-rotate-multiple" fadeIn="none" />
+          </Loader>
+        )}
+        <ModalWindow>
+          <iframe
+            style={{ opacity: styles.opacity }}
+            title={title}
+            width="100%"
+            height="100%"
+            src={url}
+            onLoad={removeLoader}
+            allowFullScreen
+          />
+        </ModalWindow>
+      </ModalWrapper>
+      <Backdrop styles={styles.backdrop} click={click} />
+    </ModalContainer>
   )
 }
 
 export default Modal
 
 Modal.propTypes = {
-  children: PropTypes.node.isRequired,
   click: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
+  styles: PropTypes.object.isRequired,
 }
 
-const ModalContainer = styled(Fixed)`
+const ModalContainer = styled.div`
+  ${fullfixed({})};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,12 +67,9 @@ const ModalWrapper = styled(Flex)`
 `
 
 const ModalWindow = styled.div`
-  width: 100%;
-  height: 100%;
+  ${fill({})};
 `
 
 const Loader = styled(Flex)`
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  ${fullabs({})};
 `

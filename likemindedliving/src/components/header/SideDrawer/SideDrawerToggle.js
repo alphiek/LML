@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Icons from '../../Icons/Icons'
 import styled from 'styled-components'
+
+import Icons from '../../Icons/Icons'
 
 const SideDrawerButton = styled.button`
    display: flex;

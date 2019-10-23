@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import { TextSection } from "../text/TextSection"
+import { TextSection } from "../Text/TextSection"
 import ModalControl from "../Modal/ModalControl"
 import IllustrationWrapper from '../Illustrations/IllustrationWrapper'
 
@@ -9,7 +9,7 @@ import {
   SectionContainer,
   SectionWrapper,
   Wrapper,
-} from "../containers/Containers"
+} from "../Containers/Containers"
 
 const PropertySearch = ({ copy }) => {
   return (

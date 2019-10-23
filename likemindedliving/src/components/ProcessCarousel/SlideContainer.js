@@ -5,7 +5,7 @@ import { updateStyle, updateNext, updatePrevious } from "./styleHelpers"
 import {
   CenterWrapperProcess,
   ProcessPaginationContainer,
-} from "../containers/Containers"
+} from "../Containers/Containers"
 import SlideImages from "./SlideImages"
 import LandlordSlideImages from "./LandlordSlideImages"
 import StepText from "./StepText"

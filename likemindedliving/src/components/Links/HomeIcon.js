@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Flex from "../containers/Flex"
+import Flex from "../Containers/Flex"
 import Icons from "../Icons/Icons"
 
 const HomeIcon = () => {

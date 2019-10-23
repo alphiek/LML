@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Body } from '../text/Text'
+import { Body } from '../Text/Text'
 import Icons from '../Icons/Icons'
 
 const Card = styled.div`  

@@ -244,12 +244,17 @@ iframe {
 }
 
 button {
-  font-size: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   display: inline-block;
   border: none;
   text-decoration: none;
   background: transparent;
+  text-align: center;
   cursor: pointer;
+  line-height: 130%;
+  overflow: hidden;
   -webkit-appearance: none;
   -moz-appearance: none;
   box-sizing: border-box;

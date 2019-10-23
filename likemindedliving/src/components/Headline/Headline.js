@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import H1SplitText from '../animations/H1SplitText'
+import H1SplitText from '../Animations/H1SplitText'
 import {
   HeadlineSection,
   TextCenter
-} from '../containers/Containers'
-import { FadeIn } from '../animations/FadeIn'
+} from '../Containers/Containers'
+import { FadeIn } from '../Animations/FadeIn'
 import Icons from '../Icons/Icons'
 
 const Headline = ({ copy }) => {

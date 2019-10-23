@@ -1,9 +1,9 @@
 import React from 'react'
 import { useSiteMetaData } from '../../hooks/useSiteMetaData'
 import styled from 'styled-components'
-import { FadeIn } from '../animations/FadeIn'
+import { FadeIn } from '../Animations/FadeIn'
 import Icons from '../Icons/Icons'
-import Terms from './terms'
+import Terms from './Terms'
 
 const AddressTitle = styled.p`
   font-weight: 700;

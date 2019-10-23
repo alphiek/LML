@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Headline from '../Headline/Headline'
-import { SectionContent } from '../sections/LandlordFAQs'
+import { SectionContent } from '../Sections/LandlordFAQs'
 import ProcessContainer from '../ProcessCarousel/ProcessContainer'
 import PressReel from '../PressReel/PressReel'
 import Testimonial from '../Testimonial/Testimonial'
