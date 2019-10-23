@@ -30,13 +30,10 @@ const Shapes = ({ name, fill }) => {
             <linearGradient
               id="linear-gradient"
               gradientTransform="rotate(90)"
-              x1="50%"
-              x2="50%"
-              y2="100%"
             >
-              <stop offset="0%" stopColor="#c9d2f5" />
-              <stop offset="50%" stopcolor="#bee1ec" />
-              <stop offset="100%" stopColor="#b4ece4" />
+      <stop offset="0" stopColor="#c9d2f5"/>
+      <stop offset="0.502" stopColor="#bee1ec"/>
+      <stop offset="1" stopColor="#b4ece4"/>
             </linearGradient>
           </defs>
           <g transform="matrix(0.993, 0.122, -0.122, 0.993, 234.09, 274.843)">
