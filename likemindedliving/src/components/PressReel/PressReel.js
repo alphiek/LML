@@ -1,18 +1,18 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import React from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
 
-import Icons from '../Icons/Icons'
-import { H2, Body } from '../Text/Text'
-import { HeadingWrapper } from '../Containers/Containers'
+import Icons from "../Icons/Icons"
+import { H2, Body } from "../Text/Text"
+import { HeadingWrapper } from "../Containers/Containers"
 
 const PressSection = styled.section`
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- background-color: ${props => props.bgColor};
- padding: 60px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${props => props.bgColor};
+  padding: 60px 0;
 `
 
 const ScrollContainer = styled.div`
@@ -28,7 +28,7 @@ const ScrollContainer = styled.div`
     width: 0;
     height: 0;
     -webkit-appearance: none;
-   }
+  }
   scrollbar-width: none;
 `
 const ArticleWrapper = styled.div`
@@ -52,7 +52,9 @@ const PressReel = ({ copy }) => {
       <div key={index}>
         <Icons name="article" />
         <ArticleWrapper>
-          <ArticleLink style={{ color: '#fff' }} href={article.url}>{article.name}</ArticleLink>
+          <ArticleLink style={{ color: "#fff" }} href={article.url}>
+            {article.name}
+          </ArticleLink>
         </ArticleWrapper>
       </div>
     )
@@ -62,7 +64,7 @@ const PressReel = ({ copy }) => {
     <PressSection bgColor={copy.bgColor}>
       <HeadingWrapper>
         <H2 color={copy.color}>{copy.h2}</H2>
-        <Icons name='dividerShort' fill={copy.divider} />
+        <Icons name="dividerShort" fill={copy.divider} />
         <Body color={copy.color}>{copy.p1}</Body>
         <ScrollContainer>{articles}</ScrollContainer>
       </HeadingWrapper>
@@ -76,5 +78,5 @@ PressReel.propTypes = {
   copy: PropTypes.shape({
     articles: PropTypes.arrayOf(PropTypes.object).isRequired,
     bgColor: PropTypes.string.isRequired,
-  }).isRequired
+  }).isRequired,
 }

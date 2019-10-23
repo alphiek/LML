@@ -1,17 +1,19 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 
-import { updateStyle, updateNext, updatePrevious } from "./styleHelpers"
+import TenantProcessIllustration from '../Illustrations/TenantProcessIllustration'
+import LandlordProcessIllustration from '../Illustrations/LandlordProcessIllustration'
+
 import {
   CenterWrapperProcess,
   ProcessPaginationContainer,
 } from "../Containers/Containers"
-import SlideImages from "./SlideImages"
-import LandlordSlideImages from "./LandlordSlideImages"
+
 import StepText from "./StepText"
 import Pagination from "./Pagination"
 import ModalControl from "../Modal/ModalControl"
 import Arrows from "./Arrows"
+import { updateStyle, updateNext, updatePrevious } from "./styleHelpers"
 
 const SlideContainer = ({ copy, link, landlord }) => {
   const [currentSlide, updateSlide] = useState(1)
@@ -22,9 +24,9 @@ const SlideContainer = ({ copy, link, landlord }) => {
   let slides
 
   if (landlord) {
-    slides = <LandlordSlideImages slide={Number(currentSlide)} />
+    slides = <LandlordProcessIllustration slide={Number(currentSlide)} />
   } else {
-    slides = <SlideImages slide={Number(currentSlide)} />
+    slides = <TenantProcessIllustration slide={Number(currentSlide)} />
   }
 
   const updateSlideHandler = val => {

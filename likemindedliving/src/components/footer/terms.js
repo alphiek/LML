@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import styled from 'styled-components'
+import styled from "styled-components"
 
 const TermsContainer = styled.ul`
-   flex-direction: column;
+  flex-direction: column;
 `
 const PdfLink = styled.a`
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -16,16 +16,16 @@ const PdfLink = styled.a`
 `
 
 const PDFLinkWrapper = styled.li`
-    @media (max-width: 1180px) {
-      margin: 15px 0;
-    }
+  @media (max-width: 1180px) {
+    margin: 15px 0;
+  }
 `
 
-const convertName = (name) => {
-  if (name === 'Cookie-Policy-for-Like-Minded-Living') {
-    return 'Cookie Policy'
+const convertName = name => {
+  if (name === "Cookie-Policy-for-Like-Minded-Living") {
+    return "Cookie Policy"
   } else {
-    return 'Terms of Use'
+    return "Terms of Use"
   }
 }
 
@@ -50,21 +50,23 @@ const Terms = () => {
             <PdfLink
               href={file.node.publicURL}
               aria-label={`Link to ${file.node.name}`}
-              target='blank'
-              rel='noopener noreferrer'
+              target="blank"
+              rel="noopener noreferrer"
             >
               {convertName(file.node.name)}
             </PdfLink>
           </PDFLinkWrapper>
         )
       })}
-      <PDFLinkWrapper
-      ><PdfLink
-        href='https://www.iubenda.com/privacy-policy/79077073'
-        aria-label='Link to Privacy Policy'
-        target='blank'
-        rel='noopener noreferrer'
-      >Privacy Policy</PdfLink>
+      <PDFLinkWrapper>
+        <PdfLink
+          href="https://www.iubenda.com/privacy-policy/79077073"
+          aria-label="Link to Privacy Policy"
+          target="blank"
+          rel="noopener noreferrer"
+        >
+          Privacy Policy
+        </PdfLink>
       </PDFLinkWrapper>
     </TermsContainer>
   )

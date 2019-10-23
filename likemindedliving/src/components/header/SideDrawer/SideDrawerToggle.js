@@ -1,24 +1,24 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import React from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
 
-import Icons from '../../Icons/Icons'
+import Icons from "../../Icons/Icons"
 
 const SideDrawerButton = styled.button`
-   display: flex;
-   @media(min-width: 1181px) {
+  display: flex;
+  @media (min-width: 1181px) {
     display: none;
- }
+  }
 `
 
 const SideDrawerToggle = ({ click }) => (
   <SideDrawerButton onClick={click}>
-    <Icons name='burger' />
+    <Icons name="burger" />
   </SideDrawerButton>
 )
 
 export default SideDrawerToggle
 
 SideDrawerToggle.propTypes = {
-  click: PropTypes.func.isRequired
+  click: PropTypes.func.isRequired,
 }

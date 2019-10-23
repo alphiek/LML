@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import Spinner from "react-spinkit"
 
-import Backdrop from "../Containers/Backdrop"
 import { fullfixed, fullabs, fill } from "../Utilities/position"
 import Flex from "../Containers/Flex"
 
@@ -18,7 +17,7 @@ const Modal = ({ url, title, click, styles }) => {
   }
 
   return (
-    <ModalContainer style={{ opacity: styles.opacity }} zIndex={99}>
+    <ModalContainer style={{ opacity: styles.opacity }}>
       <ModalWrapper justifyCenter alignCenter column>
         {loading && (
           <Loader justifyCenter alignCenter>
@@ -37,7 +36,13 @@ const Modal = ({ url, title, click, styles }) => {
           />
         </ModalWindow>
       </ModalWrapper>
-      <Backdrop styles={styles.backdrop} click={click} />
+      <BackdropCover
+        onClick={e => {
+          e.preventDefault()
+          click()
+        }}
+        style={{ opacity: styles.backdrop }}
+      ></BackdropCover>
     </ModalContainer>
   )
 }
@@ -54,6 +59,7 @@ Modal.propTypes = {
 const ModalContainer = styled.div`
   ${fullfixed({})};
   display: flex;
+  z-index: 99;
   justify-content: center;
   align-items: center;
 `
@@ -72,4 +78,10 @@ const ModalWindow = styled.div`
 
 const Loader = styled(Flex)`
   ${fullabs({})};
+`
+
+const BackdropCover = styled.div`
+  ${fullfixed({})};
+  background-color: #222;
+  opacity: 0.5;
 `

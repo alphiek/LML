@@ -45,15 +45,6 @@ export const FullSection = styled.section`
   margin-bottom: 100px;
 `
 
-export const Fixed = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: ${props => props.width || "100%"};
-  height: ${props => props.height || "100%"};
-  z-index: ${props => props.zIndex};
-`
-
 // Section Wrappers
 
 export const TextCenter = styled(Flex)`
@@ -74,9 +65,8 @@ export const TextCenter = styled(Flex)`
   }
 `
 
-export const SectionWrapper = styled.div`
+export const SectionWrapper = styled(Flex)`
   width: 950px;
-  display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
   align-items: center;
@@ -120,8 +110,7 @@ export const CenterWrapperProcess = styled(Wrapper)`
   }
 `
 
-export const HeadingContainer = styled.div`
-  display: flex;
+export const HeadingContainer = styled(Flex)`
   justify-content: center;
   align-items: center;
   width: 1100px;
@@ -129,9 +118,8 @@ export const HeadingContainer = styled.div`
   background-color: ${colors.lightPeach};
 `
 
-export const TestimonialContainer = styled.div`
+export const TestimonialContainer = styled(Flex)`
   width: 950px;
-  display: flex;
   position: relative;
   justify-content: space-between;
   @media (max-width: 1180px) {

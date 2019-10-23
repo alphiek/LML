@@ -1,39 +1,24 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "styled-components"
 import {
   IdealChoiceSection,
   ReverseSectionWrapper,
-  Wrapper,
 } from "../Containers/Containers"
 import IllustrationWrapper from "../Illustrations/IllustrationWrapper"
-import { TextSection } from "../Text/TextSection"
+import MainTextWrapper from "../Text/MainTextWrapper"
 
-const Spacer = styled.div`
-  height: 50px;
-  @media (max-width: 1180px) {
-    &:nth-child(4) {
-      display: none;
-    }
-  }
-`
 
 const IdealChoice = ({ copy }) => {
   return (
     <IdealChoiceSection bgColor={copy.bgColor}>
-      <Spacer />
       <ReverseSectionWrapper>
         <IllustrationWrapper
           name="blobFour"
           fill={copy.blob}
           image="sectionFour"
         />
-        <Spacer />
-        <Wrapper>
-          <TextSection copy={copy} />
-        </Wrapper>
+        <MainTextWrapper copy={copy} />
       </ReverseSectionWrapper>
-      <Spacer />
     </IdealChoiceSection>
   )
 }

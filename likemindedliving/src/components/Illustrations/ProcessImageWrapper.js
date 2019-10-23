@@ -1,15 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import Flex from '../Containers/Flex'
 
-export const ImageDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  align-content: center;
+export const ImageDiv = styled(Flex)`
   width: 100%;
 `
 
-const ImageWrapper = ({ children }) => {
+const ProcessImageWrapper = ({ children }) => {
   return (
     <ImageDiv>
       {children}
@@ -17,8 +15,8 @@ const ImageWrapper = ({ children }) => {
   )
 }
 
-export default ImageWrapper
+export default ProcessImageWrapper
 
-ImageWrapper.propTypes = {
+ProcessImageWrapper.propTypes = {
   children: PropTypes.node.isRequired
 }

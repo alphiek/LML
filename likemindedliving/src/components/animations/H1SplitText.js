@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import SplitText from 'react-pose-text'
-import styled from 'styled-components'
+import React from "react"
+import PropTypes from "prop-types"
+import SplitText from "react-pose-text"
+import styled from "styled-components"
 
 const H1 = styled.h1`
-   color: ${props => props.color};
+  color: ${props => props.color};
 `
 
 const H1SplitText = ({ h1, color }) => {
@@ -13,17 +13,15 @@ const H1SplitText = ({ h1, color }) => {
     enter: {
       opacity: 1,
       y: 0,
-      delay: ({ charIndex }) => charIndex * 20
-    }
-  };
+      delay: ({ charIndex }) => charIndex * 20,
+    },
+  }
 
   return (
     <H1 color={color}>
-      <SplitText
-        initialPose="exit"
-        pose="enter"
-        charPoses={charPoses}
-      >{h1}</SplitText>
+      <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
+        {h1}
+      </SplitText>
     </H1>
   )
 }
@@ -32,5 +30,5 @@ export default H1SplitText
 
 H1SplitText.propTypes = {
   h1: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired
+  color: PropTypes.string.isRequired,
 }

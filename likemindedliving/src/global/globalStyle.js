@@ -87,10 +87,6 @@ nav {
 }
 
 footer {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
   background-color: #BAEEE5;
   color: #252454;
   margin-top: 2em;
@@ -258,6 +254,9 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   box-sizing: border-box;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 button:hover,
@@ -270,7 +269,7 @@ button:focus {
 }
 
 button:active {
-  background: tranparent;
+  background: transparent;
 }
 
 `

@@ -1,32 +1,31 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
-import Headline from '../Headline/Headline'
-import { SectionContent } from '../Sections/LandlordFAQs'
-import ProcessContainer from '../ProcessCarousel/ProcessContainer'
-import PressReel from '../PressReel/PressReel'
-import Testimonial from '../Testimonial/Testimonial'
-import WPCarousel from '../WPCarousel/WPCarousel'
-
+import Headline from "../Headline/Headline"
+import { SectionContent } from "../Sections/LandlordFAQs"
+import ProcessContainer from "../ProcessCarousel/ProcessContainer"
+import PressReel from "../PressReel/PressReel"
+import Testimonial from "../Testimonial/Testimonial"
+import WPCarousel from "../WPCarousel/WPCarousel"
 
 const Landlords = ({ copy }) => {
-    return (
-        <>
-            <Headline copy={copy.headline} />
-            <SectionContent copy={copy.sectionOne} />
-            <ProcessContainer copy={copy.process} />
-            <SectionContent copy={copy.sectionTwo} />
-            <SectionContent copy={copy.sectionThree} />
-            <PressReel copy={copy.pressReel} />
-            <SectionContent copy={copy.sectionFour} />
-            <Testimonial copy={copy.testimonials} />
-            <WPCarousel copy={copy.blogs} />
-        </>
-    )
+  return (
+    <>
+      <Headline copy={copy.headline} />
+      <SectionContent copy={copy.sectionOne} />
+      <ProcessContainer copy={copy.process} />
+      <SectionContent copy={copy.sectionTwo} />
+      <SectionContent copy={copy.sectionThree} />
+      <PressReel copy={copy.pressReel} />
+      <SectionContent copy={copy.sectionFour} />
+      <Testimonial copy={copy.testimonials} />
+      <WPCarousel copy={copy.blogs} />
+    </>
+  )
 }
 
 export default Landlords
 
 Landlords.propTypes = {
-    copy: PropTypes.objectOf(PropTypes.object).isRequired
+  copy: PropTypes.objectOf(PropTypes.object).isRequired,
 }

@@ -1,26 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import { TextSection } from "../Text/TextSection"
-import ModalControl from "../Modal/ModalControl"
-import IllustrationWrapper from '../Illustrations/IllustrationWrapper'
-
-import {
-  SectionContainer,
-  SectionWrapper,
-  Wrapper,
-} from "../Containers/Containers"
+import IllustrationWrapper from "../Illustrations/IllustrationWrapper"
+import MainTextWrapper from "../Text/MainTextWrapper"
+import { SectionContainer, SectionWrapper } from "../Containers/Containers"
 
 const PropertySearch = ({ copy }) => {
   return (
     <SectionContainer>
       <SectionWrapper>
-        <IllustrationWrapper name='blobOne' fill={copy.blob} image="sectionOne" />
-        <Wrapper>
-          <TextSection copy={copy}>
-            <ModalControl link={copy.link} />
-          </TextSection>
-        </Wrapper>
+        <IllustrationWrapper
+          name="blobOne"
+          fill={copy.blob}
+          image="sectionOne"
+        />
+        <MainTextWrapper copy={copy} />
       </SectionWrapper>
     </SectionContainer>
   )

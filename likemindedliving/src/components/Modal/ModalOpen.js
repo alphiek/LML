@@ -72,7 +72,6 @@ const ButtonWrapper = styled.button`
   border-radius: 4px;
   padding: 1.5rem;
   width: 100%;
-  z-index: 1;
   transition: 0.8s;
   :hover {
     color: ${props => props.colorHover};
@@ -83,8 +82,5 @@ const ButtonWrapper = styled.button`
   }
   @media (max-width: 1180px) {
     padding: 1.5rem;
-  }
-  @media (max-width: 768px) {
-    font-size: 1rem;
   }
 `

@@ -1,16 +1,16 @@
-import React from 'react'
-import { useSiteMetaData } from '../../hooks/useSiteMetaData'
-import styled from 'styled-components'
-import { FadeIn } from '../Animations/FadeIn'
-import Icons from '../Icons/Icons'
-import Terms from './Terms'
+import React from "react"
+import { useSiteMetaData } from "../../hooks/useSiteMetaData"
+import styled from "styled-components"
+import Flex from "../Containers/Flex"
+import { FadeIn } from "../Animations/FadeIn"
+import Icons from "../Icons/Icons"
+import Terms from "./Terms"
 
 const AddressTitle = styled.p`
   font-weight: 700;
   font-size: 1.2em;
   padding-bottom: 2em;
-  @media (max-width: 1180px)
-  {
+  @media (max-width: 1180px) {
     padding-top: 1em;
     padding-bottom: 1em;
   }
@@ -37,10 +37,7 @@ const Copyright = styled.p`
   margin-top: 1.5em;
 `
 
-const IconWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+const IconWrapper = styled(Flex)`
   width: 5rem;
   margin: 1rem 0;
 `
@@ -59,31 +56,39 @@ const Footer = () => {
           {address.city} <br />
           {address.postal}
           <hr />
-          <AddressLink href={`tel:${address.tel}`}>Tel: {address.tel}</AddressLink>
-          <AddressLink href={`mailto:${address.email}`}>Email: {address.email}</AddressLink>
+          <AddressLink href={`tel:${address.tel}`}>
+            Tel: {address.tel}
+          </AddressLink>
+          <AddressLink href={`mailto:${address.email}`}>
+            Email: {address.email}
+          </AddressLink>
           <hr />
-          <IconWrapper>
-            <a href={social.fb}
-              aria-label='Facebook Link'
-              target='blank'
-              rel='noopener noreferrer'>
-              <Icons fill='#252454' name='fb' />
+          <IconWrapper alignCenter justifyBetween>
+            <a
+              href={social.fb}
+              aria-label="Facebook Link"
+              target="blank"
+              rel="noopener noreferrer"
+            >
+              <Icons fill="#252454" name="fb" />
             </a>
-            <a href={social.insta}
-              aria-label='Instagram Link'
-              target='blank'
-              rel='noopener noreferrer'>
-              <Icons fill='#252454' name='insta' />
+            <a
+              href={social.insta}
+              aria-label="Instagram Link"
+              target="blank"
+              rel="noopener noreferrer"
+            >
+              <Icons fill="#252454" name="insta" />
             </a>
           </IconWrapper>
         </address>
         <Terms />
-        <Copyright>© {new Date().getFullYear()} Like-Minded Living, all rights reserved </Copyright>
+        <Copyright>
+          © {new Date().getFullYear()} Like-Minded Living, all rights reserved{" "}
+        </Copyright>
       </FadeIn>
     </footer>
   )
 }
 
 export default Footer
-
-

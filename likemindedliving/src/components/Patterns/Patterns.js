@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import sideDrawerPtn from '../../images/sideDrawerPtn.svg'
+import sideDrawerPtn from "../../images/sideDrawerPtn.svg"
 
 const SideDrawerPattern = styled.img`
   width: 100%;
@@ -19,6 +19,5 @@ const Patterns = ({ name }) => {
     default:
   }
 }
-
 
 export default Patterns
