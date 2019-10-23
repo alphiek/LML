@@ -71,8 +71,8 @@ const Icons = ({ name, fill }) => {
           stroke={fill}
           fill="none"
           viewBox="0 0 987 8.9"
-          stroke-linecap="round"
-          stroke-miterlimit="10"
+          strokeLinecap="round"
+          strokeMiterlimit="10"
         >
           <path d="M3,3c98.1,0,98.1,2.9,196.2,2.9S297.3,3,395.4,3s98.1,2.9,196.2,2.9S689.7,3,787.8,3 S885.9,5.9,984,5.9" />
         </DividerLong>
@@ -82,8 +82,8 @@ const Icons = ({ name, fill }) => {
         <DividerShort
           stroke={fill}
           fill="none"
-          stroke-linecap="round"
-          stroke-miterlimit="10"
+          strokeLinecap="round"
+          strokeMiterlimit="10"
           viewBox="0 0 90 6.9"
         >
           <path d="M1.5,1.5c8.7,0,8.7,3.9,17.4,3.9s8.7-3.9,17.4-3.9S45,5.4,53.7,5.4s8.7-3.9,17.4-3.9 s8.7,3.9,17.4,3.9" />
@@ -95,7 +95,7 @@ const Icons = ({ name, fill }) => {
           viewBox="0 0 297 350"
           x="0"
           y="0"
-          enable-background="new 0 0 297 350"
+          enableBackground="new 0 0 297 350"
           width="4rem"
         >
           <g>
@@ -106,15 +106,15 @@ const Icons = ({ name, fill }) => {
             <path
               fill="#C9D2F5"
               stroke="#D3D3D3"
-              stroke-miterlimit="10"
+              strokeMiterlimit="10"
               d="M217.5,23c2.2,0,4,1.8,4,4v300c0,2.2-1.8,4-4,4H25.1c-2.2,0-4-1.8-4-4V27c0-2.2,1.8-4,4-4H217.5 M217.5,15H25.1
           c-6.6,0-12,5.4-12,12v300c0,6.6,5.4,12,12,12h192.4c6.6,0,12-5.4,12-12V27C229.5,20.4,224.1,15,217.5,15z"
             />
             <line
               fill="none"
               stroke="#D3D3D3"
-              stroke-width="8"
-              stroke-miterlimit="10"
+              strokeWidth="8"
+              strokeMiterlimit="10"
               x1="43"
               y1="71"
               x2="128"
@@ -123,8 +123,8 @@ const Icons = ({ name, fill }) => {
             <line
               fill="none"
               stroke="#D3D3D3"
-              stroke-width="8"
-              stroke-miterlimit="10"
+              strokeWidth="8"
+              strokeMiterlimit="10"
               x1="43"
               y1="55"
               x2="128"
@@ -133,8 +133,8 @@ const Icons = ({ name, fill }) => {
             <line
               fill="none"
               stroke="#D3D3D3"
-              stroke-width="8"
-              stroke-miterlimit="10"
+              strokeWidth="8"
+              strokeMiterlimit="10"
               x1="43"
               y1="109"
               x2="200"
@@ -143,8 +143,8 @@ const Icons = ({ name, fill }) => {
             <line
               fill="none"
               stroke="#D3D3D3"
-              stroke-width="8"
-              stroke-miterlimit="10"
+              strokeWidth="8"
+              strokeMiterlimit="10"
               x1="43"
               y1="127"
               x2="200"
@@ -153,8 +153,8 @@ const Icons = ({ name, fill }) => {
             <line
               fill="none"
               stroke="#D3D3D3"
-              stroke-width="8"
-              stroke-miterlimit="10"
+              strokeWidth="8"
+              strokeMiterlimit="10"
               x1="43"
               y1="145"
               x2="200"
@@ -163,8 +163,8 @@ const Icons = ({ name, fill }) => {
             <line
               fill="none"
               stroke="#D3D3D3"
-              stroke-width="8"
-              stroke-miterlimit="10"
+              strokeWidth="8"
+              strokeMiterlimit="10"
               x1="200"
               y1="174"
               x2="43"
@@ -173,8 +173,8 @@ const Icons = ({ name, fill }) => {
             <line
               fill="none"
               stroke="#D3D3D3"
-              stroke-width="8"
-              stroke-miterlimit="10"
+              strokeWidth="8"
+              strokeMiterlimit="10"
               x1="43"
               y1="192"
               x2="200"
@@ -183,8 +183,8 @@ const Icons = ({ name, fill }) => {
             <line
               fill="none"
               stroke="#D3D3D3"
-              stroke-width="8"
-              stroke-miterlimit="10"
+              strokeWidth="8"
+              strokeMiterlimit="10"
               x1="43"
               y1="210"
               x2="200"
@@ -193,8 +193,8 @@ const Icons = ({ name, fill }) => {
             <line
               fill="none"
               stroke="#D3D3D3"
-              stroke-width="8"
-              stroke-miterlimit="10"
+              strokeWidth="8"
+              strokeMiterlimit="10"
               x1="43"
               y1="239"
               x2="200"
@@ -203,8 +203,8 @@ const Icons = ({ name, fill }) => {
             <line
               fill="none"
               stroke="#D3D3D3"
-              stroke-width="8"
-              stroke-miterlimit="10"
+              strokeWidth="8"
+              strokeMiterlimit="10"
               x1="43"
               y1="257"
               x2="200"
@@ -213,8 +213,8 @@ const Icons = ({ name, fill }) => {
             <line
               fill="none"
               stroke="#D3D3D3"
-              stroke-width="8"
-              stroke-miterlimit="10"
+              strokeWidth="8"
+              strokeMiterlimit="10"
               x1="43"
               y1="275"
               x2="200"
@@ -228,7 +228,7 @@ const Icons = ({ name, fill }) => {
             <path
               fill="#C9D2F5"
               stroke="#D3D3D3"
-              stroke-miterlimit="10"
+              strokeMiterlimit="10"
               d="M273.4,107c2.6,0,4.6,2.1,4.6,4.7v165.7c0,2.6-2.1,4.6-4.6,4.6H126.7c-2.6,0-4.6-2.1-4.7-4.6V111.7
           c0-2.6,2.1-4.6,4.7-4.7H273.4 M273.4,99H126.7c-7,0-12.6,5.7-12.7,12.7v165.7c0,7,5.7,12.6,12.7,12.6h146.7c7,0,12.6-5.7,12.6-12.6
           V111.7C286,104.7,280.3,99,273.4,99z"
@@ -241,7 +241,7 @@ const Icons = ({ name, fill }) => {
             <path
               fill="#C9D2F5"
               stroke="#D3D3D3"
-              stroke-miterlimit="10"
+              strokeMiterlimit="10"
               d="M249.3,131c2.6,0,4.7,2.1,4.7,4.7v63.6c0,2.6-2.1,4.7-4.7,4.7H148.7c-2.6,0-4.7-2.1-4.7-4.7v-63.6
           c0-2.6,2.1-4.7,4.7-4.7H249.3 M249.3,123H148.7c-7,0-12.7,5.7-12.7,12.7v63.6c0,7,5.7,12.7,12.7,12.7h100.6c7,0,12.7-5.7,12.7-12.7
           v-63.6C262,128.7,256.3,123,249.3,123z"
@@ -253,8 +253,8 @@ const Icons = ({ name, fill }) => {
             <line
               fill="none"
               stroke="#D3D3D3"
-              stroke-width="8"
-              stroke-miterlimit="10"
+              strokeWidth="8"
+              strokeMiterlimit="10"
               x1="142"
               y1="232"
               x2="259"
@@ -263,8 +263,8 @@ const Icons = ({ name, fill }) => {
             <line
               fill="none"
               stroke="#D3D3D3"
-              stroke-width="8"
-              stroke-miterlimit="10"
+              strokeWidth="8"
+              strokeMiterlimit="10"
               x1="142"
               y1="253.5"
               x2="259"
