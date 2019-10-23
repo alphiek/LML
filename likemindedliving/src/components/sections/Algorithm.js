@@ -3,7 +3,8 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 
 import ModalControl from "../Modal/ModalControl"
-import AlgorithmIllustration from "../Illustrations/AlgorithmIllustration"
+import IllustrationWrapper from "../Illustrations/IllustrationWrapper"
+
 import {
   MainSectionContainer,
   SectionWrapper,
@@ -30,10 +31,7 @@ const Algorithm = ({ copy }) => {
   return (
     <MainSectionContainer>
       <SectionWrapper>
-        <Wrapper>
-          <AlgorithmIllustration />
-          <Spacer />
-        </Wrapper>
+        <IllustrationWrapper name="blobThree" fill={copy.blob} image="sectionThree"/>
         <Wrapper>
           <TextSection copy={copy}>
             <AlgorithmContainer>

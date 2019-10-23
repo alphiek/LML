@@ -1,7 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import HousemateMatching from "../Illustrations/HousemateMatching"
+import IllustrationWrapper from '../Illustrations/IllustrationWrapper'
+
 import {
   MainSectionContainer,
   ReverseSectionWrapper,
@@ -11,6 +12,7 @@ import { FadeIn } from "../animations/FadeIn"
 import { TextSection } from "../text/TextSection"
 import { FactBody } from "../text/Text"
 import ModalControl from "../Modal/ModalControl"
+
 import housemateBG from "../../images/housemateBG.svg"
 import { BGPattern } from "../ProcessCarousel/ProcessContainer"
 
@@ -18,9 +20,7 @@ const HouseMate = ({ copy }) => {
   return (
     <MainSectionContainer bgColor={copy.bgColor}>
       <ReverseSectionWrapper>
-        <Wrapper>
-          <HousemateMatching color={copy.blob} rotate={copy.rotate} />
-        </Wrapper>
+       <IllustrationWrapper name='blobTwo' fill={copy.blob} image="sectionTwo" />
         <Wrapper>
           <TextSection copy={copy}>
             <FadeIn>

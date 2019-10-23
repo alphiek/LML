@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { HoverPattern, HoverWrapper } from '../Illustrations/HoverPattern'
+import { HoverPattern, HoverWrapper } from '../Patterns/HoverPattern'
 import { Bounce } from '../animations/keyframes'
 
 

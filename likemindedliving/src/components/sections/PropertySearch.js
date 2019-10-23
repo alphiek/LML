@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import PropertySearchTool from "../Illustrations/PropertySearchTool"
 import { TextSection } from "../text/TextSection"
 import ModalControl from "../Modal/ModalControl"
+import IllustrationWrapper from '../Illustrations/IllustrationWrapper'
 
 import {
   SectionContainer,
@@ -15,9 +15,7 @@ const PropertySearch = ({ copy }) => {
   return (
     <SectionContainer>
       <SectionWrapper>
-        <Wrapper>
-          <PropertySearchTool color={copy.blob} />
-        </Wrapper>
+        <IllustrationWrapper name='blobOne' fill={copy.blob} image="sectionOne" />
         <Wrapper>
           <TextSection copy={copy}>
             <ModalControl link={copy.link} />
