@@ -1,18 +1,24 @@
-import React from 'react'
-import Swiper from 'react-id-swiper';
-import { usePropertyData } from '../../../hooks/usePropertyData'
-import { CardContainer, CardSpacer } from '../WPCarousel'
-import PropertyCard from './PropertyCard'
+import React from "react"
+import Swiper from "react-id-swiper"
+import { usePropertyData } from "../../../hooks/usePropertyData"
+import { CardContainer, CardSpacer } from "../WPCarousel"
+import PropertyCard from "./PropertyCard"
 
 const PropertyContent = () => {
   const data = usePropertyData()
-  let propertyItems;
+  let propertyItems
 
   if (typeof data !== `undefined`) {
-    propertyItems = data.edges.map(item => <CardSpacer key={item.node.id}><CardContainer><PropertyCard content={item.node}/></CardContainer></CardSpacer>)
+    propertyItems = data.edges.map(item => (
+      <CardSpacer key={item.node.id}>
+        <CardContainer>
+          <PropertyCard content={item.node} />
+        </CardContainer>
+      </CardSpacer>
+    ))
   } else {
     propertyItems = <div>Nothing was returned</div>
-  } 
+  }
 
   const params = {
     slidesPerView: 4,
@@ -21,25 +27,20 @@ const PropertyContent = () => {
     breakpoints: {
       1180: {
         slidesPerView: 3,
-        spaceBetween: 20
+        spaceBetween: 10,
       },
-      900: {
+      950: {
         slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 10,
       },
-      610: {
+      680: {
         slidesPerView: 1,
-        spaceBetween: 20
-      }
-    }
+        spaceBetween: 10,
+      },
+    },
   }
 
-
-  return (
-    <Swiper {...params}>
-    {propertyItems}
-    </Swiper>
-  )
+  return <Swiper {...params}>{propertyItems}</Swiper>
 }
 
 export default PropertyContent

@@ -93,7 +93,6 @@ nav {
 footer {
   background-color: #BAEEE5;
   color: #252454;
-  margin-top: 2em;
   padding: 100px 20px;
   @media(max-width: 480px) {
     padding: 3em 8% 2em 8%;

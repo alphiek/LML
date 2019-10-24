@@ -33,7 +33,7 @@ export const FullSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 `
 
 // Section Wrappers
@@ -140,6 +140,12 @@ export const CarouselHeadingWrapper = styled(HeadingWrapper)`
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
+  @media (max-width: 680px) {
+    margin-top: 60px;
+  }
+  @media (max-width: 480px) {
+    margin-top: 30px;
+  }
 `
 
 // Wrappers

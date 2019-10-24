@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import styled from 'styled-components'
 
 import IllustrationWrapper from "../Illustrations/IllustrationWrapper"
 import { MainSectionContainer, SectionWrapper } from "../Containers/Containers"
@@ -15,6 +16,7 @@ const Algorithm = ({ copy }) => {
           image="sectionThree"
           justify='flex-end'
         />
+        <Spacer/>
         <MainTextWrapper copy={copy} />
       </SectionWrapper>
     </MainSectionContainer>
@@ -22,6 +24,8 @@ const Algorithm = ({ copy }) => {
 }
 
 export default Algorithm
+
+
 
 Algorithm.propTypes = {
   copy: PropTypes.shape({
@@ -36,3 +40,11 @@ Algorithm.propTypes = {
     p1: PropTypes.string.isRequired,
   }).isRequired,
 }
+
+
+const Spacer = styled.div`
+  @media (max-width: 1180px) {
+    width: 100%;
+    height: 90px;
+  }
+`

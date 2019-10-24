@@ -4,7 +4,6 @@ export const CardImageWrapper = styled.div`
    height: 150px;
    width: 100%;
    overflow: hidden;
-   background: #4B4A68;
    border-radius: 8px 8px 0 0;
    border: 10px solid white;
 `
@@ -22,11 +21,15 @@ export const CardTextContainer = styled.div`
    width: 100%;
    height: 220px;
    text-align: left;
+   @media (max-width: 1180px) {
+      height: 235px;
+   }
 `
 
 export const CardLink = styled.a`
   font-size: 0.75rem;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
   opacity: 0.6;
   font-weight: 700;
   @media (max-width: 1180px) {
