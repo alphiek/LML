@@ -32,6 +32,11 @@ const SideDrawerListWrapper = styled.ul`
   align-items: flex-end;
   text-align: left;
   margin: 2rem 1rem;
+  @media (max-height: 460px) and (orientation: landscape) {
+    justify-content: space-evenly;
+    height: 100%;
+    margin: auto 1rem;
+  }
 `
 
 const SideDrawer = ({ show, items }) => {

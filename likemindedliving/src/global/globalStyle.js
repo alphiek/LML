@@ -246,6 +246,7 @@ button {
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.5px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   display: inline-block;
   border: none;
   text-decoration: none;

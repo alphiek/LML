@@ -58,6 +58,11 @@ Modal.propTypes = {
 
 const ModalContainer = styled.div`
   ${fullfixed({})};
+  max-height: 100vh;
+  right: 0;
+  bottom: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll;
   display: flex;
   z-index: 99;
   justify-content: center;

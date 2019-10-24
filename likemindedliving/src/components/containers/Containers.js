@@ -10,6 +10,7 @@ export const SectionContainer = styled.section`
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  padding: 30px 0 80px;
   background-color: ${props => props.bgColor};
 `
 
@@ -169,5 +170,11 @@ export const ProcessPaginationContainer = styled.div`
   width: 65%;
   @media (max-width: 480px) {
     width: 100%;
+  }
+`
+
+export const Spacer = styled.div`
+  @media (max-width: 1180px) {
+    height: 16px;
   }
 `

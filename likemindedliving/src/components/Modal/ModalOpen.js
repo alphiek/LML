@@ -50,6 +50,7 @@ const Bubble = styled.span`
   transition: 0.8s;
   transition-timing-function: ease-out;
   transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
   &:nth-child(1) {
     --n: 1;
   }
@@ -66,6 +67,8 @@ const Bubble = styled.span`
 
 const ButtonWrapper = styled.button`
   position: relative;
+  overflow: hidden;
+  z-index: 1;
   background-color: ${props => props.bgColor};
   color: ${props => props.color};
   ${elevation[2]};
@@ -75,6 +78,7 @@ const ButtonWrapper = styled.button`
   transition: 0.8s;
   :hover {
     color: ${props => props.colorHover};
+    background-color: ${props => props.bgColor};
     ${elevation[3]};
     ${Bubble} {
       transform: translateY(0) scale(2);

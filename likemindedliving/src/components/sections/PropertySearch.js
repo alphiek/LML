@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import IllustrationWrapper from "../Illustrations/IllustrationWrapper"
 import MainTextWrapper from "../Text/MainTextWrapper"
-import { SectionContainer, SectionWrapper } from "../Containers/Containers"
+import { SectionContainer, SectionWrapper, Spacer } from "../Containers/Containers"
 
 const PropertySearch = ({ copy }) => {
   return (
@@ -15,6 +15,7 @@ const PropertySearch = ({ copy }) => {
           image="sectionOne"
           justify='flex-end'
         />
+        <Spacer />
         <MainTextWrapper copy={copy} />
       </SectionWrapper>
     </SectionContainer>
