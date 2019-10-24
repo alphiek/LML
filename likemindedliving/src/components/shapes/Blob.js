@@ -1,18 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
+import styled from 'styled-components'
 import Zoom from "react-reveal/Zoom"
 import Shapes from "./Shapes"
 
 import Flex from "../Containers/Flex"
 
+
 const Blob = ({ name, fill, children }) => {
   return (
-    <Flex alignCenter >
+    <BlobFlex alignCenter >
         {children}
       <Zoom>
         <Shapes name={name} fill={fill} />
       </Zoom>
-    </Flex>
+    </BlobFlex>
   )
 }
 
@@ -23,3 +25,9 @@ Blob.propTypes = {
     fill: PropTypes.string,
     children: PropTypes.node.isRequired,
 }
+
+const BlobFlex = styled(Flex)`
+ @media (max-width: 1180px) {
+   justify-content: center;
+ }
+`

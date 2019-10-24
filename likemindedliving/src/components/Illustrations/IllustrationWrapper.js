@@ -6,7 +6,6 @@ import Illustration from "./Illustration"
 import { Wrapper } from "../Containers/Containers"
 
 const IllustrationWrapper = ({ name, image, fill, justify }) => {
-  console.log(image)
   return (
     <Wrapper justify={justify}>
       <Blob fill={fill} name={name}>
@@ -22,4 +21,5 @@ IllustrationWrapper.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   fill: PropTypes.string,
+  justify: PropTypes.string.isRequired,
 }

@@ -78,6 +78,7 @@ export const Wrapper = styled(Flex)`
   justify-content: ${props => props.justify};
   width: 50%;
   @media (max-width: 1180px) {
+    justify-content: center;
     width: 60%;
   }
   @media (max-width: 768px) {

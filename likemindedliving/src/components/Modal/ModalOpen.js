@@ -50,16 +50,16 @@ const Bubble = styled.span`
   transition: 0.8s;
   transition-timing-function: ease-out;
   transition-delay: calc((var(--n) - 1) * 0.1s);
-  &:nth-child(2) {
+  &:nth-child(1) {
     --n: 1;
   }
-  &:nth-child(3) {
+  &:nth-child(2) {
     --n: 2;
   }
-  &:nth-child(4) {
+  &:nth-child(3) {
     --n: 3;
   }
-  &:nth-child(5) {
+  &:nth-child(4) {
     --n: 4;
   }
 `
