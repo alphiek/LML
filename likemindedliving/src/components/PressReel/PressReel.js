@@ -20,6 +20,7 @@ const ScrollContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin: 20px 0 0 0;
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -33,7 +34,7 @@ const ScrollContainer = styled.div`
 `
 const ArticleWrapper = styled.div`
   text-align: center;
-  margin: 0 40px 0 0;
+  margin: 0px 40px 0 0;
   color: white;
   width: 80px;
   height: 60px;

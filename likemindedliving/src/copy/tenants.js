@@ -108,7 +108,7 @@ export const tenants = {
     },
     testimonials: {
         h2: `Ever had a difficult flat sharing experience?`,
-        p1: `Read how our happy housemates found their perfect solution to renting in London.`,
+        p1: `Read how our happy housemates found their perfect solution\xa0to\xa0renting\xa0in\xa0London.`,
         testimonial: {
             one: {
                 text: `We came across LML through my university union page, properties were fabulous, not only were they a very high standard but the prices were more than reasonable.  I can say they are definitely very reliable with great offers on housing.`,

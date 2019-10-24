@@ -71,7 +71,7 @@ const ButtonWrapper = styled.button`
   z-index: 1;
   background-color: ${props => props.bgColor};
   color: ${props => props.color};
-  ${elevation[2]};
+  ${elevation[3]};
   border-radius: 4px;
   padding: 1.5rem;
   width: 100%;
@@ -79,7 +79,7 @@ const ButtonWrapper = styled.button`
   :hover {
     color: ${props => props.colorHover};
     background-color: ${props => props.bgColor};
-    ${elevation[3]};
+    ${elevation[4]};
     ${Bubble} {
       transform: translateY(0) scale(2);
     }

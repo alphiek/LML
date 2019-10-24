@@ -1,16 +1,18 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { FadeIn } from "../Animations/FadeIn"
 import styled from "styled-components"
 
 const TermsContainer = styled.ul`
   flex-direction: column;
+  margin-top: 20px;
 `
 const PdfLink = styled.a`
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 0.7rem;
   text-transform: uppercase;
   transition: 0.5s;
-  : hover {
+  :hover {
     opacity: 0.5;
   }
 `
@@ -47,26 +49,30 @@ const Terms = () => {
       {data.allFile.edges.map((file, index) => {
         return (
           <PDFLinkWrapper key={`pdf-${index}`}>
-            <PdfLink
-              href={file.node.publicURL}
-              aria-label={`Link to ${file.node.name}`}
-              target="blank"
-              rel="noopener noreferrer"
-            >
-              {convertName(file.node.name)}
-            </PdfLink>
+            <FadeIn>
+              <PdfLink
+                href={file.node.publicURL}
+                aria-label={`Link to ${file.node.name}`}
+                target="blank"
+                rel="noopener noreferrer"
+              >
+                {convertName(file.node.name)}
+              </PdfLink>
+            </FadeIn>
           </PDFLinkWrapper>
         )
       })}
       <PDFLinkWrapper>
-        <PdfLink
-          href="https://www.iubenda.com/privacy-policy/79077073"
-          aria-label="Link to Privacy Policy"
-          target="blank"
-          rel="noopener noreferrer"
-        >
-          Privacy Policy
-        </PdfLink>
+        <FadeIn>
+          <PdfLink
+            href="https://www.iubenda.com/privacy-policy/79077073"
+            aria-label="Link to Privacy Policy"
+            target="blank"
+            rel="noopener noreferrer"
+          >
+            Privacy Policy
+          </PdfLink>
+        </FadeIn>
       </PDFLinkWrapper>
     </TermsContainer>
   )

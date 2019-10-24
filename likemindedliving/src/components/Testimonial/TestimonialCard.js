@@ -1,26 +1,24 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { Body } from '../Text/Text'
-import Icons from '../Icons/Icons'
+import React from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
+import { Body } from "../Text/Text"
+import Icons from "../Icons/Icons"
+import elevation from '../Utilities/elevation'
 
-const Card = styled.div`  
+const Card = styled.div`
   width: 45%;
   background-color: rgba(75, 74, 104, 0.95);
+  ${elevation[3]};
   color: white;
-  padding: 30px;
+  padding: 50px;
   border-radius: 25px;
   border-bottom-right-radius: 0;
   margin-top: -70px;
-  margin-right: 16px;
   @media (max-width: 1180px) {
     &:last-child {
       display: none;
     }
-    margin-right: 0px;
-  }
-  @media (max-width: 768px) {
-   width: 70%;
+    width: 70%;
   }
 `
 
@@ -31,10 +29,8 @@ const TestimonialCard = ({ copy }) => {
     <Card>
       <div>
         <Body>{data.text}</Body>
-        <Icons name='dividerShort' fill={data.divider} />
-        <Body>
-          {data.name}
-        </Body>
+        <Icons name="dividerShort" fill={data.divider} />
+        <Body>{data.name}</Body>
       </div>
     </Card>
   )
@@ -43,5 +39,5 @@ const TestimonialCard = ({ copy }) => {
 export default TestimonialCard
 
 TestimonialCard.propTypes = {
-  copy: PropTypes.array.isRequired
+  copy: PropTypes.array.isRequired,
 }

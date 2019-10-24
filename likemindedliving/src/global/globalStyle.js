@@ -93,7 +93,12 @@ nav {
 footer {
   background-color: #BAEEE5;
   color: #252454;
+  text-align: center;
   padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media(max-width: 480px) {
     padding: 3em 8% 2em 8%;
   }

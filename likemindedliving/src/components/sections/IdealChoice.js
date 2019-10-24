@@ -1,7 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
+import styled from 'styled-components'
 import {
-  IdealChoiceSection,
+  MainSectionContainer,
   ReverseSectionWrapper,
 } from "../Containers/Containers"
 import IllustrationWrapper from "../Illustrations/IllustrationWrapper"
@@ -10,7 +11,7 @@ import MainTextWrapper from "../Text/MainTextWrapper"
 
 const IdealChoice = ({ copy }) => {
   return (
-    <IdealChoiceSection bgColor={copy.bgColor}>
+    <SectionContainer bgColor={copy.bgColor}>
       <ReverseSectionWrapper>
         <IllustrationWrapper
           name="blobFour"
@@ -18,9 +19,10 @@ const IdealChoice = ({ copy }) => {
           image="sectionFour"
           justify='flex-start'
         />
+        <Spacer />
         <MainTextWrapper copy={copy} />
       </ReverseSectionWrapper>
-    </IdealChoiceSection>
+    </SectionContainer>
   )
 }
 
@@ -37,3 +39,16 @@ IdealChoice.propTypes = {
     p2: PropTypes.string.isRequired,
   }).isRequired,
 }
+
+const Spacer = styled.div`
+  @media (max-width: 1180px) {
+    height: 50px;
+  }
+`
+
+const SectionContainer = styled(MainSectionContainer)`
+  margin: 40px 0;
+  @media (max-width: 1180px) {
+    margin: 40px 0 0 0;
+  }
+`

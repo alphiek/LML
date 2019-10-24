@@ -38,8 +38,7 @@ const Copyright = styled.p`
 `
 
 const IconWrapper = styled(Flex)`
-  width: 5rem;
-  margin: 1rem 0;
+  width: 4.5rem;
 `
 
 const Footer = () => {

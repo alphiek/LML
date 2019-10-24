@@ -9,7 +9,7 @@ import MainTextWrapper from "../Text/MainTextWrapper"
 const Algorithm = ({ copy }) => {
   return (
     <MainSectionContainer>
-      <SectionWrapper>
+      <AlgoSectionWrapper>
         <IllustrationWrapper
           name="blobThree"
           fill={copy.blob}
@@ -18,7 +18,7 @@ const Algorithm = ({ copy }) => {
         />
         <Spacer/>
         <MainTextWrapper copy={copy} />
-      </SectionWrapper>
+      </AlgoSectionWrapper>
     </MainSectionContainer>
   )
 }
@@ -47,4 +47,8 @@ const Spacer = styled.div`
     width: 100%;
     height: 90px;
   }
+`
+
+const AlgoSectionWrapper = styled(SectionWrapper)`
+  margin-top: 40px;
 `

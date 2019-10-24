@@ -20,13 +20,6 @@ export const MainSectionContainer = styled(SectionContainer)`
   position: relative;
 `
 
-export const IdealChoiceSection = styled(MainSectionContainer)`
-  flex-direction: column;
-  @media (max-width: 1180px) {
-    padding: 80px 0 0;
-  }
-`
-
 export const FullSection = styled.section`
   width: 100%;
   display: flex;
@@ -110,7 +103,12 @@ export const HeadingContainer = styled(Flex)`
   align-items: center;
   width: 1100px;
   padding: 80px 0 100px;
+  border-radius: 8px;
   background-color: ${colors.lightPeach};
+  @media (max-width: 1180px) {
+    width: 85vw;
+    padding: 80px 30px 100px 30px;
+  }
 `
 
 export const TestimonialContainer = styled(Flex)`
@@ -141,10 +139,7 @@ export const CarouselHeadingWrapper = styled(HeadingWrapper)`
   justify-content: space-between;
   margin-top: 80px;
   @media (max-width: 680px) {
-    margin-top: 60px;
-  }
-  @media (max-width: 480px) {
-    margin-top: 30px;
+    margin-top: 0px;
   }
 `
 
