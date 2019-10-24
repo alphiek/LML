@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components"
-export const GlobalStyle = createGlobalStyle`
 
+const GlobalStyle = createGlobalStyle`
+
+.no-js {
+  visibility: hidden;
+}
 
 html {
   height: 100%;
@@ -115,7 +119,6 @@ h1 {
   line-height: 130%;
   font-weight: 700;
   text-align: center;
-  padding-top: 7%;
   margin-bottom: 0.4em;
   @media (max-width: 1024px) {
     font-size: 1.8rem;
@@ -261,7 +264,7 @@ button {
 
 button:hover,
 button:focus {
-  background: transparent;
+  background: inherit;
 }
 
 button:focus {
@@ -269,7 +272,8 @@ button:focus {
 }
 
 button:active {
-  background: transparent;
+  background: inherit;
 }
 
 `
+export default GlobalStyle

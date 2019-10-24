@@ -16,6 +16,7 @@ const IdealChoice = ({ copy }) => {
           name="blobFour"
           fill={copy.blob}
           image="sectionFour"
+          justify='flex-start'
         />
         <MainTextWrapper copy={copy} />
       </ReverseSectionWrapper>

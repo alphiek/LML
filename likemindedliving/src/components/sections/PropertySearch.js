@@ -13,6 +13,7 @@ const PropertySearch = ({ copy }) => {
           name="blobOne"
           fill={copy.blob}
           image="sectionOne"
+          justify='flex-end'
         />
         <MainTextWrapper copy={copy} />
       </SectionWrapper>

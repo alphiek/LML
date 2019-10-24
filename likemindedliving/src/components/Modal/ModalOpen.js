@@ -66,7 +66,7 @@ const Bubble = styled.span`
 
 const ButtonWrapper = styled.button`
   position: relative;
-  background: ${props => props.bgColor};
+  background-color: ${props => props.bgColor};
   color: ${props => props.color};
   ${elevation[2]};
   border-radius: 4px;

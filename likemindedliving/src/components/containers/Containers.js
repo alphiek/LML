@@ -4,22 +4,12 @@ import Flex from "./Flex"
 
 //Sections
 
-export const HeadlineSection = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: ${props => props.bgColor};
-  min-height: 350px;
-`
-
 export const SectionContainer = styled.section`
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 0 3rem 0;
-  margin-bottom: 2rem;
   background-color: ${props => props.bgColor};
 `
 
@@ -83,12 +73,12 @@ export const ReverseSectionWrapper = styled(SectionWrapper)`
 
 // Main Content Wrappers
 
-export const Wrapper = styled.div`
-  width: 85%;
-  padding-right: 1rem;
+export const Wrapper = styled(Flex)`
+  align-items: center;
+  justify-content: ${props => props.justify};
+  width: 50%;
   @media (max-width: 1180px) {
     width: 60%;
-    padding-right: 0rem;
   }
   @media (max-width: 768px) {
     width: 80%;

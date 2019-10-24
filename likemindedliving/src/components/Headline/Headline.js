@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-
+import styled from 'styled-components'
 import H1SplitText from "../Animations/H1SplitText"
-import { HeadlineSection, TextCenter } from "../Containers/Containers"
+import { TextCenter } from "../Containers/Containers"
 import { FadeIn } from "../Animations/FadeIn"
 import Icons from "../Icons/Icons"
 
@@ -25,3 +25,12 @@ export default Headline
 Headline.propTypes = {
   copy: PropTypes.objectOf(PropTypes.string).isRequired,
 }
+
+const HeadlineSection = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7%;
+  background-color: ${props => props.bgColor};
+  min-height: 350px;
+`

@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import IllustrationWrapper from '../Illustrations/IllustrationWrapper'
-import MainTextWrapper from '../Text/MainTextWrapper'
+import IllustrationWrapper from "../Illustrations/IllustrationWrapper"
+import MainTextWrapper from "../Text/MainTextWrapper"
 
 import {
   MainSectionContainer,
@@ -16,7 +16,12 @@ const HouseMate = ({ copy }) => {
   return (
     <MainSectionContainer bgColor={copy.bgColor}>
       <ReverseSectionWrapper>
-       <IllustrationWrapper name='blobTwo' fill={copy.blob} image="sectionTwo" />
+        <IllustrationWrapper
+          name="blobTwo"
+          justify="flex-start"
+          fill={copy.blob}
+          image="sectionTwo"
+        />
         <MainTextWrapper copy={copy} />
       </ReverseSectionWrapper>
       <BGPattern src={housemateBG} />

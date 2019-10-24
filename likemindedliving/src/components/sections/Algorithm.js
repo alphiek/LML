@@ -13,6 +13,7 @@ const Algorithm = ({ copy }) => {
           name="blobThree"
           fill={copy.blob}
           image="sectionThree"
+          justify='flex-end'
         />
         <MainTextWrapper copy={copy} />
       </SectionWrapper>

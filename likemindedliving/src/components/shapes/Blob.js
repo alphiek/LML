@@ -7,7 +7,7 @@ import Flex from "../Containers/Flex"
 
 const Blob = ({ name, fill, children }) => {
   return (
-    <Flex>
+    <Flex alignCenter >
         {children}
       <Zoom>
         <Shapes name={name} fill={fill} />

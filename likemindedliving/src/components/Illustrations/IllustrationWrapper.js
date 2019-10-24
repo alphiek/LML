@@ -5,9 +5,10 @@ import Blob from "../Shapes/Blob"
 import Illustration from "./Illustration"
 import { Wrapper } from "../Containers/Containers"
 
-const IllustrationWrapper = ({ name, image, fill }) => {
+const IllustrationWrapper = ({ name, image, fill, justify }) => {
+  console.log(image)
   return (
-    <Wrapper>
+    <Wrapper justify={justify}>
       <Blob fill={fill} name={name}>
         <Illustration name={image} />
       </Blob>

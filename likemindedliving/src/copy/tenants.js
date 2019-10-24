@@ -12,7 +12,7 @@ export const tenants = {
     sectionOne: {
         h2: `Property Search Tool`,
         p1: `Submit your details and let our tool find your perfect property. Fill in our form and kick-start your property search today, 
-        we’ll be in touch with property\xa0details.`,
+        we’ll\xa0be in touch with property\xa0details.`,
         color: `${colors.textPrimary}`,
         bgColor: `${colors.white}`,
         divider: `${colors.lilac}`,
