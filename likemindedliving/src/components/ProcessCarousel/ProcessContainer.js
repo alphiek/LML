@@ -14,14 +14,9 @@ width: 1920px;
 min-width: 1920px;
 top: -40px;
 @media (max-width: 1180px) {
- min-width: 2500px;
+ min-width: 2600px;
  top: -125px;
 }
-`
-
-export const MemphisPattern = styled(BGPattern)`
-   top: -150px;
-   z-index: 1;
 `
 
 const ProcessContainer = ({ copy }) => {

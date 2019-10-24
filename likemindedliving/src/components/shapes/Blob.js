@@ -27,6 +27,7 @@ Blob.propTypes = {
 }
 
 const BlobFlex = styled(Flex)`
+ width: 300px;
  @media (max-width: 1180px) {
    justify-content: center;
  }

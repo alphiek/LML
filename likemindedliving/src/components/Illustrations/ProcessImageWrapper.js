@@ -9,7 +9,7 @@ export const ImageDiv = styled(Flex)`
 
 const ProcessImageWrapper = ({ children }) => {
   return (
-    <ImageDiv>
+    <ImageDiv justifyCenter alignCenter>
       {children}
     </ImageDiv>
   )

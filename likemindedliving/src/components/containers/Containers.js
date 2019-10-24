@@ -89,11 +89,14 @@ export const Wrapper = styled(Flex)`
 
 export const CenterWrapperProcess = styled(Wrapper)`
   display: flex;
+  position: relative;
+  right: -100px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   margin: 30px 0 0 0;
   @media (max-width: 1180px) {
+    right: 0;
     width: 480px;
     margin: 0;
   }
@@ -163,7 +166,7 @@ export const SubTextWrapper = styled.div`
 `
 
 export const ProcessSubTextWrapper = styled(SubTextWrapper)`
-  width: 60%;
+  width: 100%;
 `
 
 export const ProcessPaginationContainer = styled.div`

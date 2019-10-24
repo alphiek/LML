@@ -258,9 +258,6 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   box-sizing: border-box;
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
 }
 
 button:hover,
