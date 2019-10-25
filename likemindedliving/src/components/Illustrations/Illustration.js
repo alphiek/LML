@@ -12,13 +12,13 @@ const Illustration = ({ name }) => {
     case "sectionOne":
       return <Image src={london} alt="Illustration of London" />
     case "sectionTwo":
-      return <Image src={housemates} alt="Illustration of happy housemates" />
+      return <LargerImage src={housemates} alt="Illustration of happy housemates" />
     case "sectionThree":
       return (
         <Image src={algorithm} alt="Illustration of a computer with houses" />
       )
     case "sectionFour":
-      return <Image src={idealchoice} alt="Illustration of happy housemates" />
+      return <LargerImage src={idealchoice} alt="Illustration of happy housemates" />
     default:
   }
 }
@@ -39,5 +39,15 @@ const Image = styled.img`
   }
   @media (max-width: 480px) {
     width: 16rem;
+  }
+`
+
+const LargerImage = styled(Image)`
+  width: 22rem;
+  @media (max-width: 1180px) {
+    width: 20rem;
+  }
+  @media (max-width: 480px) {
+    width: 18rem;
   }
 `

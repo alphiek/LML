@@ -111,12 +111,12 @@ export const tenants = {
         p1: `Read how our happy housemates found their perfect solution\xa0to\xa0renting\xa0in\xa0London.`,
         testimonial: {
             one: {
-                text: `We came across LML through my university union page, properties were fabulous, not only were they a very high standard but the prices were more than reasonable.  I can say they are definitely very reliable with great offers on housing.`,
+                text: `"We came across LML through my university union page, properties were fabulous, not only were they a very high standard but the prices were more than reasonable.  I can say they are definitely very reliable with great offers on housing."`,
                 name: `Tyrone`,
                 divider: `${colors.lilac}`
             },
             two: {
-                text: `Haven't had a drama with our room rental in Putney! Have heard some horror stories with some but from my experience with Like minded living I would recommend this as a good option!`,
+                text: `"Haven't had a drama with our room rental in Putney! Have heard some horror stories with some but from my experience with Like minded living I would recommend this as a good option!"`,
                 name: `Aaron`,
                 divider: `${colors.lilac}`
             },

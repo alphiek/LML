@@ -18,8 +18,6 @@ const FactP = styled.p`
     width: 80%;
   }
 `
-
-
 export const H2 = ({ children, color }) => {
   return (
     <FadeIn delay={0}>
