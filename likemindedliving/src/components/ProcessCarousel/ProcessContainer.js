@@ -1,26 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import SlideContainer from './SlideContainer'
-import { MainSectionContainer, ReverseSectionWrapper, Wrapper, ProcessSubTextWrapper } from '../Containers/Containers'
-import { FadeIn } from '../Animations/FadeIn'
-import { Body } from '../Text/Text'
-import Icons from '../Icons/Icons'
-import bg from '../../images/StepsBG.svg'
+import React from "react"
+import PropTypes from "prop-types"
 
-export const BGPattern = styled.img`
-position: absolute;
-width: 1920px;
-min-width: 1920px;
-top: -40px;
-@media (max-width: 1180px) {
- min-width: 2600px;
- top: -125px;
-}
-`
+import SlideContainer from "./SlideContainer"
+import {
+  MainSectionContainer,
+  ReverseSectionWrapper,
+  Wrapper,
+  ProcessSubTextWrapper,
+} from "../Containers/Containers"
+import { FadeIn } from "../Animations/FadeIn"
+import { Body } from "../Text/Text"
+import Icons from "../Icons/Icons"
+import Patterns from "../Patterns/Patterns"
 
 const ProcessContainer = ({ copy }) => {
-
   return (
     <MainSectionContainer>
       <ReverseSectionWrapper>
@@ -29,13 +22,17 @@ const ProcessContainer = ({ copy }) => {
             <FadeIn>
               <h3>{copy.h3}</h3>
             </FadeIn>
-            <Icons name='dividerShort' fill={copy.divider} />
+            <Icons name="dividerShort" fill={copy.divider} />
             <Body color={copy.color}>{copy.p1}</Body>
           </ProcessSubTextWrapper>
         </Wrapper>
-        <SlideContainer copy={copy.steps} link={copy.link} landlord={copy.landlords} />
+        <SlideContainer
+          copy={copy.steps}
+          link={copy.link}
+          landlord={copy.landlords}
+        />
       </ReverseSectionWrapper>
-      <BGPattern src={bg} />
+      <Patterns name="processPattern" />
     </MainSectionContainer>
   )
 }
@@ -51,7 +48,6 @@ ProcessContainer.propTypes = {
     h3: PropTypes.string.isRequired,
     link: PropTypes.objectOf(PropTypes.string).isRequired,
     p1: PropTypes.string.isRequired,
-    steps: PropTypes.objectOf(PropTypes.string).isRequired
-  }).isRequired
+    steps: PropTypes.objectOf(PropTypes.string).isRequired,
+  }).isRequired,
 }
-

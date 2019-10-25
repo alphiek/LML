@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from 'styled-components'
 
 import TestimonialCard from "./TestimonialCard"
 import { H2, Body } from "../Text/Text"
@@ -11,11 +10,8 @@ import {
   HeadingContainer,
   HeadingWrapper,
 } from "../Containers/Containers"
-
 import Icons from "../Icons/Icons"
-
-import testbg from '../../images/TestBG.svg'
-
+import Patterns from '../Patterns/Patterns'
 
 const Testimonial = ({ copy }) => {
   let data = copy
@@ -35,7 +31,7 @@ const Testimonial = ({ copy }) => {
               <Body>{data.p1}</Body>
             </SubTextWrapper>
           </HeadingWrapper>
-          <Pattern src={testbg} />
+          <Patterns name='testimonialPattern' />
         </HeadingContainer>
         <TestimonialContainer>{cards}</TestimonialContainer>
       </FullSection>
@@ -56,10 +52,3 @@ Testimonial.propTypes = {
   }).isRequired,
 }
 
-
-const Pattern = styled.img`
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-`

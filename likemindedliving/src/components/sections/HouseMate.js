@@ -1,33 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from 'styled-components'
 
 import IllustrationWrapper from "../Illustrations/IllustrationWrapper"
 import MainTextWrapper from "../Text/MainTextWrapper"
+import Patterns from "../Patterns/Patterns"
 
 import {
   MainSectionContainer,
   ReverseSectionWrapper,
 } from "../Containers/Containers"
-
-import housemateBG from "../../images/housemateBG.svg"
-
-
-const BGPattern = styled.img`
-position: absolute;
-width: 1920px;
-min-width: 1920px;
-top: -40px;
-@media (max-width: 1180px) {
- min-width: 2800px;
-}
-@media (max-width: 768px) {
- min-width: 2850px;
-}
-@media (max-width: 480px) {
- min-width: 3000px;
-}
-`
 
 const HouseMate = ({ copy }) => {
   return (
@@ -41,7 +22,7 @@ const HouseMate = ({ copy }) => {
         />
         <MainTextWrapper copy={copy} />
       </ReverseSectionWrapper>
-      <BGPattern src={housemateBG} />
+      <Patterns name="housematePattern" />
     </MainSectionContainer>
   )
 }

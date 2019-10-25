@@ -92,6 +92,8 @@ nav {
 
 footer {
   background-color: #BAEEE5;
+  position: relative;
+  overflow: hidden;
   color: #252454;
   text-align: center;
   padding: 100px 20px;
