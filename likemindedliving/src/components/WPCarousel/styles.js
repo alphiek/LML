@@ -10,7 +10,7 @@ export const CardImageWrapper = styled.div`
 
 export const Image = styled.img`
    width: 100%;
-   opacity: 0.8;
+   opacity: 0.9;
 `
 
 export const CardTextContainer = styled.div`

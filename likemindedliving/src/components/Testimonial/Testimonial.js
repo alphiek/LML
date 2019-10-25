@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import styled from 'styled-components'
 
 import TestimonialCard from "./TestimonialCard"
 import { H2, Body } from "../Text/Text"
@@ -12,6 +13,9 @@ import {
 } from "../Containers/Containers"
 
 import Icons from "../Icons/Icons"
+
+import testbg from '../../images/TestBG.svg'
+
 
 const Testimonial = ({ copy }) => {
   let data = copy
@@ -31,6 +35,7 @@ const Testimonial = ({ copy }) => {
               <Body>{data.p1}</Body>
             </SubTextWrapper>
           </HeadingWrapper>
+          <Pattern src={testbg} />
         </HeadingContainer>
         <TestimonialContainer>{cards}</TestimonialContainer>
       </FullSection>
@@ -50,3 +55,11 @@ Testimonial.propTypes = {
     testimonial: PropTypes.objectOf(PropTypes.object).isRequired,
   }).isRequired,
 }
+
+
+const Pattern = styled.img`
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+`

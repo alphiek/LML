@@ -99,6 +99,7 @@ export const CenterWrapperProcess = styled(Wrapper)`
 `
 
 export const HeadingContainer = styled(Flex)`
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 1100px;
