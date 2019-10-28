@@ -12,7 +12,7 @@ const SideDrawerButton = styled.button`
 `
 
 const SideDrawerToggle = ({ click }) => (
-  <SideDrawerButton onClick={click}>
+  <SideDrawerButton aria-label="Open navigation menu"onClick={click}>
     <Icons name="burger" />
   </SideDrawerButton>
 )

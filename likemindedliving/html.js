@@ -6,7 +6,13 @@ export default function HTML(props) {
     <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
-        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <script
+         dangerouslySetInnerHTML={{
+           __html: `
+            if(navigator.appName.indexOf("Internet Explorer")!=-1 || navigator.userAgent.match(/Trident.*rv[ :]*11\./))
+            { window.location = "https://likemindedliving.co.uk/ie-redirect/" };
+          `}}
+        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -16,7 +22,7 @@ export default function HTML(props) {
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript">
-          You must have Javascript enabled to view this app
+          You must have Javascript enabled to view this app.
         </noscript>
         <div
           key={`body`}

@@ -1,8 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Headline from "../Headline/Headline"
-import PropertySearch from "../Sections/PropertySearch"
+import DisplayLanding from '../LandingPage/DisplayLanding'
 import ProcessContainer from "../ProcessCarousel/ProcessContainer"
 import HouseMate from "../Sections/HouseMate"
 import Algorithm from "../Sections/Algorithm"
@@ -14,8 +13,7 @@ import WPCarousel from "../WPCarousel/WPCarousel"
 const Tenants = ({ copy }) => {
   return (
     <>
-      <Headline copy={copy.headline} />
-      <PropertySearch copy={copy.sectionOne} />
+      <DisplayLanding headlineCopy={copy.headline} propertyCopy={copy.sectionOne} />
       <ProcessContainer copy={copy.process} />
       <WPCarousel copy={copy.properties} />
       <HouseMate copy={copy.sectionTwo} />

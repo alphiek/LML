@@ -13,7 +13,7 @@ const Link = styled.a`
   }
 `
 
-export const NavLinkStyle = styled.li`
+export const NavLinkStyle = styled.div`
   position: relative;
   :hover {
     animation: ${Bounce} 0.2s ease-out 2;

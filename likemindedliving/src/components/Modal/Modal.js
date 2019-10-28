@@ -3,7 +3,8 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import Spinner from "react-spinkit"
 
-import { fullfixed, fullabs, fill } from "../Utilities/position"
+import { fullfixed, fill } from "../Utilities/position"
+import { Loader } from '../Containers/Containers'
 import Flex from "../Containers/Flex"
 
 const Modal = ({ url, title, click, styles }) => {
@@ -21,7 +22,7 @@ const Modal = ({ url, title, click, styles }) => {
       <ModalWrapper justifyCenter alignCenter column>
         {loading && (
           <Loader justifyCenter alignCenter>
-            <Spinner name="ball-clip-rotate-multiple" fadeIn="none" />
+            <Spinner name="ball-clip-rotate-multiple" color='#4B4A68' fadeIn="none" />
           </Loader>
         )}
         <ModalWindow>
@@ -81,9 +82,6 @@ const ModalWindow = styled.div`
   ${fill({})};
 `
 
-const Loader = styled(Flex)`
-  ${fullabs({})};
-`
 
 const BackdropCover = styled.div`
   ${fullfixed({})};

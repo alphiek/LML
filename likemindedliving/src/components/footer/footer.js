@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-
 import { useSiteMetaData } from "../../hooks/useSiteMetaData"
 import Flex from "../Containers/Flex"
 import { FadeIn } from "../Animations/FadeIn"

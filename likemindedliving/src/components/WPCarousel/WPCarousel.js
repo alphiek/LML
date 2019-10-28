@@ -1,8 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import DisplayContent from './DisplayContent'
 import { CarouselTextSection } from "../Text/CarouselTextSection"
-import BlogContent from "./Blogs/BlogContent"
-import PropertyContent from "./Property/PropertyContent"
 import { FullSection } from "../Containers/Containers"
 import { FadeIn } from "../Animations/FadeIn"
 import Flex from "../Containers/Flex"
@@ -12,9 +11,9 @@ const WPCarousel = ({ copy }) => {
   let section
 
   if (copy.properties) {
-    section = <PropertyContent />
+    section = <DisplayContent page={copy}/>
   } else {
-    section = <BlogContent page={copy.page} />
+    section = <DisplayContent page={copy} />
   }
 
   return (

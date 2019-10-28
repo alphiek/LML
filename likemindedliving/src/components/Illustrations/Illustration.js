@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import PropTypes from "prop-types"
-
+import { LazyLoadComponent } from "react-lazy-load-image-component"
 import london from "../../images/London.svg"
 import housemates from "../../images/Housemates.svg"
 import algorithm from "../../images/algorithm.svg"
@@ -12,13 +12,29 @@ const Illustration = ({ name }) => {
     case "sectionOne":
       return <Image src={london} alt="Illustration of London" />
     case "sectionTwo":
-      return <LargerImage src={housemates} alt="Illustration of happy housemates" />
+      return (
+        <LazyLoadComponent>
+          <LargerImage
+            src={housemates}
+            alt="Illustration of happy housemates"
+          />
+        </LazyLoadComponent>
+      )
     case "sectionThree":
       return (
-        <Image src={algorithm} alt="Illustration of a computer with houses" />
+        <LazyLoadComponent>
+          <Image src={algorithm} alt="Illustration of a computer with houses" />
+        </LazyLoadComponent>
       )
     case "sectionFour":
-      return <LargerImage src={idealchoice} alt="Illustration of happy housemates" />
+      return (
+        <LazyLoadComponent>
+          <LargerImage
+            src={idealchoice}
+            alt="Illustration of happy housemates"
+          />
+        </LazyLoadComponent>
+      )
     default:
   }
 }

@@ -2,9 +2,9 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `http://rkkcollective.com`,
+    siteUrl: `https://likemindedliving.co.uk`,
     title: `Like-Minded Living`,
-    description: `Specialists for rooms for rent and flatshare in London`,
+    description: `We use technology to search across all major listing sites, to find your dream rental home, so you don’t have to. Search now, Discover a new way to find properties`,
     address: {
       house: `Chester House`,
       street: `81 - 83 Fulham High Street`,
@@ -17,7 +17,7 @@ module.exports = {
     social: {
       fb: `https://www.facebook.com/likemindedliving/`,
       insta: `https://www.instagram.com/likemindedliving/`,
-      twitter: `@LikeMindedLvng`
+      twitter: `https://twitter.com/likemindedlvng/`
     }
   },
   plugins: [

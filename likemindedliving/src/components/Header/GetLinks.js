@@ -11,7 +11,7 @@ const GetLinks = ({ items }) => {
     data = items
   }
 
-  let links = data.map((item, index) => <NavLinks key={index} link={item} />)
+  let links = data.map((item, index) => <li key={index}><NavLinks link={item} /></li>)
 
   return <>{links}</>
 }

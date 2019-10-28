@@ -6,7 +6,9 @@ export const useSiteMetaData = () => {
         query {
           site {
             siteMetadata {
+              siteUrl
               title
+              description
               address {
                 house
                 street
@@ -19,6 +21,7 @@ export const useSiteMetaData = () => {
               social {
                   fb
                   insta
+                  twitter
               }
             }
           }

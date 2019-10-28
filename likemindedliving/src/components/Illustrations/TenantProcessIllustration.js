@@ -27,31 +27,31 @@ const TenantProcessIllustration = ({ slide }) => {
     case 1:
       return (
         <ProcessImageWrapper>
-          <ImgBlock src={step1} />
+          <ImgBlock src={step1} alt='Image of a person completing the online quiz'/>
         </ProcessImageWrapper>
       )
     case 2:
       return (
         <ProcessImageWrapper>
-          <ImgBlock src={step2} />
+          <ImgBlock src={step2} alt='Image of a person analyzing data graphs'/>
         </ProcessImageWrapper>
       )
     case 3:
       return (
         <ProcessImageWrapper>
-          <ImgBlock src={step3} />
+          <ImgBlock src={step3} alt='Image showing three house doors'/>
         </ProcessImageWrapper>
       )
     case 4:
       return (
         <ProcessImageWrapper>
-          <ImgBlock src={step4} />
+          <ImgBlock src={step4} alt='Image of a calendar'/>
         </ProcessImageWrapper>
       )
     case 5:
       return (
         <ProcessImageWrapper>
-          <ImgBlock src={step5} />
+          <ImgBlock src={step5} alt='Image of boxes and a pot plant'/>
         </ProcessImageWrapper>
       )
     default:

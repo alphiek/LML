@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import { LazyLoadComponent } from "react-lazy-load-image-component"
 
 import sideDrawerPtn from "../../images/sideDrawerPtn.svg"
 import housemateBG from "../../images/housemateBG.svg"
@@ -11,15 +12,15 @@ import stepsBG from "../../images/StepsBG.svg"
 const Patterns = ({ name }) => {
   switch (name) {
     case "sideDrawerPattern":
-      return <SideDrawerPattern src={sideDrawerPtn} alt="background pattern" />
+      return <LazyLoadComponent><SideDrawerPattern src={sideDrawerPtn} alt="background pattern" /></LazyLoadComponent>
     case "housematePattern":
-      return <HouseMatePattern src={housemateBG} alt="background pattern" />
+      return <LazyLoadComponent><HouseMatePattern src={housemateBG} alt="background pattern" /></LazyLoadComponent>
     case "footerPattern":
-      return <FooterPattern src={footerBG} alt="background pattern" />
+      return <LazyLoadComponent><FooterPattern src={footerBG} alt="background pattern" /></LazyLoadComponent>
     case "testimonialPattern":
-      return <TestimonialPattern src={testBG} alt="background pattern" />
+      return <LazyLoadComponent><TestimonialPattern src={testBG} alt="background pattern" /></LazyLoadComponent>
     case "processPattern":
-      return <ProcessPattern src={stepsBG} alt="background pattern" />
+      return <LazyLoadComponent><ProcessPattern src={stepsBG} alt="background pattern" /></LazyLoadComponent>
     default:
   }
 }

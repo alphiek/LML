@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { colors } from "../../global/colors"
+import { fullabs } from '../Utilities/position'
 import Flex from "./Flex"
 
 //Sections
@@ -182,4 +183,9 @@ export const Spacer = styled.div`
   @media (max-width: 1180px) {
     height: 16px;
   }
+`
+
+
+export const Loader = styled(Flex)`
+  ${fullabs({})};
 `
