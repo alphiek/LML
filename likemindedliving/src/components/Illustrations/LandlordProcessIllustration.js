@@ -11,12 +11,10 @@ import step4 from '../../images/Step4L.svg'
 import step5 from '../../images/Step5.svg'
 
 const ImgBlock = styled.img`
-  max-width: 70%;
-  width: 18em;
-  max-height: 200px;
+  width: auto;
+  height: 200px;
   @media (max-width: 1180px) {
     margin-top: 16px;
-    max-width: 100%;
     width: 18rem;
   }
   @media (max-width: 480px) {
