@@ -19,10 +19,6 @@ const FactP = styled.p`
   }
 `
 
-const LandlordBody = styled.p`
-  margin-top: 1rem;
-`
-
 export const H2 = ({ children, color }) => {
   return (
     <FadeIn delay={0}>
@@ -73,16 +69,6 @@ Body.propTypes = {
   color: PropTypes.string
 }
 
-export const LandlordP = ({ children, color }) => (
-  <FadeIn>
-    <LandlordBody style={{ color: `${color}` }}>{children}</LandlordBody>
-  </FadeIn>
-)
-
-LandlordBody.propTypes = {
-  children: PropTypes.node.isRequired,
-  color: PropTypes.string
-}
 
 export const FactBody = ({ children, color }) => (
   <FactP style={{ color: `${color}` }}>{children}</FactP>

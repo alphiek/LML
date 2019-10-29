@@ -152,19 +152,17 @@ h2 {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1.25rem;
+  line-height: 140%;
   @media (max-width: 1180px) {
     text-align: center;
     font-weight: 700;
   }
-  @media (max-width: 480px) {
-    line-height: 140%;
-  }
 }
 
 h3 {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding-bottom: 1rem;
   @media (max-width: 1180px) {
     text-align: center;
@@ -214,7 +212,6 @@ a:visited {
 img {
   border-style: none;
   display: block;
-  max-width: 100%;
 }
 
 hr {

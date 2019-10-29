@@ -32,8 +32,6 @@ export const FullSection = styled.section`
 
 // Section Wrappers
 
-
-
 export const SectionWrapper = styled(Flex)`
   width: 950px;
   justify-content: space-between;
@@ -63,14 +61,6 @@ export const Wrapper = styled(Flex)`
   @media (max-width: 768px) {
     width: 80%;
   }
-`
-
-export const LandlordImageWrapper = styled(Wrapper)`
-  width: 35%;
-`
-
-export const LandlordTextWrapper = styled(Wrapper)`
-  width: 65%;
 `
 
 export const CenterWrapperProcess = styled(Wrapper)`

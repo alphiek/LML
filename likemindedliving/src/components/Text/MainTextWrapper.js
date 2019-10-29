@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 
 import ModalControl from "../Modal/ModalControl"
-import { H2, H3, Body, FactBody } from "../Text/Text"
+import { H2, Body, FactBody } from "../Text/Text"
 import Icons from "../Icons/Icons"
 import { Wrapper } from "../Containers/Containers"
 import Flex from "../Containers/Flex"
@@ -19,22 +19,10 @@ const TextContainer = styled(Flex)`
 `
 
 export const MainTextWrapper = ({ copy }) => {
-
-  let h2
-  let h3
-
-  if (copy.h2) {
-    h2 = <H2 color={copy.color}>{copy.h2}</H2>
-  } else if (copy.h3) {
-    h3 = <H3>{copy.h3}</H3>
-  } 
-
-
   return (
     <Wrapper>
       <TextContainer column justifyCenter contentCenter>
-        {h2}
-        {h3}
+        <H2 color={copy.color}>{copy.h2}</H2>
         {copy.divider && <Icons name="dividerShort" fill={copy.divider} />}
         <Body color={copy.color}>{copy.p1}</Body>
         {copy.p2 && <Body color={copy.color}>{copy.p2}</Body>}

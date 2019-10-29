@@ -20,7 +20,7 @@ const Patterns = ({ name }) => {
     case "testimonialPattern":
       return <LazyLoadComponent><TestimonialPattern src={testBG} alt="background pattern" /></LazyLoadComponent>
     case "processPattern":
-      return <LazyLoadComponent><ProcessPattern src={stepsBG} alt="background pattern" /></LazyLoadComponent>
+      return <ProcessPattern src={stepsBG} alt="background pattern" />
     default:
   }
 }

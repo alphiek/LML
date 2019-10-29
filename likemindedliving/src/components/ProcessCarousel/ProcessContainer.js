@@ -9,7 +9,7 @@ import {
   ProcessSubTextWrapper,
 } from "../Containers/Containers"
 import { FadeIn } from "../Animations/FadeIn"
-import { Body } from "../Text/Text"
+import { H2, Body } from "../Text/Text"
 import Icons from "../Icons/Icons"
 import Patterns from "../Patterns/Patterns"
 
@@ -23,7 +23,7 @@ const ProcessContainer = ({ name }) => {
         <Wrapper>
           <ProcessSubTextWrapper>
             <FadeIn>
-              <h3>{copy.h3}</h3>
+              <H2>{copy.h3}</H2>
             </FadeIn>
             <Icons name="dividerShort" fill={copy.divider} />
             <Body color={copy.color}>{copy.p1}</Body>
