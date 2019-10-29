@@ -12,3 +12,4 @@ exports.wrapPageElement = ({ element }) => {
     </>
   )
 }
+

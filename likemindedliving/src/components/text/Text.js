@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { FadeIn } from '../Animations/FadeIn'
+import React from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
+import { FadeIn } from "../Animations/FadeIn"
 
 const FactP = styled.p`
   margin-top: 1rem;
@@ -29,7 +29,7 @@ export const H2 = ({ children, color }) => {
 
 H2.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.string.isRequired
+  color: PropTypes.string,
 }
 
 export const H3 = ({ children, color }) => {
@@ -42,7 +42,7 @@ export const H3 = ({ children, color }) => {
 
 H3.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.string.isRequired
+  color: PropTypes.string.isRequired,
 }
 
 export const H4 = ({ children, color }) => {
@@ -55,7 +55,7 @@ export const H4 = ({ children, color }) => {
 
 H4.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.string.isRequired
+  color: PropTypes.string.isRequired,
 }
 
 export const Body = ({ children, color }) => (
@@ -66,18 +66,16 @@ export const Body = ({ children, color }) => (
 
 Body.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.string
+  color: PropTypes.string,
 }
 
-
 export const FactBody = ({ children, color }) => (
-  <FactP style={{ color: `${color}` }}>{children}</FactP>
+  <FadeIn>
+    <FactP style={{ color: `${color}` }}>{children}</FactP>
+  </FadeIn>
 )
-
 
 FactBody.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.string.isRequired
+  color: PropTypes.string.isRequired,
 }
-
-

@@ -66,6 +66,6 @@ export default SlideContainer
 
 SlideContainer.propTypes = {
   copy: PropTypes.objectOf(PropTypes.string).isRequired,
-  landlord: PropTypes.bool.isRequired,
+  name: PropTypes.string,
   link: PropTypes.objectOf(PropTypes.string).isRequired,
 }

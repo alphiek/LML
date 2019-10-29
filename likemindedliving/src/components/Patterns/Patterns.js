@@ -80,4 +80,8 @@ export const ProcessPattern = styled.img`
     min-width: 2600px;
     top: -125px;
   }
+  @media (max-width: 480px) {
+    min-width: 2800px;
+    top: -160px;
+  }
 `

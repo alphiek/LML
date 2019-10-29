@@ -2,6 +2,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
+import contract1 from '../../images/contract1.svg'
+import contract2 from '../../images/contract2.svg'
+import contract3 from '../../images/contract3.svg'
+import payment1 from '../../images/payment1.svg'
+import payment2 from '../../images/payment2.svg'
+import payment3 from '../../images/payment3.svg'
+
+
 const Icons = ({ name, fill }) => {
   switch (name) {
     case "logo":
@@ -261,6 +269,18 @@ const Icons = ({ name, fill }) => {
           </g>
         </svg>
       )
+    case "contract1":
+      return <ContractIcon src={contract1}/>
+    case "contract2":
+      return <ContractIcon src={contract2}/>
+    case "contract3":
+      return <ContractIcon src={contract3}/>
+      case "payment1":
+      return <ContractIcon src={payment1}/>
+    case "payment2":
+      return <ContractIcon src={payment2}/>
+    case "payment3":
+      return <ContractIcon src={payment3}/>
     default:
   }
 }
@@ -276,8 +296,6 @@ Icons.propTypes = {
   fill: PropTypes.string,
 }
 
-
-
 const DividerShort = styled.svg`
   stroke-width: 5;
   width: 3.5rem;
@@ -290,4 +308,10 @@ const DividerShort = styled.svg`
   @media (max-width: 480px) {
     height: 2rem;
   }
+`
+
+const ContractIcon = styled.img`
+   width: 4rem; 
+   margin-bottom: 10px;
+   height: auto;
 `

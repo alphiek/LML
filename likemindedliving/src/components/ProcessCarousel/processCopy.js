@@ -25,6 +25,7 @@ export const processCopy = {
     },
     landlord: {
         h3: `Check out our process for estate agents and\xa0landlords`,
+        p1: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a imperdiet est, vel ultrices ipsum.`,
         steps: {
             1: `On our website, fill in our landlord / estate agent sign up form, here, or on our quiz page. 
                   A member of our team will be in touch to confirm your details and discuss the letting of your property`,

@@ -43,13 +43,6 @@ const Testimonial = ({ name }) => {
 export default Testimonial
 
 Testimonial.propTypes = {
-  copy: PropTypes.shape({
-    bgColor: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired,
-    divider: PropTypes.string.isRequired,
-    h2: PropTypes.string.isRequired,
-    p1: PropTypes.string.isRequired,
-    testimonial: PropTypes.objectOf(PropTypes.object).isRequired,
-  }).isRequired,
+  name: PropTypes.string.isRequired,
 }
 
