@@ -1,11 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import SplitText from "react-pose-text"
-import styled from "styled-components"
-
-const H1 = styled.h1`
-  color: ${props => props.color};
-`
+import { H1 } from './headlineStyles'
 
 const H1SplitText = ({ h1, color }) => {
   const charPoses = {
@@ -30,5 +26,5 @@ export default H1SplitText
 
 H1SplitText.propTypes = {
   h1: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
+  color: PropTypes.string,
 }

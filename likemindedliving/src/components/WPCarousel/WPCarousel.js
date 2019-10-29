@@ -1,19 +1,22 @@
 import React from "react"
 import styled from "styled-components"
-import DisplayContent from './DisplayContent'
 import { CarouselTextSection } from "../Text/CarouselTextSection"
 import { FullSection } from "../Containers/Containers"
 import { FadeIn } from "../Animations/FadeIn"
 import Flex from "../Containers/Flex"
 import Icons from "../Icons/Icons"
+import PropertyContent from "./Property/PropertyContent"
+import BlogContent from "./Blogs/BlogContent"
+import { carouselCopy } from "./carouselCopy"
 
-const WPCarousel = ({ copy }) => {
+const WPCarousel = ({ name }) => {
+  const copy = carouselCopy[name]
+
   let section
-
-  if (copy.properties) {
-    section = <DisplayContent page={copy}/>
+  if (name === 'properties') {
+    section = <PropertyContent />
   } else {
-    section = <DisplayContent page={copy} />
+    section = <BlogContent page={copy.page} />
   }
 
   return (
@@ -83,7 +86,7 @@ const SlideContainer = styled.div`
     max-width: 980px;
   }
   @media (max-width: 950px) {
-    max-width: 620px
+    max-width: 620px;
   }
   @media (max-width: 680px) {
     max-width: 310px;

@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-
+import { processCopy } from './processCopy'
 import SlideContainer from "./SlideContainer"
 import {
   MainSectionContainer,
@@ -13,7 +13,10 @@ import { Body } from "../Text/Text"
 import Icons from "../Icons/Icons"
 import Patterns from "../Patterns/Patterns"
 
-const ProcessContainer = ({ copy }) => {
+const ProcessContainer = ({ name }) => {
+  
+  const copy = processCopy[name]
+
   return (
     <MainSectionContainer>
       <ReverseSectionWrapper>
@@ -29,7 +32,7 @@ const ProcessContainer = ({ copy }) => {
         <SlideContainer
           copy={copy.steps}
           link={copy.link}
-          landlord={copy.landlords}
+          name={name}
         />
       </ReverseSectionWrapper>
       <Patterns name="processPattern" />
@@ -40,14 +43,5 @@ const ProcessContainer = ({ copy }) => {
 export default ProcessContainer
 
 ProcessContainer.propTypes = {
-  copy: PropTypes.shape({
-    landlords: PropTypes.bool.isRequired,
-    bgColor: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired,
-    divider: PropTypes.string.isRequired,
-    h3: PropTypes.string.isRequired,
-    link: PropTypes.objectOf(PropTypes.string).isRequired,
-    p1: PropTypes.string.isRequired,
-    steps: PropTypes.objectOf(PropTypes.string).isRequired,
-  }).isRequired,
+  name: PropTypes.string.isRequired,
 }

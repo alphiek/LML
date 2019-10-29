@@ -15,7 +15,7 @@ import ModalControl from "../Modal/ModalControl"
 import Arrows from "./Arrows"
 import { updateStyle, updateNext, updatePrevious } from "./styleHelpers"
 
-const SlideContainer = ({ copy, link, landlord }) => {
+const SlideContainer = ({ copy, link, name }) => {
   const [currentSlide, updateSlide] = useState(1)
 
   let content = copy[currentSlide]
@@ -23,7 +23,7 @@ const SlideContainer = ({ copy, link, landlord }) => {
   let pagination = Object.keys(copy)
   let slides
 
-  if (landlord) {
+  if (name === 'landlord') {
     slides = <LandlordProcessIllustration slide={Number(currentSlide)} />
   } else {
     slides = <TenantProcessIllustration slide={Number(currentSlide)} />

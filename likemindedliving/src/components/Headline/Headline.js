@@ -1,19 +1,29 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from 'styled-components'
-import H1SplitText from "../Animations/H1SplitText"
-import { TextCenter } from "../Containers/Containers"
-import { FadeIn } from "../Animations/FadeIn"
-import Icons from "../Icons/Icons"
 
-const Headline = ({ copy }) => {
+import { HeadlineSection, TextCenter, DividerLong } from "./headlineStyles"
+import H1SplitText from "./H1SplitText"
+import { FadeIn } from "../Animations/FadeIn"
+import { headlineCopy } from "./headlineCopy"
+
+const Headline = ({ name }) => {
+  const data = headlineCopy[name]
+
   return (
-    <HeadlineSection bgColor={copy.bgColor}>
+    <HeadlineSection bgColor={data.bgColor}>
       <TextCenter justifyCenter alignCenter>
-        <H1SplitText h1={copy.h1} color={copy.color} />
-        <Icons name="dividerLong" fill={copy.divider} />
+        <H1SplitText h1={data.h1} color={data.color} />
+        <DividerLong
+          stroke={data.divider}
+          fill="none"
+          viewBox="0 0 987 8.9"
+          strokeLinecap="round"
+          strokeMiterlimit="10"
+        >
+          <path d="M3,3c98.1,0,98.1,2.9,196.2,2.9S297.3,3,395.4,3s98.1,2.9,196.2,2.9S689.7,3,787.8,3 S885.9,5.9,984,5.9" />
+        </DividerLong>
         <FadeIn delay={300}>
-          <p className={copy.class}>{copy.p1}</p>
+          <p className={data.class}>{data.p1}</p>
         </FadeIn>
       </TextCenter>
     </HeadlineSection>
@@ -23,14 +33,5 @@ const Headline = ({ copy }) => {
 export default Headline
 
 Headline.propTypes = {
-  copy: PropTypes.objectOf(PropTypes.string).isRequired,
+  name: PropTypes.string.isRequired,
 }
-
-const HeadlineSection = styled.section`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 7%;
-  background-color: ${props => props.bgColor};
-  min-height: 350px;
-`

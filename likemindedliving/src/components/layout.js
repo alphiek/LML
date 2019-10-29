@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
-import { linkUrls } from '../copy/links'
+import { linkUrls } from './links'
 
 
 const Layout = ({ children }) => {

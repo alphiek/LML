@@ -2,10 +2,6 @@ import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
 
-.no-js {
-  visibility: hidden;
-}
-
 html {
   height: 100%;
   font-size: 16px;
@@ -63,7 +59,7 @@ header {
 }
 
 main {
-  padding-top: 75px;
+  padding-top: 80px;
   width: 100%;
   overflow: hidden;
 }
@@ -137,7 +133,7 @@ h1 {
 .title-sub-text {
   font-size: 1rem;
   text-align: center;
-  margin-top: 0.8rem;
+  margin: 0.8rem 0 0 0;
   width: 70%;
   line-height: 145%;
   @media (max-width: 480px) {
@@ -147,7 +143,9 @@ h1 {
 
 .landlord {
   color: #FFF;
-  margin-bottom: 5%;
+  @media (max-width: 768px) {
+    margin-bottom: 16px;
+  }
 }
 
 h2 {

@@ -7,6 +7,7 @@ import BlogCard from "./BlogCard"
 
 const BlogContent = ({ page }) => {
   
+  console.log(page)
   const data = useBlogData()
   
   let tenants

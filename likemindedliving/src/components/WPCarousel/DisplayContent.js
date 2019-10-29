@@ -18,6 +18,7 @@ const DisplayContent = ({ page }) => {
     content = (
       <Loader justifyCenter alignCenter>
         <Spinner name="ball-clip-rotate-multiple" color='#4B4A68' fadeIn="none" />
+        <p>Hello I am loading Carousel</p>
       </Loader>
     )
   } else {

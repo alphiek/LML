@@ -2,7 +2,6 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useSiteMetaData } from "../hooks/useSiteMetaData"
 import Landlords from "../components/PageLayout/Landlords"
-import { landlord } from "../copy/landlords"
 
 const LandlordPage = () => {
   const { siteUrl, title, social } = useSiteMetaData()
@@ -117,7 +116,7 @@ const LandlordPage = () => {
           }
      `}</script>
       </Helmet>
-      <Landlords copy={landlord} />
+      <Landlords name='landlord'/>
     </>
   )
 }

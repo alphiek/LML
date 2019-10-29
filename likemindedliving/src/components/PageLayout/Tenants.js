@@ -1,27 +1,29 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import DisplayLanding from '../LandingPage/DisplayLanding'
+import Headline from '../Headline/Headline'
+import PropertySearch from '../PropertySearch/PropertySearch'
 import ProcessContainer from "../ProcessCarousel/ProcessContainer"
-import HouseMate from "../Sections/HouseMate"
-import Algorithm from "../Sections/Algorithm"
+import Housemate from "../Housemate/Housemate"
+import Algorithm from "../Algorithm/Algorithm"
 import PressReel from "../PressReel/PressReel"
-import IdealChoice from "../Sections/IdealChoice"
+import IdealChoice from "../IdealChoice/IdealChoice"
 import Testimonial from "../Testimonial/Testimonial"
 import WPCarousel from "../WPCarousel/WPCarousel"
 
-const Tenants = ({ copy }) => {
+const Tenants = ({ name }) => {
   return (
     <>
-      <DisplayLanding headlineCopy={copy.headline} propertyCopy={copy.sectionOne} />
-      <ProcessContainer copy={copy.process} />
-      <WPCarousel copy={copy.properties} />
-      <HouseMate copy={copy.sectionTwo} />
-      <Algorithm copy={copy.sectionThree} />
-      <PressReel copy={copy.pressReel} />
-      <IdealChoice copy={copy.sectionFour} />
-      <Testimonial copy={copy.testimonials} />
-      <WPCarousel copy={copy.blogs} />
+      <Headline name={name}/>
+      <PropertySearch />
+      <ProcessContainer name={name} />
+      <WPCarousel name='properties' />
+      <Housemate />
+      <Algorithm />
+      <PressReel />
+      <IdealChoice />
+      <Testimonial name={name} />
+      <WPCarousel name='blogs' />
     </>
   )
 }

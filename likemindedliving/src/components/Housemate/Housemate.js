@@ -1,6 +1,5 @@
 import React from "react"
-import PropTypes from "prop-types"
-
+import { housemateCopy } from './housemateCopy'
 import IllustrationWrapper from "../Illustrations/IllustrationWrapper"
 import MainTextWrapper from "../Text/MainTextWrapper"
 import Patterns from "../Patterns/Patterns"
@@ -10,7 +9,9 @@ import {
   ReverseSectionWrapper,
 } from "../Containers/Containers"
 
-const HouseMate = ({ copy }) => {
+const Housemate = () => {
+  
+  const copy = housemateCopy
   return (
     <MainSectionContainer bgColor={copy.bgColor}>
       <ReverseSectionWrapper>
@@ -27,18 +28,5 @@ const HouseMate = ({ copy }) => {
   )
 }
 
-export default HouseMate
+export default Housemate
 
-HouseMate.propTypes = {
-  copy: PropTypes.shape({
-    bgColor: PropTypes.string.isRequired,
-    blob: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired,
-    divider: PropTypes.string.isRequired,
-    factColor: PropTypes.string.isRequired,
-    fact: PropTypes.string.isRequired,
-    h2: PropTypes.string.isRequired,
-    link: PropTypes.objectOf(PropTypes.string).isRequired,
-    p1: PropTypes.string.isRequired,
-  }).isRequired,
-}

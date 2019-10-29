@@ -65,18 +65,6 @@ const Icons = ({ name, fill }) => {
           />
         </svg>
       )
-    case "dividerLong":
-      return (
-        <DividerLong
-          stroke={fill}
-          fill="none"
-          viewBox="0 0 987 8.9"
-          strokeLinecap="round"
-          strokeMiterlimit="10"
-        >
-          <path d="M3,3c98.1,0,98.1,2.9,196.2,2.9S297.3,3,395.4,3s98.1,2.9,196.2,2.9S689.7,3,787.8,3 S885.9,5.9,984,5.9" />
-        </DividerLong>
-      )
     case "dividerShort":
       return (
         <DividerShort
@@ -288,18 +276,7 @@ Icons.propTypes = {
   fill: PropTypes.string,
 }
 
-const DividerLong = styled.svg`
-  width: 80%;
-  stroke-width: 1%;
-  height: 1em;
-  @media (max-width: 1180px) {
-    stroke-width: 2%;
-  }
-  @media (max-width: 480px) {
-    stroke-width: 3%;
-    height: 2em;
-  }
-`
+
 
 const DividerShort = styled.svg`
   stroke-width: 5;

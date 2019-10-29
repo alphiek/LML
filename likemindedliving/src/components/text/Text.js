@@ -18,6 +18,11 @@ const FactP = styled.p`
     width: 80%;
   }
 `
+
+const LandlordBody = styled.p`
+  margin-top: 1rem;
+`
+
 export const H2 = ({ children, color }) => {
   return (
     <FadeIn delay={0}>
@@ -44,6 +49,18 @@ H3.propTypes = {
   color: PropTypes.string.isRequired
 }
 
+export const H4 = ({ children, color }) => {
+  return (
+    <FadeIn delay={0}>
+      <h4 style={{ color: `${color}` }}>{children}</h4>
+    </FadeIn>
+  )
+}
+
+H4.propTypes = {
+  children: PropTypes.node.isRequired,
+  color: PropTypes.string.isRequired
+}
 
 export const Body = ({ children, color }) => (
   <FadeIn>
@@ -52,6 +69,17 @@ export const Body = ({ children, color }) => (
 )
 
 Body.propTypes = {
+  children: PropTypes.node.isRequired,
+  color: PropTypes.string
+}
+
+export const LandlordP = ({ children, color }) => (
+  <FadeIn>
+    <LandlordBody style={{ color: `${color}` }}>{children}</LandlordBody>
+  </FadeIn>
+)
+
+LandlordBody.propTypes = {
   children: PropTypes.node.isRequired,
   color: PropTypes.string
 }

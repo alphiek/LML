@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors } from "../../global/colors"
+import { colors } from "../Utilities/colors"
 import { fullabs } from '../Utilities/position'
 import Flex from "./Flex"
 
@@ -32,23 +32,7 @@ export const FullSection = styled.section`
 
 // Section Wrappers
 
-export const TextCenter = styled(Flex)`
-  width: 50%;
-  @media (max-width: 1460px) {
-    width: 60%;
-  }
-  @media (max-width: 1180px) {
-    width: 65%;
-    margin-top: 1rem;
-  }
-  @media (max-width: 768px) {
-    margin-top: 1.5rem;
-    width: 78%;
-  }
-  @media (max-width: 480px) {
-    width: 75%;
-  }
-`
+
 
 export const SectionWrapper = styled(Flex)`
   width: 950px;
@@ -79,6 +63,14 @@ export const Wrapper = styled(Flex)`
   @media (max-width: 768px) {
     width: 80%;
   }
+`
+
+export const LandlordImageWrapper = styled(Wrapper)`
+  width: 35%;
+`
+
+export const LandlordTextWrapper = styled(Wrapper)`
+  width: 65%;
 `
 
 export const CenterWrapperProcess = styled(Wrapper)`

@@ -1,10 +1,40 @@
 import React from "react"
-import PropTypes from "prop-types"
 import styled from "styled-components"
-
 import Icons from "../Icons/Icons"
 import { H2, Body } from "../Text/Text"
 import { HeadingWrapper } from "../Containers/Containers"
+import { pressReelCopy } from './pressReelCopy'
+
+
+const PressReel = () => {
+  const copy = pressReelCopy
+  const articles = copy.articles.map((article, index) => {
+    return (
+      <div key={index}>
+        <Icons name="article" />
+        <ArticleWrapper>
+          <ArticleLink style={{ color: "#fff" }} href={article.url}>
+            {article.name}
+          </ArticleLink>
+        </ArticleWrapper>
+      </div>
+    )
+  })
+
+  return (
+    <PressSection bgColor={copy.bgColor}>
+      <HeadingWrapper>
+        <H2 color={copy.color}>{copy.h2}</H2>
+        <Icons name="dividerShort" fill={copy.divider} />
+        <Body color={copy.color}>{copy.p1}</Body>
+        <ScrollContainer>{articles}</ScrollContainer>
+      </HeadingWrapper>
+    </PressSection>
+  )
+}
+
+export default PressReel
+
 
 const PressSection = styled.section`
   width: 100%;
@@ -46,38 +76,3 @@ const ArticleLink = styled.a`
   text-align: left;
   line-height: 135%;
 `
-
-const PressReel = ({ copy }) => {
-  const articles = copy.articles.map((article, index) => {
-    return (
-      <div key={index}>
-        <Icons name="article" />
-        <ArticleWrapper>
-          <ArticleLink style={{ color: "#fff" }} href={article.url}>
-            {article.name}
-          </ArticleLink>
-        </ArticleWrapper>
-      </div>
-    )
-  })
-
-  return (
-    <PressSection bgColor={copy.bgColor}>
-      <HeadingWrapper>
-        <H2 color={copy.color}>{copy.h2}</H2>
-        <Icons name="dividerShort" fill={copy.divider} />
-        <Body color={copy.color}>{copy.p1}</Body>
-        <ScrollContainer>{articles}</ScrollContainer>
-      </HeadingWrapper>
-    </PressSection>
-  )
-}
-
-export default PressReel
-
-PressReel.propTypes = {
-  copy: PropTypes.shape({
-    articles: PropTypes.arrayOf(PropTypes.object).isRequired,
-    bgColor: PropTypes.string.isRequired,
-  }).isRequired,
-}

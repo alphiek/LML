@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 
 import Icons from "../../Icons/Icons"
-import { colors } from "../../../global/colors"
+import { colors } from "../../Utilities/colors"
 import {
   CardImageWrapper,
   CardTextContainer,

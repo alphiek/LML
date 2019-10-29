@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Img from "gatsby-image"
 import Icons from "../../Icons/Icons"
-import { colors } from "../../../global/colors"
+import { colors } from "../../Utilities/colors"
 
 import {
   CardImageWrapper,

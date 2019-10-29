@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 import Patterns from "../../Patterns/Patterns"
 import GetLinks from "../GetLinks"
-import { colors } from "../../../global/colors"
+import { colors } from "../../Utilities/colors"
 
 const SideDrawerContainer = styled(a.nav)`
   height: 100vh;

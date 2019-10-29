@@ -12,10 +12,11 @@ import {
 } from "../Containers/Containers"
 import Icons from "../Icons/Icons"
 import Patterns from '../Patterns/Patterns'
+import { testimonialCopy } from './testimonialCopy'
 
-const Testimonial = ({ copy }) => {
-  let data = copy
-  let testimonial = Object.entries(copy.testimonial)
+const Testimonial = ({ name }) => {
+  let data = testimonialCopy[name]
+  let testimonial = Object.entries(data.testimonial)
   let cards = testimonial.map((item, index) => (
     <TestimonialCard key={index} copy={item} />
   ))

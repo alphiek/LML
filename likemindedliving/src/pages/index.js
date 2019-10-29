@@ -2,7 +2,6 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useSiteMetaData } from "../hooks/useSiteMetaData"
 import Tenants from "../components/PageLayout/Tenants"
-import { tenants } from "../copy/tenants"
 
 const IndexPage = () => {
   const { siteUrl, title, description, social } = useSiteMetaData()
@@ -110,7 +109,7 @@ const IndexPage = () => {
           }
      `}</script>
       </Helmet>
-      <Tenants copy={tenants} />
+      <Tenants name='tenant'/>
     </>
   )
 }
