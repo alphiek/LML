@@ -11,8 +11,8 @@ const Footer = () => {
   const { title, address, social } = useSiteMetaData()
 
   return (
-    <footer>
-      <FadeIn>
+    <FadeIn>
+      <footer>
         <address>
           <AddressTitle>{title}</AddressTitle>
           {address.house} <br />
@@ -51,9 +51,9 @@ const Footer = () => {
         <Copyright>
           © {new Date().getFullYear()} Like-Minded Living, all rights reserved{" "}
         </Copyright>
-      </FadeIn>
-      <Patterns name="footerPattern" />
-    </footer>
+        <Patterns name="footerPattern" />
+      </footer>
+    </FadeIn>
   )
 }
 

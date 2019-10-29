@@ -17,9 +17,14 @@ export const useBlogData = () => {
                       id
                       featuredImage {
                         altText
-                        mediaType
-                        sizes(size: FULLPAGE_THUMB_SIZE)
                         sourceUrl
+                        imageFile {
+                          childImageSharp {
+                            fluid {
+                            ...GatsbyImageSharpFluid
+                            }
+                          }
+                        }
                       }
                     }
                   }

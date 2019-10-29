@@ -5,7 +5,7 @@ import { LazyLoadComponent } from "react-lazy-load-image-component"
 import london from "../../images/London.svg"
 import housemates from "../../images/Housemates.svg"
 import algorithm from "../../images/algorithm.svg"
-import idealchoice from "../../images/IdealChoice.svg"
+import idealchoice from "../../images/idealChoice.png"
 
 const Illustration = ({ name }) => {
   switch (name) {

@@ -14,7 +14,15 @@ const DisplayLanding = ({ headlineCopy, propertyCopy }) => {
   }, [])
 
   if (!isLoaded) {
-    content = null
+    content = (
+      <div style={{ opacity: '0' }}>
+        <h1>Search rental properties everywhere. Save on rent. Discover your dream home.</h1>
+        <p>Our Property Search Tool searches 1000's of listings across all major sites to find your ideal home, customers can save up to £1000's per year on rent.</p>
+        <h2>Property Search Tool</h2>
+        <p>Submit your details and let our tool find your perfect property. Fill in our form and kick-start your property search today, 
+        we’ll be in touch with property details.</p>
+      </div>
+    )
   } else {
     content = (
       <>
@@ -36,5 +44,5 @@ Headline.propTypes = {
 
 const LandingWrapper = styled.div`
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
 `

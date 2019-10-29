@@ -1,24 +1,34 @@
 import React from "react"
-import styled from 'styled-components'
+import styled from "styled-components"
+import Img from "gatsby-image"
 import Icons from "../../Icons/Icons"
 import { colors } from "../../../global/colors"
+
 import {
   CardImageWrapper,
-  Image,
   CardTextContainer,
   CardLink,
   HR,
   Description,
 } from "../styles"
 
-const BlogCard = ({ data }) => {
-  let imageData = data.featuredImage
-  let imageUrl
+const Image = styled(Img)`
+  width: 100%;
+  opacity: 0.9;
+`
 
-  for (let item in imageData) {
-    if (item === "sourceUrl") {
-      imageUrl = imageData[item]
-    }
+const BlogCard = ({ data }) => {
+  const getImage = image => {
+    let displayImage
+    displayImage = image ? (
+      <Image
+        fluid={data.featuredImage.imageFile.childImageSharp.fluid}
+        alt={data.featuredImage.alt}
+      />
+    ) : (
+      <div>There is no image</div>
+    )
+    return displayImage
   }
 
   let title
@@ -34,9 +44,7 @@ const BlogCard = ({ data }) => {
 
   return (
     <>
-      <CardImageWrapper>
-        <Image src={imageUrl} />
-      </CardImageWrapper>
+      <CardImageWrapper>{getImage(data.featuredImage)}</CardImageWrapper>
       <CardTextContainer>
         <TitleHeight>
           <h4>{title}</h4>
