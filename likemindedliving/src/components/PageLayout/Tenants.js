@@ -1,8 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Headline from '../Headline/Headline'
-import PropertySearch from '../PropertySearch/PropertySearch'
+import DisplayLanding from "./DisplayLanding"
+import Headline from "../Headline/Headline"
+import PropertySearch from "../PropertySearch/PropertySearch"
 import ProcessContainer from "../ProcessCarousel/ProcessContainer"
 import Housemate from "../Housemate/Housemate"
 import Algorithm from "../Algorithm/Algorithm"
@@ -14,16 +15,18 @@ import WPCarousel from "../WPCarousel/WPCarousel"
 const Tenants = ({ name }) => {
   return (
     <>
-      <Headline name={name}/>
-      <PropertySearch />
+      <DisplayLanding>
+        <Headline name={name} />
+        <PropertySearch />
+      </DisplayLanding>
       <ProcessContainer name={name} />
-      <WPCarousel name='properties' />
+      <WPCarousel name="properties" />
       <Housemate />
       <Algorithm />
       <PressReel />
       <IdealChoice />
       <Testimonial name={name} />
-      <WPCarousel name='blogs' />
+      <WPCarousel name="blogs" />
     </>
   )
 }

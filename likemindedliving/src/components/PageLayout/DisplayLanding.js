@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import Headline from "../Headline/Headline"
 
-const DisplayLanding = ({ name }) => {
+const DisplayLanding = ({ children }) => {
   const [isLoaded, setLoaded] = useState(false)
 
   let content
@@ -15,11 +15,7 @@ const DisplayLanding = ({ name }) => {
   if (!isLoaded) {
     content = <div></div>
   } else {
-    content = (
-      <>
-        <Headline name={name} />
-      </>
-    )
+    content = <>{children}</>
   }
 
   return <LandingWrapper>{content}</LandingWrapper>
@@ -33,4 +29,5 @@ DisplayLanding.propTypes = {
 
 const LandingWrapper = styled.div`
   width: 100%;
+  min-height: 80vh;
 `
