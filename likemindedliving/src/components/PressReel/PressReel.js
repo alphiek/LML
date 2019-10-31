@@ -43,6 +43,7 @@ const PressSection = styled.section`
   align-items: center;
   background-color: ${props => props.bgColor};
   padding: 60px 0;
+  margin: 60px 0;
 `
 
 const ScrollContainer = styled.div`

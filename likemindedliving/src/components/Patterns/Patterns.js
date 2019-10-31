@@ -8,19 +8,53 @@ import housemateBG from "../../images/housemateBG.svg"
 import footerBG from "../../images/footerBG.svg"
 import testBG from "../../images/TestBG.svg"
 import stepsBG from "../../images/StepsBG.svg"
+import processLandlord from "../../images/landlordprocessBG.svg"
+import clientsBG from "../../images/clientsBG.svg"
 
 const Patterns = ({ name }) => {
   switch (name) {
     case "sideDrawerPattern":
-      return <LazyLoadComponent><SideDrawerPattern src={sideDrawerPtn} alt="background pattern" /></LazyLoadComponent>
+      return (
+        <LazyLoadComponent>
+          <SideDrawerPattern src={sideDrawerPtn} alt="background pattern" />
+        </LazyLoadComponent>
+      )
     case "housematePattern":
-      return <LazyLoadComponent><HouseMatePattern src={housemateBG} alt="background pattern" /></LazyLoadComponent>
+      return (
+        <LazyLoadComponent>
+          <HouseMatePattern src={housemateBG} alt="background pattern" />
+        </LazyLoadComponent>
+      )
     case "footerPattern":
-      return <LazyLoadComponent><FooterPattern src={footerBG} alt="background pattern" /></LazyLoadComponent>
+      return (
+        <LazyLoadComponent>
+          <FooterPattern src={footerBG} alt="background pattern" />
+        </LazyLoadComponent>
+      )
     case "testimonialPattern":
-      return <LazyLoadComponent><TestimonialPattern src={testBG} alt="background pattern" /></LazyLoadComponent>
+      return (
+        <LazyLoadComponent>
+          <TestimonialPattern src={testBG} alt="background pattern" />
+        </LazyLoadComponent>
+      )
     case "processPattern":
-      return <ProcessPattern src={stepsBG} alt="background pattern" />
+      return (
+        <LazyLoadComponent>
+          <ProcessPattern src={stepsBG} alt="background pattern" />
+        </LazyLoadComponent>
+      )
+    case "processLandlord":
+      return (
+        <LazyLoadComponent>
+          <LandlordPattern src={processLandlord} alt="background pattern" />
+        </LazyLoadComponent>
+      )
+    case "clients":
+      return (
+        <LazyLoadComponent>
+          <ClientsPattern src={clientsBG} alt="background pattern" />
+        </LazyLoadComponent>
+      )
     default:
   }
 }
@@ -78,10 +112,32 @@ export const ProcessPattern = styled.img`
   top: -40px;
   @media (max-width: 1180px) {
     min-width: 2600px;
-    top: -125px;
+    top: -110px;
   }
   @media (max-width: 480px) {
     min-width: 2800px;
     top: -160px;
+  }
+`
+
+export const LandlordPattern = styled(ProcessPattern)`
+  top: -100px;
+  @media (max-width: 1180px) {
+    top: -120px;
+  }
+  @media (max-width: 768px) {
+    top: -150px;
+  }
+  @media (max-width: 480px) {
+    top: -170px;
+  }
+`
+
+export const ClientsPattern = styled(HouseMatePattern)`
+  @media (max-width: 1180px) {
+    margin-top: -40px;
+  }
+  @media (max-width: 768px) {
+    margin-top: -80px;
   }
 `

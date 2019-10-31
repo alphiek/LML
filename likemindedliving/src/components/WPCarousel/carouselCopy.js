@@ -12,7 +12,8 @@ export const carouselCopy = {
             url: `https://likemindedliving.co.uk/blog/`
         },
         color: `${colors.textPrimary}`,
-        bgColor: `${colors.white}`
+        bgColor: `${colors.white}`,
+        divider: `${colors.lilac}`
     },
     blogs: {
         blogs: true,

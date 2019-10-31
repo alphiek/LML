@@ -108,6 +108,7 @@ export const TestimonialContainer = styled(Flex)`
 
 export const HeadingWrapper = styled.div`
   width: 950px;
+  z-index: 2;
   @media (max-width: 1180px) {
     display: flex;
     align-items: center;

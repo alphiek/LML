@@ -6,10 +6,8 @@ import { useBlogData } from "../../../hooks/useBlogData"
 import BlogCard from "./BlogCard"
 
 const BlogContent = ({ page }) => {
-  
-  console.log(page)
   const data = useBlogData()
-  
+
   let tenants
   let landlords
   let blogItems

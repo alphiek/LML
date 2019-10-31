@@ -20,6 +20,9 @@ const Card = styled.div`
     }
     width: 70%;
   }
+  @media (max-width: 480px) {
+    width: 80%;
+  }
 `
 
 const TestimonialCard = ({ copy }) => {

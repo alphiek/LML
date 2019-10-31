@@ -38,7 +38,7 @@ export const Image = styled.img`
 grid-row: 1 / 3;
 grid-column: 2;
 position: relative;
-height: 450px;
+height: 391px;
 top: -160px;
 @media (max-width: 1180px) {
   grid-row: 1;
@@ -78,8 +78,8 @@ position: relative;
 &:nth-child(4) {
   grid-column: 1 / 3;
   grid-row: 3;
-  top: -80px;
-  margin-left: 100px;
+  top: -47px;
+  margin-left: 174px;
   @media (max-width: 1180px) {
     top: 0;
     margin-left: 0;

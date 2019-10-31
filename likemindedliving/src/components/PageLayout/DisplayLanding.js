@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import Headline from "../Headline/Headline"
 
 const DisplayLanding = ({ children }) => {
   const [isLoaded, setLoaded] = useState(false)
@@ -24,7 +23,7 @@ const DisplayLanding = ({ children }) => {
 export default DisplayLanding
 
 DisplayLanding.propTypes = {
-  name: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 const LandingWrapper = styled.div`

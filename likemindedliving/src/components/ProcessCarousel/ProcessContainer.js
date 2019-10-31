@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { processCopy } from './processCopy'
+import { processCopy } from "./processCopy"
 import SlideContainer from "./SlideContainer"
 import {
   MainSectionContainer,
@@ -14,8 +14,9 @@ import Icons from "../Icons/Icons"
 import Patterns from "../Patterns/Patterns"
 
 const ProcessContainer = ({ name }) => {
-  
   const copy = processCopy[name]
+
+  const pattern = name === 'landlord' ? 'processLandlord' : 'processPattern'
 
   return (
     <MainSectionContainer>
@@ -29,13 +30,9 @@ const ProcessContainer = ({ name }) => {
             <Body color={copy.color}>{copy.p1}</Body>
           </ProcessSubTextWrapper>
         </Wrapper>
-        <SlideContainer
-          copy={copy.steps}
-          link={copy.link}
-          name={name}
-        />
+        <SlideContainer copy={copy.steps} link={copy.link} name={name} />
       </ReverseSectionWrapper>
-      <Patterns name="processPattern" />
+      <Patterns name={pattern} />
     </MainSectionContainer>
   )
 }

@@ -34,5 +34,5 @@ const Tenants = ({ name }) => {
 export default Tenants
 
 Tenants.propTypes = {
-  copy: PropTypes.objectOf(PropTypes.object).isRequired,
+  name: PropTypes.string.isRequired,
 }

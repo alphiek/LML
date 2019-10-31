@@ -9,7 +9,7 @@ import Flex from "../Containers/Flex"
 const Contracts = () => {
   const data = paymentsCopy
   const content = data.fact.map((item, index) => (
-    <Item alignStart contentStart justifyCenter key={index}>
+    <Item alignCenter contentStart justifyCenter column key={index}>
       <Icons name={item.icon} />
       <H3 color="rgba(80, 62, 167, 0.8)">{item.h4}</H3>
       <Body>{item.p}</Body>
@@ -21,7 +21,7 @@ const Contracts = () => {
       <CenterContainer justifyCenter alignCenter column>
         <H2 color={data.color}>{data.h2}</H2>
         <Icons name="dividerShort" fill={data.divider} />
-        <FactWrapper justifyBetween alignStart content>
+        <FactWrapper justifyBetween alignStart >
           {content}
         </FactWrapper>
       </CenterContainer>
@@ -33,11 +33,13 @@ export default Contracts
 
 export const CenterContainer = styled(Flex)`
   width: 950px;
+  margin: 100px 0 80px;
   @media (max-width: 1180px) {
     width: 60%;
   }
   @media (max-width: 768px) {
     width: 80%;
+    margin: 50px 0 40px;
   }
 `
 

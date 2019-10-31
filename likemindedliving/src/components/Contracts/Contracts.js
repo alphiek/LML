@@ -8,7 +8,7 @@ import Flex from "../Containers/Flex"
 
 const Contracts = () => {
   const data = contractsCopy
-  const content = data.fact.map((item, index) => (
+  const copy = data.fact.map((item, index) => (
     <Item alignStart contentStart justifyCenter key={index}>
       <Icons name={item.icon} />
       <H3 color="rgba(80, 62, 167, 0.8)">{item.h4}</H3>
@@ -21,8 +21,8 @@ const Contracts = () => {
       <CenterContainer justifyCenter alignCenter column>
         <H2 color={data.color}>{data.h2}</H2>
         <Icons name="dividerShort" fill={data.divider} />
-        <FactWrapper justifyBetween alignStart content>
-          {content}
+        <FactWrapper justifyBetween alignStart >
+          {copy}
         </FactWrapper>
       </CenterContainer>
     </FullSection>
@@ -33,8 +33,10 @@ export default Contracts
 
 export const CenterContainer = styled(Flex)`
   width: 950px;
+  margin: 100px 0 80px;
   @media (max-width: 1180px) {
     width: 60%;
+    margin: 60px 0 40px;
   }
   @media (max-width: 768px) {
     width: 80%;
