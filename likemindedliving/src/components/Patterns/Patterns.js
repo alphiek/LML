@@ -1,60 +1,31 @@
-import React from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
-import { LazyLoadComponent } from "react-lazy-load-image-component"
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import sideDrawerPtn from "../../images/sideDrawerPtn.svg"
-import housemateBG from "../../images/housemateBG.svg"
-import footerBG from "../../images/footerBG.svg"
-import testBG from "../../images/TestBG.svg"
-import stepsBG from "../../images/StepsBG.svg"
-import processLandlord from "../../images/landlordprocessBG.svg"
-import clientsBG from "../../images/clientsBG.svg"
+import sideDrawerPtn from '../../images/sideDrawerPtn.png'
+import housemateBG from '../../images/housemateBG.png'
+import footerBG from '../../images/footerBG.png'
+import testBG from '../../images/TestBG.png'
+import stepsBG from '../../images/StepsBG.png'
+import processLandlord from '../../images/landlordprocessBG.png'
+import clientsBG from '../../images/clientsBG.png'
 
 const Patterns = ({ name }) => {
   switch (name) {
-    case "sideDrawerPattern":
-      return (
-        <LazyLoadComponent>
-          <SideDrawerPattern src={sideDrawerPtn} alt="background pattern" />
-        </LazyLoadComponent>
-      )
-    case "housematePattern":
-      return (
-        <LazyLoadComponent>
-          <HouseMatePattern src={housemateBG} alt="background pattern" />
-        </LazyLoadComponent>
-      )
-    case "footerPattern":
-      return (
-        <LazyLoadComponent>
-          <FooterPattern src={footerBG} alt="background pattern" />
-        </LazyLoadComponent>
-      )
-    case "testimonialPattern":
-      return (
-        <LazyLoadComponent>
-          <TestimonialPattern src={testBG} alt="background pattern" />
-        </LazyLoadComponent>
-      )
-    case "processPattern":
-      return (
-        <LazyLoadComponent>
-          <ProcessPattern src={stepsBG} alt="background pattern" />
-        </LazyLoadComponent>
-      )
-    case "processLandlord":
-      return (
-        <LazyLoadComponent>
-          <LandlordPattern src={processLandlord} alt="background pattern" />
-        </LazyLoadComponent>
-      )
-    case "clients":
-      return (
-        <LazyLoadComponent>
-          <ClientsPattern src={clientsBG} alt="background pattern" />
-        </LazyLoadComponent>
-      )
+    case 'sideDrawerPattern':
+      return <SideDrawerPattern src={sideDrawerPtn} alt="background pattern" />
+    case 'housematePattern':
+      return <HouseMatePattern src={housemateBG} alt="background pattern" />
+    case 'footerPattern':
+      return <FooterPattern src={footerBG} alt="background pattern" />
+    case 'testimonialPattern':
+      return <TestimonialPattern src={testBG} alt="background pattern" />
+    case 'processPattern':
+      return <ProcessPattern src={stepsBG} alt="background pattern" />
+    case 'processLandlord':
+      return <LandlordPattern src={processLandlord} alt="background pattern" />
+    case 'clients':
+      return <ClientsPattern src={clientsBG} alt="background pattern" />
     default:
   }
 }

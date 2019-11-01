@@ -39,7 +39,7 @@ grid-row: 1 / 3;
 grid-column: 2;
 position: relative;
 height: 391px;
-top: -160px;
+top: -110px;
 @media (max-width: 1180px) {
   grid-row: 1;
   grid-column: 1;

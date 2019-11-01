@@ -1,7 +1,7 @@
-import React from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
-import { FadeIn } from "../Animations/FadeIn"
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { FadeIn } from '../Animations/FadeIn'
 
 const FactP = styled.p`
   margin-top: 1rem;
@@ -17,6 +17,10 @@ const FactP = styled.p`
     line-height: 150%;
     width: 80%;
   }
+`
+
+const CenterP = styled.p`
+  text-align: center;
 `
 
 export const H2 = ({ children, color }) => {
@@ -65,6 +69,17 @@ export const Body = ({ children, color }) => (
 )
 
 Body.propTypes = {
+  children: PropTypes.node.isRequired,
+  color: PropTypes.string,
+}
+
+export const CenterBody = ({ children, color }) => (
+  <FadeIn>
+    <CenterP style={{ color: `${color}` }}>{children}</CenterP>
+  </FadeIn>
+)
+
+CenterBody.propTypes = {
   children: PropTypes.node.isRequired,
   color: PropTypes.string,
 }

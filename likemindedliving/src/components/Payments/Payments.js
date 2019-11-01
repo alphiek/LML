@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { paymentsCopy } from "./paymentsCopy"
-import { H2, H3, Body } from "../Text/Text"
+import { H2, H3, CenterBody } from "../Text/Text"
 import { FullSection } from "../Containers/Containers"
 import Icons from "../Icons/Icons"
 import Flex from "../Containers/Flex"
@@ -12,7 +12,7 @@ const Contracts = () => {
     <Item alignCenter contentStart justifyCenter column key={index}>
       <Icons name={item.icon} />
       <H3 color="rgba(80, 62, 167, 0.8)">{item.h4}</H3>
-      <Body>{item.p}</Body>
+      <CenterBody>{item.p}</CenterBody>
     </Item>
   ))
 

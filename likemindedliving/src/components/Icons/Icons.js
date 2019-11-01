@@ -312,6 +312,6 @@ const DividerShort = styled.svg`
 
 const ContractIcon = styled.img`
    width: 4rem; 
-   margin-bottom: 10px;
+   margin-bottom: 25px;
    height: auto;
 `
