@@ -17,6 +17,13 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <script
+         dangerouslySetInnerHTML={{
+           __html: `
+            if(navigator.appName.indexOf("Internet Explorer")!=-1 || navigator.userAgent.match(/Trident.*rv[ :]*11\./))
+            { window.location = "https://outdatedbrowser.com/en" };
+          `}}
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

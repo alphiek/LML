@@ -22,7 +22,7 @@ const Clients = () => {
   ))
 
   return (
-    <MainSectionContainer>
+    <MainSection>
       <ReverseSectionWrapper>
         <ImageWrapper justifyCenter alignCenter contentCenter>
           <Image src={clients} />
@@ -34,11 +34,18 @@ const Clients = () => {
         </TextWrapper>
       </ReverseSectionWrapper>
       <Patterns name="clients" />
-    </MainSectionContainer>
+    </MainSection>
   )
 }
 
 export default Clients
+
+
+export const MainSection = styled(MainSectionContainer)`
+@media (max-width: 480px) {
+  padding: 25px 0 80px;
+}
+`
 
 export const Item = styled.div``
 

@@ -111,4 +111,7 @@ export const ClientsPattern = styled(HouseMatePattern)`
   @media (max-width: 768px) {
     margin-top: -80px;
   }
+  @media (max-width: 480px) {
+    min-width: 3200px;
+  }
 `

@@ -8,7 +8,7 @@ import { SectionContainer, SectionWrapper } from "../Containers/Containers"
 const PropertySearch = () => {
   return (
     <SectionContainer>
-      <SectionWrapper>
+      <SectionWrapper style={{ zIndex: '1'}}>
         <IllustrationWrapper
           name="blobOne"
           fill={propertySearchCopy.blob}
