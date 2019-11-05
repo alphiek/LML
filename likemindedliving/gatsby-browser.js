@@ -1,15 +1,18 @@
-const React = require("react")
-const Layout = require("./src/components/layout").default
-const GlobalStyle = require("./src/global/globalStyle").default
-require("typeface-montserrat")
-require("typeface-poppins")
+import React from 'react'
+import { ApolloProvider } from '@apollo/react-hooks'
+import { client } from './src/apollo/client'
+import Layout from './src/components/layout'
+import GlobalStyle from './src/global/globalStyle'
+require('typeface-montserrat')
+require('typeface-poppins')
 
-exports.wrapPageElement = ({ element }) => {
+export const wrapPageElement = ({ element }) => {
   return (
     <>
       <GlobalStyle />
-      <Layout>{element}</Layout>
+      <ApolloProvider client={client}>
+        <Layout>{element}</Layout>
+      </ApolloProvider>
     </>
   )
 }
-

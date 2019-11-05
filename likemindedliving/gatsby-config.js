@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
@@ -50,15 +50,6 @@ module.exports = {
       options: {
         name: `pdf`,
         path: `${__dirname}/src/pdf`,
-      }
-    },
-    {
-      resolve: `gatsby-source-datocms`,
-      options: {
-        apiToken: process.env.DATO_API_KEY,
-        previewMode: true,
-        disableLiveReload: false,
-        apiUrl: "https://site-api.datocms.com"
       }
     },
     {

@@ -48,7 +48,7 @@ const SideDrawerPattern = styled.img`
 
 const HouseMatePattern = styled.img`
   position: absolute;
-  width: 1920px;
+  width: 100vw;
   min-width: 1920px;
   top: -40px;
   @media (max-width: 1180px) {
@@ -64,6 +64,7 @@ const HouseMatePattern = styled.img`
 
 const FooterPattern = styled.img`
   position: absolute;
+  width: 100vw;
   min-width: 1920px;
   bottom: 0;
   left: 0;
@@ -78,7 +79,7 @@ const TestimonialPattern = styled.img`
 
 export const ProcessPattern = styled.img`
   position: absolute;
-  width: 1920px;
+  width: 100vw;
   min-width: 1920px;
   top: -40px;
   @media (max-width: 1180px) {

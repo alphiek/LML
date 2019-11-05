@@ -5,18 +5,18 @@ import { FullSection } from "../Containers/Containers"
 import { FadeIn } from "../Animations/FadeIn"
 import Flex from "../Containers/Flex"
 import Icons from "../Icons/Icons"
-import PropertyContent from "./Property/PropertyContent"
-import BlogContent from "./Blogs/BlogContent"
+import BlogSwiper from "./Blogs/BlogSwiper"
+import DisplayProperties from './Properties/DisplayProperties'
 import { carouselCopy } from "./carouselCopy"
 
-const WPCarousel = ({ name }) => {
+const Carousel = ({ name }) => {
   const copy = carouselCopy[name]
 
   let section
   if (name === 'properties') {
-    section = <PropertyContent />
+    section = <DisplayProperties />
   } else {
-    section = <BlogContent page={copy.page} />
+    section = <BlogSwiper page={copy.page} />
   }
 
   return (
@@ -44,7 +44,7 @@ const WPCarousel = ({ name }) => {
   )
 }
 
-export default WPCarousel
+export default Carousel
 
 const SwipeIndicator = styled.p`
   font-size: 60px;

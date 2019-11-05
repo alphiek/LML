@@ -1,5 +1,4 @@
 import React from "react"
-import Img from "gatsby-image"
 import styled from "styled-components"
 
 import Icons from "../../Icons/Icons"
@@ -14,7 +13,7 @@ import {
   Description,
 } from "../styles"
 
-const Image = styled(Img)`
+const Image = styled.img`
   width: 100%;
   opacity: 0.9;
   object-position: 50% 50%;
@@ -24,7 +23,7 @@ const PropertyCard = ({ content }) => {
   return (
     <>
       <CardImageWrapper>
-        <Image fluid={content.image.fluid} alt={content.image.alt} />
+        <Image src={content.image.url} alt={content.image.alt} />
       </CardImageWrapper>
       <CardTextContainer>
         <div>

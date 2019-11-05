@@ -28,5 +28,5 @@ DisplayLanding.propTypes = {
 
 const LandingWrapper = styled.div`
   width: 100%;
-  min-height: 80vh;
+  min-height: 800px;
 `

@@ -10,7 +10,7 @@ import Payments from "../Payments/Payments"
 import ProcessContainer from "../ProcessCarousel/ProcessContainer"
 import PressReel from "../PressReel/PressReel"
 import Testimonial from "../Testimonial/Testimonial"
-import WPCarousel from "../WPCarousel/WPCarousel"
+import Carousel from "../Carousel/Carousel"
 
 const Landlords = ({ name }) => {
   return (
@@ -25,7 +25,7 @@ const Landlords = ({ name }) => {
       <Payments />
       <PressReel />
       <Testimonial name={name} />
-      <WPCarousel name="landlordBlogs" />
+      <Carousel name="landlordBlogs" />
     </>
   )
 }

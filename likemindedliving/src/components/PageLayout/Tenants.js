@@ -10,7 +10,7 @@ import Algorithm from "../Algorithm/Algorithm"
 import PressReel from "../PressReel/PressReel"
 import IdealChoice from "../IdealChoice/IdealChoice"
 import Testimonial from "../Testimonial/Testimonial"
-import WPCarousel from "../WPCarousel/WPCarousel"
+import Carousel from "../Carousel/Carousel"
 
 const Tenants = ({ name }) => {
   return (
@@ -20,13 +20,13 @@ const Tenants = ({ name }) => {
         <PropertySearch />
       </DisplayLanding>
       <ProcessContainer name={name} />
-      <WPCarousel name="properties" />
+      <Carousel name="properties" />
       <Housemate />
       <Algorithm />
       <PressReel />
       <IdealChoice />
       <Testimonial name={name} />
-      <WPCarousel name="blogs" />
+      <Carousel name="blogs" />
     </>
   )
 }

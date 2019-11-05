@@ -1,11 +1,11 @@
 import React from "react"
 import Swiper from "react-id-swiper"
-import { CardContainer, CardSpacer } from "../WPCarousel"
+import { CardContainer, CardSpacer } from "../Carousel"
 
 import { useBlogData } from "../../../hooks/useBlogData"
 import BlogCard from "./BlogCard"
 
-const BlogContent = ({ page }) => {
+const BlogSwiper = ({ page }) => {
   const data = useBlogData()
 
   let tenants
@@ -55,4 +55,4 @@ const BlogContent = ({ page }) => {
   return <Swiper {...params}>{blogItems}</Swiper>
 }
 
-export default BlogContent
+export default BlogSwiper
