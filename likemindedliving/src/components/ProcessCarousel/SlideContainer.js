@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import PropTypes from "prop-types"
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
 import TenantProcessIllustration from '../Illustrations/TenantProcessIllustration'
 import LandlordProcessIllustration from '../Illustrations/LandlordProcessIllustration'
@@ -7,13 +7,13 @@ import LandlordProcessIllustration from '../Illustrations/LandlordProcessIllustr
 import {
   CenterWrapperProcess,
   ProcessPaginationContainer,
-} from "../Containers/Containers"
+} from '../Containers/Containers'
 
-import StepText from "./StepText"
-import Pagination from "./Pagination"
-import ModalControl from "../Modal/ModalControl"
-import Arrows from "./Arrows"
-import { updateStyle, updateNext, updatePrevious } from "./styleHelpers"
+import StepText from './StepText'
+import Pagination from './Pagination'
+import ModalControl from '../Modal/ModalControl'
+import Arrows from './Arrows'
+import { updateStyle, updateNext, updatePrevious } from './styleHelpers'
 
 const SlideContainer = ({ copy, link, name }) => {
   const [currentSlide, updateSlide] = useState(1)
@@ -41,7 +41,7 @@ const SlideContainer = ({ copy, link, name }) => {
   return (
     <CenterWrapperProcess>
       {slides}
-      <StepText content={content} currentSlide={currentSlide} />
+      <StepText content={content} currentSlide={currentSlide} name={name} />
       <ProcessPaginationContainer>
         <Pagination
           pagination={pagination}

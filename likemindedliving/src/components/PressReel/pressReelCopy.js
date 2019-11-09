@@ -2,7 +2,7 @@ import {colors} from '../Utilities/colors'
 
 export const pressReelCopy = {
         h2: `Hot off the press`,
-        p1: `Take a look at some of the cool features we’ve had in the media and let us know what you think!`,
+        p1: `Take a look at some of the cool features we’ve had in the media and let us know\xa0what\xa0you\xa0think!`,
         articles: [
             {
                 name: `Forbes`,

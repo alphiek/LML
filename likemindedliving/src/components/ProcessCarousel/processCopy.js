@@ -3,7 +3,7 @@ import { colors } from '../Utilities/colors'
 export const processCopy = {
   tenant: {
     h3: `So why not get started`,
-    p1: `Our process could not be easier, check out our simple steps to finding\xa0you\xa0the\xa0right\xa0property.`,
+    p1: `Our process could not be easier, check out our simple steps to finding you\xa0the\xa0right\xa0property.`,
     steps: {
       1: `Fill in our ‘Where Would you Like to Live in London\xa0Quiz’`,
       2: `Our tool will run its algorithm and search thousands of properties in accordance with\xa0your\xa0requirements`,

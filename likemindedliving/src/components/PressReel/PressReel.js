@@ -1,23 +1,22 @@
-import React from "react"
-import styled from "styled-components"
-import Icons from "../Icons/Icons"
-import { H2, Body } from "../Text/Text"
-import { HeadingWrapper } from "../Containers/Containers"
+import React from 'react'
+import styled from 'styled-components'
+import Icons from '../Icons/Icons'
+import { H2, Body } from '../Text/Text'
+import { HeadingWrapper } from '../Containers/Containers'
 import { pressReelCopy } from './pressReelCopy'
-
 
 const PressReel = () => {
   const copy = pressReelCopy
   const articles = copy.articles.map((article, index) => {
     return (
-      <div key={index}>
+      <ArticleContainer key={index}>
         <Icons name="article" />
         <ArticleWrapper>
-          <ArticleLink style={{ color: "#fff" }} href={article.url}>
+          <ArticleLink style={{ color: '#fff' }} href={article.url}>
             {article.name}
           </ArticleLink>
         </ArticleWrapper>
-      </div>
+      </ArticleContainer>
     )
   })
 
@@ -26,7 +25,9 @@ const PressReel = () => {
       <HeadingWrapper>
         <H2 color={copy.color}>{copy.h2}</H2>
         <Icons name="dividerShort" fill={copy.divider} />
-        <Body color={copy.color}>{copy.p1}</Body>
+        <PressBody>
+          <Body color={copy.color}>{copy.p1}</Body>
+        </PressBody>
         <ScrollContainer>{articles}</ScrollContainer>
       </HeadingWrapper>
     </PressSection>
@@ -34,7 +35,6 @@ const PressReel = () => {
 }
 
 export default PressReel
-
 
 const PressSection = styled.section`
   width: 100%;
@@ -44,6 +44,12 @@ const PressSection = styled.section`
   background-color: ${props => props.bgColor};
   padding: 60px 0;
   margin: 60px 0;
+  @media (max-width: 1180px) {
+    padding: 80px 0;
+  }
+  @media (max-width: 660px) {
+    margin-top: -10px;
+  }
 `
 
 const ScrollContainer = styled.div`
@@ -54,6 +60,7 @@ const ScrollContainer = styled.div`
   margin: 20px 0 0 0;
   flex-wrap: nowrap;
   overflow-x: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
     display: none;
@@ -71,9 +78,35 @@ const ArticleWrapper = styled.div`
   height: 60px;
   flex: 0 0 auto;
   display: flex;
+  @media (max-width: 1180px) {
+    margin: 0;
+  }
 `
 
 const ArticleLink = styled.a`
   text-align: left;
   line-height: 135%;
+  @media (max-width: 1180px) {
+    text-align: center;
+    margin: 0.5rem auto 0;
+  }
+`
+
+const PressBody = styled.div`
+  @media (max-width: 1180px) {
+    width: 60%;
+  }
+  @media (max-width: 660px) {
+    width: 80%;
+  }
+`
+
+const ArticleContainer = styled.div`
+ @media (max-width: 1180px) {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 0 30px;
+ }
 `

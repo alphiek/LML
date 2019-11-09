@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import {
-  MainSectionContainer,
+  SectionContainer,
   ReverseSectionWrapper,
 } from "../Containers/Containers"
 import Flex from "../Containers/Flex"
@@ -11,6 +11,8 @@ import { H3, H2, Body } from "../Text/Text"
 import Icons from "../Icons/Icons"
 import { clientsCopy } from "./clientsCopy"
 import clients from "../../images/clients.svg"
+import top from '../../images/patterns/top.svg'
+import bottom from '../../images/patterns/btm.svg'
 
 const Clients = () => {
   const data = clientsCopy
@@ -22,7 +24,7 @@ const Clients = () => {
   ))
 
   return (
-    <MainSection>
+    <Section>
       <ReverseSectionWrapper>
         <ImageWrapper justifyCenter alignCenter contentCenter>
           <Image src={clients} />
@@ -33,19 +35,13 @@ const Clients = () => {
           {content}
         </TextWrapper>
       </ReverseSectionWrapper>
-      <Patterns name="clients" />
-    </MainSection>
+      <Patterns name="processPattern" />
+    </Section>
   )
 }
 
 export default Clients
 
-
-export const MainSection = styled(MainSectionContainer)`
-@media (max-width: 480px) {
-  padding: 25px 0 80px;
-}
-`
 
 export const Item = styled.div``
 
@@ -74,5 +70,33 @@ export const TextWrapper = styled.div`
   }
   @media (max-width: 768px) {
     width: 80%;
+  }
+`
+const Section = styled(SectionContainer)`
+  padding: 200px 0 200px;
+  margin-top: -50px;
+  position: relative;
+  background: #f5f7f9;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url(${top});
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url(${bottom});
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 `

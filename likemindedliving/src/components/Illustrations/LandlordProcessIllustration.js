@@ -4,21 +4,21 @@ import PropTypes from "prop-types"
 
 import ProcessImageWrapper from "./ProcessImageWrapper"
 
-import step1 from '../../images/Step1L.svg'
+import step1 from '../../images/Step1L.png'
 import step2 from '../../images/Step2L.svg'
 import step3 from '../../images/Step3L.svg'
-import step4 from '../../images/Step4L.svg'
-import step5 from '../../images/Step5.svg'
+import step4 from '../../images/Step4L.png'
+import step5 from '../../images/Step5.png'
 
 const ImgBlock = styled.img`
   width: auto;
   height: 200px;
+  margin: 1rem 0;
   @media (max-width: 1180px) {
-    margin-top: 16px;
-    width: 18rem;
+    height: 180px;
   }
-  @media (max-width: 480px) {
-    width: 80vw;
+  @media (max-width: 768px) {
+    height: 150px;
   }
 `
 

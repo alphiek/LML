@@ -61,8 +61,3 @@ export const P2 = styled.p`
     width: 85%;
   }
 `
-
-const Spacer = styled.div`
-  height: 2rem;
-  width: 100%;
-`

@@ -40,4 +40,7 @@ const SectionContainer = styled(MainSectionContainer)`
   @media (max-width: 1180px) {
     margin: 40px 0 0 0;
   }
+  @media (max-width: 660px) {
+    margin: 40px 0 -40px;
+  }
 `

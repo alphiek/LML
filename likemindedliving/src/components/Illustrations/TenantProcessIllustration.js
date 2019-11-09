@@ -8,17 +8,17 @@ import step1 from "../../images/step1.svg"
 import step2 from "../../images/Step2.svg"
 import step3 from "../../images/Step3.svg"
 import step4 from "../../images/Step4.svg"
-import step5 from "../../images/Step5.svg"
+import step5 from "../../images/Step5.png"
 
 const ImgBlock = styled.img`
   width: auto;
   height: 200px;
+  margin: 1rem 0;
   @media (max-width: 1180px) {
-    margin-top: 16px;
-    width: 18rem;
+    height: 180px;
   }
-  @media (max-width: 480px) {
-    width: 80vw;
+  @media (max-width: 768px) {
+    height: 150px;
   }
 `
 

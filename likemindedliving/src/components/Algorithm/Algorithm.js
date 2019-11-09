@@ -9,7 +9,7 @@ const Algorithm = () => {
   const copy = algorithmCopy
   return (
     <MainSectionContainer>
-      <AlgoSectionWrapper>
+      <SectionWrapper>
         <IllustrationWrapper
           name="blobThree"
           fill={copy.blob}
@@ -18,7 +18,7 @@ const Algorithm = () => {
         />
         <Spacer />
         <MainTextWrapper copy={copy} />
-      </AlgoSectionWrapper>
+      </SectionWrapper>
     </MainSectionContainer>
   )
 }
@@ -30,8 +30,4 @@ const Spacer = styled.div`
     width: 100%;
     height: 90px;
   }
-`
-
-const AlgoSectionWrapper = styled(SectionWrapper)`
-  margin-top: 40px;
 `

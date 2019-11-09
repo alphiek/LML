@@ -11,7 +11,7 @@ export const SectionContainer = styled.section`
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  padding: 30px 0 80px;
+  padding: 30px 0 0;
   background-color: ${props => props.bgColor};
 `
 
@@ -156,7 +156,7 @@ export const ProcessSubTextWrapper = styled(SubTextWrapper)`
   margin-top: -60px;
   @media (max-width: 1180px) {
     margin-top: 20px;
-    width: 45%;
+    width: 60%;
   }
   @media (max-width: 768px) {
     width: 80%;

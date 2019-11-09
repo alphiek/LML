@@ -45,7 +45,7 @@ const Image = styled.img`
     width: 18rem;
   }
   @media (max-width: 480px) {
-    width: 16rem;
+    width: 60vw;
   }
 `
 
@@ -55,6 +55,6 @@ const LargerImage = styled(Image)`
     width: 20rem;
   }
   @media (max-width: 480px) {
-    width: 18rem;
+    width: 70vw;
   }
 `

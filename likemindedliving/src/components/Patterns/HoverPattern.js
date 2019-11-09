@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import hoverPattern from "../../images/hover.png"
+import hoverPattern from "../../images/patterns/hover.png"
 
 export const HoverWrapper = styled.div`
   position: relative;
