@@ -3,11 +3,11 @@ import { MainSectionContainer } from '../Containers/Containers'
 
 export const SectionContainer = styled(MainSectionContainer)`
   @media (max-width: 1180px) {
-    padding: 0;
-    margin-bottom: -50px;
+    padding: 0 0 50px;
+    margin-bottom: -60px;
   }
   @media (max-width: 660px) {
-    margin-bottom: -70px;
+    margin-bottom: -120px;
   }
 `
 
@@ -17,7 +17,7 @@ export const Grid = styled.div`
   display: grid;
   position: relative;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 30px 1fr 30px;
+  grid-template-rows: 30px 1fr 80px;
   @media (max-width: 1180px) {
     width: 60%;
     grid-template-rows: auto;

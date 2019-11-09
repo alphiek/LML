@@ -77,6 +77,9 @@ const Section = styled(SectionContainer)`
   margin-top: -50px;
   position: relative;
   background: #f5f7f9;
+  @media (max-width: 1180px) {
+    padding: 200px 0 240px;
+  }
   &:before {
     content: '';
     position: absolute;

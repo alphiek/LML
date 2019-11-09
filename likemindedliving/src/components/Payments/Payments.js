@@ -33,11 +33,12 @@ export default Contracts
 
 export const CenterContainer = styled(Flex)`
   width: 950px;
-  margin: 100px 0 80px;
+  margin: 60px 0 80px;
   @media (max-width: 1180px) {
+    margin: 0 0 60px;
     width: 60%;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 660px) {
     width: 80%;
     margin: 50px 0 40px;
   }
