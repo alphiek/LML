@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import { useSiteMetaData } from "../../hooks/useSiteMetaData"
 import Flex from "../Containers/Flex"
-import { FadeIn } from "../Animations/FadeIn"
 import Icons from "../Icons/Icons"
 import Patterns from "../Patterns/Patterns"
 import Terms from "./Terms"
@@ -11,7 +10,6 @@ const Footer = () => {
   const { title, address, social } = useSiteMetaData()
 
   return (
-    <FadeIn>
       <footer>
         <address>
           <AddressTitle>{title}</AddressTitle>
@@ -53,7 +51,6 @@ const Footer = () => {
         </Copyright>
         <Patterns name="footerPattern" />
       </footer>
-    </FadeIn>
   )
 }
 

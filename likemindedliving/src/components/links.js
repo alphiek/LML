@@ -4,6 +4,10 @@ export const linkUrls = [
         url: `http://alphekka-kelham.xyz/landlord/`
     },
     {
+        name: `tenants`,
+        url: `http://alphekka-kelham.xyz`
+    },
+    {
         name: `blogs`,
         url:  `https://likemindedliving.co.uk/blog`
     },

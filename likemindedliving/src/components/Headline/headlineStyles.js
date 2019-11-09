@@ -3,6 +3,7 @@ import Flex from "../Containers/Flex"
 
 export const H1 = styled.h1`
   color: ${props => props.color || '#4B4A68'};
+  width: 800px;
 `
 
 export const HeadlineSection = styled.section`

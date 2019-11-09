@@ -11,7 +11,7 @@ export const paymentsCopy = {
 
     {
       h4: `Move-in monies`,
-      p: `We notify our renters to follow your terms and conditions when it is comes to the payment schedule of moving into your property. We will assist in ensuring the move-in monies are paid.`,
+      p: `We notify our renters to follow your terms and conditions when it comes to the payment schedule of moving into your property. We will assist in ensuring the move-in monies are paid.`,
       icon: `payment2`
     },
     {

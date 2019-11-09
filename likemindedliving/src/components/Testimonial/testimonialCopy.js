@@ -21,11 +21,11 @@ export const testimonialCopy = {
         divider: `${colors.white}`,
     },
     landlord: {
-        h2: `Quisque nec sagittis massa, sit amet luctus enim`,
-        p1: `Vivamus ac fringilla erat. Suspendisse hendrerit ex sed tincidunt blandit.`,
+        h2: `Hear what other landlords and agents have to say`,
+        p1: `Below are reviews from private landlords and estate agents, suppliers we love to work with!`,
         testimonial: {
             one: {
-                text: `"Like Minded Living are worth trying out even if you have had reasonable success with other agents. It started with an appraisal and ever since then I have not looked back. In fact I have increased my portfolio with. Even if you haven’t got a problem with your agent but want to try something different then again contact Denzel at Like Minded Living and you will not be disappointed. I’m looking forward to continue with the business relationship and would recommend Like Minded Living to everyone whether you are a Tenant or a Landlord."`,
+                text: `"Like Minded Living are worth trying out even if you have had reasonable success with other agents. It started with an appraisal and ever since then I have not looked back. In fact I have increased my portfolio with them. Would recommend Like Minded Living to everyone whether you are a Tenant or a Landlord."`,
                 name: `Ravin`,
                 divider: `${colors.lilac}`
             },

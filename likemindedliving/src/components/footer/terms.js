@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { FadeIn } from "../Animations/FadeIn"
 import styled from "styled-components"
 
 const TermsContainer = styled.ul`
@@ -49,7 +48,6 @@ const Terms = () => {
       {data.allFile.edges.map((file, index) => {
         return (
           <PDFLinkWrapper key={`pdf-${index}`}>
-            <FadeIn>
               <PdfLink
                 href={file.node.publicURL}
                 aria-label={`Link to ${file.node.name}`}
@@ -58,12 +56,10 @@ const Terms = () => {
               >
                 {convertName(file.node.name)}
               </PdfLink>
-            </FadeIn>
           </PDFLinkWrapper>
         )
       })}
       <PDFLinkWrapper>
-        <FadeIn>
           <PdfLink
             href="https://www.iubenda.com/privacy-policy/79077073"
             aria-label="Link to Privacy Policy"
@@ -72,7 +68,6 @@ const Terms = () => {
           >
             Privacy Policy
           </PdfLink>
-        </FadeIn>
       </PDFLinkWrapper>
     </TermsContainer>
   )

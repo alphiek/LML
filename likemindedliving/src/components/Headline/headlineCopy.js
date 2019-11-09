@@ -2,8 +2,8 @@ import {colors} from '../Utilities/colors'
 
 export const headlineCopy = {
     tenant: {
-        h1: `Search rental properties everywhere. Save\xa0on\xa0rent. Discover your dream\xa0home.`,
-        p1: `Our Property Search Tool searches 1000's of listings across all major sites to find your ideal home, customers can save up\xa0to £1000's\xa0per\xa0year\xa0on\xa0rent.`,
+        h1: `Search rental properties everywhere. Save\xa0on\xa0rent and get\xa0the\xa0best\xa0deal. `,
+        p1: `Simply Fill in our property search form and allow our tool to search thousands of listings from different websites. We’ll match you with\xa0suitable properties, and you\xa0choose your\xa0perfect\xa0one. `,
         divider: `${colors.lilac}`,
         class: `title-sub-text`
 
