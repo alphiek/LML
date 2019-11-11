@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { SlideShow } from '../Slideshow/Slideshow'
+import { LandlordSlideShow } from '../Slideshow/LandlordSlideshow'
 import HeadlineTwoLandlord from '../HeadlineTwo/HeadlineTwoLandlord'
 import LandlordS1 from '../LandlordS1/LandlordS1'
 import Contracts from '../Contracts/Contracts'
@@ -16,7 +16,7 @@ const LandlordTwo = ({ name }) => {
   return (
     <>
       <HeadlineTwoLandlord name={name}/>
-      <SlideShow />
+      <LandlordSlideShow />
       <LandlordS1 />
       <ProcessContainer name={name} />
       <Contracts />

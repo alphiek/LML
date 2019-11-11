@@ -46,7 +46,7 @@ ProcessContainer.propTypes = {
 
 const Section = styled(SectionContainer)`
   padding: 210px 0 100px;
-  margin-top: -80px;
+  margin-top: -30px;
   margin-bottom: 60px;
   position: relative;
   background: #f5f7f9;

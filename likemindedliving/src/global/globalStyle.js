@@ -143,6 +143,7 @@ h1 {
 
 .landlord {
   color: #FFF;
+  margin-bottom: 60px;
   @media (max-width: 768px) {
     margin-bottom: 16px;
   }

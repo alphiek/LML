@@ -44,7 +44,7 @@ export const HeadlineTwoSection = styled.section`
   width: 100%;
   height: 65vh;
   position: absolute;
-  top: 100px;
+  top: 60px;
   left: 0;
   z-index: 20;
   background-color: transparent;

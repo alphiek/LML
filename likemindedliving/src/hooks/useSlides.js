@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from 'gatsby'
 
 export const useSlides = () => {
   const { allFile } = useStaticQuery(
@@ -10,7 +10,7 @@ export const useSlides = () => {
               id
               name
               childImageSharp {
-                fluid {
+                fluid(quality: 90, maxWidth: 3840, maxHeight: 1106) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }

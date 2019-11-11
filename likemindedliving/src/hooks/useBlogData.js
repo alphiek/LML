@@ -21,7 +21,7 @@ export const useBlogData = () => {
                         imageFile {
                           childImageSharp {
                             fluid {
-                            ...GatsbyImageSharpFluid
+                            ...GatsbyImageSharpFluid_withWebp
                             }
                           }
                         }

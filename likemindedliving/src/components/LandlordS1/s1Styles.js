@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import { MainSectionContainer } from '../Containers/Containers'
+import curve from '../../images/patterns/curve.svg'
 
 export const SectionContainer = styled(MainSectionContainer)`
+   z-index: 3;
   @media (max-width: 1180px) {
     padding: 0 0 50px;
     margin-bottom: -60px;
@@ -9,6 +11,18 @@ export const SectionContainer = styled(MainSectionContainer)`
   @media (max-width: 660px) {
     margin-bottom: -120px;
   }
+  &:before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: url(${curve});
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 `
 
 export const Grid = styled.div`
@@ -20,9 +34,9 @@ export const Grid = styled.div`
   grid-template-rows: 30px 1fr 80px;
   @media (max-width: 1180px) {
     width: 60%;
+    margin-top: 60px;
     grid-template-rows: auto;
     grid-template-columns: 100%;
-    top: -50px;
   }
   @media (max-width: 768px) {
     width: 80%;
@@ -42,8 +56,7 @@ export const Image = styled.img`
   grid-row: 1 / 3;
   grid-column: 2;
   position: relative;
-  height: 391px;
-  top: -110px;
+  height: 250px;
   @media (max-width: 1180px) {
     grid-row: 1;
     grid-column: 1;
@@ -82,7 +95,6 @@ export const Item = styled.div`
   &:nth-child(4) {
     grid-column: 1 / 3;
     grid-row: 3;
-    top: -47px;
     margin-left: 174px;
     @media (max-width: 1180px) {
       top: 0;
