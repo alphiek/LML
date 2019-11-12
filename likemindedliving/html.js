@@ -1,29 +1,25 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
-        <script
-         dangerouslySetInnerHTML={{
-           __html: `
-            if(navigator.appName.indexOf("Internet Explorer")!=-1 || navigator.userAgent.match(/Trident.*rv[ :]*11\./))
-            { window.location = "https://likemindedliving.co.uk/ie-redirect/" };
-          `}}
-        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <html lang="en" />
         <script
-         dangerouslySetInnerHTML={{
-           __html: `
+          dangerouslySetInnerHTML={{
+            __html: `
             if(navigator.appName.indexOf("Internet Explorer")!=-1 || navigator.userAgent.match(/Trident.*rv[ :]*11\./))
-            { window.location = "https://outdatedbrowser.com/en" };
-          `}}
+            { window.location = "https://likemindedliving.co.uk/ie-redirect/" };
+          `,
+          }}
         />
+
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

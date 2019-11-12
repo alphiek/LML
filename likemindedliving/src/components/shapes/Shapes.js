@@ -3,16 +3,6 @@ import PropTypes from "prop-types"
 
 const Shapes = ({ name, fill }) => {
   switch (name) {
-    case "blobOne":
-      return (
-        <svg fill={fill} viewBox="0 0 484.7 470.6" width="100%">
-          <path
-            d="M9.1,226.2C-7.6,168.4-1.4,106.8,28.3,64.7S111.1,0.1,163.5,0s104.3,22.3,160.8,44.1
-	      c56.6,21.6,117.8,42.6,143.9,81.7c26,39.1,16.9,96.4,2.7,145.8c-14.2,49.5-33.7,91-66.6,128.9c-32.8,37.9-79.1,72-131.2,70
-	      c-52.2-2.1-110.1-40.4-159-86.4C65.3,337.9,25.8,284,9.1,226.2z"
-          />
-        </svg>
-      )
     case "blobTwo":
       return (
         <svg fill={fill} width="100%" viewBox="0 0 484.7 470.6">

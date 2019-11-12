@@ -1,19 +1,20 @@
-import styled from "styled-components"
-import Flex from "../Containers/Flex"
+import styled from 'styled-components'
+import Flex from '../Containers/Flex'
 
-export const H1 = styled.h1`
-  color: ${props => props.color || '#4B4A68'};
-  width: 800px;
-`
-
-export const HeadlineSection = styled.section`
+export const HeadlineSectionContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${props => props.bgColor || '#fff'};
+  width: 100%;
+  height: 65vh;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 20;
+  background-color: transparent;
 `
 
-export const TextCenter = styled(Flex)`
+export const HeadlineTextCenter = styled(Flex)`
   margin: 80px 0;
   width: 50%;
   @media (max-width: 1460px) {

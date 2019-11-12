@@ -1,11 +1,10 @@
 import React from 'react'
-import { useLandlordSlides } from '../../hooks/useLandlordSlides'
+import { useSlides } from '../../hooks/useSlides'
 import Swiper from 'react-id-swiper'
-import Img from 'gatsby-image'
-import styled from 'styled-components'
+import { Slide } from './slideshowStyles'
 
-export const LandlordSlideShow = () => {
-  const data = useLandlordSlides()
+export const TenantSlides = () => {
+  const data = useSlides()
 
   let slides =
     data &&
@@ -27,8 +26,3 @@ export const LandlordSlideShow = () => {
 
   return <Swiper {...params}>{slides}</Swiper>
 }
-
-const Slide = styled(Img)`
-  width: 100%;
-  height: 65vh;
-`

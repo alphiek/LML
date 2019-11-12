@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
 
@@ -122,6 +122,8 @@ h1 {
   font-weight: 700;
   text-align: center;
   margin-bottom: 0.4em;
+  color: white;
+  width: 80%;
   @media (max-width: 1024px) {
     font-size: 1.8rem;
   }
@@ -131,8 +133,9 @@ h1 {
 }
 
 .title-sub-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: center;
+  color: #FFF;
   margin: 0.8rem 0 0 0;
   width: 70%;
   line-height: 145%;
@@ -142,7 +145,6 @@ h1 {
 }
 
 .landlord {
-  color: #FFF;
   margin-bottom: 60px;
   @media (max-width: 768px) {
     margin-bottom: 16px;

@@ -1,15 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 import PropTypes from "prop-types"
-import london from "../../images/London.svg"
 import housemates from "../../images/Housemates.svg"
 import algorithm from "../../images/algorithm.svg"
 import idealchoice from "../../images/idealChoice.png"
 
 const Illustration = ({ name }) => {
   switch (name) {
-    case "sectionOne":
-      return <Image src={london} alt="Illustration of London" />
     case "sectionTwo":
       return (
           <LargerImage

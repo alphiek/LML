@@ -1,14 +1,33 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { useSiteMetaData } from "../hooks/useSiteMetaData"
-import TenantTwo from "../components/PageLayout/TenantTwo"
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { useSiteMetaData } from '../hooks/useSiteMetaData'
 
-const Tenantstwo = () => {
-  const { siteUrl, title, description, social } = useSiteMetaData()
+import HeadlineSection from '../components/Headline/HeadlineSection'
+import { LandlordSlides } from '../components/Slideshow/LandlordSlides'
+import LandlordS1 from '../components/LandlordS1/LandlordS1'
+import Contracts from '../components/Contracts/Contracts'
+import Clients from '../components/Clients/Clients'
+import Payments from '../components/Payments/Payments'
+import ProcessContainer from '../components/ProcessCarousel/ProcessContainer'
+import PressReel from '../components/PressReel/PressReel'
+import Testimonial from '../components/Testimonial/Testimonial'
+import Carousel from '../components/Carousel/Carousel'
+
+const LandlordPage = () => {
+  const { siteUrl, title, social } = useSiteMetaData()
   return (
     <>
       <Helmet>
-        <html lang="en" />
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://likemindedliving.co.uk"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://likemindedliving.co.uk"
+        />
         <link
           rel="dns-prefetch"
           href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
@@ -18,16 +37,17 @@ const Tenantstwo = () => {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
         />
-        <title>
-          Like-Minded Living - Find Rental Properties Everywhere Across London
-        </title>
-        <meta name="description" content={description}></meta>
+        <title>Like-Minded Living - London Tenant Finding Agency</title>
+        <meta
+          name="description"
+          content="Specialist tenant finding agency for flat-sharers based in London"
+        ></meta>
 
         <meta property="og:url" content={siteUrl}></meta>
         <meta property="og:type" content="website"></meta>
         <meta
           property="og:title"
-          content="Like-Minded Living - Find Rental Properties Everywhere Across London"
+          content="Like-Minded Living - London Tenant Finding Agency"
         ></meta>
         <meta
           property="og:image"
@@ -35,7 +55,10 @@ const Tenantstwo = () => {
         ></meta>
         <meta property="og:image:width" content="1200"></meta>
         <meta property="og:image:height" content="630"></meta>
-        <meta property="og:description" content={description}></meta>
+        <meta
+          property="og:description"
+          content="Specialist tenant finding agency for flat-sharers based in London"
+        ></meta>
         <meta property="og:site_name" content={title}></meta>
 
         <meta name="twitter:card" content="summary_large_image"></meta>
@@ -43,9 +66,12 @@ const Tenantstwo = () => {
         <meta name="twitter:url" content={siteUrl}></meta>
         <meta
           name="twitter:title"
-          content="Like-Minded Living - Find Rental Properties Everywhere Across London"
+          content="Like-Minded Living - London Tenant Finding Agency"
         ></meta>
-        <meta name="twitter:description" content={description}></meta>
+        <meta
+          name="twitter:description"
+          content="Specialist tenant finding agency for flat-sharers based in London"
+        ></meta>
         <meta
           name="twitter:image"
           content="https://likemindedliving.co.uk/images/og-image.png"
@@ -55,7 +81,7 @@ const Tenantstwo = () => {
               "@context": "http://schema.org",
               "@type": "RealEstateAgent",
               "name": "${title}",
-              "description": "${description}",
+              "description": "Specialist tenant finding agency for flat-sharers based in London",
               "image": "https://likemindedliving.co.uk/images/og-image.png",
               "logo": "https://likemindedliving.co.uk/images/logo.png",
               "@id": "${siteUrl}",
@@ -109,9 +135,18 @@ const Tenantstwo = () => {
           }
      `}</script>
       </Helmet>
-      <TenantTwo name='tenant'/>
+      <HeadlineSection name='landlord'/>
+      <LandlordSlides />
+      <LandlordS1 />
+      <ProcessContainer name='landlord' />
+      <Contracts />
+      <Clients />
+      <Payments />
+      <PressReel />
+      <Testimonial name='landlord' />
+      <Carousel name="landlordBlogs" />
     </>
   )
 }
 
-export default Tenantstwo
+export default LandlordPage

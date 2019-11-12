@@ -1,9 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import SplitText from "react-pose-text"
-import { H1 } from './headlineStyles'
+import React from 'react'
+import PropTypes from 'prop-types'
+import SplitText from 'react-pose-text'
 
-const H1SplitText = ({ h1, color }) => {
+const H1SplitText = ({ h1 }) => {
   const charPoses = {
     exit: { opacity: 0, y: -60 },
     enter: {
@@ -14,11 +13,11 @@ const H1SplitText = ({ h1, color }) => {
   }
 
   return (
-    <H1 color={color}>
+    <h1 aria-label={h1}>
       <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
         {h1}
       </SplitText>
-    </H1>
+    </h1>
   )
 }
 
@@ -26,5 +25,4 @@ export default H1SplitText
 
 H1SplitText.propTypes = {
   h1: PropTypes.string.isRequired,
-  color: PropTypes.string,
 }

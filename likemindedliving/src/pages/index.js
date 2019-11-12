@@ -1,14 +1,31 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { useSiteMetaData } from "../hooks/useSiteMetaData"
-import Tenants from "../components/PageLayout/Tenants"
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { useSiteMetaData } from '../hooks/useSiteMetaData'
+import HeadlineSection from '../components/Headline/HeadlineSection'
+import ProcessContainer from '../components/ProcessCarousel/ProcessContainer'
+import Housemate from '../components/Housemate/Housemate'
+import Algorithm from '../components/Algorithm/Algorithm'
+import PressReel from '../components/PressReel/PressReel'
+import IdealChoice from '../components/IdealChoice/IdealChoice'
+import Testimonial from '../components/Testimonial/Testimonial'
+import Carousel from '../components/Carousel/Carousel'
+import { TenantSlides } from '../components/Slideshow/TenantSlides'
 
 const IndexPage = () => {
   const { siteUrl, title, description, social } = useSiteMetaData()
   return (
     <>
       <Helmet>
-        <html lang="en" />
+        <link
+          rel="alternate"
+          hreflang="en"
+          href="https://likemindedliving.co.uk"
+        />
+        <link
+          rel="alternate"
+          hreflang="x-default"
+          href="https://likemindedliving.co.uk"
+        />
         <link
           rel="dns-prefetch"
           href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
@@ -109,7 +126,16 @@ const IndexPage = () => {
           }
      `}</script>
       </Helmet>
-      <Tenants name='tenant'/>
+      <HeadlineSection name="tenant" />
+      <TenantSlides/>
+      <ProcessContainer name="tenant" />
+      <Carousel name="properties" />
+      <Housemate />
+      <Algorithm />
+      <PressReel />
+      <IdealChoice />
+      <Testimonial name="tenant" />
+      <Carousel name="blogs" />
     </>
   )
 }

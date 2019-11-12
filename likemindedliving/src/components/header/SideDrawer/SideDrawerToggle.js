@@ -1,18 +1,10 @@
-import React from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
-
-import Icons from "../../Icons/Icons"
-
-const SideDrawerButton = styled.button`
-  display: flex;
-  @media (min-width: 1181px) {
-    display: none;
-  }
-`
+import React from 'react'
+import PropTypes from 'prop-types'
+import Icons from '../../Icons/Icons'
+import { SideDrawerButton } from './sideDrawerStyles'
 
 const SideDrawerToggle = ({ click }) => (
-  <SideDrawerButton aria-label="Open navigation menu"onClick={click}>
+  <SideDrawerButton aria-label="Open navigation menu" onClick={click}>
     <Icons name="burger" />
   </SideDrawerButton>
 )
