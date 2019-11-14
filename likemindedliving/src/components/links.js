@@ -1,11 +1,11 @@
 export const linkUrls = [
     {
         name: `landlords & estate agents`,
-        url: `http://alphekka-kelham.xyz/landlord/`
+        url: `http://localhost:8000/landlords-estate-agents/`
     },
     {
         name: `tenants`,
-        url: `http://alphekka-kelham.xyz`
+        url: `http://localhost:8000/`
     },
     {
         name: `blogs`,

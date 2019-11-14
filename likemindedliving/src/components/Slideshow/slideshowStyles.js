@@ -3,5 +3,9 @@ import Img from 'gatsby-image'
 
 export const Slide = styled(Img)`
   width: 100%;
-  height: 65vh;
+  min-height: 65vh;
+`
+
+export const SlideWrapper = styled.div`
+  overflow: hidden;
 `

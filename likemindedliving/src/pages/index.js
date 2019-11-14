@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useSiteMetaData } from '../hooks/useSiteMetaData'
 import HeadlineSection from '../components/Headline/HeadlineSection'
-import ProcessContainer from '../components/ProcessCarousel/ProcessContainer'
+import ProcessContainerTenants from '../components/ProcessCarousel/ProcessContainerTenants'
 import Housemate from '../components/Housemate/Housemate'
 import Algorithm from '../components/Algorithm/Algorithm'
 import PressReel from '../components/PressReel/PressReel'
@@ -128,7 +128,7 @@ const IndexPage = () => {
       </Helmet>
       <HeadlineSection name="tenant" />
       <TenantSlides/>
-      <ProcessContainer name="tenant" />
+      <ProcessContainerTenants name="tenant" />
       <Carousel name="properties" />
       <Housemate />
       <Algorithm />

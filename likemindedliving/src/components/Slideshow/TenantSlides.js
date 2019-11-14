@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSlides } from '../../hooks/useSlides'
 import Swiper from 'react-id-swiper'
-import { Slide } from './slideshowStyles'
+import { Slide, SlideWrapper } from './slideshowStyles'
 
 export const TenantSlides = () => {
   const data = useSlides()
@@ -9,9 +9,9 @@ export const TenantSlides = () => {
   let slides =
     data &&
     data.edges.map(({ node }) => (
-      <div key={node.id}>
+      <SlideWrapper key={node.id}>
         <Slide fluid={node.childImageSharp.fluid} alt="" />
-      </div>
+      </SlideWrapper>
     ))
 
   const params = {
