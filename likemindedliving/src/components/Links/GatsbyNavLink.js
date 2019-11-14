@@ -1,9 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { HoverPattern, HoverWrapper } from "../Patterns/HoverPattern"
-import { Bounce } from "../Animations/keyframes"
+import { HoverPattern, HoverWrapper } from '../Patterns/HoverPattern'
+import { Bounce } from '../Animations/keyframes'
 
 const GatsbyLink = styled(Link)`
   padding: 0 1.2rem;
@@ -30,7 +30,7 @@ const GatsbyNavLink = ({ name, url }) => {
         <GatsbyLink
           to={url}
           aria-label={`Link to ${name}`}
-          activeStyle={{ display: "none" }}
+          activeStyle={{ display: 'none' }}
         >
           {name}
         </GatsbyLink>
@@ -43,8 +43,6 @@ const GatsbyNavLink = ({ name, url }) => {
 export default GatsbyNavLink
 
 GatsbyNavLink.propTypes = {
-  link: PropTypes.shape({
-    url: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-  }).isRequired,
+  url: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 }

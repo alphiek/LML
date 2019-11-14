@@ -23,7 +23,7 @@ const PropertyCard = ({ content }) => {
   return (
     <>
       <CardImageWrapper>
-        <Image src={content.image.url} alt={content.image.alt} />
+        <Image src={content.image.url} alt='available properties' />
       </CardImageWrapper>
       <CardTextContainer>
         <div>

@@ -1,9 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import { HoverPattern, HoverWrapper } from "../Patterns/HoverPattern"
-import { Bounce } from "../Animations/keyframes"
+import { HoverPattern, HoverWrapper } from '../Patterns/HoverPattern'
+import { Bounce } from '../Animations/keyframes'
 
 const Link = styled.a`
   padding: 0 1.2rem;
@@ -44,8 +44,6 @@ const NavLinks = ({ name, url }) => {
 export default NavLinks
 
 NavLinks.propTypes = {
-  link: PropTypes.shape({
-    url: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-  }).isRequired,
+  url: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 }

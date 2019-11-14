@@ -15,14 +15,14 @@ const ToolbarNavItems = styled.div`
   }
 `
 
-const Toolbar = ({ toggleHandler, items }) => {
+const Toolbar = ({ toggleHandler }) => {
   return (
     <>
       <HomeIcon />
       <Spacer />
       <ToolbarNavItems>
         <ul>
-          <GetLinks items={items} />
+          <GetLinks />
         </ul>
       </ToolbarNavItems>
       <SideDrawerToggle click={toggleHandler} />
@@ -34,5 +34,4 @@ export default Toolbar
 
 Toolbar.propTypes = {
   toggleHandler: PropTypes.func.isRequired,
-  items: PropTypes.arrayOf(PropTypes.object).isRequired,
 }

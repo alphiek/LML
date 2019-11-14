@@ -69,7 +69,7 @@ export const CardSpacer = styled.div`
   overflow: visible;
 `
 
-export const CardContainer = styled.li`
+export const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   background-color: white;

@@ -13,7 +13,6 @@ const APOLLO_QUERY = gql`
       linkurl
       id
       image {
-        alt
         url
       }
       shortdescription

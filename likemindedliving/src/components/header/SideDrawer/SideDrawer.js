@@ -26,5 +26,4 @@ export default SideDrawer
 
 SideDrawer.propTypes = {
   show: PropTypes.bool.isRequired,
-  items: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
