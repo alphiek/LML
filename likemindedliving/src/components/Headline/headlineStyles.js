@@ -28,7 +28,7 @@ export const HeadlineTextCenter = styled(Flex)`
     width: 78%;
   }
   @media (max-width: 480px) {
-    width: 75%;
+    width: 85%;
   }
 `
 

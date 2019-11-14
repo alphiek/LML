@@ -4,8 +4,7 @@ export const carouselCopy = {
     landlordBlogs: {
         blogs: true,
         page: 'landlords',
-        h2: `Landlord Blog Title`,
-        h2p2: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a imperdiet est, vel ultrices ipsum.`,
+        h2: `Read up more about our flatshare property market`,
         link: {
 
             name: `View all blogs<<<`,

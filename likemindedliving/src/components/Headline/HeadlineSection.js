@@ -8,11 +8,25 @@ import {
 } from './headlineStyles'
 import { FadeIn } from '../Animations/FadeIn'
 import { headlineCopy } from './headlineCopy'
+import ModalControl from '../Modal/ModalControl'
 
 const HeadlineSection = ({ name }) => {
   const [isLoaded, setLoaded] = useState(false)
   const data = headlineCopy[name]
   let content
+  let tenant = false
+
+  const link = {
+    color: `white`,
+    bgColor: `#E91E63`,
+    bgColorHover: `#673AB7`,
+    name: `Start your search now`,
+    url: `https://likemindedliving.outgrow.us/likemindedliving-45`,
+  }
+
+  if (name === 'tenant') {
+    tenant = true
+  }
 
   useEffect(() => {
     setLoaded(true)
@@ -24,7 +38,7 @@ const HeadlineSection = ({ name }) => {
     content = (
       <>
         <HeadlineSectionContainer>
-          <HeadlineTextCenter justifyCenter alignCenter>
+          <HeadlineTextCenter justifyCenter alignCenter column>
             <H1SplitText h1={data.h1} />
             <DividerLong
               stroke={data.divider}
@@ -38,6 +52,7 @@ const HeadlineSection = ({ name }) => {
             <FadeIn delay={300}>
               <p className={data.class}>{data.p1}</p>
             </FadeIn>
+            {tenant && <ModalControl link={link} width='auto' />}
           </HeadlineTextCenter>
         </HeadlineSectionContainer>
       </>

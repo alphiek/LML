@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import Icons from "../../Icons/Icons"
 import { colors } from "../../Utilities/colors"
+import { ImagePlaceholder } from './ImagePlaceholder'
 
 import {
   CardImageWrapper,
@@ -26,7 +27,7 @@ const BlogCard = ({ data }) => {
         alt={data.featuredImage.alt}
       />
     ) : (
-      <div>There is no image</div>
+      <ImagePlaceholder />
     )
     return displayImage
   }

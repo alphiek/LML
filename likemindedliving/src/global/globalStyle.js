@@ -136,11 +136,12 @@ h1 {
   font-size: 1.1rem;
   text-align: center;
   color: #FFF;
-  margin: 0.8rem 0 0 0;
+  margin: 0.8rem 0 30px 0;
   width: 70%;
   line-height: 145%;
   @media (max-width: 480px) {
   width: 85%;
+  font-size: 1rem;
   }
 }
 
