@@ -14,19 +14,6 @@ const HeadlineSection = ({ name }) => {
   const [isLoaded, setLoaded] = useState(false)
   const data = headlineCopy[name]
   let content
-  let tenant = false
-
-  const link = {
-    color: `white`,
-    bgColor: `#E91E63`,
-    bgColorHover: `#673AB7`,
-    name: `Start your search now`,
-    url: `https://likemindedliving.outgrow.us/likemindedliving-45`,
-  }
-
-  if (name === 'tenant') {
-    tenant = true
-  }
 
   useEffect(() => {
     setLoaded(true)
@@ -50,9 +37,9 @@ const HeadlineSection = ({ name }) => {
               <path d="M3,3c98.1,0,98.1,2.9,196.2,2.9S297.3,3,395.4,3s98.1,2.9,196.2,2.9S689.7,3,787.8,3 S885.9,5.9,984,5.9" />
             </DividerLong>
             <FadeIn delay={300}>
-              <p className={data.class}>{data.p1}</p>
+              <p className='title-sub-text'>{data.p1}</p>
             </FadeIn>
-            {tenant && <ModalControl link={link} width='auto' />}
+            <ModalControl link={data.link} width='18rem' />
           </HeadlineTextCenter>
         </HeadlineSectionContainer>
       </>

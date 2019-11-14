@@ -4,6 +4,7 @@ import curve from '../../images/patterns/curve.svg'
 
 export const SectionContainer = styled(MainSectionContainer)`
    z-index: 3;
+   background-color: white;
   @media (max-width: 1180px) {
     padding: 0 0 50px;
     margin-bottom: -60px;

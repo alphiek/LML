@@ -73,6 +73,7 @@ nav {
   width: 100%;
   padding: 1.5rem;
   max-height: 80px;
+  box-shadow: 0 3px 6px rgba(75,74,104,0.16), 0 3px 6px rgba(75,74,104,0.23);
 }
 
 .name {
@@ -142,13 +143,6 @@ h1 {
   @media (max-width: 480px) {
   width: 85%;
   font-size: 1rem;
-  }
-}
-
-.landlord {
-  margin-bottom: 60px;
-  @media (max-width: 768px) {
-    margin-bottom: 16px;
   }
 }
 

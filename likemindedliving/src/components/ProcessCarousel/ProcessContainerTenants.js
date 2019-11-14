@@ -45,7 +45,7 @@ ProcessContainerTenants.propTypes = {
 }
 
 const Section = styled(SectionContainer)`
-  padding: 60px 0 100px;
+  padding: 50px 0 100px;
   position: relative;
   z-index: 3;
   background: #f5f7f9;

@@ -10,7 +10,7 @@ export const TenantSlides = () => {
     data &&
     data.edges.map(({ node }) => (
       <SlideWrapper key={node.id}>
-        <Slide fluid={node.childImageSharp.fluid} alt="" />
+        <Slide fluid={node.childImageSharp.fluid} alt="Images of properties" />
       </SlideWrapper>
     ))
 

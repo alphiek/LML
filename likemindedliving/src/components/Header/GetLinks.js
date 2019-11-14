@@ -6,9 +6,7 @@ const GetLinks = ({ items }) => {
   let data
 
   if (typeof url !== 'undefined') {
-    console.log(url)
     data = items.filter(item => {
-      console.log(item.url)
       return item.url !== url
     })
   } else {

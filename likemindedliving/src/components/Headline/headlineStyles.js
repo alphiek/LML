@@ -8,14 +8,23 @@ export const HeadlineSectionContainer = styled.section`
   width: 100%;
   height: 65vh;
   position: absolute;
-  top: 60px;
+  top: 80px;
   left: 0;
   z-index: 20;
   background-color: transparent;
+  @media (max-width: 1180px) {
+    height: 75vh;
+  }
+  @media (max-width: 960px) {
+    height: 36rem;
+  }
+  @media (max-width: 480px) {
+    height: 38rem;
+    align-items: flex-start;
+  }
 `
 
 export const HeadlineTextCenter = styled(Flex)`
-  margin: 80px 0;
   width: 50%;
   @media (max-width: 1460px) {
     width: 60%;
@@ -28,7 +37,7 @@ export const HeadlineTextCenter = styled(Flex)`
     width: 78%;
   }
   @media (max-width: 480px) {
-    width: 85%;
+    width: 83%;
   }
 `
 
