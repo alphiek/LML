@@ -37,9 +37,9 @@ const HeadlineSection = ({ name }) => {
               <path d="M3,3c98.1,0,98.1,2.9,196.2,2.9S297.3,3,395.4,3s98.1,2.9,196.2,2.9S689.7,3,787.8,3 S885.9,5.9,984,5.9" />
             </DividerLong>
             <FadeIn delay={300}>
-              <p className='title-sub-text'>{data.p1}</p>
+              <p className="title-sub-text">{data.p1}</p>
             </FadeIn>
-            <ModalControl link={data.link} width='18rem' />
+            <ModalControl link={data.link} width="18rem" />
           </HeadlineTextCenter>
         </HeadlineSectionContainer>
       </>

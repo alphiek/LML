@@ -11,7 +11,7 @@ export const headlineCopy = {
       bgColorHover: `#673AB7`,
       name: `Start your search now`,
       url: `https://likemindedliving.outgrow.us/likemindedliving-45`,
-    }
+    },
   },
   landlord: {
     h1: `Find flat-sharers for\xa0your rental\xa0property`,
@@ -24,6 +24,6 @@ export const headlineCopy = {
       bgColorHover: `#673AB7`,
       name: `Find out more`,
       url: `https://likemindedliving.outgrow.us/likemindedliving-45`,
-    }
+    },
   },
 }

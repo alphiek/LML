@@ -47,10 +47,10 @@ export default ModalControl
 
 ModalControl.propTypes = {
   link: PropTypes.shape({
-    bgColor: PropTypes.string.isRequired,
-    bgColorHover: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired,
-    colorHover: PropTypes.string.isRequired,
+    bgColor: PropTypes.string,
+    bgColorHover: PropTypes.string,
+    color: PropTypes.string,
+    colorHover: PropTypes.string,
     name: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
   }).isRequired,

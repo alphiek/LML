@@ -4,8 +4,6 @@ import styled from 'styled-components'
 import { Body } from '../Text/Text'
 
 const StepText = ({ content, name }) => {
-  console.log(name)
-
   let section
 
   if (name === 'tenant') {
@@ -30,7 +28,6 @@ StepText.propTypes = {
   content: PropTypes.string.isRequired,
 }
 
-
 const TextWrapper = styled.div`
   margin: 1rem 0;
   height: auto;
@@ -42,7 +39,7 @@ const TextWrapper = styled.div`
   }
   @media (max-width: 480px) {
     height: auto;
-    width: 100%;
+    width: 90%;
   }
 `
 

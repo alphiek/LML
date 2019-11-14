@@ -166,7 +166,7 @@ export const ProcessSubTextWrapper = styled(SubTextWrapper)`
 export const ProcessPaginationContainer = styled.div`
   width: 65%;
   @media (max-width: 480px) {
-    width: 100%;
+    width: 90%;
   }
 `
 
