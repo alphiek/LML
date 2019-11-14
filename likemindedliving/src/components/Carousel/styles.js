@@ -16,6 +16,7 @@ export const Image = styled.img`
 export const CardTextContainer = styled.div`
    display: flex;
    flex-direction: column;
+   background-color: white;
    justify-content: space-between;
    padding: 0.3rem 1rem 1rem 1rem;
    width: 100%;

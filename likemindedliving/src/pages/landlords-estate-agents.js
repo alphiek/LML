@@ -21,12 +21,12 @@ const LandlordPage = () => {
         <link
           rel="alternate"
           hreflang="en"
-          href="https://likemindedliving.co.uk"
+          href="https://likemindedliving.co.uk/landlords-estate-agents"
         />
         <link
           rel="alternate"
           hreflang="x-default"
-          href="https://likemindedliving.co.uk"
+          href="https://likemindedliving.co.uk/landlords-estate-agents"
         />
         <link
           rel="dns-prefetch"

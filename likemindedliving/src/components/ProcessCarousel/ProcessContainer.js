@@ -60,6 +60,9 @@ const Section = styled(SectionContainer)`
     background-image: url(${top});
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 768px) {
+      height: 214px;
+    }
   }
   &:after {
     content: '';
@@ -74,7 +77,7 @@ const Section = styled(SectionContainer)`
   }
   @media (max-width: 1180px) {
     margin-top: -20px;
-    padding: 210px 0 230px;
+    padding: 220px 0 230px;
     margin-bottom: -50px;
   }
   @media (max-width: 660px) {

@@ -15,7 +15,7 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{
             __html: `
             if(navigator.appName.indexOf("Internet Explorer")!=-1 || navigator.userAgent.match(/Trident.*rv[ :]*11\./))
-            { window.location = "https://likemindedliving.co.uk/ie-redirect/" };
+            { window.location = "https://rkkcollective.com/ie-redirect/" };
           `,
           }}
         />

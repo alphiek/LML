@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Img from 'gatsby-image'
+import Img from 'gatsby-image/withIEPolyfill'
 
 export const Slide = styled(Img)`
   width: 100%;

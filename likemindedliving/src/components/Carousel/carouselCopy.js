@@ -4,7 +4,7 @@ export const carouselCopy = {
     landlordBlogs: {
         blogs: true,
         page: 'landlords',
-        h2: `Read up more about the flat-share property market and our journey`,
+        h2: `Read up more about the flatshare\xa0property market\xa0and\xa0our\xa0journey`,
         link: {
 
             name: `View all blogs<<<`,
@@ -18,7 +18,7 @@ export const carouselCopy = {
         blogs: true,
         page: 'tenants',
         h2: `Looking for Inspiration?`,
-        h2p2: `Check out our recent blogs and top tips for living in the city`,
+        h2p2: `Check out our recent blogs and top tips for living\xa0in\xa0the\xa0city`,
         link: {
             name: `View all blogs <<<`,
             url: `https://likemindedliving.co.uk/blog/`

@@ -35,7 +35,7 @@ export const Grid = styled.div`
   grid-template-rows: 30px 1fr 80px;
   @media (max-width: 1180px) {
     width: 60%;
-    margin-top: 60px;
+    margin-top: 20px;
     grid-template-rows: auto;
     grid-template-columns: 100%;
   }
@@ -57,13 +57,14 @@ export const Image = styled.img`
   grid-row: 1 / 3;
   grid-column: 2;
   position: relative;
+  margin: 0 auto;
   height: 250px;
   @media (max-width: 1180px) {
     grid-row: 1;
     grid-column: 1;
-    margin: 0 auto;
     top: 0;
-    height: 250px;
+    height: 210px;
+    margin: 0 auto 20px;
   }
 `
 

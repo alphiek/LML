@@ -16,3 +16,15 @@ export const wrapPageElement = ({ element }) => {
     </>
   )
 }
+
+export const onServiceWorkerUpdateReady = () => {
+  if (typeof window !== `undefined`) {
+    const answer = window.confirm(
+      `This application has been updated. ` +
+        `Reload to display the latest version?`
+    )
+    if (answer === true) {
+      window.location.reload()
+    }
+  }
+}

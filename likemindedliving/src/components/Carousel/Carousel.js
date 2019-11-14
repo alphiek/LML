@@ -72,6 +72,7 @@ export const CardSpacer = styled.div`
 export const CardContainer = styled.li`
   display: flex;
   flex-wrap: wrap;
+  background-color: white;
   border-radius: 8px;
   border: 1px solid rgba(75, 74, 104, 0.05);
   box-shadow: 0px 6px 12px 0px rgba(75,74,104,0.2);

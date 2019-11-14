@@ -1,11 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-
+import { Link } from 'gatsby'
 import { HoverPattern, HoverWrapper } from "../Patterns/HoverPattern"
 import { Bounce } from "../Animations/keyframes"
 
-const Link = styled.a`
+const GatsbyLink = styled(Link)`
   padding: 0 1.2rem;
   color: #1e1d42;
   @media (max-width: 1180px) {
@@ -23,27 +23,26 @@ export const NavLinkStyle = styled.div`
   }
 `
 
-const NavLinks = ({ name, url }) => {
+const GatsbyNavLink = ({ name, url }) => {
   return (
     <HoverWrapper>
       <NavLinkStyle>
-        <Link
-          href={url}
+        <GatsbyLink
+          to={url}
           aria-label={`Link to ${name}`}
-          target="blank"
-          rel="noopener noreferrer"
+          activeStyle={{ display: "none" }}
         >
           {name}
-        </Link>
+        </GatsbyLink>
       </NavLinkStyle>
       <HoverPattern />
     </HoverWrapper>
   )
 }
 
-export default NavLinks
+export default GatsbyNavLink
 
-NavLinks.propTypes = {
+GatsbyNavLink.propTypes = {
   link: PropTypes.shape({
     url: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

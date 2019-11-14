@@ -2,7 +2,7 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://likemindedliving.co.uk`,
+    siteUrl: `https://rkkcollective.com`,
     title: `Like-Minded Living`,
     description: `We use technology to search across all major listing sites, to find your dream rental home, so you don’t have to. Search now, Discover a new way to find properties`,
     address: {
@@ -38,6 +38,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-htaccess`,
+      options: {
+        https: true,
+        host: `rkkcollective.com`,
+        custom: `ErrorDocument 404 /404.html`
+      },
+    },
+    {
       resolve: `gatsby-source-graphql`,
       options: {
         typeName: `WPBlogsGraphQL`,
@@ -52,12 +60,20 @@ module.exports = {
         path: `${__dirname}/src/pdf`,
       }
     },
+    `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'http://www.alphekka-kelham.xyz',
+        host: 'https://rkkcollective.com',
+        sitemap: "http://rkkcollective.com/sitemap.xml",
         policy: [{ userAgent: '*', disallow: '/' }]
       }
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://rkkcollective.com'`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -73,8 +89,6 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

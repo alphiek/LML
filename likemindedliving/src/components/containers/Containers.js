@@ -1,7 +1,7 @@
-import styled from "styled-components"
-import { colors } from "../Utilities/colors"
+import styled from 'styled-components'
+import { colors } from '../Utilities/colors'
 import { fullabs } from '../Utilities/position'
-import Flex from "./Flex"
+import Flex from './Flex'
 
 //Sections
 
@@ -22,12 +22,18 @@ export const MainSectionContainer = styled(SectionContainer)`
 `
 
 export const FullSection = styled.section`
+  position: relative;
   width: 100%;
   display: flex;
+  background-color: white;
+  z-index: 10;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
+  margin: 20px 0 60px;
+  @media (max-width: 1024px) {
+    margin: 20px 0 60px;
+  }
 `
 
 // Section Wrappers
@@ -131,7 +137,7 @@ export const CarouselHeadingWrapper = styled(HeadingWrapper)`
 // Wrappers
 
 export const SignUpFormWrapper = styled.div`
-  width: ${props => props.width || "70%"};
+  width: ${props => props.width || '70%'};
   padding-top: 1rem;
   @media (max-width: 1180px) {
     width: auto;
@@ -175,7 +181,6 @@ export const Spacer = styled.div`
     height: 16px;
   }
 `
-
 
 export const Loader = styled(Flex)`
   ${fullabs({})};
