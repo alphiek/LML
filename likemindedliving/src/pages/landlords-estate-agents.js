@@ -18,6 +18,20 @@ const LandlordPage = () => {
   return (
     <>
       <Helmet>
+        <title>Like-Minded Living - London Tenant Finding Agency</title>
+        <meta
+          name="description"
+          content="Specialist tenant finding agency for flat-sharers based in London"
+        ></meta>
+        <link
+          rel="dns-prefetch"
+          href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+        />
         <link
           rel="alternate"
           hreflang="en"
@@ -28,12 +42,6 @@ const LandlordPage = () => {
           hreflang="x-default"
           href="https://likemindedliving.co.uk/landlords-estate-agents"
         />
-        <title>Like-Minded Living - London Tenant Finding Agency</title>
-        <meta
-          name="description"
-          content="Specialist tenant finding agency for flat-sharers based in London"
-        ></meta>
-
         <meta property="og:url" content={siteUrl}></meta>
         <meta property="og:type" content="website"></meta>
         <meta
@@ -126,15 +134,15 @@ const LandlordPage = () => {
           }
      `}</script>
       </Helmet>
-      <HeadlineSection name='landlord'/>
+      <HeadlineSection name="landlord" />
       <LandlordSlides />
       <LandlordS1 />
-      <ProcessContainer name='landlord' />
+      <ProcessContainer name="landlord" />
       <Contracts />
       <Clients />
       <Payments />
       <PressReel />
-      <Testimonial name='landlord' />
+      <Testimonial name="landlord" />
       <Carousel name="landlordBlogs" />
     </>
   )

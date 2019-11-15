@@ -16,6 +16,19 @@ const IndexPage = () => {
   return (
     <>
       <Helmet>
+      <title>
+          Like-Minded Living - Find Rental Properties Everywhere Across London
+        </title>
+        <meta name="description" content={description}></meta>
+      <link
+          rel="dns-prefetch"
+          href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+        />
         <link
           rel="alternate"
           hreflang="en"
@@ -26,11 +39,6 @@ const IndexPage = () => {
           hreflang="x-default"
           href="https://likemindedliving.co.uk"
         />
-        <title>
-          Like-Minded Living - Find Rental Properties Everywhere Across London
-        </title>
-        <meta name="description" content={description}></meta>
-
         <meta property="og:url" content={siteUrl}></meta>
         <meta property="og:type" content="website"></meta>
         <meta
