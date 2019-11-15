@@ -1,23 +1,11 @@
 import React from 'react'
 import { useSlides } from '../../hooks/useSlides'
 import Swiper from 'react-id-swiper'
-import { Slide, SlideWrapper } from './slideshowStyles'
+import { GetSlides } from './GetSlides'
 
 export const TenantSlides = () => {
   const data = useSlides()
-
-  let slides =
-    data &&
-    data.edges.map(({ node }) => (
-      <SlideWrapper key={node.id}>
-        <Slide
-          fluid={node.childImageSharp.fluid}
-          objectFit="cover"
-          objectPosition="50% 50%"
-          alt="Images of properties"
-        />
-      </SlideWrapper>
-    ))
+  const slideData = data.edges
 
   const params = {
     spaceBetween: 0,
@@ -29,5 +17,5 @@ export const TenantSlides = () => {
     },
   }
 
-  return <Swiper {...params}>{slides}</Swiper>
+  return <Swiper {...params}>{GetSlides(slideData)}</Swiper>
 }

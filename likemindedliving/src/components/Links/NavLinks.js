@@ -6,10 +6,15 @@ import { HoverPattern, HoverWrapper } from '../Patterns/HoverPattern'
 import { Bounce } from '../Animations/keyframes'
 
 const Link = styled.a`
+  display: block;
   padding: 0 1.2rem;
   color: #1e1d42;
   @media (max-width: 1180px) {
     padding: 0;
+    padding: 1.5rem 0;
+  }
+  @media (max-width: 820px) {
+    padding: 4.5vh 0;
   }
 `
 

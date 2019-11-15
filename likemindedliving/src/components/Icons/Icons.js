@@ -270,17 +270,17 @@ const Icons = ({ name, fill }) => {
         </svg>
       )
     case "contract1":
-      return <ContractIcon src={contract1}  alt='icon representing split commission'/>
+      return <ContractIcon src={contract1}  alt='Icon representing split commission'/>
     case "contract2":
-      return <ContractIcon src={contract2}/>
+      return <ContractIcon src={contract2}  alt='Icon representing increased profit'/>
     case "contract3":
-      return <ContractIcon src={contract3}/>
+      return <ContractIcon src={contract3} alt='Icon of a pen'/>
       case "payment1":
-      return <ContractIcon src={payment1}/>
+      return <ContractIcon src={payment1} alt='Icon of a padlock'/>
     case "payment2":
-      return <ContractIcon src={payment2}/>
+      return <ContractIcon src={payment2} alt='Icon showing an exchange of money'/>
     case "payment3":
-      return <ContractIcon src={payment3}/>
+      return <ContractIcon src={payment3} alt='Icon of a house'/>
     default:
   }
 }

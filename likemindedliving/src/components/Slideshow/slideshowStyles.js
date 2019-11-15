@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import Img from 'gatsby-image/withIEPolyfill'
+import Img from 'gatsby-image'
 
 export const Slide = styled(Img)`
-  width: 100%;
+  width: auto;
   height: 65vh;
   @media (max-width: 1366px) {
     height: 73vh;
@@ -15,6 +15,10 @@ export const Slide = styled(Img)`
   }
   @media (max-width: 960px) {
     height: 40rem;
+  }
+  @media (max-width: 660px) {
+    max-width: 660px;
+    max-height: 600px;
   }
   @media (max-width: 480px) {
     height: 42rem;

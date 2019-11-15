@@ -10,7 +10,7 @@ export const useSlides = () => {
               id
               name
               childImageSharp {
-                fluid(quality: 90, maxWidth: 3840, maxHeight: 1106) {
+                fluid(quality: 90 maxWidth: 3840 maxHeight: 1106) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }

@@ -7,14 +7,14 @@ import Patterns from "../../Patterns/Patterns"
 import GetLinks from "../GetLinks"
 
 
-const SideDrawer = ({ show, items }) => {
+const SideDrawer = ({ show, toggleHandler }) => {
   return (
     <Spring from={{ right: -1000 }} to={{ right: show ? 0 : -1000 }}>
       {props => (
         <SideDrawerContainer style={props}>
           <Patterns name="sideDrawerPattern" />
           <SideDrawerListWrapper>
-            <GetLinks items={items} />
+            <GetLinks click={toggleHandler}/>
           </SideDrawerListWrapper>
         </SideDrawerContainer>
       )}

@@ -5,12 +5,6 @@ import hoverPattern from "../../images/patterns/hover.png"
 export const HoverWrapper = styled.div`
   position: relative;
   width: auto;
-  @media (max-width: 1180px) {
-    margin: 1.5rem 0;
-  }
-  @media (max-width: 820px) {
-    margin: 4.5vh 0;
-  }
 `
 
 const PatternWrapper = styled.div`
@@ -27,6 +21,9 @@ const PatternWrapper = styled.div`
   z-index: -1;
   ${HoverWrapper}:hover & {
     opacity: 1;
+  }
+  @media(max-width: 1180px) {
+    display: none;
   }
 `
 

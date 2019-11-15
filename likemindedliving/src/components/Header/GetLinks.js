@@ -2,13 +2,13 @@ import React from 'react'
 import GatsbyNavLink from '../Links/GatsbyNavLink'
 import NavLinks from '../Links/NavLinks'
 
-const GetLinks = () => {
+const GetLinks = ({ click }) => {
   return (
     <>
-      <li>
+      <li onClick={click}>
         <GatsbyNavLink name="tenants" url="/" />
       </li>
-      <li>
+      <li onClick={click}>
         <GatsbyNavLink
           name="landlords & estate agents"
           url="/landlords-estate-agents"

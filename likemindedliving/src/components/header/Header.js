@@ -15,7 +15,7 @@ const Header = () => {
           <Toolbar toggleHandler={toggle} />
         </nav>
       </header>
-      <SideDrawer show={isShowing} />
+      <SideDrawer show={isShowing} toggleHandler={toggle} />
       {isShowing && <Backdrop hide="hide" click={toggle} />}
     </>
   )

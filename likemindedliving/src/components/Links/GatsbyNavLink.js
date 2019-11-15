@@ -8,8 +8,13 @@ import { Bounce } from '../Animations/keyframes'
 const GatsbyLink = styled(Link)`
   padding: 0 1.2rem;
   color: #1e1d42;
+  display: block;
   @media (max-width: 1180px) {
     padding: 0;
+    padding: 1.5rem 0;
+  }
+  @media (max-width: 820px) {
+    padding: 4.5vh 0;
   }
 `
 

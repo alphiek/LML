@@ -109,4 +109,7 @@ const ArticleContainer = styled.div`
    flex-direction: column;
    padding: 0 30px;
  }
+ @media (max-width: 768px) {
+   padding: 0 40px;
+ }
 `
