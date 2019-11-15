@@ -26,15 +26,6 @@ const IndexPage = () => {
           hreflang="x-default"
           href="https://likemindedliving.co.uk"
         />
-        <link
-          rel="dns-prefetch"
-          href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
-        />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
-        />
         <title>
           Like-Minded Living - Find Rental Properties Everywhere Across London
         </title>

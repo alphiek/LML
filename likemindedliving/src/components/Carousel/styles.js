@@ -31,7 +31,6 @@ export const CardLink = styled.a`
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  opacity: 0.6;
   font-weight: 700;
   @media (max-width: 1180px) {
     text-align: left;

@@ -78,7 +78,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://rkkcollective.com'`,
+        siteUrl: `https://rkkcollective.com`,
+        stripQueryString: true,
       },
     },
     `gatsby-transformer-sharp`,
@@ -95,6 +96,6 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
-    `gatsby-plugin-offline`,
+    //`gatsby-plugin-offline`,
   ],
 }

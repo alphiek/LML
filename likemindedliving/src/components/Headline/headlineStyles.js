@@ -53,3 +53,8 @@ export const DividerLong = styled.svg`
     height: 2em;
   }
 `
+
+export const H1Opaque = styled.h1`
+   opacity: 0;
+   position: absolute;
+`

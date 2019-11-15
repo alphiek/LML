@@ -5,6 +5,7 @@ import {
   HeadlineSectionContainer,
   HeadlineTextCenter,
   DividerLong,
+  H1Opaque
 } from './headlineStyles'
 import { FadeIn } from '../Animations/FadeIn'
 import { headlineCopy } from './headlineCopy'
@@ -20,7 +21,7 @@ const HeadlineSection = ({ name }) => {
   }, [])
 
   if (!isLoaded) {
-    content = <div></div>
+    content = <div><H1Opaque>{data.h1}</H1Opaque ></div>
   } else {
     content = (
       <>
@@ -54,3 +55,5 @@ export default HeadlineSection
 HeadlineSection.propTypes = {
   name: PropTypes.string.isRequired,
 }
+
+

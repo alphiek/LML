@@ -10,6 +10,15 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link
+          rel="dns-prefetch"
+          href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -18,7 +27,6 @@ export default function HTML(props) {
           `,
           }}
         />
-
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
