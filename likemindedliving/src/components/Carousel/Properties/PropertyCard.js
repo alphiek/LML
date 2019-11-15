@@ -1,8 +1,8 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-import Icons from "../../Icons/Icons"
-import { colors } from "../../Utilities/colors"
+import Icons from '../../Icons/Icons'
+import { colors } from '../../Utilities/colors'
 import {
   CardImageWrapper,
   CardTextContainer,
@@ -11,19 +11,19 @@ import {
   CardPrice,
   HR,
   Description,
-} from "../styles"
-
-const Image = styled.img`
-  width: 100%;
-  opacity: 0.9;
-  object-position: 50% 50%;
-`
+} from '../styles'
 
 const PropertyCard = ({ content }) => {
   return (
     <>
       <CardImageWrapper>
-        <Image src={content.image.url} alt='available properties' />
+        <LazyLoadImage
+          alt="available properties"
+          effect="opacity"
+          src={content.image.url}
+          height='150px'
+          width='100%'
+        />
       </CardImageWrapper>
       <CardTextContainer>
         <div>

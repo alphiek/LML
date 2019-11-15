@@ -47,7 +47,7 @@ const IndexPage = () => {
         ></meta>
         <meta
           property="og:image"
-          content="https://likemindedliving.co.uk/images/og-image.png"
+          content="https://likemindedliving.co.uk/images/og-image.jpg"
         ></meta>
         <meta property="og:image:width" content="1200"></meta>
         <meta property="og:image:height" content="630"></meta>
@@ -64,7 +64,7 @@ const IndexPage = () => {
         <meta name="twitter:description" content={description}></meta>
         <meta
           name="twitter:image"
-          content="https://likemindedliving.co.uk/images/og-image.png"
+          content="https://likemindedliving.co.uk/images/og-image.jpg"
         ></meta>
         <script type="application/ld+json">{`
           {
@@ -72,7 +72,7 @@ const IndexPage = () => {
               "@type": "RealEstateAgent",
               "name": "${title}",
               "description": "${description}",
-              "image": "https://likemindedliving.co.uk/images/og-image.png",
+              "image": "https://likemindedliving.co.uk/images/og-image.jpg",
               "logo": "https://likemindedliving.co.uk/images/logo.png",
               "@id": "${siteUrl}",
               "url": "${siteUrl}",

@@ -270,7 +270,7 @@ const Icons = ({ name, fill }) => {
         </svg>
       )
     case "contract1":
-      return <ContractIcon src={contract1}/>
+      return <ContractIcon src={contract1}  alt='icon representing split commission'/>
     case "contract2":
       return <ContractIcon src={contract2}/>
     case "contract3":
