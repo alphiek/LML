@@ -23,7 +23,7 @@ export const headlineCopy = {
       bgColor: `#E91E63`,
       bgColorHover: `#673AB7`,
       name: `Find out more`,
-      url: `https://likemindedliving.outgrow.us/likemindedliving-45`,
+      url: `https://likemindedliving.outgrow.us/likemindedliving-47`,
     },
   },
 }

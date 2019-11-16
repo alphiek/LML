@@ -42,7 +42,7 @@ export const processCopy = {
       bgColor: `#26C6DA`,
       bgColorHover: `#673AB7`,
       name: `Register to work with us today!`,
-      url: `https://likemindedliving.outgrow.us/likemindedliving-45`,
+      url: `https://likemindedliving.outgrow.us/likemindedliving-47`,
     },
   },
 }

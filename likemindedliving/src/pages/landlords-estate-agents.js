@@ -50,7 +50,7 @@ const LandlordPage = () => {
         ></meta>
         <meta
           property="og:image"
-          content="https://likemindedliving.co.uk/images/og-image.jpg"
+          content="https://likemindedliving.co.uk/seo/og-image.jpg"
         ></meta>
         <meta property="og:image:width" content="1200"></meta>
         <meta property="og:image:height" content="630"></meta>
@@ -73,7 +73,7 @@ const LandlordPage = () => {
         ></meta>
         <meta
           name="twitter:image"
-          content="https://likemindedliving.co.uk/images/og-image.jpg"
+          content="https://likemindedliving.co.uk/seo/og-image.jpg"
         ></meta>
         <script type="application/ld+json">{`
           {
@@ -81,8 +81,8 @@ const LandlordPage = () => {
               "@type": "RealEstateAgent",
               "name": "${title}",
               "description": "Specialist tenant finding agency for flat-sharers based in London",
-              "image": "https://likemindedliving.co.uk/images/og-image.jpg",
-              "logo": "https://likemindedliving.co.uk/images/logo.png",
+              "image": "https://likemindedliving.co.uk/seo/og-image.jpg",
+              "logo": "https://likemindedliving.co.uk/seo/logo.png",
               "@id": "${siteUrl}",
               "url": "${siteUrl}",
               "email": "property@likemindedliving.co.uk",

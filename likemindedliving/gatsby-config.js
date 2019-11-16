@@ -1,4 +1,4 @@
-require("dotenv").config()
+require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
@@ -12,13 +12,13 @@ module.exports = {
       city: `London`,
       postal: `SW6 3JA`,
       tel: `+44 207 859 4781`,
-      email: `property@likemindedliving.co.uk`
+      email: `property@likemindedliving.co.uk`,
     },
     social: {
       fb: `https://www.facebook.com/likemindedliving/`,
       insta: `https://www.instagram.com/likemindedliving/`,
-      twitter: `https://twitter.com/likemindedlvng/`
-    }
+      twitter: `https://twitter.com/likemindedlvng/`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -40,15 +40,15 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-html-attributes',
       options: {
-        lang: 'en'
-      }
+        lang: 'en',
+      },
     },
     {
       resolve: `gatsby-plugin-htaccess`,
       options: {
         https: true,
         host: `likemindedliving.co.uk`,
-        custom: `ErrorDocument 404 /404.html`
+        custom: `ErrorDocument 404 /404.html`,
       },
     },
     {
@@ -64,16 +64,16 @@ module.exports = {
       options: {
         name: `pdf`,
         path: `${__dirname}/src/pdf`,
-      }
+      },
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://likemindedliving.co.uk',
-        sitemap: "https://likemindedliving.co.uk/sitemap.xml",
-        policy: [{ userAgent: '*', disallow: '/' }]
-      }
+        sitemap: 'https://likemindedliving.co.uk/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
     },
     {
       resolve: `gatsby-plugin-canonical-urls`,
@@ -87,13 +87,55 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `LikeMinded Living`,
+        name: `Likeminded Living`,
         short_name: `LML`,
         start_url: `/`,
         background_color: `#FFF`,
         theme_color: `#FFF`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`,
+        icons: [
+          {
+            src: '/favicons/icons/icon-72x72.png',
+            sizes: '72x72',
+            type: 'image/png',
+          },
+          {
+            src: '/favicons/icons/icon-96x96.png',
+            sizes: '96x96',
+            type: 'image/png',
+          },
+          {
+            src: '/favicons/icons/icon-128x128.png',
+            sizes: '128x128',
+            type: 'image/png',
+          },
+          {
+            src: '/favicons/icons/icon-144x144.png',
+            sizes: '144x144',
+            type: 'image/png',
+          },
+          {
+            src: '/favicons/icons/icon-152x152.png',
+            sizes: '152x152',
+            type: 'image/png',
+          },
+          {
+            src: '/favicons/icons/icon-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/favicons/icons/icon-384x384.png',
+            sizes: '384x384',
+            type: 'image/png',
+          },
+          {
+            src: '/favicons/icons/icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
       },
     },
     `gatsby-plugin-offline`,
