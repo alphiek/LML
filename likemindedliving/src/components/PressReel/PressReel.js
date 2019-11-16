@@ -62,6 +62,9 @@ const ScrollContainer = styled.div`
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
   &::-webkit-scrollbar {
     display: none;
     width: 0;

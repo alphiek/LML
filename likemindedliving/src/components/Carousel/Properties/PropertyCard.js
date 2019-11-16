@@ -19,7 +19,6 @@ const PropertyCard = ({ content }) => {
       <CardImageWrapper>
         <LazyLoadImage
           alt="available properties"
-          effect="opacity"
           src={content.image.url}
           height='150px'
           width='100%'

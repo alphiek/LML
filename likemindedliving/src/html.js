@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 export default function HTML(props) {
   return (
-    <html {...props.htmlAttributes} lang="en">
+    <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
         <meta
@@ -14,7 +14,7 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{
             __html: `
             if(navigator.appName.indexOf("Internet Explorer")!=-1 || navigator.userAgent.match(/Trident.*rv[ :]*11\./))
-            { window.location = "https://rkkcollective.com/redirect/redirect.html" };
+            { window.location = "https://likemindedliving.co.uk/redirect/redirect.html" };
           `,
           }}
         />

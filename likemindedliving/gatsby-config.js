@@ -2,7 +2,7 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://rkkcollective.com`,
+    siteUrl: `https://likemindedliving.co.uk`,
     title: `Like-Minded Living`,
     description: `We use technology to search across all major listing sites, to find your dream rental home, so you don’t have to. Search now, Discover a new way to find properties`,
     address: {
@@ -47,7 +47,7 @@ module.exports = {
       resolve: `gatsby-plugin-htaccess`,
       options: {
         https: true,
-        host: `rkkcollective.com`,
+        host: `likemindedliving.co.uk`,
         custom: `ErrorDocument 404 /404.html`
       },
     },
@@ -70,15 +70,15 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://rkkcollective.com',
-        sitemap: "http://rkkcollective.com/sitemap.xml",
+        host: 'https://likemindedliving.co.uk',
+        sitemap: "https://likemindedliving.co.uk/sitemap.xml",
         policy: [{ userAgent: '*', disallow: '/' }]
       }
     },
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://rkkcollective.com`,
+        siteUrl: `https://likemindedliving.co.uk`,
         stripQueryString: true,
       },
     },
@@ -96,6 +96,6 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
-    //`gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

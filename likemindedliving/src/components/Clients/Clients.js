@@ -27,7 +27,7 @@ const Clients = () => {
     <Section>
       <ReverseSectionWrapper>
         <ImageWrapper justifyCenter alignCenter contentCenter>
-          <Image src={clients} />
+          <Image src={clients} alt='group of young professionals' />
         </ImageWrapper>
         <TextWrapper>
           <H2>{data.h2}</H2>

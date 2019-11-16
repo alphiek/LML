@@ -15,7 +15,7 @@ const NotFoundPage = () => {
       <PageContainer>
         <ContentWrapper justifyAround alignCenter column>
           <Blob src={blob404} alt="background shape with question marks" />
-          <h1>404, The route you are looking for does not exist</h1>
+          <h1 style={{ color: 'rgba(75, 74, 104, 0.95)'}}>404, The route you are looking for does not exist</h1>
           <Link to="/">&#62;&#62; Back to Home &#60;&#60;</Link>
         </ContentWrapper>
       </PageContainer>
