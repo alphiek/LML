@@ -44,7 +44,7 @@
     "react-spinkit": "^3.0.0",
     "react-spring": "^8.0.27",
     "styled-components": "^4.4.0",
-    "swiper": "^4.5.1",
+    "swiper": "^6.5.1",
     "typeface-montserrat": "0.0.75",
     "typeface-poppins": "0.0.72"
   },
