@@ -13,7 +13,7 @@
     "apollo-link-error": "^1.1.12",
     "apollo-link-http": "^1.5.16",
     "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.17.2",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.2.29",
     "gatsby-plugin-canonical-urls": "^2.1.14",
     "gatsby-plugin-htaccess": "^1.2.2",
